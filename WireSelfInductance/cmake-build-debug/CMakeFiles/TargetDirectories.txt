@@ -1,3 +1,0 @@
-/Users/lawrencegunn/Dev/wire-self-inductance/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/lawrencegunn/Dev/wire-self-inductance/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/lawrencegunn/Dev/wire-self-inductance/cmake-build-debug/CMakeFiles/wire-self-inductance.dir

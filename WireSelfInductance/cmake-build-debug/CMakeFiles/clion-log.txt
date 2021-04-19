@@ -1,4 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/lawrencegunn/Dev/wire-self-inductance
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/lawrencegunn/Dev/wire-self-inductance/cmake-build-debug
