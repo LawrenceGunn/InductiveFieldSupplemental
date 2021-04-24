@@ -60,20 +60,20 @@ int main(int argc,
 
         MeshedStraightWireSelfInductance proposedSolver;
         proposedSolver.initialize(MILLIMETERS_TO_METERS * wireLengthMm,
-                                       MILLIMETERS_TO_METERS * 0.5 * wireDiameterMm,
-                                       meshRings,
-                                       MILLIMETERS_TO_METERS * layerThicknessMm,
-                                       InductanceTermsToUse::PROPOSED_TERM,
-                                       1.0);
+                                  MILLIMETERS_TO_METERS * 0.5 * wireDiameterMm,
+                                  meshRings,
+                                  MILLIMETERS_TO_METERS * layerThicknessMm,
+                                  InductanceTermsToUse::PROPOSED_TERM,
+                                  1.0);
         double proposedInductanceInHenries = proposedSolver.inductanceInHenries();
 
         MeshedStraightWireSelfInductance conventionalSolver;
         conventionalSolver.initialize(MILLIMETERS_TO_METERS * wireLengthMm,
-                                       MILLIMETERS_TO_METERS * 0.5 * wireDiameterMm,
-                                       meshRings,
-                                       MILLIMETERS_TO_METERS * layerThicknessMm,
-                                       InductanceTermsToUse::CONVENTIONAL_TERM,
-                                       1.0);
+                                      MILLIMETERS_TO_METERS * 0.5 * wireDiameterMm,
+                                      meshRings,
+                                      MILLIMETERS_TO_METERS * layerThicknessMm,
+                                      InductanceTermsToUse::CONVENTIONAL_TERM,
+                                      1.0);
         double conventionalInductanceInHenries = conventionalSolver.inductanceInHenries();
 
         std::cout << "Rosa inductance (nH): " << HENRIES_TO_NANO_HENRIES * rosaInductanceMicroHenries
@@ -82,6 +82,12 @@ int main(int argc,
                   << std::endl;
         std::cout << "Conventional inductance (nH): " << -HENRIES_TO_NANO_HENRIES * conventionalInductanceInHenries
                   << std::endl;
+        std::cout << "    Wire diameter (mm): " << wireDiameterMm << std::endl
+                  << "    Wire length (mm): " << wireLengthMm << std::endl
+                  << "    Mesh rings: " << meshRings << std::endl
+                  << "    Number of polygons in x-y: " << proposedSolver.numNodesPerLayer() << std::endl
+                  << "    Layer thickness requested (mm): " << layerThicknessMm << std::endl
+                  << "    Layer thickness used (mm): " << wireLengthMm / proposedSolver.numberOfLayers() << std::endl;
     }
     catch (const std::exception& ex) {
         std::cerr << "EXCEPTION: " << ex.what() << std::endl;

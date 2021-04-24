@@ -61,6 +61,8 @@ namespace selfInductance {
 
         int numberOfLayers() const { return m_numLayers; }
 
+        int numNodesPerLayer() const { return m_numNodesPerLayer; }
+
     private:
         void createForceVsDistanceTable();
 

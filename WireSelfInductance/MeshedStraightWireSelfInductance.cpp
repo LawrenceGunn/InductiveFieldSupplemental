@@ -32,6 +32,7 @@ void MeshedStraightWireSelfInductance::initialize(double wireLength,
 
     CircularMesh meshBuilder(m_wireRadius, numMeshRings);
     m_meshLayer0 = meshBuilder.getCircularChargeElementList();
+    m_numNodesPerLayer = m_meshLayer0.size();
 
     m_exactWireCrossSectionalArea = PI * wireRadius * wireRadius;
     m_wireCrossSectionalArea = meshBuilder.circularArea();
