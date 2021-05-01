@@ -1,5 +1,3 @@
-# Inductive Field Supplemental Materials
-
 # Straight wire self inductance
 
 For the paper *An inductive field component of the electric field that corresponds to Faraday's law*, the self inductance of a straight wire is determined numerically. The derivations are included in the supplimental text for the paper. The calculations were done in C++ and the source code is available here.
