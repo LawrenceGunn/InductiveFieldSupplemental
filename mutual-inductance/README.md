@@ -1,7 +1,7 @@
 # Mutual inductance of wire circuits
 
-For the paper *An inductive field component of the electric field that corresponds to Faraday's law*, the mutual inductance between two wire circuits is determined numerically in two Mathematica notebooks.
+For the paper *An inductive field component of the electric field that corresponds to Faraday's law*, the mutual inductance between two wire circuits is determined numerically in two Mathematica notebooks, one for circuilar circuits, the other for rectangular.
 
-Each notebook has a short description of the derivation as well as notes about the Mathematica implementation.
+Each notebook has a description of the circuits, a short discussion of the equations, and the Mathematica source code.
 
-If Mathematica is not available then the PDF version of the notebooks can be inspected.
+If Mathematica is not available the equivalently named PDF documents are printed static versions of the notebooks.
