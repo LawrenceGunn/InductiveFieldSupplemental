@@ -1,5 +1,5 @@
 //
-// Created by Lawrence Gunn on 7/4/20.
+// Created on 7/4/20.
 //
 
 #include "CircularMesh.h"

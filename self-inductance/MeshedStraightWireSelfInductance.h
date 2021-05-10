@@ -3,7 +3,6 @@
 File     : MeshedStraightWireSelfInductance.h
 Project  : Bach Field Simulator
 Purpose  : Header file for the finding numerical approximations of dtr/dt.
-           Revisions: Original definition by L. Gunn.
            2020/06/04
 
 */
