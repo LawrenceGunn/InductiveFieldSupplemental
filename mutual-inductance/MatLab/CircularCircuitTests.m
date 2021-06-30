@@ -1,14 +1,17 @@
 function pass = CircularCircuitTests()
     pass = true;
-    % pass = FaradayTests(pass);
+    pass = FaradayTests(pass);
     pass = InductiveFieldTests(pass);
+    if pass == true
+        fprintf("All tests PASSED");
+    else
+        fprintf("Tests FAILED");
+    end
 end
 
 function pass = InductiveFieldTests(currentPass)
     pass = currentPass;
     micro = 1000000.0;
-    milli = 1000.0;
-    faraday = FaradayEmfForCircularCircuits;
     
     eField = InductiveFieldEmfForCircularCircuits;
 
