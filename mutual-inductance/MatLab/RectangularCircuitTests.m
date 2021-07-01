@@ -84,6 +84,10 @@ function pass = FaradayTests(currentPass)
     faradayClosestSum = emfFaradayAtClosest1 + emfFaradayAtClosest2 + emfFaradayAtClosest3 + emfFaradayAtClosest4;
     pass = EXPECT_NEAR(-169.992, micro * faradayClosestSum, 0.001, "faradaysEmf test 5", pass);
 
+	% Test 6: faradaysEmfWireSetToWireSet from experimental data for closest separation
+    faradayClosestFull = faradaysEmfWireSetToWireSet(emfFdy, dIdtClosest, srcWires, msrWiresClosest);
+    pass = EXPECT_NEAR(-169.992, micro * faradayClosestFull.emfTotal, 0.001, "faradaysEmf test 5", pass);
+
 
 end
 

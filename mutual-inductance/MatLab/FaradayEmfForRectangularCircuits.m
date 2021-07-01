@@ -103,6 +103,32 @@ classdef (ConstructOnLoad) FaradayEmfForRectangularCircuits
             
             emf = integral3(@(rMsr, msrCircuitAngle, drvCircuitAngle) calcEmfFromMatrix(rMsr, msrCircuitAngle, drvCircuitAngle), 0, rMsrOuter, 0, 2 * pi, 0, 2 * pi);
         end
+        
+        % Calculate the EMF from Faraday's law for the driven wire loop on the measured wire loop.
+        function emfData = faradaysEmfWireSetToWireSet(obj,...
+                                                       dIdt,...
+                                                       srcWireSet,...
+                                                       msrWireSet)
+            if length(srcWireSet)  ~= 4
+                error("Error in faradaysEmfWireSetToWireSet: srcWireSet size incorrect, expected 4");
+            end
+   
+            faradayEmfTotal = 0.0;
+            
+            numWireSets = length(srcWireSet);
+            faradayEmfData = cell(numWireSets,1);
+            
+            for iDrivenWireSet = 1:numWireSets
+                faradayEmfFromWires = faradaysEmfWireToWireSet(obj, dIdt, srcWireSet{iDrivenWireSet}, msrWireSet);
+                faradayEmfTotal = faradayEmfTotal + faradayEmfFromWires;
+                faradayEmfData{iDrivenWireSet}.drivenWireId = srcWireSet{iDrivenWireSet}.wireId;
+                faradayEmfData{iDrivenWireSet}.emfs = faradayEmfFromWires;
+            end
+            
+            emfData.emfTotal = faradayEmfTotal;
+            emfData.drivenWireEmfs = faradayEmfData;
+        end
+
            
     end
     methods (Static)
