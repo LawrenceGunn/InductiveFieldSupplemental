@@ -66,7 +66,24 @@ function pass = FaradayTests(currentPass)
 
     % Test 1: faradaysEmfWireToWireSet from experimental data for near
     emfFaradayAtClosest1 = faradaysEmfWireToWireSet(emfFdy, dIdtClosest, srcWires{1}, msrWiresClosest);
-    pass = EXPECT_NEAR(-201.579, micro * emfFaradayAtClosest1, 0.001, "totalEmf test 14", pass);
+    pass = EXPECT_NEAR(-201.579, micro * emfFaradayAtClosest1, 0.001, "faradaysEmf test 1", pass);
+    
+    % Test 2: faradaysEmfWireToWireSet from experimental data for top near
+    emfFaradayAtClosest2 = faradaysEmfWireToWireSet(emfFdy, dIdtClosest, srcWires{2}, msrWiresClosest);
+    pass = EXPECT_NEAR(12.1687, micro * emfFaradayAtClosest2, 0.001, "faradaysEmf test 2", pass);
+
+    % Test 3: faradaysEmfWireToWireSet from experimental data for top near
+    emfFaradayAtClosest3 = faradaysEmfWireToWireSet(emfFdy, dIdtClosest, srcWires{3}, msrWiresClosest);
+    pass = EXPECT_NEAR(7.24911, micro * emfFaradayAtClosest3, 0.001, "faradaysEmf test 3", pass);
+
+    % Test 4: faradaysEmfWireToWireSet from experimental data for top near
+    emfFaradayAtClosest4 = faradaysEmfWireToWireSet(emfFdy, dIdtClosest, srcWires{4}, msrWiresClosest);
+    pass = EXPECT_NEAR(12.1687, micro * emfFaradayAtClosest4, 0.001, "faradaysEmf test 4", pass);
+
+    % Test 5: faradaysEmfWireToWireSet from experimental data for top near
+    faradayClosestSum = emfFaradayAtClosest1 + emfFaradayAtClosest2 + emfFaradayAtClosest3 + emfFaradayAtClosest4;
+    pass = EXPECT_NEAR(-169.992, micro * faradayClosestSum, 0.001, "faradaysEmf test 5", pass);
+
 
 end
 
