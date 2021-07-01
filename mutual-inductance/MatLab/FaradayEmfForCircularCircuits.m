@@ -2,11 +2,11 @@ classdef (ConstructOnLoad) FaradayEmfForCircularCircuits
     properties
         e0 = 8.85418782e-12
         c = 299792458
-        m0
+        mu0
     end
     methods
         function obj = FaradayEmfForCircularCircuits
-            obj.m0 = 1.0/(obj.e0 * obj.c^2);
+            obj.mu0 = 1.0/(obj.e0 * obj.c^2);
         end
            
         function emf = emfAtPoint(obj,...

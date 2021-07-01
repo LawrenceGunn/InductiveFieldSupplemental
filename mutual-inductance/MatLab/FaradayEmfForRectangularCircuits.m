@@ -2,11 +2,11 @@ classdef (ConstructOnLoad) FaradayEmfForRectangularCircuits
     properties
         e0 = 8.85418782e-12
         c = 299792458
-        m0
+        mu0
     end
     methods
         function obj = FaradayEmfForRectangularCircuits
-            obj.m0 = 1.0/(obj.e0 * obj.c^2);
+            obj.mu0 = 1.0/(obj.e0 * obj.c^2);
         end
         
         % Calculate the EMF from Faraday's law for one driven wire on the measured wire loop.
@@ -42,10 +42,10 @@ classdef (ConstructOnLoad) FaradayEmfForRectangularCircuits
                 error("Error in faradaysEmfWireToWireSet: Wires not perpendicular");
             end
             
-            function emf = emfAtPoint()
-                srcWirePosFdy = x + srcWireLinearPosFdy.* srcWireNormalizedFdy;
+            function emf = emfAtPoint(srcWireLinearPosFdy, xmFdy, ymFdy)
+                srcWirePosFdy = srcWireStartFdy + srcWireLinearPosFdy.* srcWireNormalizedFdy;
                 msrCircuitPosFdy = msrXWireStartFdy + xmFdy.* msrXWireNormalizedFdy + ymFdy.* msrYWireNormalizedFdy;
-                emf = dot(cross(dIdtVecFdy, msrCircuitPosFdy - srcWirePosFdy), [0, 0, 1])...
+                emf = obj.mu0 /(4 * pi) * dot(cross(dIdtVecFdy, msrCircuitPosFdy - srcWirePosFdy), [0, 0, 1])...
                     /norm(msrCircuitPosFdy - srcWirePosFdy)^3;
             end
             
@@ -57,31 +57,13 @@ classdef (ConstructOnLoad) FaradayEmfForRectangularCircuits
                 emfMat = zeros(rows, cols);
                 for i = 1:rows
                     for j = 1:cols
-                        emfMat(i,j) = emfAtPoint(obj, dIdt, rMsr(i,j), rDrvOuter, rMsrOuter, separation, vertSeparation, msrCircuitAngle(i,j), drvCircuitAngle(i,j));
+                        emfMat(i,j) = emfAtPoint(srcWireLinearPosFdy(i,j), xmFdy(i,j), ymFdy(i,j));
                     end
                 end
             end
 
    
             emf = integral3(@(srcWireLinearPosFdy, xmFdy, ymFdy) calcEmfFromMatrix(srcWireLinearPosFdy, xmFdy, ymFdy), 0, srcWireLengthFdy, 0, msrXWireLengthFdy, 0, msrYWireLengthFdy);
-
-            emf = obj.mu0 /(4*Pi)
-    NIntegrate[
-     srcWirePosFdy = 
-      srcWireStartFdy + srcWireLinearPosFdy srcWireNormalizedFdy;
-     msrCircuitPosFdy = 
-      msrXWireStartFdy + xmFdy msrXWireNormalizedFdy + 
-       ymFdy msrYWireNormalizedFdy;
-     Dot[
-       Cross[dIdtVecFdy, msrCircuitPosFdy - srcWirePosFdy],
-       {0, 0, 1}
-       ]/Norm[msrCircuitPosFdy - srcWirePosFdy]^3,
-       
-       
-      {srcWireLinearPosFdy, 0, srcWireLengthFdy},
-     {xmFdy, 0,  msrXWireLengthFdy},
-     {ymFdy, 0, msrYWireLengthFdy},
-     Method -> "LocalAdaptive"]
         end
 
            
@@ -97,7 +79,7 @@ classdef (ConstructOnLoad) FaradayEmfForRectangularCircuits
                             
             rVec = FaradayEmfForCircularCircuits.rVector(rDrvOuter, rMsrOuter, separation, vertSeparation, rMsr, drvCircuitAngle, msrCircuitAngle);
             dIdtVec = dIdt * [-sin(drvCircuitAngle), cos(drvCircuitAngle), 0];
-            emf = obj.m0 / (4 * pi) * rMsr * rDrvOuter * dot(cross(dIdtVec, rVec), [0, 0, 1]) / norm(rVec)^3;
+            emf = obj.mu0 / (4 * pi) * rMsr * rDrvOuter * dot(cross(dIdtVec, rVec), [0, 0, 1]) / norm(rVec)^3;
         end
            
         function emf = faradayEmf(obj,...

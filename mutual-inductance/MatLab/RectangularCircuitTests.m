@@ -45,7 +45,7 @@ function pass = FaradayTests(currentPass)
     srcCorner3 = [-0.101035, 0.0507425, 0.0];
     srcCorner4 = [-0.101035, -0.0507425, 0.0];
     srcCorners = {srcCorner1, srcCorner2, srcCorner3, srcCorner4};
-    srcOffset = zeros(3,1);
+    srcOffset = [0 0 0];
 
     msrCorner1 = [0.0, 0.0195775, 0.0];
     msrCorner2 = [0.0, -0.0195775, 0.0];
@@ -65,7 +65,7 @@ function pass = FaradayTests(currentPass)
        0.026325, 0.031905, 0.039175];
 
     % Test 1: faradaysEmfWireToWireSet from experimental data for near
-    emfFaradayAtClosest1 = faradaysEmfWireToWireSet(emfFdy, dIdtClosest, srcWires(1), msrWiresClosest);
+    emfFaradayAtClosest1 = faradaysEmfWireToWireSet(emfFdy, dIdtClosest, srcWires{1}, msrWiresClosest);
     pass = EXPECT_NEAR(-201.579, micro * emfFaradayAtClosest1, 0.001, "totalEmf test 14", pass);
 
 end
