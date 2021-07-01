@@ -14,36 +14,58 @@ classdef (ConstructOnLoad) FaradayEmfForRectangularCircuits
                                                 dIdt,...
                                                 srcWire,...
                                                 msrWireSet)
-   srcWireStartFdy = srcWire["start"];
-   srcWireVecFdy = srcWire["end"] - srcWire["start"];
-   srcWireLengthFdy = Norm[srcWireVecFdy];
-   srcWireNormalizedFdy = Normalize[srcWireVecFdy];
-   dIdtVecFdy = dIdt srcWireNormalizedFdy;
+            srcWireStartFdy = srcWire.start;
+            srcWireVecFdy = srcWire.end - srcWire.start;
+            srcWireLengthFdy = norm(srcWireVecFdy);
+            srcWireNormalizedFdy = srcWireVecFdy/srcWireLengthFdy;
+            dIdtVecFdy = dIdt * srcWireNormalizedFdy;
    
-   (* This algorithm assumes that the the measured wire set is a closed
-   rectangle. The first two sides are used as perpendicular vectors. 
-   Start
-   by verifying this.  *)
+            % This algorithm assumes that the the measured wire set is a closed
+            % rectangle. The first two sides are used as perpendicular vectors. 
+            % Start by verifying this.
    
-   msrXWireStartFdy =  msrWireSet[[1]]["start"];
-   msrXWireEndFdy =  msrWireSet[[1]]["end"];
-   msrYWireStartFdy =  msrWireSet[[2]]["start"];
-   msrYWireEndFdy =  msrWireSet[[2]]["end"];
+            msrXWireStartFdy =  msrWireSet{1}.start;
+            msrXWireEndFdy =  msrWireSet{1}.end;
+            msrYWireStartFdy =  msrWireSet{2}.start;
+            msrYWireEndFdy =  msrWireSet{2}.end;
    
-   msrXWireVecFdy = msrXWireEndFdy - msrXWireStartFdy;
-   msrXWireLengthFdy = Norm[msrXWireVecFdy];
-   msrXWireNormalizedFdy = Normalize[msrXWireVecFdy];
+            msrXWireVecFdy = msrXWireEndFdy - msrXWireStartFdy;
+            msrXWireLengthFdy = norm(msrXWireVecFdy);
+            msrXWireNormalizedFdy = msrXWireVecFdy/msrXWireLengthFdy;
    
-   msrYWireVecFdy = msrYWireEndFdy - msrYWireStartFdy;
-   msrYWireLengthFdy = Norm[msrYWireVecFdy];
-   msrYWireNormalizedFdy = Normalize[msrYWireVecFdy];
+            msrYWireVecFdy = msrYWireEndFdy - msrYWireStartFdy;
+            msrYWireLengthFdy = norm(msrYWireVecFdy);
+            msrYWireNormalizedFdy = msrYWireVecFdy/msrYWireLengthFdy;
    
-   msrXYDotFdy = Dot[msrXWireVecFdy, msrYWireVecFdy]/msrXWireLengthFdy;
-   If[Abs[msrXYDotFdy] > 0.0001, 
-    Throw["Error in faradaysEmfWireToWireSet: Wires not \
-perpendicular"]];
+            msrXYDotFdy = dot(msrXWireVecFdy, msrYWireVecFdy)/msrXWireLengthFdy;
+            if abs(msrXYDotFdy) > 0.0001
+                error("Error in faradaysEmfWireToWireSet: Wires not perpendicular");
+            end
+            
+            function emf = emfAtPoint()
+                srcWirePosFdy = x + srcWireLinearPosFdy.* srcWireNormalizedFdy;
+                msrCircuitPosFdy = msrXWireStartFdy + xmFdy.* msrXWireNormalizedFdy + ymFdy.* msrYWireNormalizedFdy;
+                emf = dot(cross(dIdtVecFdy, msrCircuitPosFdy - srcWirePosFdy), [0, 0, 1])...
+                    /norm(msrCircuitPosFdy - srcWirePosFdy)^3;
+            end
+            
+            function emfMat = calcEmfFromMatrix(srcWireLinearPosFdy, xmFdy, ymFdy)
+                % Deal with MatLab passing elements as arrays. Why? Why
+                % make it so potentially convoluted for users?
+                rows = size(srcWireLinearPosFdy,1);
+                cols = size(srcWireLinearPosFdy,2);
+                emfMat = zeros(rows, cols);
+                for i = 1:rows
+                    for j = 1:cols
+                        emfMat(i,j) = emfAtPoint(obj, dIdt, rMsr(i,j), rDrvOuter, rMsrOuter, separation, vertSeparation, msrCircuitAngle(i,j), drvCircuitAngle(i,j));
+                    end
+                end
+            end
+
    
-   mu0 /(4*Pi)
+            emf = integral3(@(srcWireLinearPosFdy, xmFdy, ymFdy) calcEmfFromMatrix(srcWireLinearPosFdy, xmFdy, ymFdy), 0, srcWireLengthFdy, 0, msrXWireLengthFdy, 0, msrYWireLengthFdy);
+
+            emf = obj.mu0 /(4*Pi)
     NIntegrate[
      srcWirePosFdy = 
       srcWireStartFdy + srcWireLinearPosFdy srcWireNormalizedFdy;
@@ -54,6 +76,8 @@ perpendicular"]];
        Cross[dIdtVecFdy, msrCircuitPosFdy - srcWirePosFdy],
        {0, 0, 1}
        ]/Norm[msrCircuitPosFdy - srcWirePosFdy]^3,
+       
+       
       {srcWireLinearPosFdy, 0, srcWireLengthFdy},
      {xmFdy, 0,  msrXWireLengthFdy},
      {ymFdy, 0, msrYWireLengthFdy},
