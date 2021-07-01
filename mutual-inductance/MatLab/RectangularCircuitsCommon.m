@@ -15,23 +15,24 @@ classdef (ConstructOnLoad) RectangularCircuitsCommon
         end
  
         function wireList = wiresFromCorners(wireCorners, offsetCornersBy, isClosed)
-            numWires = length(wireCorners);
+            numCorners = length(wireCorners);
+            numWires = numCorners-1;
             if isClosed
                 numWires = numWires+1;
             end
-            wireList = cell(numWires);
+            wireList = cell(numWires,1);
 
             function corner = addCorner(startIndex, endIndex)
-                corner.start = wireCorners(startIndex) + offsetCornersBy;
-                corner.end = wireCorners(endIndex) + offsetCornersBy;
+                corner.start = wireCorners{startIndex} + offsetCornersBy;
+                corner.end = wireCorners{endIndex} + offsetCornersBy;
                 corner.wireId = startIndex;
             end
             
-            for iCorner = 1:length(wireCorners)
-                wireList(iCorner) = addCorner(iCorner, iCorner + 1);
+            for iCorner = 1:numCorners-1
+                wireList{iCorner} = addCorner(iCorner, iCorner + 1);
             end
             if isClosed
-                wireList(numWires) = addCorner(iCorner, 1);
+                wireList{numWires} = addCorner(numCorners, 1);
             end
         end
         

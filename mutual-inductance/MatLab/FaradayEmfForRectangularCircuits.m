@@ -8,6 +8,58 @@ classdef (ConstructOnLoad) FaradayEmfForRectangularCircuits
         function obj = FaradayEmfForRectangularCircuits
             obj.m0 = 1.0/(obj.e0 * obj.c^2);
         end
+        
+        % Calculate the EMF from Faraday's law for one driven wire on the measured wire loop.
+        function emf = faradaysEmfWireToWireSet(obj,...
+                                                dIdt,...
+                                                srcWire,...
+                                                msrWireSet)
+   srcWireStartFdy = srcWire["start"];
+   srcWireVecFdy = srcWire["end"] - srcWire["start"];
+   srcWireLengthFdy = Norm[srcWireVecFdy];
+   srcWireNormalizedFdy = Normalize[srcWireVecFdy];
+   dIdtVecFdy = dIdt srcWireNormalizedFdy;
+   
+   (* This algorithm assumes that the the measured wire set is a closed
+   rectangle. The first two sides are used as perpendicular vectors. 
+   Start
+   by verifying this.  *)
+   
+   msrXWireStartFdy =  msrWireSet[[1]]["start"];
+   msrXWireEndFdy =  msrWireSet[[1]]["end"];
+   msrYWireStartFdy =  msrWireSet[[2]]["start"];
+   msrYWireEndFdy =  msrWireSet[[2]]["end"];
+   
+   msrXWireVecFdy = msrXWireEndFdy - msrXWireStartFdy;
+   msrXWireLengthFdy = Norm[msrXWireVecFdy];
+   msrXWireNormalizedFdy = Normalize[msrXWireVecFdy];
+   
+   msrYWireVecFdy = msrYWireEndFdy - msrYWireStartFdy;
+   msrYWireLengthFdy = Norm[msrYWireVecFdy];
+   msrYWireNormalizedFdy = Normalize[msrYWireVecFdy];
+   
+   msrXYDotFdy = Dot[msrXWireVecFdy, msrYWireVecFdy]/msrXWireLengthFdy;
+   If[Abs[msrXYDotFdy] > 0.0001, 
+    Throw["Error in faradaysEmfWireToWireSet: Wires not \
+perpendicular"]];
+   
+   mu0 /(4*Pi)
+    NIntegrate[
+     srcWirePosFdy = 
+      srcWireStartFdy + srcWireLinearPosFdy srcWireNormalizedFdy;
+     msrCircuitPosFdy = 
+      msrXWireStartFdy + xmFdy msrXWireNormalizedFdy + 
+       ymFdy msrYWireNormalizedFdy;
+     Dot[
+       Cross[dIdtVecFdy, msrCircuitPosFdy - srcWirePosFdy],
+       {0, 0, 1}
+       ]/Norm[msrCircuitPosFdy - srcWirePosFdy]^3,
+      {srcWireLinearPosFdy, 0, srcWireLengthFdy},
+     {xmFdy, 0,  msrXWireLengthFdy},
+     {ymFdy, 0, msrYWireLengthFdy},
+     Method -> "LocalAdaptive"]
+        end
+
            
         function emf = emfAtPoint(obj,...
                                   dIdt,...
