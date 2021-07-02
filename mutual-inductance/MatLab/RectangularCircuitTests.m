@@ -1,7 +1,8 @@
 function pass = RectangularCircuitTests()
     pass = true;
-    pass = FaradayTests(pass);
-    % pass = InductiveFieldTests(pass);
+    skipLongTests = false;
+    pass = FaradayTests(pass, skipLongTests);
+    % pass = InductiveFieldTests(pass, skipLongTests);
     if pass == true
         fprintf("All tests PASSED");
     else
@@ -9,7 +10,7 @@ function pass = RectangularCircuitTests()
     end
 end
 
-function pass = InductiveFieldTests(currentPass)
+function pass = InductiveFieldTests(currentPass, skipLongTests)
     pass = currentPass;
     micro = 1000000.0;
     
@@ -33,8 +34,9 @@ function pass = InductiveFieldTests(currentPass)
 
 end
 
-function pass = FaradayTests(currentPass)
+function pass = FaradayTests(currentPass, skipLongTests)
     pass = currentPass;
+    milli = 1000.0;
     micro = 1000000.0;
     emfFdy = FaradayEmfForRectangularCircuits;
 
@@ -86,7 +88,17 @@ function pass = FaradayTests(currentPass)
 
 	% Test 6: faradaysEmfWireSetToWireSet from experimental data for closest separation
     faradayClosestFull = faradaysEmfWireSetToWireSet(emfFdy, dIdtClosest, srcWires, msrWiresClosest);
-    pass = EXPECT_NEAR(-169.992, micro * faradayClosestFull.emfTotal, 0.001, "faradaysEmf test 5", pass);
+    pass = EXPECT_NEAR(-169.992, micro * faradayClosestFull.emfTotal, 0.001, "faradaysEmfWireSetToWireSet test 6", pass);
+
+    % Test 7: inlineEmfForWireOnWireSetsAtOffsets from experimental data
+    if ~skipLongTests
+        emfAtOffset7 = faradayEmfForWireOnWireSetsAtOffsets(emfFdy, dIdtClosest, srcCorners, msrCorners, experimentalXList);
+        fprintf("emfsAtOffsets:\n");
+        for i=1:length(emfAtOffset7)
+            fprintf("    x offset : %-10g   emf: %-10g\n", milli * emfAtOffset7{i}.xOffset, micro * emfAtOffset7{i}.emf);
+        end
+        EXPECT_NEAR(-12.3345, micro * emfAtOffset7{14}.emf, 0.0001, "faradayEmfForWireOnWireSetsAtOffsets test 6", pass);
+    end
 
 
 end

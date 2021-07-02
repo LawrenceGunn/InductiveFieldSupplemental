@@ -79,7 +79,7 @@ classdef (ConstructOnLoad) FaradayEmfForRectangularCircuits
                             
             rVec = FaradayEmfForCircularCircuits.rVector(rDrvOuter, rMsrOuter, separation, vertSeparation, rMsr, drvCircuitAngle, msrCircuitAngle);
             dIdtVec = dIdt * [-sin(drvCircuitAngle), cos(drvCircuitAngle), 0];
-            emf = obj.mu0 / (4 * pi) * rMsr * rDrvOuter * dot(cross(dIdtVec, rVec), [0, 0, 1]) / norm(rVec)^3;
+            emf = -obj.mu0 / (4 * pi) * rMsr * rDrvOuter * dot(cross(dIdtVec, rVec), [0, 0, 1]) / norm(rVec)^3;
         end
            
         function emf = faradayEmf(obj,...
@@ -129,6 +129,29 @@ classdef (ConstructOnLoad) FaradayEmfForRectangularCircuits
             emfData.drivenWireEmfs = faradayEmfData;
         end
 
+         % Calculate the EMF from Faraday's law for the driven on measured
+         % wire loops for a set of horizontal loop separations.
+        function emfAtOffsets = faradayEmfForWireOnWireSetsAtOffsets(...
+            obj,...
+            dIdt,...
+            drivenWireCorners,...
+            measuredWireCorners,...
+            measuredXOffsets) % Vertical separation of circuits (m). 0 for coplanar circuits
+        
+            drivenWireSet = RectangularCircuitsCommon.wiresFromCorners(drivenWireCorners, [0, 0, 0], true);
+            
+            numOffsets = length(measuredXOffsets);
+            emfAtOffsets = cell(numOffsets, 1);
+            
+            for i=1:numOffsets
+                xOffset = measuredXOffsets(i);
+                measuredWireSetAtOffset = RectangularCircuitsCommon.wiresFromCorners(measuredWireCorners, [xOffset, 0, 0], true);
+                
+                wireEmf = faradaysEmfWireSetToWireSet(obj, dIdt, drivenWireSet, measuredWireSetAtOffset);
+                emfAtOffsets{i}.xOffset = xOffset;
+                emfAtOffsets{i}.emf = wireEmf.emfTotal;
+            end
+        end
            
     end
     methods (Static)
