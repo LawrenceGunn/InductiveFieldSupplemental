@@ -1,8 +1,8 @@
 function pass = RectangularCircuitTests()
     pass = true;
     skipLongTests = false;
-    pass = FaradayTests(pass, skipLongTests);
-    % pass = InductiveFieldTests(pass, skipLongTests);
+    %pass = FaradayTests(pass, skipLongTests);
+    pass = InductiveFieldTests(pass, skipLongTests);
     if pass == true
         fprintf("All tests PASSED");
     else
@@ -15,21 +15,79 @@ function pass = InductiveFieldTests(currentPass, skipLongTests)
     micro = 1000000.0;
     
     eField = InductiveFieldEmfForRectangularCircuits;
+    
+    dIdtClosest = 6110.3534985431;
 
-   % Test 13-15: wiresFromCorners test for single wire.
+    srcCorner1 = [0.0, -0.0507425, 0.0];
+    srcCorner2 = [0.0, 0.0507425, 0.0];
+    srcCorner3 = [-0.101035, 0.0507425, 0.0];
+    srcCorner4 = [-0.101035, -0.0507425, 0.0];
+    srcCorners = {srcCorner1, srcCorner2, srcCorner3, srcCorner4};
+    srcOffset = [0 0 0];
+
+    msrCorner1 = [0.0, 0.0195775, 0.0];
+    msrCorner2 = [0.0, -0.0195775, 0.0];
+    msrCorner3 = [0.050515, -0.0195775, 0.0];
+    msrCorner4 = [0.050515, 0.0195775, 0.0];
+    msrCorners = {msrCorner1, msrCorner2, msrCorner3, msrCorner4};
+    msrOffsetClosest = [0.000615, 0.0, 0.0];
+    msrOffsetFarthest = [0.039175, 0.0, 0.0];
+
+    % Test 1
+    r1 = [2, 3, 0];
+    a1 = [1, 1, 0];
+    v1 = accelProduct(eField, a1, r1);
+    unitR1 = r1/norm(r1);
+    pass = EXPECT_NEAR(micro * (cross(unitR1, cross(unitR1, a1)) - a1), micro * v1, 0.01, "accel product test 1", pass);
+
+    % Test 2
+    v2 = accelProduct(eField, [1, 0, 0], [1, 1, 0]);
+    pass = EXPECT_NEAR(micro * [-1.5, 0.5, 0], micro * v2, 0.00001, "accel produc test 2", pass);
+
+    % Test 3
+    v3 = accelProduct(eField, [1, 0, 0], [0, 1, 0]);
+    pass = EXPECT_NEAR(micro * [-2, 0, 0], micro * v3, 0.00001, "accel produc test 3", pass);
+
+    % Test 4: compare emf to old method. It seems like the old version
+    % produced an EMF opposite of that calculated in the new code.
+    r4Drv = [0.000615, 0.0, 0];
+    r4Msr = [0.0, 0.0, 0];
+    dIdt = [dIdtClosest, 0, 0]; % old used acceleration in x direction only*)
+    eFieldV4 = emfAtPoint(eField, dIdt, r4Drv, r4Msr);
+    pass = EXPECT_NEAR([-0.993553, 0.0, 0.0],  eFieldV4, 0.000001, "emf at point test 4", pass);
+
+    % Tests 5-9: Get EMF at end points and middle point of Test 5
+    % because the test is currently failing).
+    dIdt5 = 1.0;
+    dIdtVec5 = [dIdt5, 0.0, 0.0];
+    srcStart5 = [-0.05, 0, 0];
+    srcEnd5 = [0.05, 0, 0];
+    msrPnt5 = [0.0, 0.002, 0];
+    emf5 = emfAtPoint(eField,dIdtVec5, srcStart5, msrPnt5);
+    pass = EXPECT_NEAR([-2.00159, 0.0798084, 0.0], micro * emf5, 0.00001, "emf at point test 5", pass);
+
+    emf6 = emfAtPoint(eField,dIdtVec5, mean(srcStart5 + srcEnd5), msrPnt5);
+    pass = EXPECT_NEAR([-100, 0, 0], micro * emf6, 0.000001, "emf at point test 6", pass);
+
+    emf7 = emfAtPoint(eField,dIdtVec5, srcEnd5, msrPnt5);
+    pass = EXPECT_NEAR([-2.00159, -0.0798084, 0.0], micro * emf7, 0.00001, "emf at point test 7", pass);
+    pass = EXPECT_NEAR(micro * emf5(1), micro * emf7(1), 0.000001, "emf at point test 8", pass);
+    pass = EXPECT_NEAR(micro * emf5(2), -micro * emf7(2), 0.000001, "emf at point test 9", pass);
+    
+    % Test 13-15: wiresFromCorners test for single wire.
     wires21 = RectangularCircuitsCommon.wiresFromCorners({srcCorner1, srcCorner2}, srcOffset, false);
-    EXPECT_NEAR(1, length(wires21), 0, "totalEmf test 14", pass);
-    EXPECT_NEAR(1, wires21{1}.wireId, 0, "totalEmf test 14", pass);
-    EXPECT_NEAR([0.0, 0.0507425, 0.0], wires21{1}.end, 0, "totalEmf test 14", pass);
+    pass = EXPECT_NEAR(1, length(wires21), 0, "totalEmf test 13", pass);
+    pass = EXPECT_NEAR(1, wires21{1}.wireId, 0, "totalEmf test 14", pass);
+    pass = EXPECT_NEAR([0.0, 0.0507425, 0.0], wires21{1}.end, 0, "totalEmf test 15", pass);
 
     % Test 16-21: wiresFromCorners test for full driven wire loop.
     srcWires = RectangularCircuitsCommon.wiresFromCorners(srcCorners, srcOffset, true);
-    EXPECT_NEAR(4, length(srcWires), 0, "totalEmf test 14", pass);
-    EXPECT_NEAR(4, srcWires{4}.wireId, 0, "totalEmf test 14", pass);
-    EXPECT_NEAR(srcCorner2, srcWires{1}.end, 0, "totalEmf test 14", pass);
-    EXPECT_NEAR(srcCorner3, srcWires{3}.start, 0, "totalEmf test 14", pass);
-    EXPECT_NEAR(srcCorner4, srcWires{4}.start, 0, "totalEmf test 14", pass);
-    EXPECT_NEAR(srcCorner1, srcWires{4}.end, 0, "totalEmf test 14", pass);
+    pass = EXPECT_NEAR(4, length(srcWires), 0, "totalEmf test 16", pass);
+    pass = EXPECT_NEAR(4, srcWires{4}.wireId, 0, "totalEmf test 17", pass);
+    pass = EXPECT_NEAR(srcCorner2, srcWires{1}.end, 0, "totalEmf test 18", pass);
+    pass = EXPECT_NEAR(srcCorner3, srcWires{3}.start, 0, "totalEmf test 19", pass);
+    pass = EXPECT_NEAR(srcCorner4, srcWires{4}.start, 0, "totalEmf test 20", pass);
+    pass = EXPECT_NEAR(srcCorner1, srcWires{4}.end, 0, "totalEmf test 21", pass);
 
 
 end
