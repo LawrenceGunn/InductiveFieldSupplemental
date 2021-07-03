@@ -97,14 +97,6 @@ classdef (ConstructOnLoad) InductiveFieldEmfForRectangularCircuits
             inlineEmfs.drivenWireEmfs = drivenWireEmfs;
         end
         
-        function obj = set.proposedAccelTermCoeff(obj, coeff)
-            obj.proposedAccelTermCoeff = coeff;
-        end
-        
-        function obj = set.conventionalAccelTermCoeff(obj, coeff)
-            obj.conventionalAccelTermCoeff = coeff;
-        end
-
         % This function calculates the inline emf for two sets of wires.
         function inlineEmfs = inlineEmfForWireSetsOnWireSets(obj,...
                                                              dIdt,...
@@ -124,6 +116,38 @@ classdef (ConstructOnLoad) InductiveFieldEmfForRectangularCircuits
 
             inlineEmfs.emfTotal = emfTotalForSets;
             inlineEmfs.individualWireEmfs = measuredWireEmfs;
+        end
+        
+        % This function calculates the inline emf for two sets of wires.
+        function emfsAtOffsets = inlineEmfForWireOnWireSetsAtOffsets(...
+            obj,...
+            dIdt,...
+            drivenWireCorners,...
+            measuredWireCorners,...
+            measuredXOffsets)
+        
+            drivenWireSet = RectangularCircuitsCommon.wiresFromCorners(drivenWireCorners, [0, 0, 0], true);
+
+            numMeasuredXOffsets = length(measuredXOffsets);
+            emfsAtOffsets = cell(numMeasuredXOffsets, 1);
+
+            for i=1:numMeasuredXOffsets
+                xOffset = measuredXOffsets(i);
+                measuredWireSetAtOffset = RectangularCircuitsCommon.wiresFromCorners(measuredWireCorners, [xOffset, 0, 0], true);
+
+                wireEmf = inlineEmfForWireSetsOnWireSets(obj, dIdt, drivenWireSet, measuredWireSetAtOffset);
+                emfsAtOffsets{i}.xOffset = xOffset;
+                emfsAtOffsets{i}.emfTotal = wireEmf.emfTotal;
+            end
+            
+        end
+
+        function obj = set.proposedAccelTermCoeff(obj, coeff)
+            obj.proposedAccelTermCoeff = coeff;
+        end
+        
+        function obj = set.conventionalAccelTermCoeff(obj, coeff)
+            obj.conventionalAccelTermCoeff = coeff;
         end
     
     end

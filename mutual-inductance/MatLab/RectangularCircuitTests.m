@@ -7,10 +7,11 @@ function pass = RectangularCircuitTests(verbose)
     skipLongTests = false;
     
     testNumber = 1;
-    %pass = FaradayTests(pass, skipLongTests);
+    pass = FaradayTests(pass, skipLongTests);
 
     testNumber = 1;
     pass = InductiveFieldTests(pass, skipLongTests);
+    
     if pass == true
         fprintf("All tests PASSED");
     else
@@ -20,6 +21,7 @@ function pass = RectangularCircuitTests(verbose)
     function pass = InductiveFieldTests(currentPass, skipLongTests)
         pass = currentPass;
         micro = 1000000.0;
+        milli = 1000.0;
 
         eField = InductiveFieldEmfForRectangularCircuits;
 
@@ -143,10 +145,10 @@ function pass = RectangularCircuitTests(verbose)
         pass = EXPECT_NEAR(-55.2659, micro * emf30, 0.01, "inlineEmfForWires test 30", pass);
 
         function emf = emfById(emfSet, id)
-            for i = 1:length(emfSet.drivenWireEmfs)
-                if(emfSet.drivenWireEmfs{i}.drivenWireId == id)
-                    emf = emfSet.drivenWireEmfs{i};
-                    return;
+            for iDrv = 1:length(emfSet.drivenWireEmfs)
+                if(emfSet.drivenWireEmfs{iDrv}.drivenWireId == id)
+                    emf = emfSet.drivenWireEmfs{iDrv};
+                    break;
                 end
             end
         end
@@ -186,6 +188,62 @@ function pass = RectangularCircuitTests(verbose)
         pass = EXPECT_NEAR(msrCorner3 + msrOffsetFarthest, msrWiresFarthest{3}.start, 0, "wiresFromCorners test 43", pass);
         pass = EXPECT_NEAR(msrCorner4 + msrOffsetFarthest, msrWiresFarthest{4}.start, 0, "wiresFromCorners test 44", pass);
         pass = EXPECT_NEAR(msrCorner1 + msrOffsetFarthest, msrWiresFarthest{4}.end, 0, "wiresFromCorners test 45", pass);
+
+        % Test 46: inlineEmfForWireSetsOnWireSets
+        emf46 = inlineEmfForWireSetsOnWireSets(eField, dIdtClosest, srcWires, msrWiresFarthest);
+        pass = EXPECT_NEAR(12.3345, micro * emf46.emfTotal, 0.001, "inlineEmfForWireSetsOnWireSets test 46", pass);
+
+        experimentalXList = [0.000615, 0.000945, 0.002155, 0.003545, 0.005305,...
+            0.006915, 0.009085, 0.011315, 0.014395, 0.017285, 0.020965,...
+           0.026325, 0.031905, 0.039175];
+
+        % Test 47: inlineEmfForWireOnWireSetsAtOffsets from experimental data
+        if ~skipLongTests
+            emfAtOffset47 = inlineEmfForWireOnWireSetsAtOffsets(eField, dIdtClosest, srcCorners, msrCorners, experimentalXList);
+            if verbose
+                fprintf("emfAtOffset47:\n");
+                for i=1:length(emfAtOffset47)
+                    fprintf("    x offset : %-10g   emf: %-10g\n", milli * emfAtOffset47{i}.xOffset, micro * emfAtOffset47{i}.emfTotal);
+                end
+            end
+          pass = EXPECT_NEAR(12.3345, micro * emfAtOffset47{14}.emfTotal, 0.0001, "inlineEmfForWireOnWireSetsAtOffsets test 47", pass);
+        end
+
+        % Test 48: emfAtPoint for comparison to rectangular wires
+        rDrv67 = [0, 0, 0];
+        rMsr67 = [0.021, 0.02, 0];
+        emf48 = emfAtPoint(eField, [0, dIdtClosest, 0], rDrv67, rMsr67);
+        pass = EXPECT_NEAR([0.0105226, -0.0321189, 0.0], emf48, 0.0001, "emfAtPoint test 48", pass);
+
+        % Test 49: inlineEmfForWireOnWireSetsAtOffsets from experimental data
+        if ~skipLongTests
+            emfAtOffset49 = inlineEmfForWireOnWireSetsAtOffsets(eField, dIdtClosest, srcCorners, msrCorners, experimentalXList);
+            if verbose
+                fprintf("emfAtOffset49:\n");
+                for i=1:length(emfAtOffset49)
+                    fprintf("    x offset : %-10g   emf: %-10g\n", milli * emfAtOffset49{i}.xOffset, micro * emfAtOffset49{i}.emfTotal);
+                end
+            end
+            pass = EXPECT_NEAR(12.3345, micro * emfAtOffset49{14}.emfTotal, 0.0001, "inlineEmfForWireOnWireSetsAtOffsets test 49", pass);
+        end
+
+        % Run tests for old and proposed LW E-field terms individually.
+        eField.conventionalAccelTermCoeff = 1;
+        eField.proposedAccelTermCoeff = 0;
+
+        % Tests 50-54
+        emf50 = inlineEmfForWireSetsOnWire(eField, dIdtClosest, srcWires, msrWiresClosest{1});
+        if verbose
+            fprintf("Front wire to all wires for existing double cross term only");
+        end
+        pass = EXPECT_NEAR(47.8461, micro * emfById(emf50, 1).emf, 0.001, "inlineEmfForWireSetsOnWire test 50", pass);
+        pass = EXPECT_NEAR(-13.3628,  micro * emfById(emf50, 2).emf, 0.001, "inlineEmfForWireSetsOnWire test 51", pass);
+        pass = EXPECT_NEAR(-21.1205,  micro * emfById(emf50, 3).emf, 0.001, "inlineEmfForWireSetsOnWire test 52", pass);
+        pass = EXPECT_NEAR(-13.3628,  micro * emfById(emf50, 4).emf, 0.001, "inlineEmfForWireSetsOnWire test 53", pass);
+        if verbose
+            fprintf("Starting wire to wire for existing double cross term only");
+        end
+        pass = EXPECT_NEAR(0, micro * emf50.emfTotal, 0.001, "inlineEmfForWireSetsOnWire test 54", pass);
 
     end
 
