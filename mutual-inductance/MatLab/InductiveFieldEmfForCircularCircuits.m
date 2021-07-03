@@ -62,7 +62,9 @@ classdef (ConstructOnLoad) InductiveFieldEmfForCircularCircuits
                 end
             end
             
-            emf = integral2(@(msrCircuitAngle, drvCircuitAngle) calcEmfFromMatrix(msrCircuitAngle, drvCircuitAngle), 0, 2 * pi, 0, 2 * pi);
+            emf = integral2(@(msrCircuitAngle, drvCircuitAngle) calcEmfFromMatrix(msrCircuitAngle, drvCircuitAngle),...
+                            0, 2 * pi, 0, 2 * pi,...
+                            'AbsTol', 1e-12, 'RelTol', 1e-9);
         end
         
         function obj = set.proposedAccelTermCoeff(obj, coeff)

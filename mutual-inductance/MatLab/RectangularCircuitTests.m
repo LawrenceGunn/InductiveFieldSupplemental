@@ -63,17 +63,40 @@ function pass = InductiveFieldTests(currentPass, skipLongTests)
     srcStart5 = [-0.05, 0, 0];
     srcEnd5 = [0.05, 0, 0];
     msrPnt5 = [0.0, 0.002, 0];
-    emf5 = emfAtPoint(eField,dIdtVec5, srcStart5, msrPnt5);
+    emf5 = emfAtPoint(eField, dIdtVec5, srcStart5, msrPnt5);
     pass = EXPECT_NEAR([-2.00159, 0.0798084, 0.0], micro * emf5, 0.00001, "emf at point test 5", pass);
 
-    emf6 = emfAtPoint(eField,dIdtVec5, mean(srcStart5 + srcEnd5), msrPnt5);
+    emf6 = emfAtPoint(eField, dIdtVec5, mean(srcStart5 + srcEnd5), msrPnt5);
     pass = EXPECT_NEAR([-100, 0, 0], micro * emf6, 0.000001, "emf at point test 6", pass);
 
-    emf7 = emfAtPoint(eField,dIdtVec5, srcEnd5, msrPnt5);
+    emf7 = emfAtPoint(eField, dIdtVec5, srcEnd5, msrPnt5);
     pass = EXPECT_NEAR([-2.00159, -0.0798084, 0.0], micro * emf7, 0.00001, "emf at point test 7", pass);
     pass = EXPECT_NEAR(micro * emf5(1), micro * emf7(1), 0.000001, "emf at point test 8", pass);
     pass = EXPECT_NEAR(micro * emf5(2), -micro * emf7(2), 0.000001, "emf at point test 9", pass);
     
+    % Test 10: emfFromWireToWire
+    srcStart11 = [0.0, -0.05, 0.0];
+    srcEnd11 = [0.0, 0.05, 0.0];
+    msrPnt11 = [0.002, 0.0, 0.0];
+    msrStart13 = [-0.05, 0.002, 0.0];
+    msrEnd13 = [0.05, 0.002, 0.0];
+    emf10 = emfFromWireToWire(eField, dIdt5, srcStart5, srcEnd5, msrStart13, msrEnd13);
+    pass = EXPECT_NEAR(-0.0921054, micro * emf10, 0.000001, "wire to wire emf 10", pass);
+
+    % Test 11: emfFromWireToWire perpendicular to Test 13
+    srcStart15 = [srcStart5(2), srcStart5(1), 0.0];
+    srcEnd15 = [srcEnd5(2), srcEnd5(1), 0.0];
+    msrStart15 = [msrStart13(2), msrStart13(1), 0.0];
+    msrEnd15 = [msrEnd13(2), msrEnd13(1), 0.0];
+    emf11 = emfFromWireToWire(eField, dIdt5, srcStart15, srcEnd15, msrStart15, msrEnd15);
+    pass = EXPECT_NEAR(-0.0921054, micro * emf11, 0.000001, "wire to wire emf 11", pass);
+
+    % Test 12: emfFromWireToWire as per Test 13 with measured wire at 30 degrees from parallel
+    msrStart19 = [-0.025, 0.001, 0.0];
+    msrEnd19 = [0.025, 0.001 + 0.05 * sin(deg2rad(30)), 0.0];
+    emf12 = emfFromWireToWire(eField, dIdt5, srcStart5, srcEnd5, msrStart19, msrEnd19);
+    pass = EXPECT_NEAR(-0.0313341, micro * emf12, 0.000001, "wire to wire emf 12", pass);
+
     % Test 13-15: wiresFromCorners test for single wire.
     wires21 = RectangularCircuitsCommon.wiresFromCorners({srcCorner1, srcCorner2}, srcOffset, false);
     pass = EXPECT_NEAR(1, length(wires21), 0, "totalEmf test 13", pass);
