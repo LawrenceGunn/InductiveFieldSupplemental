@@ -7,7 +7,7 @@ function pass = RectangularCircuitTests(verbose)
     skipLongTests = false;
     
     testNumber = 1;
-    pass = FaradayTests(pass, skipLongTests);
+    % pass = FaradayTests(pass, skipLongTests);
 
     testNumber = 1;
     pass = InductiveFieldTests(pass, skipLongTests);
@@ -244,7 +244,139 @@ function pass = RectangularCircuitTests(verbose)
             fprintf("Starting wire to wire for existing double cross term only");
         end
         pass = EXPECT_NEAR(0, micro * emf50.emfTotal, 0.001, "inlineEmfForWireSetsOnWire test 54", pass);
+        
+        % Test 55
+        emf55 = inlineEmfForWireSetsOnWire(eField, dIdtClosest, srcWires, msrWiresClosest{2});
+        pass = EXPECT_NEAR(0, micro * emf55.emfTotal, 0.001, "inlineEmfForWireSetsOnWire test 55", pass);
 
+        % Test 56
+        emf56 = inlineEmfForWireSetsOnWire(eField, dIdtClosest, srcWires, msrWiresClosest{3});
+        pass = EXPECT_NEAR(0, micro * emf56.emfTotal, 0.001, "inlineEmfForWireSetsOnWire test 56", pass);
+
+        % Test 57
+        emf57 = inlineEmfForWireSetsOnWire(eField, dIdtClosest, srcWires, msrWiresClosest{4});
+        pass = EXPECT_NEAR(0, micro * emf57.emfTotal, 0.001, "inlineEmfForWireSetsOnWire test 57", pass);
+
+        % Test 58
+        emf58 = emf50.emfTotal + emf55.emfTotal + emf56.emfTotal + emf57.emfTotal;
+        pass = EXPECT_NEAR(0, micro * emf58, 0.001, "inlineEmfForWireSetsOnWire test 58", pass);
+
+        % Run tests for old and proposed LW E-field terms individually.
+        eField.proposedAccelTermCoeff = 1;
+        eField.conventionalAccelTermCoeff = 0;
+
+        % Tests 59-63
+        emf59 = inlineEmfForWireSetsOnWire(eField, dIdtClosest, srcWires, msrWiresClosest{1});
+        pass = EXPECT_NEAR(243.083, micro * emfById(emf59, 1).emf, 0.001, "inlineEmfForWireSetsOnWire test 59", pass);
+        pass = EXPECT_NEAR(0,  micro * emfById(emf59, 2).emf, 0.001, "inlineEmfForWireSetsOnWire test 60", pass);
+        pass = EXPECT_NEAR(-22.8865, micro * emfById(emf59, 3).emf, 0.001, "inlineEmfForWireSetsOnWire test 61", pass);
+        pass = EXPECT_NEAR(0, micro * emfById(emf59, 4).emf, 0.001, "inlineEmfForWireSetsOnWire test 62", pass);
+        if verbose
+            fprintf("Starting wire to wire for proposed a term only");
+        end
+        pass = EXPECT_NEAR(220.196, micro * emf59.emfTotal, 0.001, "inlineEmfForWireSetsOnWire test 63", pass);
+
+        % Test 64
+        emf64 = inlineEmfForWireSetsOnWire(eField, dIdtClosest, srcWires, msrWiresClosest{2});
+        pass = EXPECT_NEAR(-12.1687, micro * emf64.emfTotal, 0.001, "inlineEmfForWireSetsOnWire test 64", pass);
+
+        % Test 65
+        emf65 = inlineEmfForWireSetsOnWire(eField, dIdtClosest, srcWires, msrWiresClosest{3});
+        pass = EXPECT_NEAR(-25.8672, micro * emf65.emfTotal, 0.001, "inlineEmfForWireSetsOnWire test 65", pass);
+
+        % Test 66
+        emf66 = inlineEmfForWireSetsOnWire(eField, dIdtClosest, srcWires, msrWiresClosest{4});
+        pass = EXPECT_NEAR(-12.1687, micro * emf66.emfTotal, 0.001, "inlineEmfForWireSetsOnWire test 66", pass);
+
+        % Test 67
+        emf67 = emf59.emfTotal + emf64.emfTotal + emf65.emfTotal +  emf66.emfTotal;
+        pass = EXPECT_NEAR(169.992, micro * emf67, 0.001, "inlineEmfForWireSetsOnWire test 67", pass);
+        
+        % Test 68: wireset with vertical displacement
+        srcWidth68 = 0.101035;
+        msrWidth68 = 0.050515;
+        sep68 = (srcWidth68 + msrWidth68)/2 + msrOffsetClosest(1);
+        srcWires68 = RectangularCircuitsCommon.wiresFromDimensions([srcWidth68, 2 * 0.0507425], [0, 0, 0]);
+        msrWires68 =RectangularCircuitsCommon.wiresFromDimensions([msrWidth68, 2 * 0.0195775], [sep68, 0, 0]);
+
+        eField.proposedAccelTermCoeff = 1;
+        eField.conventionalAccelTermCoeff = 0;
+
+        emf68 = inlineEmfForWireSetsOnWireSets(eField, dIdtClosest, srcWires68, msrWires68);
+        pass = EXPECT_NEAR(169.992, micro * emf68.emfTotal, 0.001, "inlineEmfForWireSetsOnWire test 68", pass);
+
+        % Test 69: wireset with vertical displacement
+        msrWires69 = RectangularCircuitsCommon.wiresFromDimensions([msrWidth68, 2 * 0.0195775], [0, 0, 0.0]);
+        emf69 = inlineEmfForWireSetsOnWireSets(eField, dIdtClosest, srcWires68, msrWires69);
+        pass = EXPECT_NEAR(-148.064, micro * emf69.emfTotal, 0.001, "inlineEmfForWireSetsOnWireSets test 69", pass);
+
+        % Test 70: wireset with vertical displacement
+        msrWires70 = RectangularCircuitsCommon.wiresFromDimensions([msrWidth68, 2 * 0.0195775], [0, 0, 0.01]);
+        emf70 = inlineEmfForWireSetsOnWireSets(eField, dIdtClosest, srcWires68, msrWires70);
+        pass = EXPECT_NEAR(-138.135, micro * emf70.emfTotal, 0.001, "inlineEmfForWireSetsOnWireSets test 70", pass);
+
+        % Test 71: wireset with vertical displacement
+        msrWires71 = RectangularCircuitsCommon.wiresFromDimensions([msrWidth68, 2 * 0.0195775], [0, 0, 0.02]);
+        emf71 = inlineEmfForWireSetsOnWireSets(eField, dIdtClosest, srcWires68, msrWires71);
+        pass = EXPECT_NEAR(-115.356, micro * emf71.emfTotal, 0.001, "inlineEmfForWireSetsOnWireSets test 71", pass);
+
+        % Test 72: wireset with vertical displacement
+        msrWires72 = RectangularCircuitsCommon.wiresFromDimensions([msrWidth68, 2 * 0.0195775], [0, 0, -0.02]);
+        emf72 = inlineEmfForWireSetsOnWireSets(eField, dIdtClosest, srcWires68, msrWires72);
+        pass = EXPECT_NEAR(-115.356, micro * emf72.emfTotal, 0.001, "inlineEmfForWireSetsOnWireSets test 72", pass);
+
+        eField.proposedAccelTermCoeff = 0;
+        eField.conventionalAccelTermCoeff = 1;
+
+        % Test 73: wireset with vertical displacement
+        msrWires73 = RectangularCircuitsCommon.wiresFromDimensions([msrWidth68, 2 * 0.0195775], [0, 0, 0.0]);
+        emf73 = inlineEmfForWireSetsOnWireSets(eField, dIdtClosest, srcWires68, msrWires73);
+        pass = EXPECT_NEAR(0.0, micro * emf73.emfTotal, 0.001, "inlineEmfForWireSetsOnWireSets test 73", pass);
+
+        % Test 74: wireset with vertical displacement
+        msrWires74 = RectangularCircuitsCommon.wiresFromDimensions([msrWidth68, 2 * 0.0195775], [0, 0, 0.01]);
+        emf74 = inlineEmfForWireSetsOnWireSets(eField, dIdtClosest, srcWires68, msrWires74);
+        pass = EXPECT_NEAR(0.0, micro * emf74.emfTotal, 0.001, "inlineEmfForWireSetsOnWireSets test 74", pass);
+
+        % Test 75: wireset with vertical displacement
+        msrWires75 = RectangularCircuitsCommon.wiresFromDimensions([msrWidth68, 2 * 0.0195775], [0, 0, 0.02]);
+        emf75 = inlineEmfForWireSetsOnWireSets(eField, dIdtClosest, srcWires68, msrWires75);
+        pass = EXPECT_NEAR(0.0, micro * emf75.emfTotal, 0.001, "inlineEmfForWireSetsOnWireSets test 75", pass);
+
+        % Test 76: perpendicular wires
+        eField.proposedAccelTermCoeff = 1;
+        eField.conventionalAccelTermCoeff = 0;
+        emf76 = emfFromWireToWire(eField, dIdtClosest, [1, 0, 0], [2, 0, 0], [2, 0.5, 0], [2, 2, 0]);
+        pass = EXPECT_NEAR(0.0, micro * emf76, 0.001, "emfFromWireToWire test 76", pass);
+        
+        % Test 77: from comparison table non-zero perp wire issue
+        sep77 = 0.005;
+        srcWires77 = RectangularCircuitsCommon.wiresFromDimensions([0.1, 0.1], [0, 0, 0]);
+        msrWires77 = RectangularCircuitsCommon.wiresFromDimensions([0.05, 0.04], [(0.1 + 0.05)/2 + sep77, 0, 0]);
+        dot77 = dot(srcWires77{1}.end - srcWires77{1}.start, msrWires77{4}.start - msrWires77{4}.end);
+        pass = EXPECT_NEAR(0.0, dot77, 0.00001, "wiresFromDimensions test 77", pass);
+
+        % Test 78: from comparison table non-zero perp wire issue - emf being start/end - perp wires
+        dIdt78 = 1000.0;
+        emf78 = emfFromWireToWire(eField, dIdt78, srcWires77{1}.end, srcWires77{1}.start, msrWires77{4}.start, msrWires77{4}.end);
+        pass = EXPECT_NEAR(0.0, micro * emf78, 0.001, "emfFromWireToWire test 78", pass);
+
+        % Test 79: from comparison table non-zero perp wire issue - emf being start/end - nearest wires
+        emf79 = emfFromWireToWire(eField, dIdt78, srcWires77{1}.end, srcWires77{1}.start, msrWires77{3}.end, msrWires77{3}.start);
+        pass = EXPECT_NEAR(23.7651, micro * emf79, 0.001, "emfFromWireToWire test 79", pass);
+
+        % Test 80: from comparison table non-zero perp wire issue - emf being start/end - nearest wires by index
+        emf80 = inlineEmfForWires(eField, dIdt78, srcWires77{1}, msrWires77{3});
+        pass = EXPECT_NEAR(23.7651, micro * emf80, 0.001, "inlineEmfForWires test 80", pass);
+
+        % Test 81: from comparison table non-zero perp wire issue - emf being start/end - nearest wires by index
+        emf81 = inlineEmfForWires(eField, dIdt78, srcWires77{1}, msrWires77{1});
+        pass = EXPECT_NEAR(-6.46048, micro * emf81, 0.001, "inlineEmfForWires test 81", pass);
+
+        % Test 82: from comparison table non-zero perp wire issue - emf being start/end - nearest wires by index
+        emf82 = inlineEmfForWires(eField, dIdt78, srcWires77{1}, msrWires77{2});
+        pass = EXPECT_NEAR(0.0, micro * emf82, 0.001, "inlineEmfForWires test 82", pass);
+        
     end
 
     function pass = FaradayTests(currentPass, skipLongTests)

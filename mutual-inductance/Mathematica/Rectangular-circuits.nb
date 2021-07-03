@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    838963,      14747]
-NotebookOptionsPosition[    826887,      14557]
-NotebookOutlinePosition[    830529,      14622]
-CellTagsIndexPosition[    830380,      14616]
+NotebookDataLength[    901209,      15995]
+NotebookOptionsPosition[    858443,      15401]
+NotebookOutlinePosition[    877597,      15666]
+CellTagsIndexPosition[    877448,      15660]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -7556,7 +7556,7 @@ Cell[BoxData[
    3.81376829211045*^9, 3.8137682991504707`*^9}, {3.8280955878585176`*^9, 
    3.828095771288365*^9}, {3.8282165959740553`*^9, 3.828216596299152*^9}, 
    3.8283101838444242`*^9},
- CellLabel->"In[55]:=",ExpressionUUID->"2b372f87-ca4e-4480-9a0d-a14e4fd540a3"],
+ CellLabel->"In[65]:=",ExpressionUUID->"2b372f87-ca4e-4480-9a0d-a14e4fd540a3"],
 
 Cell[CellGroupData[{
 
@@ -7567,34 +7567,34 @@ Cell[BoxData[
  CellChangeTimes->{{3.8124511709673367`*^9, 3.812451176208119*^9}, 
    3.813498616193062*^9, {3.813665052223181*^9, 3.813665071225655*^9}, 
    3.813768302588705*^9},
- CellLabel->"In[56]:=",ExpressionUUID->"59439501-3171-485e-a8b5-6aa9b9a1e857"],
+ CellLabel->"In[66]:=",ExpressionUUID->"59439501-3171-485e-a8b5-6aa9b9a1e857"],
 
 Cell[BoxData[
  TagBox[GridBox[{
-    {Cell["",ExpressionUUID->"2639f463-1681-4521-ba48-2eb08c54f387"], Cell[
-     "",ExpressionUUID->"e29bacc4-b925-4feb-b328-3831831f8fba"], Cell[
+    {Cell["",ExpressionUUID->"0b1a6a21-9567-44de-afac-8d5c3cc175a7"], Cell[
+     "",ExpressionUUID->"1aa9e458-b04f-4772-bf3a-adcb9413dc93"], Cell[
      "Coplanar (\[Mu]V)",ExpressionUUID->
-      "db69f053-a7d4-4e06-bb51-3417ccbc52c2"], "\[SpanFromLeft]", 
+      "41754569-d2b3-41f8-ac88-45c5d3aca844"], "\[SpanFromLeft]", 
      "\[SpanFromLeft]", Cell[
-     "",ExpressionUUID->"1a265dcb-305b-4c84-ae97-264e2f08b124"], Cell[
+     "",ExpressionUUID->"40749215-f440-498c-98bf-504d8a523026"], Cell[
      "Coaxial (\[Mu]V)",ExpressionUUID->
-      "8dbe561c-dfca-4ca8-aa08-e35cbccda722"], "\[SpanFromLeft]", 
+      "890c39ca-6504-4cf3-bb0c-99e4cdd13d76"], "\[SpanFromLeft]", 
      "\[SpanFromLeft]"},
     {Cell[
      "separation (mm)",ExpressionUUID->
-      "e3607809-a228-4195-9226-4a3d0dd824bc"], Cell[
-     "",ExpressionUUID->"720ce803-292a-4555-958d-69fd68545dd8"], Cell[
-     "Faraday",ExpressionUUID->"6937606a-9de5-44e2-81ce-e6794b046977"], Cell[
-     "Prop accel",ExpressionUUID->"fa08e3a6-04cc-4eeb-b4ab-8a5a00e5cb00"], 
+      "d1995b13-6a8a-4e7b-82ca-11d986800604"], Cell[
+     "",ExpressionUUID->"5f851ba0-bbdf-4e8f-bc75-6942c7b98c60"], Cell[
+     "Faraday",ExpressionUUID->"0685793d-28c6-4192-a982-d6bcd8db9047"], Cell[
+     "Prop accel",ExpressionUUID->"5a801661-fda1-4fe1-a009-b99e167e2b7c"], 
      Cell["Conv accel",ExpressionUUID->
-      "4ca99268-698d-4a00-9288-791e94fd5977"], Cell[
-     "   ",ExpressionUUID->"f02eca23-c58c-489a-ad58-cfd6bad69ff1"], Cell[
-     "Faraday",ExpressionUUID->"1d5b2f16-8c50-407d-9384-a06e18c61a39"], Cell[
-     "Prop accel",ExpressionUUID->"810685d7-793b-4cb8-b69a-da5a4d42a9e0"], 
+      "93cb167a-6892-4d9a-837f-197249ddd116"], Cell[
+     "   ",ExpressionUUID->"a688f2f0-48c9-47a7-b446-25d2e3c1da96"], Cell[
+     "Faraday",ExpressionUUID->"2888427b-f806-45e3-bdfb-e7d6f432676f"], Cell[
+     "Prop accel",ExpressionUUID->"7f877b52-6a07-49ff-a06c-0b7f57c029f2"], 
      Cell["Conv accel",ExpressionUUID->
-      "737158f5-54b6-4ad4-86ea-9ac014d51585"]},
+      "a586d01a-bc07-41cd-93bd-efc101cd75c3"]},
     {"5.`", Cell[
-     "   ",ExpressionUUID->"cd8d7ff2-9534-4099-9c94-bf273162c0e6"], 
+     "   ",ExpressionUUID->"c1580e38-0799-42ce-9903-42060d8bdae8"], 
      TagBox[
       InterpretationBox["\<\"12.5657\"\>",
        12.5656799484055,
@@ -7612,7 +7612,7 @@ Cell[BoxData[
        2.3769586796615946`*^-9,
        AutoDelete->True],
       NumberForm[#, 6]& ], Cell[
-     "   ",ExpressionUUID->"51fe553d-54e7-4dfa-b0ad-b8784aab8b32"], 
+     "   ",ExpressionUUID->"d1ed6da5-d23f-4ed2-b4d5-195de9821d11"], 
      TagBox[
       InterpretationBox["\<\"-24.4164\"\>",
        -24.41639762421922,
@@ -7631,7 +7631,7 @@ Cell[BoxData[
        AutoDelete->True],
       NumberForm[#, 6]& ]},
     {"10.`", Cell[
-     "   ",ExpressionUUID->"f1b94f1d-313e-4b4e-9aa1-355c4a17bc55"], 
+     "   ",ExpressionUUID->"a7b50c6a-b382-437a-8156-43279535c56c"], 
      TagBox[
       InterpretationBox["\<\"8.09668\"\>",
        8.096679976823609,
@@ -7649,7 +7649,7 @@ Cell[BoxData[
        3.748120791600279*^-12,
        AutoDelete->True],
       NumberForm[#, 6]& ], Cell[
-     "   ",ExpressionUUID->"29b0d3ab-f1cf-4e2a-ad89-eecbe3738155"], 
+     "   ",ExpressionUUID->"b4562bc9-76ec-4282-8339-fd1ed688ac75"], 
      TagBox[
       InterpretationBox["\<\"-23.152\"\>",
        -23.152008460748995`,
@@ -7668,7 +7668,7 @@ Cell[BoxData[
        AutoDelete->True],
       NumberForm[#, 6]& ]},
     {"25.`", Cell[
-     "   ",ExpressionUUID->"90d046ac-f75f-476a-99eb-e891f3e8634b"], 
+     "   ",ExpressionUUID->"23635ec2-a5f0-4225-b6a4-0ca0ba2442e1"], 
      TagBox[
       InterpretationBox["\<\"3.52078\"\>",
        3.5207766834042937`,
@@ -7686,7 +7686,7 @@ Cell[BoxData[
        -3.323153774050956*^-11,
        AutoDelete->True],
       NumberForm[#, 6]& ], Cell[
-     "   ",ExpressionUUID->"aa957290-b473-455e-92c5-8d88549a232c"], 
+     "   ",ExpressionUUID->"366eef1f-e092-49ce-83c1-1b167912d397"], 
      TagBox[
       InterpretationBox["\<\"-17.0874\"\>",
        -17.08738431647914,
@@ -7705,7 +7705,7 @@ Cell[BoxData[
        AutoDelete->True],
       NumberForm[#, 6]& ]},
     {"75.`", Cell[
-     "   ",ExpressionUUID->"1c45ff5f-723b-4be4-8c31-08132bfeab1c"], 
+     "   ",ExpressionUUID->"0c6bd3bd-0828-498d-9663-205228f669f2"], 
      TagBox[
       InterpretationBox["\<\"0.742114\"\>",
        0.7421143347494671,
@@ -7723,7 +7723,7 @@ Cell[BoxData[
        2.553486698616495*^-12,
        AutoDelete->True],
       NumberForm[#, 6]& ], Cell[
-     "   ",ExpressionUUID->"e56734d9-c43d-448a-9067-8f0cde97bff2"], 
+     "   ",ExpressionUUID->"04083ade-2876-4b93-ba04-0d53d78c6953"], 
      TagBox[
       InterpretationBox["\<\"-4.47633\"\>",
        -4.4763310699830505`,
@@ -7763,8 +7763,9 @@ Cell[BoxData[
    3.828803063827711*^9}, {3.828803174435141*^9, 3.828803196837805*^9}, {
    3.828804850414371*^9, 3.828804867979113*^9}, 3.833805268239676*^9, 
    3.833806286286418*^9, 3.833806514078072*^9, 3.834191757217573*^9, 
-   3.8342865436077023`*^9, 3.8342868188451967`*^9, 3.83428700713507*^9},
- CellLabel->"Out[56]=",ExpressionUUID->"9d66020c-da9c-40c3-9dc5-85c02bdb6189"]
+   3.8342865436077023`*^9, 3.8342868188451967`*^9, 3.83428700713507*^9, 
+   3.834319797884177*^9},
+ CellLabel->"Out[66]=",ExpressionUUID->"51b49ad2-1593-4a98-9d1d-70a0b95153a3"]
 }, Open  ]],
 
 Cell["\<\
@@ -7790,103 +7791,103 @@ Cell[BoxData[
  CellChangeTimes->{{3.813668838871529*^9, 3.813668845632308*^9}, {
    3.813669061430032*^9, 3.813669125854301*^9}, 3.813671266842155*^9, 
    3.8137683040693493`*^9},
- CellLabel->"In[57]:=",ExpressionUUID->"fdd90cc0-32bd-4b41-9258-133964d6a5f9"],
+ CellLabel->"In[67]:=",ExpressionUUID->"fdd90cc0-32bd-4b41-9258-133964d6a5f9"],
 
 Cell[BoxData[
  TagBox[GridBox[{
     {Cell[
      "Conventional accel term EMF's (\[Mu]V)",ExpressionUUID->
-      "4627c3a3-91b7-48bd-93c6-1db05cbf091f"], "\[SpanFromLeft]", 
+      "960496ca-96a0-4bd0-b6e7-39d7df2d3b53"], "\[SpanFromLeft]", 
      "\[SpanFromLeft]", "\[SpanFromLeft]", "\[SpanFromLeft]", 
      "\[SpanFromLeft]", Cell[
-     "",ExpressionUUID->"6a646d62-b02c-47dc-9cbd-8c65a2419bb0"], Cell[
+     "",ExpressionUUID->"57ea0379-3bfc-4543-ab97-8a32e7ce1a59"], Cell[
      "Proposed term EMF's (\[Mu]V)",ExpressionUUID->
-      "3b7e20ae-8748-4798-80d8-4fa02988381c"], "\[SpanFromLeft]", 
+      "e0f71f56-a327-4f71-9ca2-686296600369"], "\[SpanFromLeft]", 
      "\[SpanFromLeft]", "\[SpanFromLeft]", "\[SpanFromLeft]", 
      "\[SpanFromLeft]"},
-    {Cell["",ExpressionUUID->"a0930227-b6f9-4636-b2d1-c42c97ee30c9"], Cell[
-     "i=1",ExpressionUUID->"38173864-266d-4570-84e2-6c6486b0b898"], Cell[
-     "2",ExpressionUUID->"1cd720b0-90a8-4d28-982b-72c0389146c8"], Cell[
-     "3",ExpressionUUID->"9f8b5ef7-c98c-4605-9e4c-bb0e15dccf17"], Cell[
-     "4",ExpressionUUID->"97e55f13-605d-4019-9d39-5e2d0c25c1f7"], Cell[
-     "Sum",ExpressionUUID->"225e86e2-64db-41f0-af92-99fb5789f83b"], Cell[
-     "   ",ExpressionUUID->"953567ab-1f41-4eb1-b877-da028995385a"], Cell[
-     "",ExpressionUUID->"25c512c5-9c33-4fe2-8144-e74574414c2f"], Cell[
-     "i=1",ExpressionUUID->"4b0b337e-5fa1-47fb-8d2e-4b01a0142064"], Cell[
-     "2",ExpressionUUID->"7aa9e8df-4826-4b5f-8ed3-594ac24659e1"], Cell[
-     "3",ExpressionUUID->"681f8c76-34aa-491e-9781-942a49d41d2e"], Cell[
-     "4",ExpressionUUID->"67d29033-a815-48fa-bd46-2525428a8b9b"], Cell[
-     "Sum",ExpressionUUID->"c7c2c89a-3973-4d28-93b8-4d3f7207bc39"]},
-    {Cell["j=1",ExpressionUUID->"112606ab-a046-4c8d-9238-c67cb36e1591"], Cell[
-     "-5.27453",ExpressionUUID->"b7298872-40c0-4e16-9d1d-87c1ec116f14"], Cell[
-     "1.41757",ExpressionUUID->"45784f4e-6091-4f56-9110-b4a4b19062a9"], Cell[
-     "2.4394",ExpressionUUID->"25530a95-aa49-411c-9f9b-af3431375149"], Cell[
-     "1.41757",ExpressionUUID->"f2b17a27-258e-4cd7-878a-ba0b1b7bc8e7"], 
+    {Cell["",ExpressionUUID->"adfc1dc1-7ff4-4574-ac17-103eee524c33"], Cell[
+     "i=1",ExpressionUUID->"4dc73edb-3064-4bf6-b685-b2b8b67b90e7"], Cell[
+     "2",ExpressionUUID->"b3225832-5183-480b-b735-4c9083035b10"], Cell[
+     "3",ExpressionUUID->"d66c9b4f-5e80-48e0-9d04-ddf3fb9caef7"], Cell[
+     "4",ExpressionUUID->"ac484f73-916a-4ddb-89d6-e114cfb3ba4e"], Cell[
+     "Sum",ExpressionUUID->"c1eb6f7d-b777-4604-bffb-10f3e6a72db6"], Cell[
+     "   ",ExpressionUUID->"63e38b45-4015-46d5-981b-9d5af34c19fa"], Cell[
+     "",ExpressionUUID->"e97f36d0-39d0-4feb-87b9-397ca7489c6c"], Cell[
+     "i=1",ExpressionUUID->"4e9cadc3-e328-42a6-b9f4-f35eca1bc99a"], Cell[
+     "2",ExpressionUUID->"603ca131-a2c9-4117-a6fe-55fd7145f40b"], Cell[
+     "3",ExpressionUUID->"23afae81-ccfe-4a6f-b6c3-68e73d1b6970"], Cell[
+     "4",ExpressionUUID->"b8c279cd-0155-4af2-bfa3-d83d40ac69d9"], Cell[
+     "Sum",ExpressionUUID->"529a5f13-d87d-45f7-80a5-915a632f7471"]},
+    {Cell["j=1",ExpressionUUID->"a27c41d1-0649-440c-bf03-b87a2d4d05e9"], Cell[
+     "-5.27453",ExpressionUUID->"abd4508d-c71c-4cd3-b303-e92378b840fc"], Cell[
+     "1.41757",ExpressionUUID->"6c55214e-4fed-4dc5-ac95-1e65c605875e"], Cell[
+     "2.4394",ExpressionUUID->"084b1ec0-8f4d-4d85-83ef-4a6429bf899f"], Cell[
+     "1.41757",ExpressionUUID->"f6defe86-cd58-4c16-b325-dceb4006cd03"], 
      RowBox[{"-", "3.864164305374118`*^-12"}], Cell[
-     "",ExpressionUUID->"81868113-47e2-4956-9e16-8f8d633c7623"], Cell[
-     "j=1",ExpressionUUID->"9d0956b0-00c2-4143-b900-0530d5e3b146"], Cell[
-     "-6.46048",ExpressionUUID->"53add0e6-3881-4b28-bc26-f5efe0daeb7f"], Cell[
-     "0.0",ExpressionUUID->"d8472721-1106-43d3-a971-165541191518"], Cell[
-     "2.53173",ExpressionUUID->"76752d52-ea9b-43c7-a22b-2660c78045e6"], Cell[
-     "0.0",ExpressionUUID->"26b96ed9-ac31-4f1f-afee-0b499a8c3df9"], 
+     "",ExpressionUUID->"f1ac47b1-13cf-44b5-85c7-a24f30f6d130"], Cell[
+     "j=1",ExpressionUUID->"e145b643-f72b-476f-baa2-04c3c191a7af"], Cell[
+     "-6.46048",ExpressionUUID->"4b808f32-b73e-486a-9f3f-97d272455e9b"], Cell[
+     "0.0",ExpressionUUID->"7d044f60-b6b0-4ae5-9a9d-ac2f556cea9c"], Cell[
+     "2.53173",ExpressionUUID->"5e071b67-3788-443c-a677-3c316c6ec69e"], Cell[
+     "0.0",ExpressionUUID->"88717654-4ae7-454e-900a-1b246f06b457"], 
      RowBox[{"-", "3.9287541563808612`"}]},
-    {Cell["2",ExpressionUUID->"e7a6ffe5-e5b6-4646-980d-43816806db69"], Cell[
-     "-1.33919",ExpressionUUID->"27567c2a-1be6-409d-bab0-7aa658081d23"], Cell[
-     "-1.64389",ExpressionUUID->"6d9560e3-d4ac-49a3-a9c2-5207dae7cc2a"], Cell[
-     "0.479567",ExpressionUUID->"641bdd7e-fa1d-46de-9683-37a3aa1e2105"], Cell[
-     "2.50351",ExpressionUUID->"3cabdd8a-5f4d-4c70-aede-d6d2c4fcf78b"], 
+    {Cell["2",ExpressionUUID->"a535fd94-08ae-4201-80be-eed9ad0f8412"], Cell[
+     "-1.33919",ExpressionUUID->"c6efcf2a-04af-40b9-be3b-a3449d61f750"], Cell[
+     "-1.64389",ExpressionUUID->"2f39dfb1-7244-4b04-80e0-7c1afb93be4e"], Cell[
+     "0.479567",ExpressionUUID->"b91174c4-2ed4-4a82-923c-f3fdff834ce3"], Cell[
+     "2.50351",ExpressionUUID->"b268fb7f-56b3-4dd8-bdea-e2fad39e9fd8"], 
      "5.2956923378812484`*^-11", Cell[
-     "",ExpressionUUID->"b104a249-9359-478f-8153-d076cc445348"], Cell[
-     "2",ExpressionUUID->"a6e0a9f1-40f1-4cbb-a393-dd5ad55add62"], Cell[
-     "0.0",ExpressionUUID->"442b3687-fcfb-499b-a818-2e90bfa335e7"], Cell[
-     "-6.62464",ExpressionUUID->"317741cf-c726-430d-ad23-86355c8d73f0"], Cell[
-     "0.0",ExpressionUUID->"6f77a170-2fbf-420a-b655-757ae4929943"], Cell[
-     "4.82017",ExpressionUUID->"e6f3bcab-d2e8-480a-adeb-3962657e0a83"], 
+     "",ExpressionUUID->"cb406161-27b8-41b4-9f50-6a1f3f699f41"], Cell[
+     "2",ExpressionUUID->"b6af0da0-262e-48c1-917c-6bb1a9bd974e"], Cell[
+     "0.0",ExpressionUUID->"d281763b-62b3-4de2-bdf0-1461d6e77986"], Cell[
+     "-6.62464",ExpressionUUID->"f5cc1591-7031-4d71-859b-ee418ba922f6"], Cell[
+     "0.0",ExpressionUUID->"b6ab6ffa-96eb-4f72-b038-63144969a0c9"], Cell[
+     "4.82017",ExpressionUUID->"d3caf89b-b724-4ae6-be7a-8a2ed5f11f1e"], 
      RowBox[{"-", "1.8044675301222988`"}]},
-    {Cell["3",ExpressionUUID->"66080960-fe8a-47a1-957c-3520779cd23c"], Cell[
-     "7.95291",ExpressionUUID->"aabbfce3-b3b5-4fcb-bb6a-1ddb49804b3f"], Cell[
-     "-2.27719",ExpressionUUID->"44bf150f-3227-4a8d-add9-635f491ea932"], Cell[
-     "-3.39853",ExpressionUUID->"d171f4da-5451-4fa6-a674-4cbb9badc054"], Cell[
-     "-2.27719",ExpressionUUID->"5135fdb6-485a-4667-8b86-79bafe663a34"], 
+    {Cell["3",ExpressionUUID->"52978095-a537-4935-ac14-638a1ea51ee1"], Cell[
+     "7.95291",ExpressionUUID->"a7db50bc-e6e8-4b3d-add5-8e0245c14df6"], Cell[
+     "-2.27719",ExpressionUUID->"577d75a8-61b0-41db-85b8-fbbff459d695"], Cell[
+     "-3.39853",ExpressionUUID->"684cb640-5362-4ec7-86f1-102f77eaaef3"], Cell[
+     "-2.27719",ExpressionUUID->"c120231b-b66f-44b6-bfec-e7141ecbdd8d"], 
      "2.2749170440223426`*^-9", Cell[
-     "",ExpressionUUID->"2706fe10-071f-41a0-a32f-107c076c4eaa"], Cell[
-     "3",ExpressionUUID->"8ff26ba9-0074-4bf4-aee8-4b7238dd0168"], Cell[
-     "23.7651",ExpressionUUID->"b43d907e-f468-4d0a-9fbb-1d3a1919140b"], Cell[
-     "0.0",ExpressionUUID->"d2d9e7b1-7159-4c27-81d3-0fc338da6e6f"], Cell[
-     "-3.66172",ExpressionUUID->"05afb4a8-8c64-45d2-b97d-372bd8422928"], Cell[
-     "0.0",ExpressionUUID->"ed6cc1ad-53af-48ab-9c3e-4e0aeacb89c4"], 
+     "",ExpressionUUID->"26ad82c5-52be-419e-b8d3-ee6bbf0e6472"], Cell[
+     "3",ExpressionUUID->"3db16a34-bbd4-4909-b5e8-6830bf334b51"], Cell[
+     "23.7651",ExpressionUUID->"fabe3b6d-395c-483d-b501-bca559e92e82"], Cell[
+     "0.0",ExpressionUUID->"7b8cb43b-e858-4279-8148-4e72f6e78c86"], Cell[
+     "-3.66172",ExpressionUUID->"78cf8177-27f6-435e-9411-f0f46519ec30"], Cell[
+     "0.0",ExpressionUUID->"e7463a76-5f4b-4573-9bb1-37819ca61972"], 
      "20.10337784814529`"},
-    {Cell["4",ExpressionUUID->"9c6ede18-fb2d-4d69-8aae-81924a0ddf9f"], Cell[
-     "-1.33919",ExpressionUUID->"e4793042-a2c6-49f5-a39a-7732b2359d11"], Cell[
-     "2.50351",ExpressionUUID->"fcfe3b85-7541-4ecd-8e22-1072df6925ce"], Cell[
-     "0.479567",ExpressionUUID->"9ea14794-3f56-4ca4-8324-d3ef5fce2f6f"], Cell[
-     "-1.64389",ExpressionUUID->"2eaba89e-d2a4-429b-9452-da0be478eaa7"], 
+    {Cell["4",ExpressionUUID->"53ba395e-1c80-4e60-bbc1-3a3116d2b289"], Cell[
+     "-1.33919",ExpressionUUID->"f8b160ec-6fb8-46d0-8b74-0ecbf1e42abe"], Cell[
+     "2.50351",ExpressionUUID->"daceab37-edad-4801-b077-b0b1350ba27c"], Cell[
+     "0.479567",ExpressionUUID->"90e6a768-2f54-4876-aa78-ff07e442ae5e"], Cell[
+     "-1.64389",ExpressionUUID->"2db54e83-8d40-436b-93ff-42522fa4c302"], 
      "5.294887656581357`*^-11", Cell[
-     "",ExpressionUUID->"ddd16816-9e9a-45fd-9539-6b4bcee0f76a"], Cell[
-     "4",ExpressionUUID->"6b8fd759-51d7-4ae1-83ac-c763f4dd2e15"], Cell[
-     "0.0",ExpressionUUID->"dec4dd28-3d7c-4061-b1a9-23103d45d26c"], Cell[
-     "4.82017",ExpressionUUID->"cce9069f-c3ce-43f3-a9a3-92fdb9f99fdf"], Cell[
-     "0.0",ExpressionUUID->"cdbc0727-c1b4-4b95-9135-5d8ff74608d1"], Cell[
-     "-6.62464",ExpressionUUID->"6cb8fc01-7e66-4ea8-adbd-24908b978689"], 
+     "",ExpressionUUID->"3bb7bcb0-c62f-4eaa-8435-531693cdf94c"], Cell[
+     "4",ExpressionUUID->"4b6da6ba-d621-47c3-b98b-e407a2010183"], Cell[
+     "0.0",ExpressionUUID->"850b4792-1047-4362-9762-39a30697cfba"], Cell[
+     "4.82017",ExpressionUUID->"c86eae48-203b-4a24-8d48-a343db697758"], Cell[
+     "0.0",ExpressionUUID->"617ddfce-ab6b-429d-af4a-b0620de09be4"], Cell[
+     "-6.62464",ExpressionUUID->"17ee0b24-1f2f-42a2-b711-2b67a1b40c32"], 
      RowBox[{"-", "1.8044675301223014`"}]},
-    {Cell["Sum",ExpressionUUID->"25223564-586f-4810-839c-f8aee5e480d7"], Cell[
+    {Cell["Sum",ExpressionUUID->"8ba6b5af-89a7-4777-98d2-cc4297663d8d"], Cell[
      "0.0000000023767",ExpressionUUID->
-      "9f73b8b6-afc9-48bf-8228-09f9ac707db9"], Cell[
+      "715d565c-7ec6-42b0-b0f9-34083325913a"], Cell[
      "0.000000000000659028",ExpressionUUID->
-      "eaeaa748-94ad-47e0-b335-4e98303276f0"], Cell[
+      "6780bbb5-4c0f-4ebb-ac92-8337405df984"], Cell[
      "-0.00000000000105949",ExpressionUUID->
-      "77b4e8df-1b24-41e7-914c-d7c25af7d3d9"], Cell[
+      "7e3aec1c-b4a8-4221-82bc-e4972b89a67e"], Cell[
      "0.000000000000662137",ExpressionUUID->
-      "43508c69-0533-4ad0-8484-8306c10cc344"], Cell[
+      "346991a7-b649-406d-835b-d1bcf5f620b0"], Cell[
      "0.00000000237696",ExpressionUUID->
-      "5de041a1-6472-4608-aa05-2ef75766aaf5"], Cell[
-     "",ExpressionUUID->"31f18c96-4f5c-4b53-8620-6342762041ba"], Cell[
-     "",ExpressionUUID->"de348097-866d-4952-bc3f-d12debfc606b"], Cell[
-     "17.3046",ExpressionUUID->"59036abe-70de-4022-b224-28f16ceb39bd"], Cell[
-     "-1.80447",ExpressionUUID->"e4109078-4478-4e5e-8e17-71dfcb12c0f6"], Cell[
-     "-1.13",ExpressionUUID->"23509ece-d3b6-44ad-b21c-25bb96a4e87a"], Cell[
-     "-1.80447",ExpressionUUID->"70aa396e-7fd8-41b8-8c57-a57fa08e2155"], Cell[
-     "12.5657",ExpressionUUID->"fd676599-ad1a-4b73-ad54-c2d676e7dedc"]}
+      "ad3ce679-f2d6-4b0c-a1bc-e2f39e948b35"], Cell[
+     "",ExpressionUUID->"11b869c7-96f1-4074-a3b0-4a8b0fb43ebd"], Cell[
+     "",ExpressionUUID->"6a7c5970-996d-4f85-bd4a-c5cb91c46c19"], Cell[
+     "17.3046",ExpressionUUID->"30ded273-1326-473a-b020-e30d40877342"], Cell[
+     "-1.80447",ExpressionUUID->"e93e80d9-3bb7-4a32-9088-7d966c0d4f1f"], Cell[
+     "-1.13",ExpressionUUID->"b548fcb1-807d-4e3d-9041-61a70a796bf7"], Cell[
+     "-1.80447",ExpressionUUID->"487cd6b9-eb65-4ab2-8bfe-4e0781db3b4b"], Cell[
+     "12.5657",ExpressionUUID->"7cbf7dd2-77ad-480d-b8b2-b48373743740"]}
    },
    AutoDelete->False,
    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
@@ -7907,8 +7908,8 @@ Cell[BoxData[
    3.828803175071176*^9, 3.8288031973743973`*^9}, {3.8288048509746733`*^9, 
    3.8288048685720463`*^9}, 3.83380526882261*^9, 3.8338062870840797`*^9, 
    3.833806514665586*^9, 3.834191757782343*^9, 3.834286544235183*^9, 
-   3.834286820189753*^9, 3.83428700850667*^9},
- CellLabel->"Out[57]=",ExpressionUUID->"37f43cc3-56e3-4763-a087-eb8237f2282c"]
+   3.834286820189753*^9, 3.83428700850667*^9, 3.834319799208392*^9},
+ CellLabel->"Out[67]=",ExpressionUUID->"dd190a99-f722-4719-937b-34783f29ebd9"]
 }, Open  ]]
 }, Open  ]],
 
@@ -8135,7 +8136,7 @@ Cell[BoxData[
    3.812403675688423*^9, 3.812403722792232*^9}, {3.8124047470809402`*^9, 
    3.812404830216049*^9}, {3.812412015838152*^9, 3.8124120245917*^9}, {
    3.828803467675497*^9, 3.8288034699292383`*^9}},
- CellLabel->"In[58]:=",ExpressionUUID->"35c9ef32-ac78-4343-8ab9-59a9509dc052"]
+ CellLabel->"In[68]:=",ExpressionUUID->"35c9ef32-ac78-4343-8ab9-59a9509dc052"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -8815,7 +8816,7 @@ incorrect, expected 4 but found \>\"", "<>", " ",
    3.82880286432904*^9, 3.834191317177438*^9, 3.83419135424319*^9, 
    3.834191692181156*^9, {3.834191818551909*^9, 3.834191820525778*^9}},
  CellTags->"EmfFromTheoryXY module",
- CellLabel->"In[59]:=",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a"]
+ CellLabel->"In[69]:=",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -9453,9 +9454,8 @@ Cell[BoxData[
    3.833806073095858*^9, 3.8338060792595463`*^9}, {3.8338062373162947`*^9, 
    3.8338062500280647`*^9}, {3.834286525704319*^9, 3.8342865266580353`*^9}, 
    3.834319776504631*^9},
- CellTags->
-  "EmfFromTheoryXY \
-module",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc"]
+ CellTags->"EmfFromTheoryXY module",
+ CellLabel->"In[70]:=",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -10523,7 +10523,7 @@ Cell[BoxData[
    3.8338062516267*^9, 3.833806256740892*^9}, {3.833806383086994*^9, 
    3.8338064055710287`*^9}, {3.833806449315113*^9, 3.83380649861281*^9}},
  CellTags->"EmfFromTheoryXY module",
- CellLabel->"In[61]:=",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37"]
+ CellLabel->"In[71]:=",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -11233,7 +11233,7 @@ Cell[BoxData[
    3.812451159006023*^9}, {3.834191729764151*^9, 3.8341917371972313`*^9}, {
    3.834192120181082*^9, 3.834192123630341*^9}},
  CellTags->"EMF from theory using x-y segments test",
- CellLabel->"In[62]:=",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f"],
+ CellLabel->"In[72]:=",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f"],
 
 Cell[CellGroupData[{
 
@@ -11309,11 +11309,11 @@ Cell[BoxData["\<\"Test: 1  Expected: -201.579  Actual: -201.579\"\>"], "Print",
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.834287008956046*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.834319799636963*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"63fcb660-85f0-40ee-987e-fb769a17bd90"],
+In[72]:=",ExpressionUUID->"f381b3bc-f759-42ba-b7af-ebd6db96601a"],
 
 Cell[BoxData["\<\"Test: 2  Expected: 12.1687  Actual: 12.1687\"\>"], "Print",
  CellChangeTimes->{
@@ -11387,11 +11387,11 @@ Cell[BoxData["\<\"Test: 2  Expected: 12.1687  Actual: 12.1687\"\>"], "Print",
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.834287008995376*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.834319799670764*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"8ff9616d-b87a-43fd-b92f-c87dd16a4463"],
+In[72]:=",ExpressionUUID->"e264d0fb-342d-4333-b6f9-e72b1a08aa2e"],
 
 Cell[BoxData["\<\"Test: 3  Expected: 7.24911  Actual: 7.24911\"\>"], "Print",
  CellChangeTimes->{
@@ -11465,11 +11465,11 @@ Cell[BoxData["\<\"Test: 3  Expected: 7.24911  Actual: 7.24911\"\>"], "Print",
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.83428700904144*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.834319799713252*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"95fd8a32-1bb9-4010-94ee-fbd46c5e1761"],
+In[72]:=",ExpressionUUID->"55aa60b4-52b1-4eb2-a5e2-526d460869b5"],
 
 Cell[BoxData["\<\"Test: 4  Expected: 12.1687  Actual: 12.1687\"\>"], "Print",
  CellChangeTimes->{
@@ -11543,11 +11543,11 @@ Cell[BoxData["\<\"Test: 4  Expected: 12.1687  Actual: 12.1687\"\>"], "Print",
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.834287009091501*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.83431979976869*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"ba99e44c-356d-45e9-9d5d-6e4b28ca96ca"],
+In[72]:=",ExpressionUUID->"12d15b1f-3a62-48ee-a997-9bb9788bd447"],
 
 Cell[BoxData["\<\"Test: 5  Expected: -169.992  Actual: -169.992\"\>"], "Print",
  CellChangeTimes->{
@@ -11621,11 +11621,11 @@ Cell[BoxData["\<\"Test: 5  Expected: -169.992  Actual: -169.992\"\>"], "Print",
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.8342870090929117`*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.8343197997696743`*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"917cc2e3-e801-4226-86e9-e08d796e3b74"],
+In[72]:=",ExpressionUUID->"5723e9d6-f5ad-4532-afea-315069158a54"],
 
 Cell[BoxData["\<\"Test: 6  Expected: -169.992  Actual: -169.992\"\>"], "Print",
  CellChangeTimes->{
@@ -11699,11 +11699,11 @@ Cell[BoxData["\<\"Test: 6  Expected: -169.992  Actual: -169.992\"\>"], "Print",
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.834287009497208*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.8343198001462173`*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"8de55964-d35f-49ed-93c6-ee1bed663ae2"],
+In[72]:=",ExpressionUUID->"2850f419-68c8-43b0-9c79-e290ea759141"],
 
 Cell[BoxData["\<\"emfsAtOffsets: {{0.000615, -0.000169992}, {0.000945, \
 -0.000149906}, {0.002155, -0.000112161}, {0.003545, -0.000090251}, {0.005305, \
@@ -11782,11 +11782,11 @@ Cell[BoxData["\<\"emfsAtOffsets: {{0.000615, -0.000169992}, {0.000945, \
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.83428701332703*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.834319803236114*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"92bf158b-5f07-4118-bdea-84b4faeabafe"],
+In[72]:=",ExpressionUUID->"06f735ce-2794-41a9-808b-c90667cb1833"],
 
 Cell[BoxData["\<\"Test: 7  Expected: -12.3345  Actual: -12.3345\"\>"], "Print",
  CellChangeTimes->{
@@ -11860,11 +11860,11 @@ Cell[BoxData["\<\"Test: 7  Expected: -12.3345  Actual: -12.3345\"\>"], "Print",
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.834287013328973*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.834319803237286*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"4de00845-6598-4233-b573-1870441c41e7"],
+In[72]:=",ExpressionUUID->"25d6c6bd-b70f-441a-bbc2-2db5ce3be284"],
 
 Cell[BoxData["\<\"Test: 8  Expected: -169.992  Actual: -169.992\"\>"], "Print",
  CellChangeTimes->{
@@ -11938,11 +11938,11 @@ Cell[BoxData["\<\"Test: 8  Expected: -169.992  Actual: -169.992\"\>"], "Print",
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.8342870142858152`*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.834319803620591*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"fc86652d-cc65-4c71-a6af-db5ba8e45887"],
+In[72]:=",ExpressionUUID->"7626732f-af75-4f59-a12c-79a83f8cb78a"],
 
 Cell[BoxData["\<\"Test: 9  Expected: 148.064  Actual: 148.064\"\>"], "Print",
  CellChangeTimes->{
@@ -12016,11 +12016,11 @@ Cell[BoxData["\<\"Test: 9  Expected: 148.064  Actual: 148.064\"\>"], "Print",
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.834287014771741*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.834319803854706*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"b6c3104d-3b51-4666-a736-e122da098a83"],
+In[72]:=",ExpressionUUID->"fb244f13-7934-4348-beba-05f420fbc911"],
 
 Cell[BoxData["\<\"Test: 10  Expected: 138.135  Actual: 138.135\"\>"], "Print",
  CellChangeTimes->{
@@ -12094,11 +12094,11 @@ Cell[BoxData["\<\"Test: 10  Expected: 138.135  Actual: 138.135\"\>"], "Print",
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.834287015147656*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.83431980408237*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"e3e1351b-a136-4ea9-b06c-6da46a7d14dc"],
+In[72]:=",ExpressionUUID->"1f7993bc-5b68-4da7-a62a-ee39ad450a35"],
 
 Cell[BoxData["\<\"Test: 11  Expected: 115.356  Actual: 115.356\"\>"], "Print",
  CellChangeTimes->{
@@ -12172,11 +12172,11 @@ Cell[BoxData["\<\"Test: 11  Expected: 115.356  Actual: 115.356\"\>"], "Print",
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.834287015506383*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.8343198042760143`*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"8bf7a72b-fa7d-4d7c-91fc-4afb1a75e657"],
+In[72]:=",ExpressionUUID->"9064e901-1065-426f-9ea5-8879bb5bf05e"],
 
 Cell[BoxData["\<\"Test: 12  Expected: 115.356  Actual: 115.356\"\>"], "Print",
  CellChangeTimes->{
@@ -12250,11 +12250,11 @@ Cell[BoxData["\<\"Test: 12  Expected: 115.356  Actual: 115.356\"\>"], "Print",
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.8342870157948923`*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.834319804473351*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"62f23178-ce87-41f6-8ca8-1720070469b8"],
+In[72]:=",ExpressionUUID->"9e1e9dc0-50f7-4edc-b52e-e82da7038c02"],
 
 Cell[BoxData["\<\"PASSED 12 tests\"\>"], "Print",
  CellChangeTimes->{
@@ -12328,11 +12328,11 @@ Cell[BoxData["\<\"PASSED 12 tests\"\>"], "Print",
    3.828803175449567*^9, 3.828803197774363*^9}, {3.828804851351769*^9, 
    3.828804868959591*^9}, 3.8338052692949333`*^9, 3.833806287545877*^9, 
    3.833806515110401*^9, 3.834191758255279*^9, 3.8342865447153883`*^9, 
-   3.83428682064347*^9, 3.834287015796019*^9},
+   3.83428682064347*^9, 3.834287008956046*^9, 3.834319804474272*^9},
  CellTags->"EMF from theory using x-y segments test",
  CellLabel->
   "During evaluation of \
-In[62]:=",ExpressionUUID->"ae1f2293-d945-42d2-9ea4-5765816b394e"]
+In[72]:=",ExpressionUUID->"a2109914-099c-4ddd-a3ad-1c3da92ddb4c"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -12360,6 +12360,8 @@ and actual output.\
    3.82866066552507*^9}, {3.828660831240555*^9, 3.828660834185911*^9}, 
    3.82878660004737*^9},ExpressionUUID->"7a008000-24c7-4662-8978-\
 ef79484ec3a9"],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
@@ -13555,7 +13557,8 @@ Cell[BoxData[
           RowBox[{"[", "3", "]"}], "]"}]}], "]"}]}], ";", 
       "\[IndentingNewLine]", 
       RowBox[{"EXPECTNEAR", "[", 
-       RowBox[{"\"\<-25.8672\>\"", ",", " ", 
+       RowBox[{
+        RowBox[{"-", "25.8672"}], ",", " ", 
         RowBox[{"micro", " ", 
          RowBox[{"emf65", "[", "\"\<emfTotal\>\"", "]"}]}], ",", " ", 
         "0.001"}], "]"}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
@@ -14345,10 +14348,851 @@ Cell[BoxData[
    3.833806214716963*^9}, 3.834194142489109*^9, 3.83422775113055*^9, {
    3.834273662515524*^9, 3.834273690161984*^9}, 3.834273856954455*^9, {
    3.834286622323756*^9, 3.834286652893381*^9}, 3.834286696110787*^9, 
-   3.834286975654272*^9, 3.834319749022128*^9},
+   3.834286975654272*^9, 3.834319749022128*^9, {3.83432732307633*^9, 
+   3.834327324603065*^9}},
  CellTags->
   "EMF from theory using x-y segments \
-test",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672"]
+test",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"Test: 1  Expected: {-1230769., -846154., 0}  Actual: \
+{-1230769., -846154., 0}\"\>"], "Print",
+ CellChangeTimes->{3.834319804569071*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"b5ab4a25-08cc-4bd5-a6dd-eb5009da6087"],
+
+Cell[BoxData["\<\"Test: 2  Expected: {-1500000., 500000., 0}  Actual: \
+{-1500000, 500000, 0}\"\>"], "Print",
+ CellChangeTimes->{3.834319804570427*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"99d5d178-0934-4195-90a5-1b0e111622e9"],
+
+Cell[BoxData["\<\"Test: 3  Expected: {-2000000, 0, 0}  Actual: {-2000000, 0, \
+0}\"\>"], "Print",
+ CellChangeTimes->{3.8343198045719433`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"2d1e1b4c-c049-4990-b2c8-b4cbb434537d"],
+
+Cell[BoxData["\<\"Test: 4  Expected: {-0.993553, 0.0, 0.0}  Actual: \
+{-0.993553, 0.0, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319804573367*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"cae92f4c-6562-437c-a2ef-8f647560b243"],
+
+Cell[BoxData["\<\"Test: 5  Expected: {-2.00159, 0.0798084, 0.0}  Actual: \
+{-2.00159, 0.0798084, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319804576865*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"5ea93f68-5d5a-40d8-9fcd-9cf905e6f7ac"],
+
+Cell[BoxData["\<\"Test: 6  Expected: {-100, 0, 0}  Actual: {-100.0, 0.0, 0.0}\
+\"\>"], "Print",
+ CellChangeTimes->{3.834319804579102*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"a4eb5e20-ac22-452b-a494-68f7fe29e0ee"],
+
+Cell[BoxData["\<\"Test: 7  Expected: {-2.00159, -0.0798084, 0.0}  Actual: \
+{-2.00159, -0.0798084, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319804580676*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"0c86ec35-d139-4c74-b893-68f9b56ecadc"],
+
+Cell[BoxData["\<\"Test: 8  Expected: -2.00159  Actual: -2.00159\"\>"], "Print",
+ CellChangeTimes->{3.834319804581514*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"355b2e51-dee8-442f-bc78-38d417c4b3da"],
+
+Cell[BoxData["\<\"Test: 9  Expected: 0.0798084  Actual: 0.0798084\"\>"], \
+"Print",
+ CellChangeTimes->{3.8343198045822487`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"94b8a00d-b292-4764-9d51-19b49caa5ce4"],
+
+Cell[BoxData["\<\"Test: 10  Expected: -0.0921054  Actual: -0.0921054\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319804726346*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"f76ecd8d-ed4c-4180-9de9-14c9711ee186"],
+
+Cell[BoxData["\<\"Test: 11  Expected: -0.0921054  Actual: -0.0921054\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319804875243*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"127354db-eb47-4091-8c9b-5c15b26f9753"],
+
+Cell[BoxData["\<\"Test: 12  Expected: -0.0313341  Actual: -0.0313341\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319804924501*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"5209d4c7-3342-4825-9b4c-17dbf8cdc996"],
+
+Cell[BoxData["\<\"Test: 13  Expected: 1  Actual: 1\"\>"], "Print",
+ CellChangeTimes->{3.83431980492575*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"21be6433-95d0-4f02-9f24-34ecd9fef26e"],
+
+Cell[BoxData["\<\"Test: 14  Expected: 1  Actual: 1\"\>"], "Print",
+ CellChangeTimes->{3.83431980492664*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"96e06e42-bce0-40cd-b493-122c56093e01"],
+
+Cell[BoxData["\<\"Test: 15  Expected: {0.0, 0.0507425, 0.0}  Actual: {0.0, \
+0.0507425, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319804927341*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"3da78ce1-f4a8-44e4-9d63-521be999fe22"],
+
+Cell[BoxData["\<\"Test: 16  Expected: 4  Actual: 4\"\>"], "Print",
+ CellChangeTimes->{3.834319804928043*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"6d6a7518-8437-4c55-90d0-6b4182d69a41"],
+
+Cell[BoxData["\<\"Test: 17  Expected: 4  Actual: 4\"\>"], "Print",
+ CellChangeTimes->{3.8343198049287233`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"d0042bc9-3ec5-4b8f-85d2-c8ea8a13dfcf"],
+
+Cell[BoxData["\<\"Test: 18  Expected: {0.0, 0.0507425, 0.0}  Actual: {0.0, \
+0.0507425, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319804929476*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"f470563d-fc07-4514-96d3-0f2b64f332c9"],
+
+Cell[BoxData["\<\"Test: 19  Expected: {-0.101035, 0.0507425, 0.0}  Actual: \
+{-0.101035, 0.0507425, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319804930191*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"a2a2c31c-dc1d-40ab-b3e5-98bb3b8b3ec1"],
+
+Cell[BoxData["\<\"Test: 20  Expected: {-0.101035, -0.0507425, 0.0}  Actual: \
+{-0.101035, -0.0507425, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319804931837*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"7f4eecb0-d3c2-4f92-97df-c0c79f3d04b5"],
+
+Cell[BoxData["\<\"Test: 21  Expected: {0.0, -0.0507425, 0.0}  Actual: {0.0, \
+-0.0507425, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319804932591*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"32d1fda6-10a8-490d-bc2d-717467d4e0c7"],
+
+Cell[BoxData["\<\"Test: 22  Expected: 4  Actual: 4\"\>"], "Print",
+ CellChangeTimes->{3.834319804933362*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"b80501c9-7480-427c-b0c5-cc866a9cf35e"],
+
+Cell[BoxData["\<\"Test: 23  Expected: 4  Actual: 4\"\>"], "Print",
+ CellChangeTimes->{3.834319804934161*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"0fd8bc6f-78e2-448f-8399-14ffbc000db0"],
+
+Cell[BoxData["\<\"Test: 24  Expected: {0.000615, -0.0195775, 0.0}  Actual: \
+{0.000615, -0.0195775, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.8343198049348783`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"f2a657bb-5aba-479e-b598-3a742082ee82"],
+
+Cell[BoxData["\<\"Test: 25  Expected: {0.05113, -0.0195775, 0.0}  Actual: \
+{0.05113, -0.0195775, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319804935584*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"6a466495-c266-4a9f-949c-0cea03aea743"],
+
+Cell[BoxData["\<\"Test: 26  Expected: {0.05113, 0.0195775, 0.0}  Actual: \
+{0.05113, 0.0195775, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319804936385*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"077b08c0-19f3-4daf-8432-ad391f9b1903"],
+
+Cell[BoxData["\<\"Test: 27  Expected: {0.000615, 0.0195775, 0.0}  Actual: \
+{0.000615, 0.0195775, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.8343198049372473`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"7ab748e5-f4db-460d-96e7-06b766496319"],
+
+Cell[BoxData["\<\"Skipping tests 28 to 28\"\>"], "Print",
+ CellChangeTimes->{3.834319804937995*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"9f1f78c8-f4bf-4ba7-9ee9-10bd630adfc8"],
+
+Cell[BoxData["\<\"Test: 29  Expected: -13.3628  Actual: -13.3628\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319804955749*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"d262658f-61d3-4560-8dff-a34872a7ad3f"],
+
+Cell[BoxData["\<\"Test: 30  Expected: -55.2659  Actual: -55.2659\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319804994527*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"8f414404-e082-40ff-bd1a-b41f9871a348"],
+
+Cell[BoxData["\<\"Test: 31  Expected: 290.929  Actual: 290.935\"\>"], "Print",
+ CellChangeTimes->{3.834319805171793*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"82f58f4b-180b-4ea9-938c-1f538181b806"],
+
+Cell[BoxData[
+ StyleBox["\<\"Expected: 290.929\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0, 0],
+  FrontFaceColor->RGBColor[1, 0, 0],
+  BackFaceColor->RGBColor[1, 0, 0],
+  GraphicsColor->RGBColor[1, 0, 0],
+  FontColor->RGBColor[1, 0, 0]]], "Print",
+ CellChangeTimes->{3.834319805185801*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"3f5eb6d2-77a3-482b-bc40-c48ddb61bc34"],
+
+Cell[BoxData[
+ StyleBox["\<\"Actual: 290.935\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0, 0],
+  FrontFaceColor->RGBColor[1, 0, 0],
+  BackFaceColor->RGBColor[1, 0, 0],
+  GraphicsColor->RGBColor[1, 0, 0],
+  FontColor->RGBColor[1, 0, 0]]], "Print",
+ CellChangeTimes->{3.83431980518821*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"bebc6617-f7e3-4534-b4ca-a585cfb40635"],
+
+Cell[BoxData[
+ StyleBox["\<\"Difference: -0.00578735\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0, 0],
+  FrontFaceColor->RGBColor[1, 0, 0],
+  BackFaceColor->RGBColor[1, 0, 0],
+  GraphicsColor->RGBColor[1, 0, 0],
+  FontColor->RGBColor[1, 0, 0]]], "Print",
+ CellChangeTimes->{3.834319805189363*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"19dddeb5-b1d9-4ec8-928a-c1c84062f30b"],
+
+Cell[BoxData[
+ StyleBox["\<\"EPS: 0.001\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0, 0],
+  FrontFaceColor->RGBColor[1, 0, 0],
+  BackFaceColor->RGBColor[1, 0, 0],
+  GraphicsColor->RGBColor[1, 0, 0],
+  FontColor->RGBColor[1, 0, 0]]], "Print",
+ CellChangeTimes->{3.834319805190857*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"f4b8b977-b7f3-4099-ab57-c1c70bf56ecf"],
+
+Cell[BoxData["\<\"Test: 32  Expected: -13.3628  Actual: -13.3628\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319805191607*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"4502773d-12ab-45b5-926e-e240c88ec5a7"],
+
+Cell[BoxData["\<\"Test: 33  Expected: -44.007  Actual: -44.007\"\>"], "Print",
+ CellChangeTimes->{3.8343198051923122`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"95c4c90c-a1d2-4207-81b1-74bd4413c6bd"],
+
+Cell[BoxData["\<\"Test: 34  Expected: -13.3628  Actual: -13.3628\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319805193733*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"9ffc8c11-4572-4e52-8a24-76ecdab33b48"],
+
+Cell[BoxData["\<\"Starting wire to wire for old and proposed terms\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319805194504*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"8af16c38-949c-421b-982b-5b311c7625d1"],
+
+Cell[BoxData["\<\"Test: 35  Expected: 220.196  Actual: 220.202\"\>"], "Print",
+ CellChangeTimes->{3.834319805195512*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"80cde55c-4a2f-4780-b8ba-150fbe7df7d8"],
+
+Cell[BoxData[
+ StyleBox["\<\"Expected: 220.196\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0, 0],
+  FrontFaceColor->RGBColor[1, 0, 0],
+  BackFaceColor->RGBColor[1, 0, 0],
+  GraphicsColor->RGBColor[1, 0, 0],
+  FontColor->RGBColor[1, 0, 0]]], "Print",
+ CellChangeTimes->{3.834319805196356*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"4f5f6ef1-20ca-4eac-83ac-ed6cf86f8e1a"],
+
+Cell[BoxData[
+ StyleBox["\<\"Actual: 220.202\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0, 0],
+  FrontFaceColor->RGBColor[1, 0, 0],
+  BackFaceColor->RGBColor[1, 0, 0],
+  GraphicsColor->RGBColor[1, 0, 0],
+  FontColor->RGBColor[1, 0, 0]]], "Print",
+ CellChangeTimes->{3.834319805197077*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"62d42401-ab0a-4dd8-8feb-eaf22b23447e"],
+
+Cell[BoxData[
+ StyleBox["\<\"Difference: -0.00583538\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0, 0],
+  FrontFaceColor->RGBColor[1, 0, 0],
+  BackFaceColor->RGBColor[1, 0, 0],
+  GraphicsColor->RGBColor[1, 0, 0],
+  FontColor->RGBColor[1, 0, 0]]], "Print",
+ CellChangeTimes->{3.834319805197752*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"2614f386-fac1-4fa8-a51e-b998e549b379"],
+
+Cell[BoxData[
+ StyleBox["\<\"EPS: 0.001\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0, 0],
+  FrontFaceColor->RGBColor[1, 0, 0],
+  BackFaceColor->RGBColor[1, 0, 0],
+  GraphicsColor->RGBColor[1, 0, 0],
+  FontColor->RGBColor[1, 0, 0]]], "Print",
+ CellChangeTimes->{3.8343198051985064`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"6b090999-55ca-4757-b315-7281d682defc"],
+
+Cell[BoxData["\<\"Test: 36  Expected: -12.1687  Actual: -12.1687\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319805295487*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"b0552b6f-d4e7-493b-96f9-5948fa316bda"],
+
+Cell[BoxData["\<\"Test: 37  Expected: -25.8672  Actual: -25.8672\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319805371443*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"e7e6d848-13ef-4b52-857d-b00af3e0ff63"],
+
+Cell[BoxData["\<\"Test: 38  Expected: -12.1687  Actual: -12.1687\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319805472884*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"b2600975-a660-4f02-8e81-31d4be0691d0"],
+
+Cell[BoxData["\<\"Test: 39  Expected: 169.992  Actual: 169.998\"\>"], "Print",
+ CellChangeTimes->{3.8343198059073763`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"dd023576-ecf6-4f4e-b45c-4ecc652c04ec"],
+
+Cell[BoxData[
+ StyleBox["\<\"Expected: 169.992\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0, 0],
+  FrontFaceColor->RGBColor[1, 0, 0],
+  BackFaceColor->RGBColor[1, 0, 0],
+  GraphicsColor->RGBColor[1, 0, 0],
+  FontColor->RGBColor[1, 0, 0]]], "Print",
+ CellChangeTimes->{3.834319805908841*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"77e66c3a-1be0-4f72-b07c-3761d1ad82ef"],
+
+Cell[BoxData[
+ StyleBox["\<\"Actual: 169.998\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0, 0],
+  FrontFaceColor->RGBColor[1, 0, 0],
+  BackFaceColor->RGBColor[1, 0, 0],
+  GraphicsColor->RGBColor[1, 0, 0],
+  FontColor->RGBColor[1, 0, 0]]], "Print",
+ CellChangeTimes->{3.834319805909917*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"7fab11b5-39b5-4d0f-9269-185601b29fb6"],
+
+Cell[BoxData[
+ StyleBox["\<\"Difference: -0.00573579\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0, 0],
+  FrontFaceColor->RGBColor[1, 0, 0],
+  BackFaceColor->RGBColor[1, 0, 0],
+  GraphicsColor->RGBColor[1, 0, 0],
+  FontColor->RGBColor[1, 0, 0]]], "Print",
+ CellChangeTimes->{3.8343198059115887`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"6a809042-d003-449d-8fd0-44700d92dacf"],
+
+Cell[BoxData[
+ StyleBox["\<\"EPS: 0.001\"\>",
+  StripOnInput->False,
+  LineColor->RGBColor[1, 0, 0],
+  FrontFaceColor->RGBColor[1, 0, 0],
+  BackFaceColor->RGBColor[1, 0, 0],
+  GraphicsColor->RGBColor[1, 0, 0],
+  FontColor->RGBColor[1, 0, 0]]], "Print",
+ CellChangeTimes->{3.8343198059134893`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"0731fce8-ee8d-409f-abbe-da80b7698bf6"],
+
+Cell[BoxData["\<\"Test: 40  Expected: 4  Actual: 4\"\>"], "Print",
+ CellChangeTimes->{3.8343198059149446`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"a83560af-9312-4fad-ad45-1a2bb87d143d"],
+
+Cell[BoxData["\<\"Test: 41  Expected: 4  Actual: 4\"\>"], "Print",
+ CellChangeTimes->{3.834319805916403*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"80443946-ddcc-4c38-b588-6a139045689b"],
+
+Cell[BoxData["\<\"Test: 42  Expected: {0.039175, -0.0195775, 0.0}  Actual: \
+{0.039175, -0.0195775, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319805917745*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"deb2c335-55f4-4066-9e3e-ebc8934f66c4"],
+
+Cell[BoxData["\<\"Test: 43  Expected: {0.08969, -0.0195775, 0.0}  Actual: \
+{0.08969, -0.0195775, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319805918797*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"0b6494cf-fa26-463f-b97e-89ef704e4501"],
+
+Cell[BoxData["\<\"Test: 44  Expected: {0.08969, 0.0195775, 0.0}  Actual: \
+{0.08969, 0.0195775, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319805920465*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"4ec737ab-7e2b-4e10-a00d-c133ace950b0"],
+
+Cell[BoxData["\<\"Test: 45  Expected: {0.039175, 0.0195775, 0.0}  Actual: \
+{0.039175, 0.0195775, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.8343198059221573`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"78bfd9e7-5e94-44a5-a569-3d19facf1c9a"],
+
+Cell[BoxData["\<\"Test: 46  Expected: 12.3345  Actual: 12.3345\"\>"], "Print",
+ CellChangeTimes->{3.8343198063012114`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"bb2b7169-16ee-4ad0-984e-db7645c09de0"],
+
+Cell[BoxData["\<\"Skipping tests 47 to 47\"\>"], "Print",
+ CellChangeTimes->{3.8343198063025208`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"d64a3b9b-adc0-4a69-b91d-6a68deafe67f"],
+
+Cell[BoxData["\<\"Test: 48  Expected: {0.0105226, -0.0321189, 0.0}  Actual: \
+{0.0105226, -0.0321189, 0.0}\"\>"], "Print",
+ CellChangeTimes->{3.834319806303653*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"0422b902-e5ea-4f56-8873-12e114716091"],
+
+Cell[BoxData["\<\"Skipping tests 49 to 49\"\>"], "Print",
+ CellChangeTimes->{3.8343198063048983`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"e6031a5f-f7ef-472c-8e94-a39ea4d51976"],
+
+Cell[BoxData["\<\"Front wire to all wires for existing double cross term only\
+\"\>"], "Print",
+ CellChangeTimes->{3.834319806464692*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"b9fd19e6-72a8-4e51-b471-ea18833f09ca"],
+
+Cell[BoxData["\<\"Test: 50  Expected: 47.8461  Actual: 47.8461\"\>"], "Print",
+ CellChangeTimes->{3.8343198064661293`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"2249fd98-5019-4b20-adc2-b9951724be20"],
+
+Cell[BoxData["\<\"Test: 51  Expected: -13.3628  Actual: -13.3628\"\>"], \
+"Print",
+ CellChangeTimes->{3.8343198064670153`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"3d6426f2-31af-49c0-99b4-74b637755ef1"],
+
+Cell[BoxData["\<\"Test: 52  Expected: -21.1205  Actual: -21.1205\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319806467928*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"6d6b73ce-9326-4f7b-b0b6-b46ada9f2686"],
+
+Cell[BoxData["\<\"Test: 53  Expected: -13.3628  Actual: -13.3628\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319806468705*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"4b9aeada-fbe1-4a71-a636-be6d82fe038c"],
+
+Cell[BoxData["\<\"Starting wire to wire for existing double cross term only\"\
+\>"], "Print",
+ CellChangeTimes->{3.8343198064697104`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"01067f3c-9ebe-4b06-afa6-01318f9b94c3"],
+
+Cell[BoxData["\<\"Test: 54  Expected: 0  Actual: 0.00000517672\"\>"], "Print",
+ CellChangeTimes->{3.834319806470583*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"7b079ee9-0e4e-4887-b570-aeb45bd324c5"],
+
+Cell[BoxData["\<\"Test: 55  Expected: 0  Actual: 0.000000543189\"\>"], "Print",
+ CellChangeTimes->{3.834319806558094*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"29642aae-e682-4b47-aa14-41f603cfd46a"],
+
+Cell[BoxData["\<\"Test: 56  Expected: 0  Actual: -0.000000222988\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319806642942*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"bb061e76-bc13-4e2d-9d9f-550379bf88a1"],
+
+Cell[BoxData["\<\"Test: 57  Expected: 0  Actual: 0.00000054319\"\>"], "Print",
+ CellChangeTimes->{3.834319806733345*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"9dd803c6-d15c-4078-b677-2f2e8ba1d3a0"],
+
+Cell[BoxData["\<\"Test: 58  Expected: 0  Actual: 0.00000604011\"\>"], "Print",
+ CellChangeTimes->{3.834319806734391*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"6b7ada02-38f9-47f2-8e64-3a9eac53490c"],
+
+Cell[BoxData["\<\"Test: 59  Expected: 243.083  Actual: 243.083\"\>"], "Print",
+ CellChangeTimes->{3.834319806821486*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"94bc38b0-c68f-4b13-9bcc-8517e3a0c097"],
+
+Cell[BoxData["\<\"Test: 60  Expected: 0  Actual: 0.0\"\>"], "Print",
+ CellChangeTimes->{3.834319806822555*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"2f84a445-2786-4337-9601-46a4661113b6"],
+
+Cell[BoxData["\<\"Test: 61  Expected: -22.8865  Actual: -22.8865\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319806823435*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"ad278941-f430-4694-9744-c0227d7ba4f7"],
+
+Cell[BoxData["\<\"Test: 62  Expected: 0  Actual: 0.0\"\>"], "Print",
+ CellChangeTimes->{3.834319806824213*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"6c26d80a-6ae4-4b04-958c-afe012b6d9f1"],
+
+Cell[BoxData["\<\"Starting wire to wire for proposed a term only\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319806825056*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"fff1e07e-fd68-431a-9d86-344f2a1221c6"],
+
+Cell[BoxData["\<\"Test: 63  Expected: 220.196  Actual: 220.196\"\>"], "Print",
+ CellChangeTimes->{3.834319806825955*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"9a052e48-939a-482b-8767-c2a84008781e"],
+
+Cell[BoxData["\<\"Test: 64  Expected: -12.1687  Actual: -12.1687\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319806865189*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"0d5ff5c6-990d-4100-b27b-c4994d81cbd6"],
+
+Cell[BoxData["\<\"Test: 65  Expected: -25.8672  Actual: -25.8672\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319806914112*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"e437a57d-7e7b-421c-9356-5951c4d59dd0"],
+
+Cell[BoxData["\<\"Test: 66  Expected: -12.1687  Actual: -12.1687\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319806965826*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"58eeb575-fdc2-49f3-8d69-f302c119c637"],
+
+Cell[BoxData["\<\"Test: 67  Expected: 169.992  Actual: 169.992\"\>"], "Print",
+ CellChangeTimes->{3.834319806966907*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"4186e822-ff87-4338-a540-375673b9083c"],
+
+Cell[BoxData["\<\"Test: 68  Expected: 169.992  Actual: 169.992\"\>"], "Print",
+ CellChangeTimes->{3.834319807209453*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"9939f6c9-96f4-4112-bdb4-497a0940bd5a"],
+
+Cell[BoxData["\<\"Test: 69  Expected: -148.064  Actual: -148.064\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319807395924*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"1ab99d27-c441-40ac-afcb-ad640bbf0040"],
+
+Cell[BoxData["\<\"Test: 70  Expected: -138.135  Actual: -138.135\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319807572665*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"bb08a145-4ee1-44a9-af63-8f7a9c208cdb"],
+
+Cell[BoxData["\<\"Test: 71  Expected: -115.356  Actual: -115.356\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319807750547*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"db28ebd7-fc63-4169-a780-9ec3a129bad8"],
+
+Cell[BoxData["\<\"Test: 72  Expected: -115.356  Actual: -115.356\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319807931057*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"eda7504c-c694-446f-a5ce-7f4292c31503"],
+
+Cell[BoxData["\<\"Test: 73  Expected: 0.0  Actual: -0.00000103103\"\>"], \
+"Print",
+ CellChangeTimes->{3.8343198082810097`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"0530dde2-6bf1-4c28-95b2-37b4494da394"],
+
+Cell[BoxData["\<\"Test: 74  Expected: 0.0  Actual: -0.00000135603\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319808608306*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"1469e337-9249-418a-be3c-2efa76a2b24a"],
+
+Cell[BoxData["\<\"Test: 75  Expected: 0.0  Actual: -0.000000259609\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319808927423*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"26fc4614-6812-46d8-8a44-290b883376f5"],
+
+Cell[BoxData["\<\"Test: 76  Expected: 0.0  Actual: 0.0\"\>"], "Print",
+ CellChangeTimes->{3.83431980894389*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"3d735539-a736-45b8-a2b8-43986e863f4e"],
+
+Cell[BoxData["\<\"Test: 77  Expected: 0.0  Actual: 0.0\"\>"], "Print",
+ CellChangeTimes->{3.834319808945051*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"4cea3445-15ad-4a0d-a010-71e9ee5a539f"],
+
+Cell[BoxData["\<\"Test: 78  Expected: 0.0  Actual: 0.0\"\>"], "Print",
+ CellChangeTimes->{3.834319808945982*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"27a49771-dda8-48cd-a6b0-b9092c5eafb5"],
+
+Cell[BoxData["\<\"Test: 79  Expected: 23.7651  Actual: 23.7651\"\>"], "Print",
+ CellChangeTimes->{3.83431980898243*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"02d62b88-3614-4157-b394-e98f4d982ecc"],
+
+Cell[BoxData["\<\"Test: 80  Expected: 23.7651  Actual: 23.7651\"\>"], "Print",
+ CellChangeTimes->{3.8343198090188437`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"47d09f19-9e5a-44fd-ba7a-59c9e0ffca9e"],
+
+Cell[BoxData["\<\"Test: 81  Expected: -6.46048  Actual: -6.46048\"\>"], \
+"Print",
+ CellChangeTimes->{3.834319809039158*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"212aeebe-c884-4354-abf5-541d6f882d29"],
+
+Cell[BoxData["\<\"Test: 82  Expected: 0.0  Actual: 0.0\"\>"], "Print",
+ CellChangeTimes->{3.834319809047226*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"8f6d3323-8e12-435f-9a9f-a368fd1dcec6"],
+
+Cell[BoxData["\<\"PASSED 75 tests\"\>"], "Print",
+ CellChangeTimes->{3.8343198090482607`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"ec11eeac-5554-49d6-9248-454a4274be23"],
+
+Cell[BoxData["\<\"FAILED: 3\"\>"], "Print",
+ CellChangeTimes->{3.8343198090489473`*^9},
+ CellTags->"EMF from theory using x-y segments test",
+ CellLabel->
+  "During evaluation of \
+In[73]:=",ExpressionUUID->"48618d93-82de-4522-8232-9954b9ad1ee3"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -14551,7 +15395,7 @@ Cell[BoxData[
      "\[IndentingNewLine]", "]"}]}], ";"}], "\[IndentingNewLine]"}]], "Input",\
 
  CellChangeTimes->{3.828803511719739*^9},
- CellLabel->"In[64]:=",ExpressionUUID->"2db0c55c-cfce-41f8-91ae-5911b1a7ff27"]
+ CellLabel->"In[74]:=",ExpressionUUID->"2db0c55c-cfce-41f8-91ae-5911b1a7ff27"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -14569,54 +15413,254 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "EmfFromTheoryXY module"->{
-  Cell[473490, 8158, 40807, 659, 2735, "Input",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a",
+  Cell[473538, 8159, 40807, 659, 2735, "Input",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a",
    InitializationCell->True,
    CellTags->"EmfFromTheoryXY module"],
-  Cell[514876, 8837, 35280, 620, 3827, "Input",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc",
+  Cell[514924, 8838, 35299, 619, 3827, "Input",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc",
    InitializationCell->True,
    CellTags->"EmfFromTheoryXY module"],
-  Cell[550805, 9479, 58442, 1046, 4709, "Input",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37",
+  Cell[550872, 9479, 58442, 1046, 4709, "Input",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37",
    InitializationCell->True,
    CellTags->"EmfFromTheoryXY module"]},
  "EMF from theory using x-y segments test"->{
-  Cell[610313, 10552, 36936, 683, 2467, "Input",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f",
+  Cell[610380, 10552, 36936, 683, 2467, "Input",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[647274, 11239, 5337, 76, 24, "Print",ExpressionUUID->"63fcb660-85f0-40ee-987e-fb769a17bd90",
+  Cell[647341, 11239, 5359, 76, 24, "Print",ExpressionUUID->"f381b3bc-f759-42ba-b7af-ebd6db96601a",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[652614, 11317, 5335, 76, 24, "Print",ExpressionUUID->"8ff9616d-b87a-43fd-b92f-c87dd16a4463",
+  Cell[652703, 11317, 5357, 76, 24, "Print",ExpressionUUID->"e264d0fb-342d-4333-b6f9-e72b1a08aa2e",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[657952, 11395, 5334, 76, 24, "Print",ExpressionUUID->"95fd8a32-1bb9-4010-94ee-fbd46c5e1761",
+  Cell[658063, 11395, 5357, 76, 24, "Print",ExpressionUUID->"55aa60b4-52b1-4eb2-a5e2-526d460869b5",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[663289, 11473, 5335, 76, 24, "Print",ExpressionUUID->"ba99e44c-356d-45e9-9d5d-6e4b28ca96ca",
+  Cell[663423, 11473, 5356, 76, 24, "Print",ExpressionUUID->"12d15b1f-3a62-48ee-a997-9bb9788bd447",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[668627, 11551, 5339, 76, 24, "Print",ExpressionUUID->"917cc2e3-e801-4226-86e9-e08d796e3b74",
+  Cell[668782, 11551, 5361, 76, 24, "Print",ExpressionUUID->"5723e9d6-f5ad-4532-afea-315069158a54",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[673969, 11629, 5337, 76, 24, "Print",ExpressionUUID->"8de55964-d35f-49ed-93c6-ee1bed663ae2",
+  Cell[674146, 11629, 5361, 76, 24, "Print",ExpressionUUID->"2850f419-68c8-43b0-9c79-e290ea759141",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[679309, 11707, 5688, 81, 82, "Print",ExpressionUUID->"92bf158b-5f07-4118-bdea-84b4faeabafe",
+  Cell[679510, 11707, 5711, 81, 82, "Print",ExpressionUUID->"06f735ce-2794-41a9-808b-c90667cb1833",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[685000, 11790, 5337, 76, 24, "Print",ExpressionUUID->"4de00845-6598-4233-b573-1870441c41e7",
+  Cell[685224, 11790, 5359, 76, 24, "Print",ExpressionUUID->"25d6c6bd-b70f-441a-bbc2-2db5ce3be284",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[690340, 11868, 5339, 76, 24, "Print",ExpressionUUID->"fc86652d-cc65-4c71-a6af-db5ba8e45887",
+  Cell[690586, 11868, 5359, 76, 24, "Print",ExpressionUUID->"7626732f-af75-4f59-a12c-79a83f8cb78a",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[695682, 11946, 5335, 76, 24, "Print",ExpressionUUID->"b6c3104d-3b51-4666-a736-e122da098a83",
+  Cell[695948, 11946, 5357, 76, 24, "Print",ExpressionUUID->"fb244f13-7934-4348-beba-05f420fbc911",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[701020, 12024, 5336, 76, 24, "Print",ExpressionUUID->"e3e1351b-a136-4ea9-b06c-6da46a7d14dc",
+  Cell[701308, 12024, 5357, 76, 24, "Print",ExpressionUUID->"1f7993bc-5b68-4da7-a62a-ee39ad450a35",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[706359, 12102, 5336, 76, 24, "Print",ExpressionUUID->"8bf7a72b-fa7d-4d7c-91fc-4afb1a75e657",
+  Cell[706668, 12102, 5360, 76, 24, "Print",ExpressionUUID->"9064e901-1065-426f-9ea5-8879bb5bf05e",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[711698, 12180, 5338, 76, 24, "Print",ExpressionUUID->"62f23178-ce87-41f6-8ca8-1720070469b8",
+  Cell[712031, 12180, 5358, 76, 24, "Print",ExpressionUUID->"9e1e9dc0-50f7-4edc-b52e-e82da7038c02",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[717039, 12258, 5307, 76, 24, "Print",ExpressionUUID->"ae1f2293-d945-42d2-9ea4-5765816b394e",
+  Cell[717392, 12258, 5329, 76, 24, "Print",ExpressionUUID->"a2109914-099c-4ddd-a3ad-1c3da92ddb4c",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[723517, 12363, 93661, 1987, 7843, "Input",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672",
+  Cell[723914, 12365, 93725, 1989, 7843, "Input",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[817664, 14358, 314, 6, 24, "Print",ExpressionUUID->"b5ab4a25-08cc-4bd5-a6dd-eb5009da6087",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[817981, 14366, 310, 6, 24, "Print",ExpressionUUID->"99d5d178-0934-4195-90a5-1b0e111622e9",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[818294, 14374, 300, 6, 24, "Print",ExpressionUUID->"2d1e1b4c-c049-4990-b2c8-b4cbb434537d",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[818597, 14382, 308, 6, 24, "Print",ExpressionUUID->"cae92f4c-6562-437c-a2ef-8f647560b243",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[818908, 14390, 318, 6, 24, "Print",ExpressionUUID->"5ea93f68-5d5a-40d8-9fcd-9cf905e6f7ac",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[819229, 14398, 296, 6, 24, "Print",ExpressionUUID->"a4eb5e20-ac22-452b-a494-68f7fe29e0ee",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[819528, 14406, 320, 6, 24, "Print",ExpressionUUID->"0c86ec35-d139-4c74-b893-68f9b56ecadc",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[819851, 14414, 280, 5, 24, "Print",ExpressionUUID->"355b2e51-dee8-442f-bc78-38d417c4b3da",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[820134, 14421, 286, 6, 24, "Print",ExpressionUUID->"94b8a00d-b292-4764-9d51-19b49caa5ce4",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[820423, 14429, 287, 6, 24, "Print",ExpressionUUID->"f76ecd8d-ed4c-4180-9de9-14c9711ee186",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[820713, 14437, 287, 6, 24, "Print",ExpressionUUID->"127354db-eb47-4091-8c9b-5c15b26f9753",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[821003, 14445, 287, 6, 24, "Print",ExpressionUUID->"5209d4c7-3342-4825-9b4c-17dbf8cdc996",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[821293, 14453, 266, 5, 24, "Print",ExpressionUUID->"21be6433-95d0-4f02-9f24-34ecd9fef26e",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[821562, 14460, 266, 5, 24, "Print",ExpressionUUID->"96e06e42-bce0-40cd-b493-122c56093e01",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[821831, 14467, 309, 6, 24, "Print",ExpressionUUID->"3da78ce1-f4a8-44e4-9d63-521be999fe22",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[822143, 14475, 267, 5, 24, "Print",ExpressionUUID->"6d6a7518-8437-4c55-90d0-6b4182d69a41",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[822413, 14482, 269, 5, 24, "Print",ExpressionUUID->"d0042bc9-3ec5-4b8f-85d2-c8ea8a13dfcf",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[822685, 14489, 309, 6, 24, "Print",ExpressionUUID->"f470563d-fc07-4514-96d3-0f2b64f332c9",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[822997, 14497, 321, 6, 24, "Print",ExpressionUUID->"a2a2c31c-dc1d-40ab-b3e5-98bb3b8b3ec1",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[823321, 14505, 323, 6, 24, "Print",ExpressionUUID->"7f4eecb0-d3c2-4f92-97df-c0c79f3d04b5",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[823647, 14513, 311, 6, 24, "Print",ExpressionUUID->"32d1fda6-10a8-490d-bc2d-717467d4e0c7",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[823961, 14521, 267, 5, 24, "Print",ExpressionUUID->"b80501c9-7480-427c-b0c5-cc866a9cf35e",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[824231, 14528, 267, 5, 24, "Print",ExpressionUUID->"0fd8bc6f-78e2-448f-8399-14ffbc000db0",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[824501, 14535, 323, 6, 24, "Print",ExpressionUUID->"f2a657bb-5aba-479e-b598-3a742082ee82",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[824827, 14543, 319, 6, 24, "Print",ExpressionUUID->"6a466495-c266-4a9f-949c-0cea03aea743",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[825149, 14551, 317, 6, 24, "Print",ExpressionUUID->"077b08c0-19f3-4daf-8432-ad391f9b1903",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[825469, 14559, 321, 6, 24, "Print",ExpressionUUID->"7ab748e5-f4db-460d-96e7-06b766496319",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[825793, 14567, 258, 5, 24, "Print",ExpressionUUID->"9f1f78c8-f4bf-4ba7-9ee9-10bd630adfc8",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[826054, 14574, 283, 6, 24, "Print",ExpressionUUID->"d262658f-61d3-4560-8dff-a34872a7ad3f",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[826340, 14582, 283, 6, 24, "Print",ExpressionUUID->"8f414404-e082-40ff-bd1a-b41f9871a348",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[826626, 14590, 279, 5, 24, "Print",ExpressionUUID->"82f58f4b-180b-4ea9-938c-1f538181b806",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[826908, 14597, 460, 12, 24, "Print",ExpressionUUID->"3f5eb6d2-77a3-482b-bc40-c48ddb61bc34",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[827371, 14611, 457, 12, 24, "Print",ExpressionUUID->"bebc6617-f7e3-4534-b4ca-a585cfb40635",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[827831, 14625, 466, 12, 24, "Print",ExpressionUUID->"19dddeb5-b1d9-4ec8-928a-c1c84062f30b",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[828300, 14639, 453, 12, 24, "Print",ExpressionUUID->"f4b8b977-b7f3-4099-ab57-c1c70bf56ecf",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[828756, 14653, 283, 6, 24, "Print",ExpressionUUID->"4502773d-12ab-45b5-926e-e240c88ec5a7",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[829042, 14661, 281, 5, 24, "Print",ExpressionUUID->"95c4c90c-a1d2-4207-81b1-74bd4413c6bd",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[829326, 14668, 283, 6, 24, "Print",ExpressionUUID->"9ffc8c11-4572-4e52-8a24-76ecdab33b48",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[829612, 14676, 285, 6, 24, "Print",ExpressionUUID->"8af16c38-949c-421b-982b-5b311c7625d1",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[829900, 14684, 279, 5, 24, "Print",ExpressionUUID->"80cde55c-4a2f-4780-b8ba-150fbe7df7d8",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[830182, 14691, 460, 12, 24, "Print",ExpressionUUID->"4f5f6ef1-20ca-4eac-83ac-ed6cf86f8e1a",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[830645, 14705, 458, 12, 24, "Print",ExpressionUUID->"62d42401-ab0a-4dd8-8feb-eaf22b23447e",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[831106, 14719, 466, 12, 24, "Print",ExpressionUUID->"2614f386-fac1-4fa8-a51e-b998e549b379",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[831575, 14733, 455, 12, 24, "Print",ExpressionUUID->"6b090999-55ca-4757-b315-7281d682defc",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[832033, 14747, 283, 6, 24, "Print",ExpressionUUID->"b0552b6f-d4e7-493b-96f9-5948fa316bda",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[832319, 14755, 283, 6, 24, "Print",ExpressionUUID->"e7e6d848-13ef-4b52-857d-b00af3e0ff63",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[832605, 14763, 283, 6, 24, "Print",ExpressionUUID->"b2600975-a660-4f02-8e81-31d4be0691d0",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[832891, 14771, 281, 5, 24, "Print",ExpressionUUID->"dd023576-ecf6-4f4e-b45c-4ecc652c04ec",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[833175, 14778, 460, 12, 24, "Print",ExpressionUUID->"77e66c3a-1be0-4f72-b07c-3761d1ad82ef",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[833638, 14792, 458, 12, 24, "Print",ExpressionUUID->"7fab11b5-39b5-4d0f-9269-185601b29fb6",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[834099, 14806, 468, 12, 24, "Print",ExpressionUUID->"6a809042-d003-449d-8fd0-44700d92dacf",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[834570, 14820, 455, 12, 24, "Print",ExpressionUUID->"0731fce8-ee8d-409f-abbe-da80b7698bf6",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[835028, 14834, 269, 5, 24, "Print",ExpressionUUID->"a83560af-9312-4fad-ad45-1a2bb87d143d",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[835300, 14841, 267, 5, 24, "Print",ExpressionUUID->"80443946-ddcc-4c38-b588-6a139045689b",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[835570, 14848, 321, 6, 24, "Print",ExpressionUUID->"deb2c335-55f4-4066-9e3e-ebc8934f66c4",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[835894, 14856, 319, 6, 24, "Print",ExpressionUUID->"0b6494cf-fa26-463f-b97e-89ef704e4501",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[836216, 14864, 317, 6, 24, "Print",ExpressionUUID->"4ec737ab-7e2b-4e10-a00d-c133ace950b0",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[836536, 14872, 321, 6, 24, "Print",ExpressionUUID->"78bfd9e7-5e94-44a5-a569-3d19facf1c9a",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[836860, 14880, 281, 5, 24, "Print",ExpressionUUID->"bb2b7169-16ee-4ad0-984e-db7645c09de0",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[837144, 14887, 260, 5, 24, "Print",ExpressionUUID->"d64a3b9b-adc0-4a69-b91d-6a68deafe67f",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[837407, 14894, 323, 6, 24, "Print",ExpressionUUID->"0422b902-e5ea-4f56-8873-12e114716091",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[837733, 14902, 260, 5, 24, "Print",ExpressionUUID->"e6031a5f-f7ef-472c-8e94-a39ea4d51976",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[837996, 14909, 296, 6, 24, "Print",ExpressionUUID->"b9fd19e6-72a8-4e51-b471-ea18833f09ca",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[838295, 14917, 281, 5, 24, "Print",ExpressionUUID->"2249fd98-5019-4b20-adc2-b9951724be20",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[838579, 14924, 285, 6, 24, "Print",ExpressionUUID->"3d6426f2-31af-49c0-99b4-74b637755ef1",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[838867, 14932, 283, 6, 24, "Print",ExpressionUUID->"6d6b73ce-9326-4f7b-b0b6-b46ada9f2686",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[839153, 14940, 283, 6, 24, "Print",ExpressionUUID->"4b9aeada-fbe1-4a71-a636-be6d82fe038c",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[839439, 14948, 296, 6, 24, "Print",ExpressionUUID->"01067f3c-9ebe-4b06-afa6-01318f9b94c3",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[839738, 14956, 279, 5, 24, "Print",ExpressionUUID->"7b079ee9-0e4e-4887-b570-aeb45bd324c5",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[840020, 14963, 280, 5, 24, "Print",ExpressionUUID->"29642aae-e682-4b47-aa14-41f603cfd46a",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[840303, 14970, 283, 6, 24, "Print",ExpressionUUID->"bb061e76-bc13-4e2d-9d9f-550379bf88a1",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[840589, 14978, 279, 5, 24, "Print",ExpressionUUID->"9dd803c6-d15c-4078-b677-2f2e8ba1d3a0",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[840871, 14985, 279, 5, 24, "Print",ExpressionUUID->"6b7ada02-38f9-47f2-8e64-3a9eac53490c",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[841153, 14992, 279, 5, 24, "Print",ExpressionUUID->"94bc38b0-c68f-4b13-9bcc-8517e3a0c097",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[841435, 14999, 269, 5, 24, "Print",ExpressionUUID->"2f84a445-2786-4337-9601-46a4661113b6",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[841707, 15006, 283, 6, 24, "Print",ExpressionUUID->"ad278941-f430-4694-9744-c0227d7ba4f7",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[841993, 15014, 269, 5, 24, "Print",ExpressionUUID->"6c26d80a-6ae4-4b04-958c-afe012b6d9f1",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[842265, 15021, 283, 6, 24, "Print",ExpressionUUID->"fff1e07e-fd68-431a-9d86-344f2a1221c6",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[842551, 15029, 279, 5, 24, "Print",ExpressionUUID->"9a052e48-939a-482b-8767-c2a84008781e",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[842833, 15036, 283, 6, 24, "Print",ExpressionUUID->"0d5ff5c6-990d-4100-b27b-c4994d81cbd6",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[843119, 15044, 283, 6, 24, "Print",ExpressionUUID->"e437a57d-7e7b-421c-9356-5951c4d59dd0",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[843405, 15052, 283, 6, 24, "Print",ExpressionUUID->"58eeb575-fdc2-49f3-8d69-f302c119c637",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[843691, 15060, 279, 5, 24, "Print",ExpressionUUID->"4186e822-ff87-4338-a540-375673b9083c",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[843973, 15067, 279, 5, 24, "Print",ExpressionUUID->"9939f6c9-96f4-4112-bdb4-497a0940bd5a",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[844255, 15074, 283, 6, 24, "Print",ExpressionUUID->"1ab99d27-c441-40ac-afcb-ad640bbf0040",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[844541, 15082, 283, 6, 24, "Print",ExpressionUUID->"bb08a145-4ee1-44a9-af63-8f7a9c208cdb",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[844827, 15090, 283, 6, 24, "Print",ExpressionUUID->"db28ebd7-fc63-4169-a780-9ec3a129bad8",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[845113, 15098, 283, 6, 24, "Print",ExpressionUUID->"eda7504c-c694-446f-a5ce-7f4292c31503",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[845399, 15106, 286, 6, 24, "Print",ExpressionUUID->"0530dde2-6bf1-4c28-95b2-37b4494da394",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[845688, 15114, 284, 6, 24, "Print",ExpressionUUID->"1469e337-9249-418a-be3c-2efa76a2b24a",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[845975, 15122, 285, 6, 24, "Print",ExpressionUUID->"26fc4614-6812-46d8-8a44-290b883376f5",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[846263, 15130, 270, 5, 24, "Print",ExpressionUUID->"3d735539-a736-45b8-a2b8-43986e863f4e",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[846536, 15137, 271, 5, 24, "Print",ExpressionUUID->"4cea3445-15ad-4a0d-a010-71e9ee5a539f",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[846810, 15144, 271, 5, 24, "Print",ExpressionUUID->"27a49771-dda8-48cd-a6b0-b9092c5eafb5",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[847084, 15151, 278, 5, 24, "Print",ExpressionUUID->"02d62b88-3614-4157-b394-e98f4d982ecc",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[847365, 15158, 281, 5, 24, "Print",ExpressionUUID->"47d09f19-9e5a-44fd-ba7a-59c9e0ffca9e",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[847649, 15165, 283, 6, 24, "Print",ExpressionUUID->"212aeebe-c884-4354-abf5-541d6f882d29",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[847935, 15173, 271, 5, 24, "Print",ExpressionUUID->"8f6d3323-8e12-435f-9a9f-a368fd1dcec6",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[848209, 15180, 252, 5, 24, "Print",ExpressionUUID->"ec11eeac-5554-49d6-9248-454a4274be23",
+   CellTags->"EMF from theory using x-y segments test"],
+  Cell[848464, 15187, 246, 5, 24, "Print",ExpressionUUID->"48618d93-82de-4522-8232-9954b9ad1ee3",
    CellTags->"EMF from theory using x-y segments test"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"EmfFromTheoryXY module", 827271, 14570},
- {"EMF from theory using x-y segments test", 827835, 14580}
+ {"EmfFromTheoryXY module", 858827, 15414},
+ {"EMF from theory using x-y segments test", 859391, 15424}
  }
 *)
 (*NotebookFileOutline
@@ -14664,89 +15708,293 @@ Cell[443432, 7501, 567, 11, 58, "Text",ExpressionUUID->"de0c5b5a-304d-4946-b68f-
 Cell[444002, 7514, 1954, 44, 115, "Input",ExpressionUUID->"2b372f87-ca4e-4480-9a0d-a14e4fd540a3"],
 Cell[CellGroupData[{
 Cell[445981, 7562, 365, 7, 30, "Input",ExpressionUUID->"59439501-3171-485e-a8b5-6aa9b9a1e857"],
-Cell[446349, 7571, 7366, 195, 152, "Output",ExpressionUUID->"9d66020c-da9c-40c3-9dc5-85c02bdb6189"]
+Cell[446349, 7571, 7392, 196, 152, "Output",ExpressionUUID->"51b49ad2-1593-4a98-9d1d-70a0b95153a3"]
 }, Open  ]],
-Cell[453730, 7769, 719, 12, 81, "Text",ExpressionUUID->"e23f5e3a-16b6-4c83-9a93-9245ba838749"],
+Cell[453756, 7770, 719, 12, 81, "Text",ExpressionUUID->"e23f5e3a-16b6-4c83-9a93-9245ba838749"],
 Cell[CellGroupData[{
-Cell[454474, 7785, 381, 7, 30, "Input",ExpressionUUID->"fdd90cc0-32bd-4b41-9258-133964d6a5f9"],
-Cell[454858, 7794, 7616, 116, 212, "Output",ExpressionUUID->"37f43cc3-56e3-4763-a087-eb8237f2282c"]
+Cell[454500, 7786, 381, 7, 30, "Input",ExpressionUUID->"fdd90cc0-32bd-4b41-9258-133964d6a5f9"],
+Cell[454884, 7795, 7638, 116, 212, "Output",ExpressionUUID->"dd190a99-f722-4719-937b-34783f29ebd9"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[462523, 7916, 187, 3, 67, "Section",ExpressionUUID->"81d59fb3-b381-4e59-b7b9-cb5aeb509e47"],
-Cell[462713, 7921, 393, 8, 35, "Text",ExpressionUUID->"ee0b7f7b-677d-424d-8105-c58423228738"],
-Cell[463109, 7931, 9536, 206, 1265, "Input",ExpressionUUID->"35c9ef32-ac78-4343-8ab9-59a9509dc052",
+Cell[462571, 7917, 187, 3, 67, "Section",ExpressionUUID->"81d59fb3-b381-4e59-b7b9-cb5aeb509e47"],
+Cell[462761, 7922, 393, 8, 35, "Text",ExpressionUUID->"ee0b7f7b-677d-424d-8105-c58423228738"],
+Cell[463157, 7932, 9536, 206, 1265, "Input",ExpressionUUID->"35c9ef32-ac78-4343-8ab9-59a9509dc052",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[472682, 8142, 559, 8, 67, "Section",ExpressionUUID->"a7adafe0-1133-4668-94f7-ec3fcb63539f"],
-Cell[473244, 8152, 243, 4, 35, "Text",ExpressionUUID->"1c5620c9-eb1b-4132-b491-a8a2a4ac0a71"],
-Cell[473490, 8158, 40807, 659, 2735, "Input",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a",
+Cell[472730, 8143, 559, 8, 67, "Section",ExpressionUUID->"a7adafe0-1133-4668-94f7-ec3fcb63539f"],
+Cell[473292, 8153, 243, 4, 35, "Text",ExpressionUUID->"1c5620c9-eb1b-4132-b491-a8a2a4ac0a71"],
+Cell[473538, 8159, 40807, 659, 2735, "Input",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a",
  InitializationCell->True,
  CellTags->"EmfFromTheoryXY module"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[514334, 8822, 222, 4, 67, "Section",ExpressionUUID->"36305967-a1f0-48af-99bd-34a0e306db56"],
-Cell[514559, 8828, 314, 7, 35, "Text",ExpressionUUID->"7b014b69-19e5-4dc6-874f-16f000dcc3b1"],
-Cell[514876, 8837, 35280, 620, 3827, "Input",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc",
+Cell[514382, 8823, 222, 4, 67, "Section",ExpressionUUID->"36305967-a1f0-48af-99bd-34a0e306db56"],
+Cell[514607, 8829, 314, 7, 35, "Text",ExpressionUUID->"7b014b69-19e5-4dc6-874f-16f000dcc3b1"],
+Cell[514924, 8838, 35299, 619, 3827, "Input",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc",
  InitializationCell->True,
  CellTags->"EmfFromTheoryXY module"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[550193, 9462, 385, 8, 67, "Section",ExpressionUUID->"dc74adc8-9d30-40fc-a07d-d9bf1922fb7a"],
-Cell[550581, 9472, 221, 5, 35, "Text",ExpressionUUID->"44a066f0-4ada-4b81-b035-aff20c1cb187"],
-Cell[550805, 9479, 58442, 1046, 4709, "Input",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37",
+Cell[550260, 9462, 385, 8, 67, "Section",ExpressionUUID->"dc74adc8-9d30-40fc-a07d-d9bf1922fb7a"],
+Cell[550648, 9472, 221, 5, 35, "Text",ExpressionUUID->"44a066f0-4ada-4b81-b035-aff20c1cb187"],
+Cell[550872, 9479, 58442, 1046, 4709, "Input",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37",
  InitializationCell->True,
  CellTags->"EmfFromTheoryXY module"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[609284, 10530, 369, 5, 67, "Section",ExpressionUUID->"4368181f-6343-4d9b-82b9-b28ba61346a6"],
-Cell[609656, 10537, 632, 11, 58, "Text",ExpressionUUID->"7f7c5250-ac9a-46ce-803a-c04136d596a0"],
+Cell[609351, 10530, 369, 5, 67, "Section",ExpressionUUID->"4368181f-6343-4d9b-82b9-b28ba61346a6"],
+Cell[609723, 10537, 632, 11, 58, "Text",ExpressionUUID->"7f7c5250-ac9a-46ce-803a-c04136d596a0"],
 Cell[CellGroupData[{
-Cell[610313, 10552, 36936, 683, 2467, "Input",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f",
+Cell[610380, 10552, 36936, 683, 2467, "Input",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f",
  CellTags->"EMF from theory using x-y segments test"],
 Cell[CellGroupData[{
-Cell[647274, 11239, 5337, 76, 24, "Print",ExpressionUUID->"63fcb660-85f0-40ee-987e-fb769a17bd90",
+Cell[647341, 11239, 5359, 76, 24, "Print",ExpressionUUID->"f381b3bc-f759-42ba-b7af-ebd6db96601a",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[652614, 11317, 5335, 76, 24, "Print",ExpressionUUID->"8ff9616d-b87a-43fd-b92f-c87dd16a4463",
+Cell[652703, 11317, 5357, 76, 24, "Print",ExpressionUUID->"e264d0fb-342d-4333-b6f9-e72b1a08aa2e",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[657952, 11395, 5334, 76, 24, "Print",ExpressionUUID->"95fd8a32-1bb9-4010-94ee-fbd46c5e1761",
+Cell[658063, 11395, 5357, 76, 24, "Print",ExpressionUUID->"55aa60b4-52b1-4eb2-a5e2-526d460869b5",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[663289, 11473, 5335, 76, 24, "Print",ExpressionUUID->"ba99e44c-356d-45e9-9d5d-6e4b28ca96ca",
+Cell[663423, 11473, 5356, 76, 24, "Print",ExpressionUUID->"12d15b1f-3a62-48ee-a997-9bb9788bd447",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[668627, 11551, 5339, 76, 24, "Print",ExpressionUUID->"917cc2e3-e801-4226-86e9-e08d796e3b74",
+Cell[668782, 11551, 5361, 76, 24, "Print",ExpressionUUID->"5723e9d6-f5ad-4532-afea-315069158a54",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[673969, 11629, 5337, 76, 24, "Print",ExpressionUUID->"8de55964-d35f-49ed-93c6-ee1bed663ae2",
+Cell[674146, 11629, 5361, 76, 24, "Print",ExpressionUUID->"2850f419-68c8-43b0-9c79-e290ea759141",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[679309, 11707, 5688, 81, 82, "Print",ExpressionUUID->"92bf158b-5f07-4118-bdea-84b4faeabafe",
+Cell[679510, 11707, 5711, 81, 82, "Print",ExpressionUUID->"06f735ce-2794-41a9-808b-c90667cb1833",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[685000, 11790, 5337, 76, 24, "Print",ExpressionUUID->"4de00845-6598-4233-b573-1870441c41e7",
+Cell[685224, 11790, 5359, 76, 24, "Print",ExpressionUUID->"25d6c6bd-b70f-441a-bbc2-2db5ce3be284",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[690340, 11868, 5339, 76, 24, "Print",ExpressionUUID->"fc86652d-cc65-4c71-a6af-db5ba8e45887",
+Cell[690586, 11868, 5359, 76, 24, "Print",ExpressionUUID->"7626732f-af75-4f59-a12c-79a83f8cb78a",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[695682, 11946, 5335, 76, 24, "Print",ExpressionUUID->"b6c3104d-3b51-4666-a736-e122da098a83",
+Cell[695948, 11946, 5357, 76, 24, "Print",ExpressionUUID->"fb244f13-7934-4348-beba-05f420fbc911",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[701020, 12024, 5336, 76, 24, "Print",ExpressionUUID->"e3e1351b-a136-4ea9-b06c-6da46a7d14dc",
+Cell[701308, 12024, 5357, 76, 24, "Print",ExpressionUUID->"1f7993bc-5b68-4da7-a62a-ee39ad450a35",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[706359, 12102, 5336, 76, 24, "Print",ExpressionUUID->"8bf7a72b-fa7d-4d7c-91fc-4afb1a75e657",
+Cell[706668, 12102, 5360, 76, 24, "Print",ExpressionUUID->"9064e901-1065-426f-9ea5-8879bb5bf05e",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[711698, 12180, 5338, 76, 24, "Print",ExpressionUUID->"62f23178-ce87-41f6-8ca8-1720070469b8",
+Cell[712031, 12180, 5358, 76, 24, "Print",ExpressionUUID->"9e1e9dc0-50f7-4edc-b52e-e82da7038c02",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[717039, 12258, 5307, 76, 24, "Print",ExpressionUUID->"ae1f2293-d945-42d2-9ea4-5765816b394e",
+Cell[717392, 12258, 5329, 76, 24, "Print",ExpressionUUID->"a2109914-099c-4ddd-a3ad-1c3da92ddb4c",
  CellTags->"EMF from theory using x-y segments test"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[722407, 12341, 459, 7, 67, "Section",ExpressionUUID->"cd589396-ef02-44cd-89af-5e30c17b5d79"],
-Cell[722869, 12350, 645, 11, 58, "Text",ExpressionUUID->"7a008000-24c7-4662-8978-ef79484ec3a9"],
-Cell[723517, 12363, 93661, 1987, 7843, "Input",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672",
+Cell[722782, 12341, 459, 7, 67, "Section",ExpressionUUID->"cd589396-ef02-44cd-89af-5e30c17b5d79"],
+Cell[723244, 12350, 645, 11, 58, "Text",ExpressionUUID->"7a008000-24c7-4662-8978-ef79484ec3a9"],
+Cell[CellGroupData[{
+Cell[723914, 12365, 93725, 1989, 7843, "Input",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[CellGroupData[{
+Cell[817664, 14358, 314, 6, 24, "Print",ExpressionUUID->"b5ab4a25-08cc-4bd5-a6dd-eb5009da6087",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[817981, 14366, 310, 6, 24, "Print",ExpressionUUID->"99d5d178-0934-4195-90a5-1b0e111622e9",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[818294, 14374, 300, 6, 24, "Print",ExpressionUUID->"2d1e1b4c-c049-4990-b2c8-b4cbb434537d",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[818597, 14382, 308, 6, 24, "Print",ExpressionUUID->"cae92f4c-6562-437c-a2ef-8f647560b243",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[818908, 14390, 318, 6, 24, "Print",ExpressionUUID->"5ea93f68-5d5a-40d8-9fcd-9cf905e6f7ac",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[819229, 14398, 296, 6, 24, "Print",ExpressionUUID->"a4eb5e20-ac22-452b-a494-68f7fe29e0ee",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[819528, 14406, 320, 6, 24, "Print",ExpressionUUID->"0c86ec35-d139-4c74-b893-68f9b56ecadc",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[819851, 14414, 280, 5, 24, "Print",ExpressionUUID->"355b2e51-dee8-442f-bc78-38d417c4b3da",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[820134, 14421, 286, 6, 24, "Print",ExpressionUUID->"94b8a00d-b292-4764-9d51-19b49caa5ce4",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[820423, 14429, 287, 6, 24, "Print",ExpressionUUID->"f76ecd8d-ed4c-4180-9de9-14c9711ee186",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[820713, 14437, 287, 6, 24, "Print",ExpressionUUID->"127354db-eb47-4091-8c9b-5c15b26f9753",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[821003, 14445, 287, 6, 24, "Print",ExpressionUUID->"5209d4c7-3342-4825-9b4c-17dbf8cdc996",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[821293, 14453, 266, 5, 24, "Print",ExpressionUUID->"21be6433-95d0-4f02-9f24-34ecd9fef26e",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[821562, 14460, 266, 5, 24, "Print",ExpressionUUID->"96e06e42-bce0-40cd-b493-122c56093e01",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[821831, 14467, 309, 6, 24, "Print",ExpressionUUID->"3da78ce1-f4a8-44e4-9d63-521be999fe22",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[822143, 14475, 267, 5, 24, "Print",ExpressionUUID->"6d6a7518-8437-4c55-90d0-6b4182d69a41",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[822413, 14482, 269, 5, 24, "Print",ExpressionUUID->"d0042bc9-3ec5-4b8f-85d2-c8ea8a13dfcf",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[822685, 14489, 309, 6, 24, "Print",ExpressionUUID->"f470563d-fc07-4514-96d3-0f2b64f332c9",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[822997, 14497, 321, 6, 24, "Print",ExpressionUUID->"a2a2c31c-dc1d-40ab-b3e5-98bb3b8b3ec1",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[823321, 14505, 323, 6, 24, "Print",ExpressionUUID->"7f4eecb0-d3c2-4f92-97df-c0c79f3d04b5",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[823647, 14513, 311, 6, 24, "Print",ExpressionUUID->"32d1fda6-10a8-490d-bc2d-717467d4e0c7",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[823961, 14521, 267, 5, 24, "Print",ExpressionUUID->"b80501c9-7480-427c-b0c5-cc866a9cf35e",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[824231, 14528, 267, 5, 24, "Print",ExpressionUUID->"0fd8bc6f-78e2-448f-8399-14ffbc000db0",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[824501, 14535, 323, 6, 24, "Print",ExpressionUUID->"f2a657bb-5aba-479e-b598-3a742082ee82",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[824827, 14543, 319, 6, 24, "Print",ExpressionUUID->"6a466495-c266-4a9f-949c-0cea03aea743",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[825149, 14551, 317, 6, 24, "Print",ExpressionUUID->"077b08c0-19f3-4daf-8432-ad391f9b1903",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[825469, 14559, 321, 6, 24, "Print",ExpressionUUID->"7ab748e5-f4db-460d-96e7-06b766496319",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[825793, 14567, 258, 5, 24, "Print",ExpressionUUID->"9f1f78c8-f4bf-4ba7-9ee9-10bd630adfc8",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[826054, 14574, 283, 6, 24, "Print",ExpressionUUID->"d262658f-61d3-4560-8dff-a34872a7ad3f",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[826340, 14582, 283, 6, 24, "Print",ExpressionUUID->"8f414404-e082-40ff-bd1a-b41f9871a348",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[826626, 14590, 279, 5, 24, "Print",ExpressionUUID->"82f58f4b-180b-4ea9-938c-1f538181b806",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[826908, 14597, 460, 12, 24, "Print",ExpressionUUID->"3f5eb6d2-77a3-482b-bc40-c48ddb61bc34",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[827371, 14611, 457, 12, 24, "Print",ExpressionUUID->"bebc6617-f7e3-4534-b4ca-a585cfb40635",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[827831, 14625, 466, 12, 24, "Print",ExpressionUUID->"19dddeb5-b1d9-4ec8-928a-c1c84062f30b",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[828300, 14639, 453, 12, 24, "Print",ExpressionUUID->"f4b8b977-b7f3-4099-ab57-c1c70bf56ecf",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[828756, 14653, 283, 6, 24, "Print",ExpressionUUID->"4502773d-12ab-45b5-926e-e240c88ec5a7",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[829042, 14661, 281, 5, 24, "Print",ExpressionUUID->"95c4c90c-a1d2-4207-81b1-74bd4413c6bd",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[829326, 14668, 283, 6, 24, "Print",ExpressionUUID->"9ffc8c11-4572-4e52-8a24-76ecdab33b48",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[829612, 14676, 285, 6, 24, "Print",ExpressionUUID->"8af16c38-949c-421b-982b-5b311c7625d1",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[829900, 14684, 279, 5, 24, "Print",ExpressionUUID->"80cde55c-4a2f-4780-b8ba-150fbe7df7d8",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[830182, 14691, 460, 12, 24, "Print",ExpressionUUID->"4f5f6ef1-20ca-4eac-83ac-ed6cf86f8e1a",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[830645, 14705, 458, 12, 24, "Print",ExpressionUUID->"62d42401-ab0a-4dd8-8feb-eaf22b23447e",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[831106, 14719, 466, 12, 24, "Print",ExpressionUUID->"2614f386-fac1-4fa8-a51e-b998e549b379",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[831575, 14733, 455, 12, 24, "Print",ExpressionUUID->"6b090999-55ca-4757-b315-7281d682defc",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[832033, 14747, 283, 6, 24, "Print",ExpressionUUID->"b0552b6f-d4e7-493b-96f9-5948fa316bda",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[832319, 14755, 283, 6, 24, "Print",ExpressionUUID->"e7e6d848-13ef-4b52-857d-b00af3e0ff63",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[832605, 14763, 283, 6, 24, "Print",ExpressionUUID->"b2600975-a660-4f02-8e81-31d4be0691d0",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[832891, 14771, 281, 5, 24, "Print",ExpressionUUID->"dd023576-ecf6-4f4e-b45c-4ecc652c04ec",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[833175, 14778, 460, 12, 24, "Print",ExpressionUUID->"77e66c3a-1be0-4f72-b07c-3761d1ad82ef",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[833638, 14792, 458, 12, 24, "Print",ExpressionUUID->"7fab11b5-39b5-4d0f-9269-185601b29fb6",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[834099, 14806, 468, 12, 24, "Print",ExpressionUUID->"6a809042-d003-449d-8fd0-44700d92dacf",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[834570, 14820, 455, 12, 24, "Print",ExpressionUUID->"0731fce8-ee8d-409f-abbe-da80b7698bf6",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[835028, 14834, 269, 5, 24, "Print",ExpressionUUID->"a83560af-9312-4fad-ad45-1a2bb87d143d",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[835300, 14841, 267, 5, 24, "Print",ExpressionUUID->"80443946-ddcc-4c38-b588-6a139045689b",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[835570, 14848, 321, 6, 24, "Print",ExpressionUUID->"deb2c335-55f4-4066-9e3e-ebc8934f66c4",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[835894, 14856, 319, 6, 24, "Print",ExpressionUUID->"0b6494cf-fa26-463f-b97e-89ef704e4501",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[836216, 14864, 317, 6, 24, "Print",ExpressionUUID->"4ec737ab-7e2b-4e10-a00d-c133ace950b0",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[836536, 14872, 321, 6, 24, "Print",ExpressionUUID->"78bfd9e7-5e94-44a5-a569-3d19facf1c9a",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[836860, 14880, 281, 5, 24, "Print",ExpressionUUID->"bb2b7169-16ee-4ad0-984e-db7645c09de0",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[837144, 14887, 260, 5, 24, "Print",ExpressionUUID->"d64a3b9b-adc0-4a69-b91d-6a68deafe67f",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[837407, 14894, 323, 6, 24, "Print",ExpressionUUID->"0422b902-e5ea-4f56-8873-12e114716091",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[837733, 14902, 260, 5, 24, "Print",ExpressionUUID->"e6031a5f-f7ef-472c-8e94-a39ea4d51976",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[837996, 14909, 296, 6, 24, "Print",ExpressionUUID->"b9fd19e6-72a8-4e51-b471-ea18833f09ca",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[838295, 14917, 281, 5, 24, "Print",ExpressionUUID->"2249fd98-5019-4b20-adc2-b9951724be20",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[838579, 14924, 285, 6, 24, "Print",ExpressionUUID->"3d6426f2-31af-49c0-99b4-74b637755ef1",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[838867, 14932, 283, 6, 24, "Print",ExpressionUUID->"6d6b73ce-9326-4f7b-b0b6-b46ada9f2686",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[839153, 14940, 283, 6, 24, "Print",ExpressionUUID->"4b9aeada-fbe1-4a71-a636-be6d82fe038c",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[839439, 14948, 296, 6, 24, "Print",ExpressionUUID->"01067f3c-9ebe-4b06-afa6-01318f9b94c3",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[839738, 14956, 279, 5, 24, "Print",ExpressionUUID->"7b079ee9-0e4e-4887-b570-aeb45bd324c5",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[840020, 14963, 280, 5, 24, "Print",ExpressionUUID->"29642aae-e682-4b47-aa14-41f603cfd46a",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[840303, 14970, 283, 6, 24, "Print",ExpressionUUID->"bb061e76-bc13-4e2d-9d9f-550379bf88a1",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[840589, 14978, 279, 5, 24, "Print",ExpressionUUID->"9dd803c6-d15c-4078-b677-2f2e8ba1d3a0",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[840871, 14985, 279, 5, 24, "Print",ExpressionUUID->"6b7ada02-38f9-47f2-8e64-3a9eac53490c",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[841153, 14992, 279, 5, 24, "Print",ExpressionUUID->"94bc38b0-c68f-4b13-9bcc-8517e3a0c097",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[841435, 14999, 269, 5, 24, "Print",ExpressionUUID->"2f84a445-2786-4337-9601-46a4661113b6",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[841707, 15006, 283, 6, 24, "Print",ExpressionUUID->"ad278941-f430-4694-9744-c0227d7ba4f7",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[841993, 15014, 269, 5, 24, "Print",ExpressionUUID->"6c26d80a-6ae4-4b04-958c-afe012b6d9f1",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[842265, 15021, 283, 6, 24, "Print",ExpressionUUID->"fff1e07e-fd68-431a-9d86-344f2a1221c6",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[842551, 15029, 279, 5, 24, "Print",ExpressionUUID->"9a052e48-939a-482b-8767-c2a84008781e",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[842833, 15036, 283, 6, 24, "Print",ExpressionUUID->"0d5ff5c6-990d-4100-b27b-c4994d81cbd6",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[843119, 15044, 283, 6, 24, "Print",ExpressionUUID->"e437a57d-7e7b-421c-9356-5951c4d59dd0",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[843405, 15052, 283, 6, 24, "Print",ExpressionUUID->"58eeb575-fdc2-49f3-8d69-f302c119c637",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[843691, 15060, 279, 5, 24, "Print",ExpressionUUID->"4186e822-ff87-4338-a540-375673b9083c",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[843973, 15067, 279, 5, 24, "Print",ExpressionUUID->"9939f6c9-96f4-4112-bdb4-497a0940bd5a",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[844255, 15074, 283, 6, 24, "Print",ExpressionUUID->"1ab99d27-c441-40ac-afcb-ad640bbf0040",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[844541, 15082, 283, 6, 24, "Print",ExpressionUUID->"bb08a145-4ee1-44a9-af63-8f7a9c208cdb",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[844827, 15090, 283, 6, 24, "Print",ExpressionUUID->"db28ebd7-fc63-4169-a780-9ec3a129bad8",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[845113, 15098, 283, 6, 24, "Print",ExpressionUUID->"eda7504c-c694-446f-a5ce-7f4292c31503",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[845399, 15106, 286, 6, 24, "Print",ExpressionUUID->"0530dde2-6bf1-4c28-95b2-37b4494da394",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[845688, 15114, 284, 6, 24, "Print",ExpressionUUID->"1469e337-9249-418a-be3c-2efa76a2b24a",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[845975, 15122, 285, 6, 24, "Print",ExpressionUUID->"26fc4614-6812-46d8-8a44-290b883376f5",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[846263, 15130, 270, 5, 24, "Print",ExpressionUUID->"3d735539-a736-45b8-a2b8-43986e863f4e",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[846536, 15137, 271, 5, 24, "Print",ExpressionUUID->"4cea3445-15ad-4a0d-a010-71e9ee5a539f",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[846810, 15144, 271, 5, 24, "Print",ExpressionUUID->"27a49771-dda8-48cd-a6b0-b9092c5eafb5",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[847084, 15151, 278, 5, 24, "Print",ExpressionUUID->"02d62b88-3614-4157-b394-e98f4d982ecc",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[847365, 15158, 281, 5, 24, "Print",ExpressionUUID->"47d09f19-9e5a-44fd-ba7a-59c9e0ffca9e",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[847649, 15165, 283, 6, 24, "Print",ExpressionUUID->"212aeebe-c884-4354-abf5-541d6f882d29",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[847935, 15173, 271, 5, 24, "Print",ExpressionUUID->"8f6d3323-8e12-435f-9a9f-a368fd1dcec6",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[848209, 15180, 252, 5, 24, "Print",ExpressionUUID->"ec11eeac-5554-49d6-9248-454a4274be23",
+ CellTags->"EMF from theory using x-y segments test"],
+Cell[848464, 15187, 246, 5, 24, "Print",ExpressionUUID->"48618d93-82de-4522-8232-9954b9ad1ee3",
  CellTags->"EMF from theory using x-y segments test"]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[817215, 14355, 455, 7, 67, "Section",ExpressionUUID->"ae17f6bb-9bd0-4b33-a8de-a6e616575ef4"],
-Cell[817673, 14364, 503, 9, 35, "Text",ExpressionUUID->"ebf30fc3-6ac9-4da0-929c-a42eb8d426ed"],
-Cell[818179, 14375, 8680, 178, 1375, "Input",ExpressionUUID->"2db0c55c-cfce-41f8-91ae-5911b1a7ff27"]
+Cell[848771, 15199, 455, 7, 67, "Section",ExpressionUUID->"ae17f6bb-9bd0-4b33-a8de-a6e616575ef4"],
+Cell[849229, 15208, 503, 9, 35, "Text",ExpressionUUID->"ebf30fc3-6ac9-4da0-929c-a42eb8d426ed"],
+Cell[849735, 15219, 8680, 178, 1375, "Input",ExpressionUUID->"2db0c55c-cfce-41f8-91ae-5911b1a7ff27"]
 }, Open  ]]
 }, Open  ]]
 }
