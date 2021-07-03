@@ -62,6 +62,41 @@ classdef (ConstructOnLoad) InductiveFieldEmfForRectangularCircuits
 
         end
         
+        % This function calculates the inline emf for two wire sets.
+        function emf = inlineEmfForWires(obj,...
+                                         dIdt,...
+                                         drivenWire,...
+                                         measuredWire)
+            emf = emfFromWireToWire(obj,...
+                                    dIdt,...
+                                    drivenWire.start,...
+                                    drivenWire.end,... 
+                                    measuredWire.start,...
+                                    measuredWire.end);
+        end
+        
+        % This function calculates the inline emf for two wire sets.
+        function inlineEmfs = inlineEmfForWireSetsOnWire(obj,...
+                                                         dIdt,...
+                                                         drivenWireSets,...
+                                                         measuredWire)
+        	emfTotal = 0.0;
+            numDrivenWireSets = length(drivenWireSets);
+            drivenWireEmfs = cell(numDrivenWireSets, 1);
+            
+            for i=1:numDrivenWireSets
+                drivenWire = drivenWireSets{i};
+
+                wireEmf = inlineEmfForWires(obj, dIdt, drivenWire, measuredWire);
+                emfTotal = emfTotal + wireEmf;
+                drivenWireEmfs{i}.drivenWireId = i;
+                drivenWireEmfs{i}.emf = wireEmf;
+            end
+            
+            inlineEmfs.emfTotal = emfTotal;
+            inlineEmfs.drivenWireEmfs = drivenWireEmfs;
+        end
+        
         function obj = set.proposedAccelTermCoeff(obj, coeff)
             obj.proposedAccelTermCoeff = coeff;
         end
@@ -70,6 +105,28 @@ classdef (ConstructOnLoad) InductiveFieldEmfForRectangularCircuits
             obj.conventionalAccelTermCoeff = coeff;
         end
 
+        % This function calculates the inline emf for two sets of wires.
+        function inlineEmfs = inlineEmfForWireSetsOnWireSets(obj,...
+                                                             dIdt,...
+                                                             drivenWireSets,...
+                                                             measuredWireSets)
+            emfTotalForSets = 0.0;
+            numMeasuredWireSets = length(measuredWireSets);
+            measuredWireEmfs = cell(numMeasuredWireSets, 1);
+
+            for i=1:numMeasuredWireSets
+                measuredWire = measuredWireSets{i};
+                wireEmf = inlineEmfForWireSetsOnWire(obj, dIdt, drivenWireSets, measuredWire);
+                emfTotalForSets = emfTotalForSets + wireEmf.emfTotal;
+                measuredWireEmfs{i}.measuredWireId = measuredWire.wireId;
+                measuredWireEmfs{i}.measuredWireEmfs = wireEmf;
+            end
+
+            inlineEmfs.emfTotal = emfTotalForSets;
+            inlineEmfs.individualWireEmfs = measuredWireEmfs;
+        end
+    
     end
+    
 end
                        
