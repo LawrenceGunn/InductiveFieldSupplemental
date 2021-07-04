@@ -21,7 +21,7 @@ classdef (ConstructOnLoad) FaradayEmfForCircularCircuits
                             
             rVec = FaradayEmfForCircularCircuits.rVector(rDrvOuter, rMsrOuter, separation, vertSeparation, rMsr, drvCircuitAngle, msrCircuitAngle);
             dIdtVec = dIdt * [-sin(drvCircuitAngle), cos(drvCircuitAngle), 0];
-            emf = obj.m0 / (4 * pi) * rMsr * rDrvOuter * dot(cross(dIdtVec, rVec), [0, 0, 1]) / norm(rVec)^3;
+            emf = obj.mu0 / (4 * pi) * rMsr * rDrvOuter * dot(cross(dIdtVec, rVec), [0, 0, 1]) / norm(rVec)^3;
         end
            
         function emf = faradayEmf(obj,...
