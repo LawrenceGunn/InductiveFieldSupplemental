@@ -39,8 +39,8 @@ function [results] = RectangularCircuitWireEmfs(separation,... % Separation in x
     end
 
     function result = writeWireToWireEmfsToTable(separation)
-        fprintf("Conventional accel term EMF's (uV)        Proposed term EMF's (uV)\n");
-        fprintf("i=1   2    3    4    Sum       i=1     2      3      4        Sum\n");
+        fprintf("  Conventional accel term EMF's (uV)        Proposed term EMF's (uV)\n");
+        fprintf("           i=1         2          3          4           Sum                    i=1        2           3         4          Sum\n");
    
         sumConvEmf = [0, 0, 0, 0];
         sumProposedEmf = [0, 0, 0, 0];
@@ -48,7 +48,7 @@ function [results] = RectangularCircuitWireEmfs(separation,... % Separation in x
         for j = 1:4
             row = "j=1";
             if j ~= 1
-                row = int2str(j);
+                row = "  "+int2str(j);
             end
             
             convEmfs = findMsrWireEmfForSrcLoop(separation, j, 0, 1);
@@ -58,7 +58,7 @@ function [results] = RectangularCircuitWireEmfs(separation,... % Separation in x
                 convEmfRowTotal = convEmfRowTotal + micro * convEmfs{i};
             end
             
-            leftCols = sprintf("%s %-10g %-10g %-10g %-10g %-10g", row, micro * convEmfs{1}, micro * convEmfs{2}, micro * convEmfs{3}, micro * convEmfs{4}, convEmfRowTotal);
+            leftCols = sprintf("%s     % -10g % -10g % -10g % -10g % -10g", row, micro * convEmfs{1}, micro * convEmfs{2}, micro * convEmfs{3}, micro * convEmfs{4}, convEmfRowTotal);
 
             proposedEmfs = findMsrWireEmfForSrcLoop(separation, j, 1, 0);            
             proposedEmfRowTotal = 0.0;
@@ -67,21 +67,15 @@ function [results] = RectangularCircuitWireEmfs(separation,... % Separation in x
                 proposedEmfRowTotal = proposedEmfRowTotal + micro * proposedEmfs{i};
             end
             
-            rightCols = sprintf("%s %-10g %-10g %-10g %-10g %-10g", row, micro * proposedEmfs{1}, micro * proposedEmfs{2}, micro * proposedEmfs{3}, micro * proposedEmfs{4}, proposedEmfRowTotal);
+            rightCols = sprintf("%s     % -10g % -10g % -10g % -10g % -10g", row, micro * proposedEmfs{1}, micro * proposedEmfs{2}, micro * proposedEmfs{3}, micro * proposedEmfs{4}, proposedEmfRowTotal);
             fprintf("%s    %s\n", leftCols, rightCols);
 
         end
-%    AppendTo[
-%     resultsArray, {"Sum", TextString[sumConvEmf[[1]]], 
-%      TextString[sumConvEmf[[2]]], TextString[sumConvEmf[[3]]], 
-%      TextString[sumConvEmf[[4]]], TextString[Total[sumConvEmf]], "", 
-%      "", TextString[sumProposedEmf[[1]]], 
-%      TextString[sumProposedEmf[[2]]], TextString[sumProposedEmf[[3]]],
-%       TextString[sumProposedEmf[[4]]], 
-%      TextString[Total[sumProposedEmf]]}];
-%    (*findMsrWireEmfForSrcLoop*)
-%    TextGrid[resultsArray, Frame -> All]
-%    );
+        
+        leftCols = sprintf("Sum     % -10g % -10g % -10g % -10g % -10g", sumConvEmf(1), sumConvEmf(2), sumConvEmf(3), sumConvEmf(4), sum(sumConvEmf));
+        rightCols = sprintf("Sum    % -10g % -10g % -10g % -10g % -10g", sumProposedEmf(1), sumProposedEmf(2), sumProposedEmf(3), sumProposedEmf(4), sum(sumProposedEmf));
+        fprintf("%s    %s\n", leftCols, rightCols);            
+
         result = true;
     end
 
