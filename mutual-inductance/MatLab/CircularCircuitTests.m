@@ -184,7 +184,21 @@ function pass = CircularCircuitTests(verbose)
         vertSep11 = 0.00075;
         emf11 = faradayEmf(faraday, dIdt8, radiusDrv8, radiusMsr8, -(radiusDrv8 + radiusMsr8), vertSep11);
         EXPECT_NEAR(-966.787, micro * emf11, 0.01, "faradayEMF test 11");
+        
+        % Test 12-13 : Coaxial positioning
+        drvCircuitAngle12 = deg2rad(90);
+        msrCircuitAngle12 = deg2rad(90);
+        r12 = FaradayEmfForCircularCircuits.rVector(rDrv1, rMsr1, -(rDrv1 + rMsr1), 0, rMsr1, drvCircuitAngle12, msrCircuitAngle12);
+        EXPECT_NEAR(0.0, r12(1), 0.001, "faraday rVector test 12");
+        EXPECT_NEAR(-0.02, r12(2), 0.001, "faraday rVector test 13");
 
+        % Test 14 : EMF per unit area at a point
+        emfAtPnt14 = emfAtPoint(faraday, dIdt8, rMsr1, rDrv1, rMsr1, -(rDrv1 + rMsr1), 0, drvCircuitAngle12, msrCircuitAngle12);
+        EXPECT_NEAR( -0.2275, emfAtPnt14, 0.001, "emfAtAPoint test 14");
+
+        % Test 15 : EMF per unit area at a point
+        emfAtPnt15 = emfAtPoint(faraday, dIdt8, rMsr1 + 2*(rDrv1 - rMsr1), rDrv1, rMsr1, -(rDrv1 + rMsr1), 0, drvCircuitAngle12, msrCircuitAngle12);
+        EXPECT_NEAR(0.2275, emfAtPnt15, 0.001, "emfAtAPoint test 15");
         passed = pass;
     end
 
@@ -198,7 +212,7 @@ function pass = CircularCircuitTests(verbose)
             diff = abs(target-actual);
             maxDiff = max(diff);
             if(maxDiff > eps)
-                fprintf('Error for %s: Max difference is %f\n', msg, maxDiff);
+                fprintf(2, 'Error for %s: Max difference is %f\n', msg, maxDiff);
                 pass = false;
             end
         else
@@ -214,9 +228,9 @@ function pass = CircularCircuitTests(verbose)
             end
             diff = targetScalar-actualScalar;
             if(abs(diff) > eps)
-                fprintf('Error for %s: Difference is %f\n', msg, diff);
-                fprintf('  Target is: %f\n', targetScalar);
-                fprintf('  Actual is: %f\n', actualScalar);
+                fprintf(2, 'Error for %s: Difference is %f\n', msg, diff);
+                fprintf(2, '  Target is: %f\n', targetScalar);
+                fprintf(2, '  Actual is: %f\n', actualScalar);
                 pass = false;
             end
         end

@@ -21,17 +21,17 @@ function [results]...
         msrWires = RectangularCircuitsCommon.wiresFromDimensions(msrDimension, [msrOffsetX + sep, 0, 0]);
         
         emfFaraday = faradaysEmfWireSetToWireSet(faraday, dIdt, srcWires, msrWires);
-        results.faradayEmfCoplanar(i) = -emfFaraday;
+        results.faradayEmfCoplanar(i) = emfFaraday.emfTotal;
         
         eField.proposedAccelTermCoeff = 1;
         eField.conventionalAccelTermCoeff = 0;
         emfProposed = inlineEmfForWireSetsOnWireSets(eField, dIdt, srcWires, msrWires);
-        results.proposedAccelEmfCoplanar(i) = emfProposed;
+        results.proposedAccelEmfCoplanar(i) = emfProposed.emfTotal;
 
         eField.proposedAccelTermCoeff = 0;
         eField.conventionalAccelTermCoeff = 1;
         emfConventional = inlineEmfForWireSetsOnWireSets(eField, dIdt, srcWires, msrWires);
-        results.conventionalAccelEmfCoplanar(i) = emfConventional;
+        results.conventionalAccelEmfCoplanar(i) = emfConventional.emfTotal;
 
     end
 
@@ -45,17 +45,17 @@ function [results]...
         
         msrWires =  RectangularCircuitsCommon.wiresFromDimensions(msrDimension, [0, 0, sep]);
         emfFaraday = faradaysEmfWireSetToWireSet(faraday, dIdt, srcWires, msrWires);
-        results.faradayEmfCoaxial(i) = -emfFaraday;
+        results.faradayEmfCoaxial(i) = emfFaraday.emfTotal;
   
         eField.proposedAccelTermCoeff = 1;
         eField.conventionalAccelTermCoeff = 0;
         emfProposed = inlineEmfForWireSetsOnWireSets(eField, dIdt, srcWires, msrWires);
-        results.proposedAccelEmfCoaxial(i) = emfProposed;
+        results.proposedAccelEmfCoaxial(i) = emfProposed.emfTotal;
 
         eField.proposedAccelTermCoeff = 0;
         eField.conventionalAccelTermCoeff = 1;
         emfConventional = inlineEmfForWireSetsOnWireSets(eField, dIdt, srcWires, msrWires);
-        results.conventionalAccelEmfCoaxial(i) = emfConventional;
+        results.conventionalAccelEmfCoaxial(i) = emfConventional.emfTotal;
 
     end
     

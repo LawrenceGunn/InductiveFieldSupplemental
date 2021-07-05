@@ -45,7 +45,7 @@ classdef (ConstructOnLoad) FaradayEmfForRectangularCircuits
             function emf = emfAtPoint(srcWireLinearPosFdy, xmFdy, ymFdy)
                 srcWirePosFdy = srcWireStartFdy + srcWireLinearPosFdy.* srcWireNormalizedFdy;
                 msrCircuitPosFdy = msrXWireStartFdy + xmFdy.* msrXWireNormalizedFdy + ymFdy.* msrYWireNormalizedFdy;
-                emf = obj.mu0 /(4 * pi) * dot(cross(dIdtVecFdy, msrCircuitPosFdy - srcWirePosFdy), [0, 0, 1])...
+                emf = -obj.mu0 /(4 * pi) * dot(cross(dIdtVecFdy, msrCircuitPosFdy - srcWirePosFdy), [0, 0, 1])...
                     /norm(msrCircuitPosFdy - srcWirePosFdy)^3;
             end
             
@@ -67,7 +67,7 @@ classdef (ConstructOnLoad) FaradayEmfForRectangularCircuits
         end
 
            
-        function emf = emfAtPoint(obj,...
+        function emfPerArea = emfAtPoint(obj,...
                                   dIdt,...
                                   rMsr,...
                                   rDrvOuter,...
@@ -79,7 +79,7 @@ classdef (ConstructOnLoad) FaradayEmfForRectangularCircuits
                             
             rVec = FaradayEmfForCircularCircuits.rVector(rDrvOuter, rMsrOuter, separation, vertSeparation, rMsr, drvCircuitAngle, msrCircuitAngle);
             dIdtVec = dIdt * [-sin(drvCircuitAngle), cos(drvCircuitAngle), 0];
-            emf = -obj.mu0 / (4 * pi) * rMsr * rDrvOuter * dot(cross(dIdtVec, rVec), [0, 0, 1]) / norm(rVec)^3;
+            emfPerArea = -obj.mu0 / (4 * pi) * rDrvOuter * dot(cross(dIdtVec, rVec), [0, 0, 1]) / norm(rVec)^3;
         end
            
         function emf = faradayEmf(obj,...
@@ -96,7 +96,7 @@ classdef (ConstructOnLoad) FaradayEmfForRectangularCircuits
                 emfMat = zeros(rows, cols);
                 for i = 1:rows
                     for j = 1:cols
-                        emfMat(i,j) = emfAtPoint(obj, dIdt, rMsr(i,j), rDrvOuter, rMsrOuter, separation, vertSeparation, msrCircuitAngle(i,j), drvCircuitAngle(i,j));
+                        emfMat(i,j) = rMsr * emfAtPoint(obj, dIdt, rMsr(i,j), rDrvOuter, rMsrOuter, separation, vertSeparation, msrCircuitAngle(i,j), drvCircuitAngle(i,j));
                     end
                 end
             end

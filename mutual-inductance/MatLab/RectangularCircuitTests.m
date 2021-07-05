@@ -84,9 +84,6 @@ function pass = RectangularCircuitTests(verbose)
         EXPECT_NEAR(micro * emf5(2), -micro * emf7(2), 0.000001, "emf at point test 9");
 
         % Test 10: emfFromWireToWire
-        srcStart11 = [0.0, -0.05, 0.0];
-        srcEnd11 = [0.0, 0.05, 0.0];
-        msrPnt11 = [0.002, 0.0, 0.0];
         msrStart13 = [-0.05, 0.002, 0.0];
         msrEnd13 = [0.05, 0.002, 0.0];
         emf10 = emfFromWireToWire(eField, dIdt5, srcStart5, srcEnd5, msrStart13, msrEnd13);
@@ -234,14 +231,14 @@ function pass = RectangularCircuitTests(verbose)
         % Tests 50-54
         emf50 = inlineEmfForWireSetsOnWire(eField, dIdtClosest, srcWires, msrWiresClosest{1});
         if verbose
-            fprintf("Front wire to all wires for existing double cross term only");
+            fprintf("Front wire to all wires for existing double cross term only\n");
         end
         EXPECT_NEAR(47.8461, micro * emfById(emf50, 1).emf, 0.001, "inlineEmfForWireSetsOnWire test 50");
         EXPECT_NEAR(-13.3628,  micro * emfById(emf50, 2).emf, 0.001, "inlineEmfForWireSetsOnWire test 51");
         EXPECT_NEAR(-21.1205,  micro * emfById(emf50, 3).emf, 0.001, "inlineEmfForWireSetsOnWire test 52");
         EXPECT_NEAR(-13.3628,  micro * emfById(emf50, 4).emf, 0.001, "inlineEmfForWireSetsOnWire test 53");
         if verbose
-            fprintf("Starting wire to wire for existing double cross term only");
+            fprintf("Starting wire to wire for existing double cross term only\n");
         end
         EXPECT_NEAR(0, micro * emf50.emfTotal, 0.001, "inlineEmfForWireSetsOnWire test 54");
         
@@ -272,7 +269,7 @@ function pass = RectangularCircuitTests(verbose)
         EXPECT_NEAR(-22.8865, micro * emfById(emf59, 3).emf, 0.001, "inlineEmfForWireSetsOnWire test 61");
         EXPECT_NEAR(0, micro * emfById(emf59, 4).emf, 0.001, "inlineEmfForWireSetsOnWire test 62");
         if verbose
-            fprintf("Starting wire to wire for proposed a term only");
+            fprintf("Starting wire to wire for proposed a term only\n");
         end
         EXPECT_NEAR(220.196, micro * emf59.emfTotal, 0.001, "inlineEmfForWireSetsOnWire test 63");
 
@@ -401,12 +398,9 @@ function pass = RectangularCircuitTests(verbose)
         msrCorner4 = [0.050515, 0.0195775, 0.0];
         msrCorners = {msrCorner1, msrCorner2, msrCorner3, msrCorner4};
         msrOffsetClosest = [0.000615, 0.0, 0.0];
-        msrOffsetFarthest = [0.039175, 0.0, 0.0];
 
         srcWires = RectangularCircuitsCommon.wiresFromCorners(srcCorners, srcOffset, true);
         msrWiresClosest = RectangularCircuitsCommon.wiresFromCorners(msrCorners, msrOffsetClosest, true);
-
-        msrWiresFarthest = RectangularCircuitsCommon.wiresFromCorners(msrCorners, msrOffsetFarthest, true);
 
         experimentalXList = [0.000615, 0.000945, 0.002155, 0.003545, 0.005305,...
             0.006915, 0.009085, 0.011315, 0.014395, 0.017285, 0.020965, ...
@@ -414,27 +408,27 @@ function pass = RectangularCircuitTests(verbose)
 
         % Test 1: faradaysEmfWireToWireSet from experimental data for near
         emfFaradayAtClosest1 = faradaysEmfWireToWireSet(emfFdy, dIdtClosest, srcWires{1}, msrWiresClosest);
-        EXPECT_NEAR(-201.579, micro * emfFaradayAtClosest1, 0.001, "faradaysEmf test 1");
+        EXPECT_NEAR(201.579, micro * emfFaradayAtClosest1, 0.001, "faradaysEmf test 1");
 
         % Test 2: faradaysEmfWireToWireSet from experimental data for top near
         emfFaradayAtClosest2 = faradaysEmfWireToWireSet(emfFdy, dIdtClosest, srcWires{2}, msrWiresClosest);
-        EXPECT_NEAR(12.1687, micro * emfFaradayAtClosest2, 0.001, "faradaysEmf test 2");
+        EXPECT_NEAR(-12.1687, micro * emfFaradayAtClosest2, 0.001, "faradaysEmf test 2");
 
         % Test 3: faradaysEmfWireToWireSet from experimental data for top near
         emfFaradayAtClosest3 = faradaysEmfWireToWireSet(emfFdy, dIdtClosest, srcWires{3}, msrWiresClosest);
-        EXPECT_NEAR(7.24911, micro * emfFaradayAtClosest3, 0.001, "faradaysEmf test 3");
+        EXPECT_NEAR(-7.24911, micro * emfFaradayAtClosest3, 0.001, "faradaysEmf test 3");
 
         % Test 4: faradaysEmfWireToWireSet from experimental data for top near
         emfFaradayAtClosest4 = faradaysEmfWireToWireSet(emfFdy, dIdtClosest, srcWires{4}, msrWiresClosest);
-        EXPECT_NEAR(12.1687, micro * emfFaradayAtClosest4, 0.001, "faradaysEmf test 4");
+        EXPECT_NEAR(-12.1687, micro * emfFaradayAtClosest4, 0.001, "faradaysEmf test 4");
 
         % Test 5: faradaysEmfWireToWireSet from experimental data for top near
         faradayClosestSum = emfFaradayAtClosest1 + emfFaradayAtClosest2 + emfFaradayAtClosest3 + emfFaradayAtClosest4;
-        EXPECT_NEAR(-169.992, micro * faradayClosestSum, 0.001, "faradaysEmf test 5");
+        EXPECT_NEAR(169.992, micro * faradayClosestSum, 0.001, "faradaysEmf test 5");
 
         % Test 6: faradaysEmfWireSetToWireSet from experimental data for closest separation
         faradayClosestFull = faradaysEmfWireSetToWireSet(emfFdy, dIdtClosest, srcWires, msrWiresClosest);
-        EXPECT_NEAR(-169.992, micro * faradayClosestFull.emfTotal, 0.001, "faradaysEmfWireSetToWireSet test 6");
+        EXPECT_NEAR(169.992, micro * faradayClosestFull.emfTotal, 0.001, "faradaysEmfWireSetToWireSet test 6");
 
         % Test 7: inlineEmfForWireOnWireSetsAtOffsets from experimental data
         if ~skipLongTests
@@ -443,7 +437,7 @@ function pass = RectangularCircuitTests(verbose)
             for i=1:length(emfAtOffset7)
                 fprintf("    x offset : %-10g   emf: %-10g\n", milli * emfAtOffset7{i}.xOffset, micro * emfAtOffset7{i}.emf);
             end
-            EXPECT_NEAR(-12.3345, micro * emfAtOffset7{14}.emf, 0.0001, "faradayEmfForWireOnWireSetsAtOffsets test 6");
+            EXPECT_NEAR(12.3345, micro * emfAtOffset7{14}.emf, 0.0001, "faradayEmfForWireOnWireSetsAtOffsets test 6");
         end
 
         % Test 8: wireset with vertical displacement
@@ -454,27 +448,27 @@ function pass = RectangularCircuitTests(verbose)
         msrWires8 = RectangularCircuitsCommon.wiresFromDimensions([msrWidth8, (2 * 0.0195775)], [sep8, 0, 0]);
 
         emf8 = faradaysEmfWireSetToWireSet(emfFdy, dIdtClosest, srcWires8, msrWires8);
-        EXPECT_NEAR(-169.992, micro * emf8.emfTotal, 0.001, "faradaysEmfWireSetToWireSet test 8");
+        EXPECT_NEAR(169.992, micro * emf8.emfTotal, 0.001, "faradaysEmfWireSetToWireSet test 8");
 
         % Test 9: wireset with vertical displacement
         msrWires9 = RectangularCircuitsCommon.wiresFromDimensions([msrWidth8, (2 * 0.0195775)], [0, 0, 0]);
         emf9 = faradaysEmfWireSetToWireSet(emfFdy, dIdtClosest, srcWires8, msrWires9);
-        EXPECT_NEAR(148.064, micro * emf9.emfTotal, 0.001, "faradaysEmfWireSetToWireSet test 9");
+        EXPECT_NEAR(-148.064, micro * emf9.emfTotal, 0.001, "faradaysEmfWireSetToWireSet test 9");
 
         % Test 10: wireset with vertical displacement
         msrWires10 = RectangularCircuitsCommon.wiresFromDimensions([msrWidth8, (2 * 0.0195775)], [0, 0, 0.01]);
         emf10 = faradaysEmfWireSetToWireSet(emfFdy, dIdtClosest, srcWires8, msrWires10);
-        EXPECT_NEAR(138.135, micro * emf10.emfTotal, 0.001, "faradaysEmfWireSetToWireSet test 10");
+        EXPECT_NEAR(-138.135, micro * emf10.emfTotal, 0.001, "faradaysEmfWireSetToWireSet test 10");
 
         % Test 11: wireset with vertical displacement
         msrWires11 = RectangularCircuitsCommon.wiresFromDimensions([msrWidth8, (2 * 0.0195775)], [0, 0, 0.02]);
         emf11 = faradaysEmfWireSetToWireSet(emfFdy, dIdtClosest, srcWires8, msrWires11);
-        EXPECT_NEAR(115.356, micro * emf11.emfTotal, 0.001, "faradaysEmfWireSetToWireSet test 11");
+        EXPECT_NEAR(-115.356, micro * emf11.emfTotal, 0.001, "faradaysEmfWireSetToWireSet test 11");
 
         % Test 12: wireset with vertical displacement
         msrWires12 = RectangularCircuitsCommon.wiresFromDimensions([msrWidth8, (2 * 0.0195775)], [0, 0, -0.02]);
         emf12 = faradaysEmfWireSetToWireSet(emfFdy, dIdtClosest, srcWires8, msrWires12);
-        EXPECT_NEAR(115.356, micro * emf12.emfTotal, 0.001, "faradaysEmfWireSetToWireSet test 12");
+        EXPECT_NEAR(-115.356, micro * emf12.emfTotal, 0.001, "faradaysEmfWireSetToWireSet test 12");
 
                 
         passed = pass;
@@ -490,7 +484,7 @@ function pass = RectangularCircuitTests(verbose)
             diff = abs(target-actual);
             maxDiff = max(diff);
             if(maxDiff > eps)
-                fprintf('Error for %s: Max difference is %f\n', msg, maxDiff);
+                fprintf(2, 'Error for %s: Max difference is %f\n', msg, maxDiff);
                 pass = false;
             end
         else
@@ -506,9 +500,9 @@ function pass = RectangularCircuitTests(verbose)
             end
             diff = targetScalar-actualScalar;
             if(abs(diff) > eps)
-                fprintf('Error for %s: Difference is %f\n', msg, diff);
-                fprintf('  Target is: %f\n', targetScalar);
-                fprintf('  Actual is: %f\n', actualScalar);
+                fprintf(2, 'Error for %s: Difference is %f\n', msg, diff);
+                fprintf(2, '  Target is: %f\n', targetScalar);
+                fprintf(2, '  Actual is: %f\n', actualScalar);
                 pass = false;
             end
         end
