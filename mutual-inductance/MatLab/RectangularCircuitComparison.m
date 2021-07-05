@@ -73,5 +73,5 @@ function [results]...
         micro * results.proposedAccelEmfCoaxial(i),...
         micro * results.conventionalAccelEmfCoaxial(i));
     end
-    
+
 end
