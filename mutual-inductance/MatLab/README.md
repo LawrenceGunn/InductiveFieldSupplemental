@@ -1,6 +1,6 @@
 # Mutual inductance of wire circuits: MATLAB scripts
 
-For the paper *An inductive field component of the electric field that corresponds to Faraday's law*, the mutual inductance between two wire circuits is determined numerically using MATLAB. These correspond to the Mathematica notebooks which were used for calculating the values in the paper.
+For the paper *An electric field property that corresponds to the Maxwell-Faraday equation*, the mutual inductance between two wire circuits is determined numerically using MATLAB. These correspond to the Mathematica notebooks which were used for calculating the values in the paper.
 
 To execute the examples run the two scripts:
 
