@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1171571,      20806]
-NotebookOptionsPosition[   1127620,      20187]
-NotebookOutlinePosition[   1146070,      20442]
-CellTagsIndexPosition[   1145919,      20436]
+NotebookDataLength[   1206095,      21449]
+NotebookOptionsPosition[   1162563,      20838]
+NotebookOutlinePosition[   1181034,      21093]
+CellTagsIndexPosition[   1180883,      21087]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -8033,17 +8033,17 @@ Cell["Precision and convergence of values", "Section",
 3dbf033e0f33"],
 
 Cell["\<\
-The table below shows the numerical results of the EMF generated using \
-Faraday\[CloseCurlyQuote]s law, the full acceleration term, the static term, \
-and the dynamic term. The EMF for the Faraday and dynamic acceleration terms \
-are equal or differ in the last few least significant digits.  The full \
-acceleration term is consistently close to zero, and the static term is the \
-negative of the Faraday and dynamic terms.\
+It is shown above that the The table below shows the numerical results of the \
+EMF generated using Faraday\[CloseCurlyQuote]s law, the full acceleration \
+term, the static term, and the dynamic term. The EMF for the Faraday and \
+dynamic acceleration terms are equal or differ in the last few least \
+significant digits.  The full acceleration term is consistently close to \
+zero, and the static term is the negative of the Faraday and dynamic terms.\
 \>", "Text",
  CellChangeTimes->{{3.8121963720928373`*^9, 3.812196581990821*^9}, {
    3.8280955692621403`*^9, 3.8280955712109127`*^9}, 3.82879924435096*^9, {
-   3.85722227436418*^9, 
-   3.857222329163479*^9}},ExpressionUUID->"574b583a-80f8-4652-b426-\
+   3.85722227436418*^9, 3.857222329163479*^9}, {3.897736134904607*^9, 
+   3.897736141218402*^9}},ExpressionUUID->"574b583a-80f8-4652-b426-\
 b5830ac963bf"],
 
 Cell[TextData[{
@@ -8059,7 +8059,9 @@ the arguments in the call to ",
    3.828799271932713*^9},ExpressionUUID->"64f930f5-2081-4842-ab35-\
 35f10f395b44"],
 
-Cell[BoxData[
+Cell[CellGroupData[{
+
+Cell[BoxData[{
  RowBox[{
   RowBox[{"precisionAnalysis", " ", "=", " ", 
    RowBox[{
@@ -8084,9 +8086,21 @@ Cell[BoxData[
          RowBox[{"height", " ", "in", " ", "the", " ", "paper"}], ")"}], " ", 
         "of", " ", "the", " ", "measured", " ", "circuit"}], ",", " ", 
        RowBox[{"in", " ", "meters"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+     " ", 
      RowBox[{"{", 
-      RowBox[{"3", ",", " ", "4", ",", " ", "6"}], "}"}]}], 
-    "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+      RowBox[{"3", ",", " ", "6", ",", " ", "9", ",", " ", "12", ",", "15"}], 
+      "}"}]}], " ", 
+    RowBox[{"(*", " ", 
+     RowBox[{"The", " ", "precision", " ", "values"}], " ", "*)"}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{
+    RowBox[{"precisionAnalysis", "[", "\"\<writeResultsToTable\>\"", "]"}], 
+    "[", "]"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"precisionAnalysis", "[", "\"\<plotCharts\>\"", "]"}], "[", 
+  "]"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.8124511709673367`*^9, 3.812451176208119*^9}, 
    3.813498616193062*^9, {3.813665052223181*^9, 3.813665077890149*^9}, {
    3.81376829211045*^9, 3.8137682991504707`*^9}, {3.8280955878585176`*^9, 
@@ -8096,9 +8110,516 @@ Cell[BoxData[
    3.857402238000194*^9, 3.857402247178041*^9}, {3.8637044489443693`*^9, 
    3.863704453204597*^9}, 3.877884389784994*^9, {3.8974086680588713`*^9, 
    3.897408669973536*^9}, {3.897438826182263*^9, 3.8974388683053703`*^9}, {
-   3.897439143769992*^9, 
-   3.8974391608962297`*^9}},ExpressionUUID->"5b66db58-ebdf-4bd6-8efb-\
-e0e53b9a7afc"]
+   3.897439143769992*^9, 3.8974391608962297`*^9}, {3.8977359288913307`*^9, 
+   3.8977359452787848`*^9}, {3.897735994532955*^9, 3.8977360168632603`*^9}, {
+   3.8977360828439913`*^9, 3.897736087504938*^9}, {3.897738040663945*^9, 
+   3.897738052490755*^9}},
+ CellLabel->
+  "In[301]:=",ExpressionUUID->"5b66db58-ebdf-4bd6-8efb-e0e53b9a7afc"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {Cell["precision",ExpressionUUID->"4258a439-fc78-403b-a26d-389f20159a5a"],
+      Cell["",ExpressionUUID->"646faeb0-ee3b-417b-b54f-f7070addd2e9"], Cell[
+     "Faraday",ExpressionUUID->"8d345fa5-0e1f-4564-8be1-41266fcfb523"], Cell[
+     "Difference between Faraday and dynamic accel",ExpressionUUID->
+      "6aa86a7d-83b1-4b67-8eb1-3e1ccef8ad9b"], Cell[
+     "",ExpressionUUID->"66f09282-2607-49aa-8e85-053055b24d98"], Cell[
+     "Full accel",ExpressionUUID->"d0092fee-01c7-42cc-9805-00b209a7f19b"], 
+     Cell["Difference of full accel from zero",ExpressionUUID->
+      "4fc72682-552b-424c-ab8e-716425a3fb83"]},
+    {"3", Cell["   ",ExpressionUUID->"474841fd-0253-4bc5-abce-4a26f87ed9f8"], 
+     
+     TagBox[
+      InterpretationBox["\<\"8.09835\"\>",
+       8.098346082745753,
+       AutoDelete->True],
+      DecimalForm[#, 6]& ], 
+     TagBox[
+      InterpretationBox[
+       RowBox[{"\<\"1.55\"\>", "\[Times]", 
+        SuperscriptBox["10", "\<\"-3\"\>"]}],
+       0.0015545403580468076`,
+       AutoDelete->True],
+      ScientificForm[#, 3]& ], Cell[
+     "   ",ExpressionUUID->"b9a5e2de-7ba7-4978-b617-bda25c0491af"], 
+     TagBox[
+      InterpretationBox["\<\"-0.000230\"\>",
+       -0.00022965039701026865`,
+       AutoDelete->True],
+      DecimalForm[#, {6, 6}]& ], 
+     TagBox[
+      InterpretationBox[
+       RowBox[{"\<\"2.3\"\>", "\[Times]", 
+        SuperscriptBox["10", "\<\"-4\"\>"]}],
+       0.00022965039701026865`,
+       AutoDelete->True],
+      ScientificForm[#, 3]& ]},
+    {"6", Cell["   ",ExpressionUUID->"08aea7e3-fbec-4ddb-98f6-aed7fb0a9647"], 
+     
+     TagBox[
+      InterpretationBox["\<\"8.09668\"\>",
+       8.096679976823609,
+       AutoDelete->True],
+      DecimalForm[#, 6]& ], 
+     TagBox[
+      InterpretationBox[
+       RowBox[{"\<\"5.01\"\>", "\[Times]", 
+        SuperscriptBox["10", "\<\"-5\"\>"]}],
+       0.00005008624700053588,
+       AutoDelete->True],
+      ScientificForm[#, 3]& ], Cell[
+     "   ",ExpressionUUID->"6ceae18a-3cd2-4d57-b1f2-a168c34e7b93"], 
+     TagBox[
+      InterpretationBox["\<\"-0.000000\"\>",
+       -1.7948342278698926`*^-7,
+       AutoDelete->True],
+      DecimalForm[#, {6, 6}]& ], 
+     TagBox[
+      InterpretationBox[
+       RowBox[{"\<\"1.79\"\>", "\[Times]", 
+        SuperscriptBox["10", "\<\"-7\"\>"]}],
+       1.7948342278698926`*^-7,
+       AutoDelete->True],
+      ScientificForm[#, 3]& ]},
+    {"9", Cell["   ",ExpressionUUID->"9059e018-72ea-47d0-a715-9aaf69ced83e"], 
+     
+     TagBox[
+      InterpretationBox["\<\"8.09663\"\>",
+       8.096629649397258,
+       AutoDelete->True],
+      DecimalForm[#, 6]& ], 
+     TagBox[
+      InterpretationBox[
+       RowBox[{"\<\"3.56\"\>", "\[Times]", 
+        SuperscriptBox["10", "\<\"-8\"\>"]}],
+       3.564495365537823*^-8,
+       AutoDelete->True],
+      ScientificForm[#, 3]& ], Cell[
+     "   ",ExpressionUUID->"d97febbb-dfe8-4b59-8811-814d33c50008"], 
+     TagBox[
+      InterpretationBox["\<\"0.000000\"\>",
+       4.1982883098798385`*^-9,
+       AutoDelete->True],
+      DecimalForm[#, {6, 6}]& ], 
+     TagBox[
+      InterpretationBox[
+       RowBox[{"\<\"4.2\"\>", "\[Times]", 
+        SuperscriptBox["10", "\<\"-9\"\>"]}],
+       4.1982883098798385`*^-9,
+       AutoDelete->True],
+      ScientificForm[#, 3]& ]},
+    {"12", Cell["   ",ExpressionUUID->"44b4c139-a208-414e-aa36-8712dc8b7952"], 
+     TagBox[
+      InterpretationBox["\<\"8.09663\"\>",
+       8.096629613535825,
+       AutoDelete->True],
+      DecimalForm[#, 6]& ], 
+     TagBox[
+      InterpretationBox[
+       RowBox[{"\<\"5.29\"\>", "\[Times]", 
+        SuperscriptBox["10", "\<\"-11\"\>"]}],
+       5.291056481837586*^-11,
+       AutoDelete->True],
+      ScientificForm[#, 3]& ], Cell[
+     "   ",ExpressionUUID->"b84fa772-c8da-4267-a7c3-47571199417d"], 
+     TagBox[
+      InterpretationBox["\<\"0.000000\"\>",
+       7.877406409464993*^-14,
+       AutoDelete->True],
+      DecimalForm[#, {6, 6}]& ], 
+     TagBox[
+      InterpretationBox[
+       RowBox[{"\<\"7.88\"\>", "\[Times]", 
+        SuperscriptBox["10", "\<\"-14\"\>"]}],
+       7.877406409464993*^-14,
+       AutoDelete->True],
+      ScientificForm[#, 3]& ]},
+    {"15", Cell["   ",ExpressionUUID->"dc4a3ca2-7dc0-4d95-bde5-c5b02e9ed09f"], 
+     TagBox[
+      InterpretationBox["\<\"8.09663\"\>",
+       8.096629613588629,
+       AutoDelete->True],
+      DecimalForm[#, 6]& ], 
+     TagBox[
+      InterpretationBox[
+       RowBox[{"\<\"4.09\"\>", "\[Times]", 
+        SuperscriptBox["10", "\<\"-14\"\>"]}],
+       4.085620730620576*^-14,
+       AutoDelete->True],
+      ScientificForm[#, 3]& ], Cell[
+     "   ",ExpressionUUID->"cb03bd68-c506-4e5b-8e73-c9d2b20bc7d5"], 
+     TagBox[
+      InterpretationBox["\<\"0.000000\"\>",
+       5.039846036163087*^-14,
+       AutoDelete->True],
+      DecimalForm[#, {6, 6}]& ], 
+     TagBox[
+      InterpretationBox[
+       RowBox[{"\<\"5.04\"\>", "\[Times]", 
+        SuperscriptBox["10", "\<\"-14\"\>"]}],
+       5.039846036163087*^-14,
+       AutoDelete->True],
+      ScientificForm[#, 3]& ]}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {10}, "Rows" -> {2}}],
+  "TextGrid"]], "Print",
+ CellChangeTimes->{3.897736020768937*^9, 3.897736103136441*^9, 
+  3.8977385206825333`*^9},
+ TextAlignment->Center,
+ CellLabel->
+  "During evaluation of \
+In[301]:=",ExpressionUUID->"7ba72010-39e4-469c-939e-953b3fee5873"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     GraphicsBox[{{}, {{{}, {}, 
+         {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+          0.012833333333333334`], AbsoluteThickness[1.6], 
+          LineBox[{{3., -6.46657536672669}, {6., -9.901764098525835}, {
+           9., -17.149658252549408`}, {12., -23.662418083991508`}, {
+           15., -30.82871763150817}}]}}, 
+        {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+         0.012833333333333334`], AbsoluteThickness[1.6], 
+         GeometricTransformationBox[InsetBox[
+           FormBox[
+            StyleBox[
+             GraphicsBox[
+              {EdgeForm[None], DiskBox[{0, 0}]}],
+             StripOnInput->False,
+             GraphicsBoxOptions->{DefaultBaseStyle->Directive[
+               PointSize[0.012833333333333334`], 
+               RGBColor[0.368417, 0.506779, 0.709798], 
+               AbsoluteThickness[1.6]]}],
+            TraditionalForm], {0., 0.}, Automatic, Offset[8]], {{{
+          3., -6.46657536672669}}, {{6., -9.901764098525835}}, {{
+          9., -17.149658252549408`}}, {{12., -23.662418083991508`}}, {{
+          15., -30.82871763150817}}}]}, {
+         {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+          0.012833333333333334`], AbsoluteThickness[1.6]}, {}}, {
+         {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+          0.012833333333333334`], AbsoluteThickness[1.6]}, {}}}, {{}, {}}},
+      AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+      Axes->{True, True},
+      AxesLabel->{None, None},
+      AxesOrigin->{2.750000000000001, -32.18216997955158},
+      DisplayFunction->Identity,
+      Frame->{{True, False}, {True, False}},
+      FrameLabel->{{
+         FormBox["\"Difference(mV)\"", TraditionalForm], None}, {
+         FormBox["\"Precision\"", TraditionalForm], None}},
+      FrameTicks->FrontEndValueCache[{{Quiet[
+           Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
+          Charting`ScaledFrameTicks[{Log, Exp}]}, {
+         Automatic, Automatic}}, {{{{-29.933606208922594`, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "13"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-25.328436022934504`, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "11"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-20.72326583694641, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "9"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-16.11809565095832, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "7"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.512925464970229`, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "5"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-6.907755278982137, 
+            FormBox["0.001`", TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-34.538776394910684`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-32.23619130191664, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-27.631021115928547`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-23.025850929940457`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, 
+            {
+             AbsoluteThickness[0.1]}}, {-18.420680743952367`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-13.815510557964274`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.210340371976182, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.605170185988091, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-2.3025850929940455`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}}, {{-29.933606208922594`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-25.328436022934504`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-20.72326583694641, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-16.11809565095832, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-11.512925464970229`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-6.907755278982137, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-34.538776394910684`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-32.23619130191664, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-27.631021115928547`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-23.025850929940457`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-18.420680743952367`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-13.815510557964274`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.210340371976182, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.605170185988091, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-2.3025850929940455`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}}}, {Automatic, Automatic}}],
+      GridLines->{None, None},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageSize->Medium,
+      Method->{
+       "OptimizePlotMarkers" -> True, 
+        "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+            (Identity[#]& )[
+             Part[#, 1]], 
+            (Exp[#]& )[
+             Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+            (Identity[#]& )[
+             Part[#, 1]], 
+            (Exp[#]& )[
+             Part[#, 2]]}& )}},
+      PlotLabel->FormBox[
+       "\"Difference Faraday to Dyn. Accel vs Precision\"", TraditionalForm],
+      PlotRange->{{2.750000000000001, 
+       15.}, {-32.18216997955158, -6.46657536672669}},
+      PlotRangeClipping->True,
+      PlotRangePadding->{{
+         Scaled[0.02], 
+         Scaled[0.02]}, {
+         Scaled[0.02], 
+         Scaled[0.05]}},
+      Ticks->{Automatic, Quiet[
+         Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }], 
+     GraphicsBox[{{}, {{{}, {}, 
+         {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+          0.012833333333333334`], AbsoluteThickness[1.6], 
+          LineBox[{{3., -8.378952418431638}, {6., -15.533182985444421`}, {
+           9., -19.288588939992938`}, {12., -30.17219258807864}, {
+           15., -30.618815768680314`}}]}}, 
+        {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+         0.012833333333333334`], AbsoluteThickness[1.6], 
+         GeometricTransformationBox[InsetBox[
+           FormBox[
+            StyleBox[
+             GraphicsBox[
+              {EdgeForm[None], DiskBox[{0, 0}]}],
+             StripOnInput->False,
+             GraphicsBoxOptions->{DefaultBaseStyle->Directive[
+               PointSize[0.012833333333333334`], 
+               RGBColor[0.368417, 0.506779, 0.709798], 
+               AbsoluteThickness[1.6]]}],
+            TraditionalForm], {0., 0.}, Automatic, Offset[8]], {{{
+          3., -8.378952418431638}}, {{6., -15.533182985444421`}}, {{
+          9., -19.288588939992938`}}, {{12., -30.17219258807864}}, {{
+          15., -30.618815768680314`}}}]}, {
+         {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+          0.012833333333333334`], AbsoluteThickness[1.6]}, {}}, {
+         {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+          0.012833333333333334`], AbsoluteThickness[1.6]}, {}}}, {{}, {}}},
+      AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+      Axes->{True, True},
+      AxesLabel->{None, None},
+      AxesOrigin->{2.750000000000001, -31.854363732583018`},
+      DisplayFunction->Identity,
+      Frame->{{True, False}, {True, False}},
+      FrameLabel->{{
+         FormBox["\"Difference(mV)\"", TraditionalForm], None}, {
+         FormBox["\"Precision\"", TraditionalForm], None}},
+      FrameTicks->FrontEndValueCache[{{Quiet[
+           Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
+          Charting`ScaledFrameTicks[{Log, Exp}]}, {
+         Automatic, Automatic}}, {{{{-32.23619130191664, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "14"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-27.631021115928547`, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "12"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-23.025850929940457`, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "10"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-18.420680743952367`, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "8"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-13.815510557964274`, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "6"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.210340371976182, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "4"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-29.933606208922594`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-25.328436022934504`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-20.72326583694641, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-16.11809565095832, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.512925464970229`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-6.907755278982137, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.605170185988091, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}}, {{-32.23619130191664, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-27.631021115928547`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-23.025850929940457`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-18.420680743952367`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-13.815510557964274`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-9.210340371976182, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-29.933606208922594`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-25.328436022934504`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-20.72326583694641, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-16.11809565095832, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.512925464970229`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-6.907755278982137, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.605170185988091, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}}}, {Automatic, Automatic}}],
+      GridLines->{None, None},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageSize->Medium,
+      Method->{
+       "OptimizePlotMarkers" -> True, 
+        "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+            (Identity[#]& )[
+             Part[#, 1]], 
+            (Exp[#]& )[
+             Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+            (Identity[#]& )[
+             Part[#, 1]], 
+            (Exp[#]& )[
+             Part[#, 2]]}& )}},
+      PlotLabel->FormBox[
+       "\"Difference Full Accel to Zero vs Precision\"", TraditionalForm],
+      PlotRange->{{2.750000000000001, 
+       15.}, {-31.854363732583018`, -8.378952418431638}},
+      PlotRangeClipping->True,
+      PlotRangePadding->{{
+         Scaled[0.02], 
+         Scaled[0.02]}, {
+         Scaled[0.02], 
+         Scaled[0.05]}},
+      Ticks->{Automatic, Quiet[
+         Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }]}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.8977360208632298`*^9, 3.897736103211678*^9, 
+  3.897738522453321*^9},
+ TextAlignment->Center,
+ CellLabel->
+  "Out[303]=",ExpressionUUID->"5107e050-a198-4f36-b6c0-1e7d82ec5746"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -11101,8 +11622,8 @@ Cell[BoxData[
        "writeWireToWireEmfsToTable", ",", "findMsrLoopEmfForSingleSrcWire", 
        ",", "findMsrWireEmfForSrcLoop", ",", "generateFaraday", ",", 
        "generateFullAccel", ",", "generateStaticAccel", ",", 
-       "generateDynamicAccel", ",", "circuitAtSeparation", ",", 
-       "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       "generateDynamicAccel", ",", "circuitAtSeparation", ",", "plotCharts", 
+       ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
        RowBox[{"(*", " ", "constants", " ", "*)"}], "\[IndentingNewLine]", 
        RowBox[{"dIdt", " ", "=", " ", "1000.0"}], ",", "\[IndentingNewLine]", 
        "\[IndentingNewLine]", 
@@ -11143,6 +11664,13 @@ Cell[BoxData[
        RowBox[{"writeResultsToTable", "[", "]"}], " ", ":=", 
        RowBox[{"(", "\[IndentingNewLine]", 
         RowBox[{
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Length", "[", "faradayEmfCoplanar", "]"}], " ", 
+            "\[Equal]", " ", "0"}], ",", 
+           RowBox[{"generateEmfValues", "[", "]"}]}], "]"}], ";", 
+         "\[IndentingNewLine]", "\[IndentingNewLine]", 
          RowBox[{"resultsArray", " ", "=", " ", 
           RowBox[{"{", "\[IndentingNewLine]", 
            RowBox[{"{", 
@@ -11191,12 +11719,14 @@ Cell[BoxData[
                     RowBox[{"[", "i", "]"}], "]"}], "-", 
                     RowBox[{"dynamicAccelEmfCoplanar", "[", 
                     RowBox[{"[", "i", "]"}], "]"}]}], "]"}], ",", "precSci"}],
-                   "]"}], ",", "\"\<\>\"", ",", 
+                   "]"}], ",", "\"\<   \>\"", ",", 
                  RowBox[{"DecimalForm", "[", 
                   RowBox[{
                    RowBox[{"fullAccelEmfCoplanar", "[", 
-                    RowBox[{"[", "i", "]"}], "]"}], ",", "precNum"}], "]"}], 
-                 ",", 
+                    RowBox[{"[", "i", "]"}], "]"}], ",", 
+                   RowBox[{"{", 
+                    RowBox[{"precNum", ",", "precNum"}], "}"}]}], "]"}], ",", 
+                 
                  RowBox[{"ScientificForm", "[", 
                   RowBox[{
                    RowBox[{"Abs", "[", 
@@ -11215,7 +11745,8 @@ Cell[BoxData[
               RowBox[{"{", "10", "}"}], ",", " ", 
               RowBox[{"{", "2", "}"}], ",", " ", 
               RowBox[{"{", "10", "}"}], ",", " ", 
-              RowBox[{"{", "10", "}"}], ",", " ", 
+              RowBox[{"{", "10", "}"}], ",", 
+              RowBox[{"{", "2", "}"}], ",", 
               RowBox[{"{", "10", "}"}], ",", " ", 
               RowBox[{"{", "10", "}"}]}], "}"}]}]}], "]"}]}], 
         "\[IndentingNewLine]", ")"}]}], ";", "\[IndentingNewLine]", 
@@ -11428,6 +11959,91 @@ Cell[BoxData[
          "\[IndentingNewLine]", "\[IndentingNewLine]", 
          "dynamicAccelEmfCoplanar"}], "\[IndentingNewLine]", ")"}]}], ";", 
       "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"plotCharts", "[", "]"}], " ", ":=", " ", 
+       RowBox[{"(", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Length", "[", "faradayEmfCoplanar", "]"}], " ", 
+            "\[Equal]", " ", "0"}], ",", 
+           RowBox[{"generateEmfValues", "[", "]"}]}], "]"}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Grid", "[", 
+          RowBox[{"{", 
+           RowBox[{"{", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"ListPlot", "[", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"Transpose", "[", 
+                RowBox[{"{", 
+                 RowBox[{"precisions", ",", 
+                  RowBox[{"Abs", "[", 
+                   RowBox[{
+                   "faradayEmfCoplanar", "-", "dynamicAccelEmfCoplanar"}], 
+                   "]"}]}], "}"}], "]"}], ",", "\[IndentingNewLine]", 
+               RowBox[{"ImageSize", "\[Rule]", " ", "Medium"}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{"PlotMarkers", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{"Automatic", ",", "8"}], "}"}]}], ",", 
+               "\[IndentingNewLine]", " ", 
+               RowBox[{"ScalingFunctions", "\[Rule]", "\"\<Log\>\""}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{"Frame", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"True", ",", "False"}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"True", ",", "False"}], "}"}]}], "}"}]}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{
+               "PlotLabel", "\[Rule]", 
+                "\"\<Difference Faraday to Dyn. Accel vs Precision\>\""}], 
+               ",", "\[IndentingNewLine]", 
+               RowBox[{"FrameLabel", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{"\"\<Precision\>\"", ",", "\"\<Difference(mV)\>\""}],
+                  "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
+             RowBox[{"ListPlot", "[", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"Transpose", "[", 
+                RowBox[{"{", 
+                 RowBox[{"precisions", ",", 
+                  RowBox[{"Abs", "[", "fullAccelEmfCoplanar", "]"}]}], "}"}], 
+                "]"}], ",", "\[IndentingNewLine]", " ", 
+               RowBox[{"ImageSize", "\[Rule]", "Medium"}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{"PlotMarkers", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{"Automatic", ",", "8"}], "}"}]}], ",", 
+               "\[IndentingNewLine]", " ", 
+               RowBox[{"ScalingFunctions", "\[Rule]", "\"\<Log\>\""}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{"Frame", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"True", ",", "False"}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"True", ",", "False"}], "}"}]}], "}"}]}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{
+               "PlotLabel", "\[Rule]", 
+                "\"\<Difference Full Accel to Zero vs Precision\>\""}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{"FrameLabel", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{"\"\<Precision\>\"", ",", "\"\<Difference(mV)\>\""}],
+                  "}"}]}]}], "]"}]}], "\[IndentingNewLine]", "}"}], "}"}], 
+          "]"}]}], "\[IndentingNewLine]", ")"}]}], ";", "\[IndentingNewLine]",
+       "\[IndentingNewLine]", 
       RowBox[{"this", " ", "=", " ", 
        RowBox[{
         RowBox[{"this", "[", "\"\<makePublic\>\"", "]"}], "[", 
@@ -11437,7 +12053,8 @@ Cell[BoxData[
           "\"\<generateEmfValues\>\"", ",", "generateEmfValues", ",", 
            "\[IndentingNewLine]", "\"\<writeResultsToTable\>\"", ",", 
            "writeResultsToTable", ",", "\[IndentingNewLine]", 
-           "\"\<writeWireToWireEmfsToTable\>\"", ",", 
+           "\"\<plotCharts\>\"", ",", "plotCharts", ",", 
+           "\[IndentingNewLine]", "\"\<writeWireToWireEmfsToTable\>\"", ",", 
            "writeWireToWireEmfsToTable", ",", "\[IndentingNewLine]", 
            "\"\<findMsrLoopEmfForSingleSrcWire\>\"", ",", 
            "findMsrLoopEmfForSingleSrcWire", ",", "\[IndentingNewLine]", 
@@ -11826,19 +12443,17 @@ Cell[BoxData[
    3.8976500964532537`*^9, 3.8976501666162853`*^9}, 3.897650945292048*^9, {
    3.897650994173274*^9, 3.897651073366323*^9}, {3.89765113030965*^9, 
    3.897651178158119*^9}, {3.897651299487071*^9, 3.89765131909338*^9}, 
-   3.8976513557970963`*^9},
+   3.8976513557970963`*^9, {3.897696192300679*^9, 3.897696203944435*^9}, {
+   3.897696364807613*^9, 3.897696395986437*^9}, {3.8976992627021008`*^9, 
+   3.8976993128968897`*^9}, {3.89770121225238*^9, 3.8977012173853807`*^9}, {
+   3.897701247432454*^9, 3.897701296775847*^9}, {3.897701369703415*^9, 
+   3.8977013982406588`*^9}, {3.897734975484272*^9, 3.897734977753482*^9}, {
+   3.8977350525297127`*^9, 3.897735054836012*^9}},
  CellTags->"EmfFromTheoryXY module",
  CellLabel->
-  "In[226]:=",ExpressionUUID->"fd611682-7255-4493-bceb-27f0f8cf3caf"],
+  "In[291]:=",ExpressionUUID->"fd611682-7255-4493-bceb-27f0f8cf3caf"],
 
-Cell[CellGroupData[{
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"precisions", " ", "=", " ", 
-   RowBox[{"{", 
-    RowBox[{"2", ",", " ", "3", ",", " ", "4", ",", " ", "5", ",", " ", "6"}],
-     "}"}]}], ";"}], "\[IndentingNewLine]", 
+Cell[BoxData[
  RowBox[{
   RowBox[{"precisionAnalysis", " ", "=", " ", 
    RowBox[{
@@ -11863,694 +12478,755 @@ Cell[BoxData[{
          RowBox[{"height", " ", "in", " ", "the", " ", "paper"}], ")"}], " ", 
         "of", " ", "the", " ", "measured", " ", "circuit"}], ",", " ", 
        RowBox[{"in", " ", "meters"}]}], " ", "*)"}], "\[IndentingNewLine]", 
-     "precisions"}], "\[IndentingNewLine]", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"faraday", " ", "=", " ", 
-   RowBox[{
-    RowBox[{"precisionAnalysis", "[", "\"\<generateFaraday\>\"", "]"}], "[", 
-    "]"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"Print", "[", 
-    RowBox[{"ScientificForm", "[", "faraday", "]"}], "]"}], ";"}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"fullAccel", " ", "=", " ", 
-   RowBox[{
-    RowBox[{"precisionAnalysis", "[", "\"\<generateFullAccel\>\"", "]"}], "[",
-     "]"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"Print", "[", 
-    RowBox[{"ScientificForm", "[", "fullAccel", "]"}], "]"}], ";"}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"dynamic", " ", "=", " ", 
-   RowBox[{
-    RowBox[{"precisionAnalysis", "[", "\"\<generateDynamicAccel\>\"", "]"}], 
-    "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"Print", "[", 
-    RowBox[{"ScientificForm", "[", "dynamic", "]"}], "]"}], ";"}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"diff", " ", "=", " ", 
-   RowBox[{"faraday", "-", "dynamic"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"Print", "[", 
-   RowBox[{"ScientificForm", "[", 
-    RowBox[{"Abs", "[", "diff", "]"}], "]"}], "]"}], ";"}]}], "Input",
+     " ", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", " ", "3", ",", " ", "4", ",", " ", "5"}], "}"}]}], 
+    " ", 
+    RowBox[{"(*", " ", 
+     RowBox[{"The", " ", "precision", " ", "values"}], " ", "*)"}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.897491591019113*^9, 3.897491598123472*^9}, {
-  3.897491770933062*^9, 3.8974918115071583`*^9}, {3.897492478392147*^9, 
-  3.8974925027081547`*^9}, {3.897492597417313*^9, 3.897492630381332*^9}, {
-  3.897492696432971*^9, 3.897492781722555*^9}, {3.897492916849039*^9, 
-  3.897492920992743*^9}, {3.897492959743376*^9, 3.89749296290161*^9}, {
-  3.897493324685442*^9, 3.8974933281427307`*^9}, {3.897496547347768*^9, 
-  3.897496554901188*^9}, {3.897497301632516*^9, 3.89749731790235*^9}, {
-  3.897561848673064*^9, 3.897561906416457*^9}},
+   3.897491770933062*^9, 3.8974918115071583`*^9}, {3.897492478392147*^9, 
+   3.8974925027081547`*^9}, {3.897492597417313*^9, 3.897492630381332*^9}, {
+   3.897492696432971*^9, 3.897492781722555*^9}, {3.897492916849039*^9, 
+   3.897492920992743*^9}, {3.897492959743376*^9, 3.89749296290161*^9}, {
+   3.897493324685442*^9, 3.8974933281427307`*^9}, {3.897496547347768*^9, 
+   3.897496554901188*^9}, {3.897497301632516*^9, 3.89749731790235*^9}, {
+   3.897561848673064*^9, 3.897561906416457*^9}, {3.8976991631355143`*^9, 
+   3.897699192433951*^9}, {3.8977013327057962`*^9, 3.8977013410217047`*^9}, 
+   3.89770142045324*^9, 3.8977014599607553`*^9, {3.8977015936699867`*^9, 
+   3.897701597387144*^9}, {3.897734918465918*^9, 3.897734935499518*^9}},
  CellLabel->
-  "In[227]:=",ExpressionUUID->"5d60f25c-83b7-4557-bf42-435bffdca6a1"],
+  "In[292]:=",ExpressionUUID->"5d60f25c-83b7-4557-bf42-435bffdca6a1"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- TagBox[
-  RowBox[{"{", 
-   RowBox[{
-    InterpretationBox["\<\"8.09332\"\>",
-     8.093315463664773,
-     AutoDelete->True], ",", 
-    InterpretationBox["\<\"8.09835\"\>",
-     8.098346082745753,
-     AutoDelete->True], ",", 
-    InterpretationBox["\<\"8.09635\"\>",
-     8.096349360045998,
-     AutoDelete->True], ",", 
-    InterpretationBox["\<\"8.09661\"\>",
-     8.096614973491553,
-     AutoDelete->True], ",", 
-    InterpretationBox["\<\"8.09668\"\>",
-     8.096679976823609,
-     AutoDelete->True]}], "}"}],
-  ScientificForm]], "Print",
- CellChangeTimes->{3.897492631440197*^9, 3.8974927865619097`*^9, 
-  3.897492925087717*^9, 3.897492977629673*^9, 3.897493342311125*^9, 
-  3.897496798606906*^9, 3.897497595016164*^9, 3.8975619263896933`*^9, 
-  3.897562060027316*^9, 3.897614226774334*^9, 3.8976147604262733`*^9, 
-  3.897649503957955*^9, 3.8976508416389513`*^9, 3.897651086344823*^9, 
-  3.897651194901457*^9, 3.897651327974419*^9, 3.897651363325285*^9},
+ RowBox[{
+  RowBox[{"precisionAnalysis", "[", "\"\<plotCharts\>\"", "]"}], "[", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.897701435739502*^9, 3.897701448649749*^9}},
  CellLabel->
-  "During evaluation of \
-In[227]:=",ExpressionUUID->"95e95ae7-7c6e-47bc-8856-861c0fb239d9"],
+  "In[293]:=",ExpressionUUID->"974ed848-ca51-45d4-9fb5-7dfd92530dbc"],
 
 Cell[BoxData[
- TagBox[
-  RowBox[{"{", 
-   RowBox[{
-    InterpretationBox[
-     RowBox[{"\<\"2.85818\"\>", "\[Times]", 
-      SuperscriptBox["10", "\<\"-3\"\>"]}],
-     0.0028581774707678014`,
-     AutoDelete->True], ",", 
-    InterpretationBox[
-     RowBox[{"\<\"-2.2965\"\>", "\[Times]", 
-      SuperscriptBox["10", "\<\"-4\"\>"]}],
-     -0.00022965039701026865`,
-     AutoDelete->True], ",", 
-    InterpretationBox[
-     RowBox[{"\<\"-7.52542\"\>", "\[Times]", 
-      SuperscriptBox["10", "\<\"-5\"\>"]}],
-     -0.0000752541589533829,
-     AutoDelete->True], ",", 
-    InterpretationBox[
-     RowBox[{"\<\"5.69561\"\>", "\[Times]", 
-      SuperscriptBox["10", "\<\"-7\"\>"]}],
-     5.695606511601283*^-7,
-     AutoDelete->True], ",", 
-    InterpretationBox[
-     RowBox[{"\<\"-1.79483\"\>", "\[Times]", 
-      SuperscriptBox["10", "\<\"-7\"\>"]}],
-     -1.7948342278698926`*^-7,
-     AutoDelete->True]}], "}"}],
-  ScientificForm]], "Print",
- CellChangeTimes->{3.897492631440197*^9, 3.8974927865619097`*^9, 
-  3.897492925087717*^9, 3.897492977629673*^9, 3.897493342311125*^9, 
-  3.897496798606906*^9, 3.897497595016164*^9, 3.8975619263896933`*^9, 
-  3.897562060027316*^9, 3.897614226774334*^9, 3.8976147604262733`*^9, 
-  3.897649503957955*^9, 3.8976508416389513`*^9, 3.897651086344823*^9, 
-  3.897651194901457*^9, 3.897651327974419*^9, 3.897651365126636*^9},
+ TagBox[GridBox[{
+    {
+     GraphicsBox[{{}, {{{}, {}, 
+         {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+          0.012833333333333334`], AbsoluteThickness[1.6], 
+          LineBox[{{2., -5.132818344996341}, {3., -6.46657536672669}, {
+           4., -8.102615616931907}, {5., -11.402964558080676`}}]}}, 
+        {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+         0.012833333333333334`], AbsoluteThickness[1.6], 
+         GeometricTransformationBox[InsetBox[
+           FormBox[
+            StyleBox[
+             GraphicsBox[
+              {EdgeForm[None], DiskBox[{0, 0}]}],
+             StripOnInput->False,
+             GraphicsBoxOptions->{DefaultBaseStyle->Directive[
+               PointSize[0.012833333333333334`], 
+               RGBColor[0.368417, 0.506779, 0.709798], 
+               AbsoluteThickness[1.6]]}],
+            TraditionalForm], {0., 0.}, Automatic, Offset[8]], {{{
+          2., -5.132818344996341}}, {{3., -6.46657536672669}}, {{
+          4., -8.102615616931907}}, {{5., -11.402964558080676`}}}]}, {
+         {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+          0.012833333333333334`], AbsoluteThickness[1.6]}, {}}, {
+         {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+          0.012833333333333334`], AbsoluteThickness[1.6]}, {}}}, {{}, {}}},
+      AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+      Axes->{True, True},
+      AxesLabel->{None, None},
+      AxesOrigin->{1.9375000000000002`, -11.751306014363141`},
+      DisplayFunction->Identity,
+      Frame->{{True, False}, {True, False}},
+      FrameLabel->{{
+         FormBox["\"Difference(mV)\"", TraditionalForm], None}, {
+         FormBox["\"Precision\"", TraditionalForm], None}},
+      FrameTicks->FrontEndValueCache[{{Quiet[
+           Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
+          Charting`ScaledFrameTicks[{Log, Exp}]}, {
+         Automatic, Automatic}}, {{{{-11.512925464970229`, 
+            FormBox[
+             TemplateBox[{"\[Times]", "\"\[Times]\"", "1.`", 
+               TemplateBox[{"10", 
+                 RowBox[{"-", "5"}]}, "Superscript", SyntaxForm -> 
+                SuperscriptBox]}, "RowWithSeparators"], TraditionalForm], {
+            0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.903487552536127, 
+            FormBox[
+             TemplateBox[{"\[Times]", "\"\[Times]\"", "5.`", 
+               TemplateBox[{"10", 
+                 RowBox[{"-", "5"}]}, "Superscript", SyntaxForm -> 
+                SuperscriptBox]}, "RowWithSeparators"], TraditionalForm], {
+            0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.210340371976182, 
+            FormBox[
+             TemplateBox[{"\[Times]", "\"\[Times]\"", "1.`", 
+               TemplateBox[{"10", 
+                 RowBox[{"-", "4"}]}, "Superscript", SyntaxForm -> 
+                SuperscriptBox]}, "RowWithSeparators"], TraditionalForm], {
+            0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.600902459542082, 
+            FormBox[
+             TemplateBox[{"\[Times]", "\"\[Times]\"", "5.`", 
+               TemplateBox[{"10", 
+                 RowBox[{"-", "4"}]}, "Superscript", SyntaxForm -> 
+                SuperscriptBox]}, "RowWithSeparators"], TraditionalForm], {
+            0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-6.907755278982137, 
+            FormBox["0.001`", TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.298317366548036, 
+            FormBox[
+             TagBox[
+              InterpretationBox["\"0.005\"", 0.005, AutoDelete -> True], 
+              NumberForm[#, {
+                DirectedInfinity[1], 3}]& ], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-12.206072645530174`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-12.02375108873622, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.86960040890896, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.736069016284437`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.618285980628055`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-10.819778284410283`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-10.41431317630212, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-10.126631103850338`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.721165995742174, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.567015315914915, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.433483923290392, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.315700887634009, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-8.517193191416238, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-8.111728083308073, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.824046010856292, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.418580902748128, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.264430222920869, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.1308988302963465`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.013115794639964, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-6.214608098422191, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.809142990314028, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.521460917862246, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.115995809754082, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.961845129926823, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.8283137373023015`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.710530701645918, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.605170185988091, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.509860006183766, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.422848629194137, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.3428059215206005`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.268697949366879, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.199705077879927, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.135166556742356, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.074541934925921, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.017383521085972, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}}, {{-11.512925464970229`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-9.903487552536127, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-9.210340371976182, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-7.600902459542082, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-6.907755278982137, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-5.298317366548036, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-12.206072645530174`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-12.02375108873622, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.86960040890896, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.736069016284437`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.618285980628055`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-10.819778284410283`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-10.41431317630212, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-10.126631103850338`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.721165995742174, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.567015315914915, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.433483923290392, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.315700887634009, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-8.517193191416238, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-8.111728083308073, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.824046010856292, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.418580902748128, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.264430222920869, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.1308988302963465`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.013115794639964, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-6.214608098422191, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.809142990314028, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.521460917862246, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.115995809754082, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.961845129926823, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.8283137373023015`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.710530701645918, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.605170185988091, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.509860006183766, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.422848629194137, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.3428059215206005`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.268697949366879, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.199705077879927, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.135166556742356, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.074541934925921, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.017383521085972, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}}}, {Automatic, Automatic}}],
+      GridLines->{None, None},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageSize->Medium,
+      Method->{
+       "OptimizePlotMarkers" -> True, 
+        "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+            (Identity[#]& )[
+             Part[#, 1]], 
+            (Exp[#]& )[
+             Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+            (Identity[#]& )[
+             Part[#, 1]], 
+            (Exp[#]& )[
+             Part[#, 2]]}& )}},
+      PlotLabel->FormBox[
+       "\"Difference Faraday to Dyn. Accel vs Precision\"", TraditionalForm],
+      PlotRange->{{1.9375000000000002`, 
+       5.}, {-11.751306014363141`, -5.132818344996341}},
+      PlotRangeClipping->True,
+      PlotRangePadding->{{
+         Scaled[0.02], 
+         Scaled[0.02]}, {
+         Scaled[0.02], 
+         Scaled[0.05]}},
+      Ticks->{Automatic, Quiet[
+         Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }], 
+     GraphicsBox[{{}, {{{}, {}, 
+         {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+          0.012833333333333334`], AbsoluteThickness[1.6], 
+          LineBox[{{2., -5.857571105262458}, {3., -8.378952418431638}, {
+           4., -9.494639387379042}, {5., -14.378400560765558`}}]}}, 
+        {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+         0.012833333333333334`], AbsoluteThickness[1.6], 
+         GeometricTransformationBox[InsetBox[
+           FormBox[
+            StyleBox[
+             GraphicsBox[
+              {EdgeForm[None], DiskBox[{0, 0}]}],
+             StripOnInput->False,
+             GraphicsBoxOptions->{DefaultBaseStyle->Directive[
+               PointSize[0.012833333333333334`], 
+               RGBColor[0.368417, 0.506779, 0.709798], 
+               AbsoluteThickness[1.6]]}],
+            TraditionalForm], {0., 0.}, Automatic, Offset[8]], {{{
+          2., -5.857571105262458}}, {{3., -8.378952418431638}}, {{
+          4., -9.494639387379042}}, {{5., -14.378400560765558`}}}]}, {
+         {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+          0.012833333333333334`], AbsoluteThickness[1.6]}, {}}, {
+         {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+          0.012833333333333334`], AbsoluteThickness[1.6]}, {}}}, {{}, {}}},
+      AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+      Axes->{True, True},
+      AxesLabel->{None, None},
+      AxesOrigin->{1.9375000000000002`, -14.851779974960175`},
+      DisplayFunction->Identity,
+      Frame->{{True, False}, {True, False}},
+      FrameLabel->{{
+         FormBox["\"Difference(mV)\"", TraditionalForm], None}, {
+         FormBox["\"Precision\"", TraditionalForm], None}},
+      FrameTicks->FrontEndValueCache[{{Quiet[
+           Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
+          Charting`ScaledFrameTicks[{Log, Exp}]}, {
+         Automatic, Automatic}}, {{{{-13.815510557964274`, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "6"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.512925464970229`, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "5"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.210340371976182, 
+            FormBox[
+             TemplateBox[{"10", 
+               RowBox[{"-", "4"}]}, "Superscript", SyntaxForm -> 
+              SuperscriptBox], TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-6.907755278982137, 
+            FormBox["0.001`", TraditionalForm], {0.01, 0.}, {
+             AbsoluteThickness[0.1]}}, {-16.11809565095832, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-15.424948470398375`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-15.01948336229021, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-14.73180128983843, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-14.508657738524219`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-14.326336181730264`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-14.172185501903007`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-14.038654109278484`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-13.9208710736221, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-13.122363377404328`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-12.716898269296165`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-12.429216196844383`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-12.206072645530174`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-12.02375108873622, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.86960040890896, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.736069016284437`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.618285980628055`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-10.819778284410283`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-10.41431317630212, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-10.126631103850338`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.903487552536127, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.721165995742174, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.567015315914915, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.433483923290392, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.315700887634009, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-8.517193191416238, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-8.111728083308073, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.824046010856292, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.600902459542082, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.418580902748128, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.264430222920869, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.1308988302963465`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.013115794639964, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-6.214608098422191, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.809142990314028, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.521460917862246, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.298317366548036, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.115995809754082, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.961845129926823, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.8283137373023015`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.710530701645918, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.605170185988091, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-3.912023005428146, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-3.506557897319982, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-3.2188758248682006`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-2.995732273553991, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}}, {{-13.815510557964274`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-11.512925464970229`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-9.210340371976182, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-6.907755278982137, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.01, 0.}, {
+            
+             AbsoluteThickness[0.1]}}, {-16.11809565095832, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-15.424948470398375`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-15.01948336229021, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-14.73180128983843, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-14.508657738524219`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-14.326336181730264`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-14.172185501903007`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-14.038654109278484`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-13.9208710736221, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-13.122363377404328`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-12.716898269296165`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-12.429216196844383`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-12.206072645530174`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-12.02375108873622, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.86960040890896, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.736069016284437`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-11.618285980628055`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-10.819778284410283`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-10.41431317630212, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-10.126631103850338`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.903487552536127, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.721165995742174, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.567015315914915, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.433483923290392, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-9.315700887634009, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-8.517193191416238, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-8.111728083308073, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.824046010856292, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.600902459542082, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.418580902748128, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.264430222920869, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.1308988302963465`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-7.013115794639964, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-6.214608098422191, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.809142990314028, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.521460917862246, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.298317366548036, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-5.115995809754082, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.961845129926823, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.8283137373023015`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.710530701645918, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-4.605170185988091, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-3.912023005428146, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-3.506557897319982, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-3.2188758248682006`, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}, {-2.995732273553991, 
+            FormBox[
+             TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+             AbsoluteThickness[0.1]}}}}, {Automatic, Automatic}}],
+      GridLines->{None, None},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageSize->Medium,
+      Method->{
+       "OptimizePlotMarkers" -> True, 
+        "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+            (Identity[#]& )[
+             Part[#, 1]], 
+            (Exp[#]& )[
+             Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+            (Identity[#]& )[
+             Part[#, 1]], 
+            (Exp[#]& )[
+             Part[#, 2]]}& )}},
+      PlotLabel->FormBox[
+       "\"Difference Full Accel to Zero vs Precision\"", TraditionalForm],
+      PlotRange->{{1.9375000000000002`, 
+       5.}, {-14.851779974960175`, -5.857571105262458}},
+      PlotRangeClipping->True,
+      PlotRangePadding->{{
+         Scaled[0.02], 
+         Scaled[0.02]}, {
+         Scaled[0.02], 
+         Scaled[0.05]}},
+      Ticks->{Automatic, Quiet[
+         Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }]}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{{3.897701588921097*^9, 3.897701610928759*^9}, 
+   3.897735028828279*^9, 3.89773506760765*^9},
  CellLabel->
-  "During evaluation of \
-In[227]:=",ExpressionUUID->"fabf6967-675d-48f0-ac5d-0fae0afd88dd"],
-
-Cell[BoxData[
- TagBox[
-  RowBox[{"{", 
-   RowBox[{
-    InterpretationBox["\<\"8.09922\"\>",
-     8.099215372705611,
-     AutoDelete->True], ",", 
-    InterpretationBox["\<\"8.09679\"\>",
-     8.096791542387706,
-     AutoDelete->True], ",", 
-    InterpretationBox["\<\"8.09665\"\>",
-     8.096652106279388,
-     AutoDelete->True], ",", 
-    InterpretationBox["\<\"8.09663\"\>",
-     8.096626135835878,
-     AutoDelete->True], ",", 
-    InterpretationBox["\<\"8.09663\"\>",
-     8.096629890576608,
-     AutoDelete->True]}], "}"}],
-  ScientificForm]], "Print",
- CellChangeTimes->{3.897492631440197*^9, 3.8974927865619097`*^9, 
-  3.897492925087717*^9, 3.897492977629673*^9, 3.897493342311125*^9, 
-  3.897496798606906*^9, 3.897497595016164*^9, 3.8975619263896933`*^9, 
-  3.897562060027316*^9, 3.897614226774334*^9, 3.8976147604262733`*^9, 
-  3.897649503957955*^9, 3.8976508416389513`*^9, 3.897651086344823*^9, 
-  3.897651194901457*^9, 3.897651327974419*^9, 3.897651366063232*^9},
- CellLabel->
-  "During evaluation of \
-In[227]:=",ExpressionUUID->"63620dec-c2f8-46d9-8f1d-72595ca6cb37"],
-
-Cell[BoxData[
- TagBox[
-  RowBox[{"{", 
-   RowBox[{
-    InterpretationBox[
-     RowBox[{"\<\"5.89991\"\>", "\[Times]", 
-      SuperscriptBox["10", "\<\"-3\"\>"]}],
-     0.00589990904083848,
-     AutoDelete->True], ",", 
-    InterpretationBox[
-     RowBox[{"\<\"1.55454\"\>", "\[Times]", 
-      SuperscriptBox["10", "\<\"-3\"\>"]}],
-     0.0015545403580468076`,
-     AutoDelete->True], ",", 
-    InterpretationBox[
-     RowBox[{"\<\"3.02746\"\>", "\[Times]", 
-      SuperscriptBox["10", "\<\"-4\"\>"]}],
-     0.00030274623338932827`,
-     AutoDelete->True], ",", 
-    InterpretationBox[
-     RowBox[{"\<\"1.11623\"\>", "\[Times]", 
-      SuperscriptBox["10", "\<\"-5\"\>"]}],
-     0.0000111623443252995,
-     AutoDelete->True], ",", 
-    InterpretationBox[
-     RowBox[{"\<\"5.00862\"\>", "\[Times]", 
-      SuperscriptBox["10", "\<\"-5\"\>"]}],
-     0.00005008624700053588,
-     AutoDelete->True]}], "}"}],
-  ScientificForm]], "Print",
- CellChangeTimes->{3.897492631440197*^9, 3.8974927865619097`*^9, 
-  3.897492925087717*^9, 3.897492977629673*^9, 3.897493342311125*^9, 
-  3.897496798606906*^9, 3.897497595016164*^9, 3.8975619263896933`*^9, 
-  3.897562060027316*^9, 3.897614226774334*^9, 3.8976147604262733`*^9, 
-  3.897649503957955*^9, 3.8976508416389513`*^9, 3.897651086344823*^9, 
-  3.897651194901457*^9, 3.897651327974419*^9, 3.897651366064597*^9},
- CellLabel->
-  "During evaluation of \
-In[227]:=",ExpressionUUID->"0ee1f34f-42cd-4c4f-817e-f2b6ef6d5a6d"]
-}, Open  ]]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"ListPlot", "[", 
-  RowBox[{
-   RowBox[{"Transpose", "[", 
-    RowBox[{"{", 
-     RowBox[{"precisions", ",", 
-      RowBox[{"Abs", "[", "diff", "]"}]}], "}"}], "]"}], ",", " ", 
-   RowBox[{"Joined", "\[Rule]", "True"}], ",", " ", 
-   RowBox[{"ScalingFunctions", "\[Rule]", "\"\<Log\>\""}]}], "]"}]], "Input",
- CellChangeTimes->{{3.897493244133316*^9, 3.8974932876431417`*^9}, {
-   3.8974941552849283`*^9, 3.8974941894328737`*^9}, {3.8974964075381937`*^9, 
-   3.897496409185212*^9}, {3.89749646195286*^9, 3.897496465375679*^9}, {
-   3.897496503130311*^9, 3.897496522395753*^9}, 3.897496563417778*^9, 
-   3.897561917245727*^9},
- CellLabel->
-  "In[163]:=",ExpressionUUID->"3d4b63e5-6787-4f09-abfb-2458a7fa5fb6"],
-
-Cell[BoxData[
- GraphicsBox[{{}, {{{}, {}, 
-     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      LineBox[{{2., -5.132818344996341}, {3., -6.46657536672669}, {
-       4., -8.102615616931907}, {5., -11.402964558080676`}, {
-       6., -9.901764098525835}}]}}, 
-    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
-      AbsoluteThickness[1.6]}, {
-     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6]}, {}}, {
-     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6]}, {}}}, {{}, {}}},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->{True, True},
-  AxesLabel->{None, None},
-  AxesOrigin->{1.916666666666667, -11.751306014363141`},
-  DisplayFunction->Identity,
-  Frame->{{False, False}, {False, False}},
-  FrameLabel->{{None, None}, {None, None}},
-  FrameTicks->{{Quiet[
-      Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-     Charting`ScaledFrameTicks[{Log, Exp}]}, {Automatic, Automatic}},
-  GridLines->{None, None},
-  GridLinesStyle->Directive[
-    GrayLevel[0.5, 0.4]],
-  Method->{
-   "OptimizePlotMarkers" -> True, 
-    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-        (Identity[#]& )[
-         Part[#, 1]], 
-        (Exp[#]& )[
-         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-        (Identity[#]& )[
-         Part[#, 1]], 
-        (Exp[#]& )[
-         Part[#, 2]]}& )}},
-  PlotRange->{{1.916666666666667, 
-   6.}, {-11.751306014363141`, -5.132818344996341}},
-  PlotRangeClipping->True,
-  PlotRangePadding->{{
-     Scaled[0.02], 
-     Scaled[0.02]}, {
-     Scaled[0.02], 
-     Scaled[0.05]}},
-  Ticks->FrontEndValueCache[{Automatic, Quiet[
-      Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }, {
-    Automatic, {{-11.512925464970229`, 
-       FormBox[
-        TemplateBox[{"\[Times]", "\"\[Times]\"", "1.`", 
-          TemplateBox[{"10", 
-            RowBox[{"-", "5"}]}, "Superscript", SyntaxForm -> 
-           SuperscriptBox]}, "RowWithSeparators"], TraditionalForm], {0.01, 
-       0.}, {
-        AbsoluteThickness[0.1]}}, {-9.903487552536127, 
-       FormBox[
-        TemplateBox[{"\[Times]", "\"\[Times]\"", "5.`", 
-          TemplateBox[{"10", 
-            RowBox[{"-", "5"}]}, "Superscript", SyntaxForm -> 
-           SuperscriptBox]}, "RowWithSeparators"], TraditionalForm], {0.01, 
-       0.}, {
-        AbsoluteThickness[0.1]}}, {-9.210340371976182, 
-       FormBox[
-        TemplateBox[{"\[Times]", "\"\[Times]\"", "1.`", 
-          TemplateBox[{"10", 
-            RowBox[{"-", "4"}]}, "Superscript", SyntaxForm -> 
-           SuperscriptBox]}, "RowWithSeparators"], TraditionalForm], {0.01, 
-       0.}, {
-        AbsoluteThickness[0.1]}}, {-7.600902459542082, 
-       FormBox[
-        TemplateBox[{"\[Times]", "\"\[Times]\"", "5.`", 
-          TemplateBox[{"10", 
-            RowBox[{"-", "4"}]}, "Superscript", SyntaxForm -> 
-           SuperscriptBox]}, "RowWithSeparators"], TraditionalForm], {0.01, 
-       0.}, {
-        AbsoluteThickness[0.1]}}, {-6.907755278982137, 
-       FormBox["0.001`", TraditionalForm], {0.01, 0.}, {
-        AbsoluteThickness[0.1]}}, {-5.298317366548036, 
-       FormBox[
-        TagBox[
-         InterpretationBox["\"0.005\"", 0.005, AutoDelete -> True], 
-         NumberForm[#, {
-           DirectedInfinity[1], 3}]& ], TraditionalForm], {0.01, 0.}, {
-        AbsoluteThickness[0.1]}}, {-12.206072645530174`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-12.02375108873622, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-11.86960040890896, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-11.736069016284437`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-11.618285980628055`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-10.819778284410283`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-10.41431317630212, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-10.126631103850338`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-9.721165995742174, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-9.567015315914915, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-9.433483923290392, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-9.315700887634009, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-8.517193191416238, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-8.111728083308073, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-7.824046010856292, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-7.418580902748128, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-7.264430222920869, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-7.1308988302963465`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-7.013115794639964, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-6.214608098422191, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-5.809142990314028, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-5.521460917862246, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-5.115995809754082, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.961845129926823, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.8283137373023015`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.710530701645918, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.605170185988091, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.509860006183766, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.422848629194137, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.3428059215206005`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.268697949366879, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.199705077879927, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.135166556742356, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.074541934925921, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.017383521085972, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}}}]]], "Output",
- CellChangeTimes->{
-  3.897493294015321*^9, {3.897494159428894*^9, 3.8974941906708937`*^9}, {
-   3.897496368257914*^9, 3.897496410037208*^9}, 3.897496467719371*^9, {
-   3.897496514151932*^9, 3.897496522918788*^9}, 3.8974972313010893`*^9, 
-   3.897497595147883*^9, 3.897561932985745*^9, 3.8976142319719677`*^9, 
-   3.897614769148109*^9},
- CellLabel->
-  "Out[163]=",ExpressionUUID->"cf98ba7a-65e9-4f7b-be0b-e98bed271466"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"ListPlot", "[", "\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{"Transpose", "[", 
-    RowBox[{"{", 
-     RowBox[{"precisions", ",", 
-      RowBox[{"Abs", "[", "fullAccel", "]"}]}], "}"}], "]"}], ",", 
-   "\[IndentingNewLine]", " ", 
-   RowBox[{"Joined", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
-   RowBox[{"PlotMarkers", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{"Automatic", ",", "8"}], "}"}]}], ",", "\[IndentingNewLine]", 
-   " ", 
-   RowBox[{"ScalingFunctions", "\[Rule]", "\"\<Log\>\""}]}], "]"}]], "Input",
- CellChangeTimes->{{3.897493244133316*^9, 3.8974932876431417`*^9}, {
-   3.8974941552849283`*^9, 3.8974941894328737`*^9}, {3.8974964075381937`*^9, 
-   3.897496409185212*^9}, {3.89749646195286*^9, 3.897496465375679*^9}, {
-   3.897496503130311*^9, 3.897496522395753*^9}, 3.897496563417778*^9, 
-   3.897497324116541*^9, {3.897561425792492*^9, 3.897561432756064*^9}, {
-   3.897561620471459*^9, 3.8975616256633167`*^9}, {3.897561721130746*^9, 
-   3.8975617284947557`*^9}, 3.89756192218878*^9},
- CellLabel->
-  "In[150]:=",ExpressionUUID->"fb9f0bff-3b18-48b4-a641-9f270b23da7d"],
-
-Cell[BoxData[
- GraphicsBox[{{}, {{{}, {}, 
-     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      LineBox[{{2., -5.857571105262458}, {3., -8.378952418431638}, {
-       4., -9.494639387379042}, {5., -14.378400560765558`}, {
-       6., -15.533182985444421`}}]}}, 
-    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
-      AbsoluteThickness[1.6], GeometricTransformationBox[InsetBox[
-       FormBox[
-        StyleBox[
-         GraphicsBox[
-          {EdgeForm[None], DiskBox[{0, 0}]}],
-         StripOnInput->False,
-         GraphicsBoxOptions->{DefaultBaseStyle->Directive[
-           PointSize[0.012833333333333334`], 
-           RGBColor[0.368417, 0.506779, 0.709798], 
-           AbsoluteThickness[1.6]]}],
-        TraditionalForm], {0., 0.}, Automatic, Offset[8]], {{{
-      2., -5.857571105262458}}, {{3., -8.378952418431638}}, {{
-      4., -9.494639387379042}}, {{5., -14.378400560765558`}}, {{
-      6., -15.533182985444421`}}}]}, {
-     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6]}, {}}, {
-     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6]}, {}}}, {{}, {}}},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->{True, True},
-  AxesLabel->{None, None},
-  AxesOrigin->{1.916666666666667, -16.070716978787864`},
-  DisplayFunction->Identity,
-  Frame->{{False, False}, {False, False}},
-  FrameLabel->{{None, None}, {None, None}},
-  FrameTicks->{{Quiet[
-      Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& , 
-     Charting`ScaledFrameTicks[{Log, Exp}]}, {Automatic, Automatic}},
-  GridLines->{None, None},
-  GridLinesStyle->Directive[
-    GrayLevel[0.5, 0.4]],
-  Method->{
-   "OptimizePlotMarkers" -> True, 
-    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-        (Identity[#]& )[
-         Part[#, 1]], 
-        (Exp[#]& )[
-         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-        (Identity[#]& )[
-         Part[#, 1]], 
-        (Exp[#]& )[
-         Part[#, 2]]}& )}},
-  PlotRange->{{1.916666666666667, 
-   6.}, {-16.070716978787864`, -5.857571105262458}},
-  PlotRangeClipping->True,
-  PlotRangePadding->{{
-     Scaled[0.02], 
-     Scaled[0.02]}, {
-     Scaled[0.02], 
-     Scaled[0.05]}},
-  Ticks->FrontEndValueCache[{Automatic, Quiet[
-      Charting`ScaledTicks[{Log, Exp}][#, #2, {6, 6}]]& }, {
-    Automatic, {{-16.11809565095832, 
-       FormBox[
-        TemplateBox[{"10", 
-          RowBox[{"-", "7"}]}, "Superscript", SyntaxForm -> SuperscriptBox], 
-        TraditionalForm], {0.01, 0.}, {
-        AbsoluteThickness[0.1]}}, {-13.815510557964274`, 
-       FormBox[
-        TemplateBox[{"10", 
-          RowBox[{"-", "6"}]}, "Superscript", SyntaxForm -> SuperscriptBox], 
-        TraditionalForm], {0.01, 0.}, {
-        AbsoluteThickness[0.1]}}, {-11.512925464970229`, 
-       FormBox[
-        TemplateBox[{"10", 
-          RowBox[{"-", "5"}]}, "Superscript", SyntaxForm -> SuperscriptBox], 
-        TraditionalForm], {0.01, 0.}, {
-        AbsoluteThickness[0.1]}}, {-9.210340371976182, 
-       FormBox[
-        TemplateBox[{"10", 
-          RowBox[{"-", "4"}]}, "Superscript", SyntaxForm -> SuperscriptBox], 
-        TraditionalForm], {0.01, 0.}, {
-        AbsoluteThickness[0.1]}}, {-6.907755278982137, 
-       FormBox["0.001`", TraditionalForm], {0.01, 0.}, {
-        AbsoluteThickness[0.1]}}, {-18.420680743952367`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-17.72753356339242, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-17.322068455284256`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-17.034386382832476`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-16.811242831518264`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-16.62892127472431, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-16.474770594897052`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-16.34123920227253, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-16.223456166616145`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-15.424948470398375`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-15.01948336229021, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-14.73180128983843, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-14.508657738524219`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-14.326336181730264`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-14.172185501903007`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-14.038654109278484`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-13.9208710736221, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-13.122363377404328`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-12.716898269296165`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-12.429216196844383`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-12.206072645530174`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-12.02375108873622, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-11.86960040890896, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-11.736069016284437`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-11.618285980628055`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-10.819778284410283`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-10.41431317630212, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-10.126631103850338`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-9.903487552536127, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-9.721165995742174, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-9.567015315914915, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-9.433483923290392, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-9.315700887634009, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-8.517193191416238, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-8.111728083308073, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-7.824046010856292, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-7.600902459542082, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-7.418580902748128, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-7.264430222920869, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-7.1308988302963465`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-7.013115794639964, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-6.214608098422191, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-5.809142990314028, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-5.521460917862246, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-5.298317366548036, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-5.115995809754082, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.961845129926823, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.8283137373023015`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.710530701645918, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-4.605170185988091, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-3.912023005428146, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-3.506557897319982, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}, {-3.2188758248682006`, 
-       FormBox[
-        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
-        AbsoluteThickness[0.1]}}}}]]], "Output",
- CellChangeTimes->{
-  3.897493294015321*^9, {3.897494159428894*^9, 3.8974941906708937`*^9}, {
-   3.897496368257914*^9, 3.897496410037208*^9}, 3.897496467719371*^9, {
-   3.897496514151932*^9, 3.897496522918788*^9}, 3.8974972313010893`*^9, 
-   3.897497595223233*^9, 3.897561626971833*^9, {3.897561723721142*^9, 
-   3.897561728987541*^9}, 3.897561935500441*^9, 3.897614234440981*^9},
- CellLabel->
-  "Out[150]=",ExpressionUUID->"83c0f0d3-23af-454c-9377-2cfa954df01a"]
+  "Out[293]=",ExpressionUUID->"d9583c0a-dc59-4365-bdba-8aebe1a0e3ff"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -12559,22 +13235,23 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"precisionAnalysis", "[", "\"\<writeResultsToTable\>\"", "]"}], "[",
    "]"}]], "Input",
- CellChangeTimes->{3.897497481389078*^9},
+ CellChangeTimes->{
+  3.897497481389078*^9, {3.8977359747014427`*^9, 3.897735976006194*^9}},
  CellLabel->
-  "In[237]:=",ExpressionUUID->"f8f24877-33af-4cd9-bba5-508d7d38bc68"],
+  "In[295]:=",ExpressionUUID->"f8f24877-33af-4cd9-bba5-508d7d38bc68"],
 
 Cell[BoxData[
  TagBox[GridBox[{
-    {Cell["precision",ExpressionUUID->"58769d1d-b304-4fef-83b7-291c8f02b4c2"],
-      Cell["",ExpressionUUID->"52bea8e1-91b3-489b-bf25-d607ea12d2bc"], Cell[
-     "Faraday",ExpressionUUID->"065e3103-f53d-422a-b788-9469532d59ad"], Cell[
+    {Cell["precision",ExpressionUUID->"27d118e9-75a9-4814-b02a-fd3af78a3bc7"],
+      Cell["",ExpressionUUID->"fa296741-e7f3-47ed-8236-3f548001d130"], Cell[
+     "Faraday",ExpressionUUID->"2ee90c28-e673-4da2-83bd-0b83f3944be6"], Cell[
      "Difference between Faraday and dynamic accel",ExpressionUUID->
-      "1d613841-6f7d-426c-9b2c-98aeb8ff06a1"], Cell[
-     "",ExpressionUUID->"d749946f-1102-471e-8824-a87757363e7f"], Cell[
-     "Full accel",ExpressionUUID->"4124e53f-20d2-4009-a422-b19192d8b8e4"], 
+      "3d4e53e6-c315-4909-baad-e41f990dc91a"], Cell[
+     "",ExpressionUUID->"43776560-3ccc-4af7-87bd-beed9489d356"], Cell[
+     "Full accel",ExpressionUUID->"f340ef9d-05e5-484c-ad67-f09a0f5dbaa8"], 
      Cell["Difference of full accel from zero",ExpressionUUID->
-      "23a5cded-f501-49b2-9a9e-5f19f0bf1133"]},
-    {"2", Cell["   ",ExpressionUUID->"073bb393-5ef5-498e-a95f-b7a1c2b37058"], 
+      "63b9346e-b5dc-45ca-adf0-7ca2913c47ba"]},
+    {"2", Cell["   ",ExpressionUUID->"7be6a1c1-c497-448b-ad74-1939da01401c"], 
      
      TagBox[
       InterpretationBox["\<\"8.09332\"\>",
@@ -12588,12 +13265,12 @@ Cell[BoxData[
        0.00589990904083848,
        AutoDelete->True],
       ScientificForm[#, 3]& ], Cell[
-     "",ExpressionUUID->"f190aa30-948a-4d9b-8ff2-3e024a2ade29"], 
+     "   ",ExpressionUUID->"89ce6266-e0c8-4698-bbd9-5256bd929b2f"], 
      TagBox[
-      InterpretationBox["\<\"0.00285818\"\>",
+      InterpretationBox["\<\"0.002858\"\>",
        0.0028581774707678014`,
        AutoDelete->True],
-      DecimalForm[#, 6]& ], 
+      DecimalForm[#, {6, 6}]& ], 
      TagBox[
       InterpretationBox[
        RowBox[{"\<\"2.86\"\>", "\[Times]", 
@@ -12601,7 +13278,7 @@ Cell[BoxData[
        0.0028581774707678014`,
        AutoDelete->True],
       ScientificForm[#, 3]& ]},
-    {"3", Cell["   ",ExpressionUUID->"c87a7b2b-d0fa-41f4-9851-1c954b918d2a"], 
+    {"3", Cell["   ",ExpressionUUID->"8bd37d84-9408-423b-9753-c4bb8356ea77"], 
      
      TagBox[
       InterpretationBox["\<\"8.09835\"\>",
@@ -12615,12 +13292,12 @@ Cell[BoxData[
        0.0015545403580468076`,
        AutoDelete->True],
       ScientificForm[#, 3]& ], Cell[
-     "",ExpressionUUID->"84d4f39a-1913-4058-a43a-03c11ffaaabe"], 
+     "   ",ExpressionUUID->"b8e3b327-2464-4807-b64e-00dbdcc3cc2b"], 
      TagBox[
-      InterpretationBox["\<\"-0.00022965\"\>",
+      InterpretationBox["\<\"-0.000230\"\>",
        -0.00022965039701026865`,
        AutoDelete->True],
-      DecimalForm[#, 6]& ], 
+      DecimalForm[#, {6, 6}]& ], 
      TagBox[
       InterpretationBox[
        RowBox[{"\<\"2.3\"\>", "\[Times]", 
@@ -12628,7 +13305,7 @@ Cell[BoxData[
        0.00022965039701026865`,
        AutoDelete->True],
       ScientificForm[#, 3]& ]},
-    {"4", Cell["   ",ExpressionUUID->"7c2e957a-c36b-4cc7-b447-25bab478213f"], 
+    {"4", Cell["   ",ExpressionUUID->"8c7c61b2-d93b-4633-ba8a-8fd6ec03e524"], 
      
      TagBox[
       InterpretationBox["\<\"8.09635\"\>",
@@ -12642,12 +13319,12 @@ Cell[BoxData[
        0.00030274623338932827`,
        AutoDelete->True],
       ScientificForm[#, 3]& ], Cell[
-     "",ExpressionUUID->"8e7f30f1-f422-476a-9ad3-b40dea07ba8e"], 
+     "   ",ExpressionUUID->"85870dcd-21a6-4e70-8fb0-46f976f048db"], 
      TagBox[
-      InterpretationBox["\<\"-0.0000752542\"\>",
+      InterpretationBox["\<\"-0.000075\"\>",
        -0.0000752541589533829,
        AutoDelete->True],
-      DecimalForm[#, 6]& ], 
+      DecimalForm[#, {6, 6}]& ], 
      TagBox[
       InterpretationBox[
        RowBox[{"\<\"7.53\"\>", "\[Times]", 
@@ -12655,7 +13332,7 @@ Cell[BoxData[
        0.0000752541589533829,
        AutoDelete->True],
       ScientificForm[#, 3]& ]},
-    {"5", Cell["   ",ExpressionUUID->"eb0da819-bdb5-4259-b37e-be7c41c59a64"], 
+    {"5", Cell["   ",ExpressionUUID->"709d9235-291a-43db-876a-a9ebb113ff1c"], 
      
      TagBox[
       InterpretationBox["\<\"8.09661\"\>",
@@ -12669,44 +13346,17 @@ Cell[BoxData[
        0.0000111623443252995,
        AutoDelete->True],
       ScientificForm[#, 3]& ], Cell[
-     "",ExpressionUUID->"8f76d24f-c9bc-43b8-b3f4-7bd2c1a09ce0"], 
+     "   ",ExpressionUUID->"508544c8-bb32-46fc-b234-0d9eed924574"], 
      TagBox[
-      InterpretationBox["\<\"0.000000569561\"\>",
+      InterpretationBox["\<\"0.000001\"\>",
        5.695606511601283*^-7,
        AutoDelete->True],
-      DecimalForm[#, 6]& ], 
+      DecimalForm[#, {6, 6}]& ], 
      TagBox[
       InterpretationBox[
        RowBox[{"\<\"5.7\"\>", "\[Times]", 
         SuperscriptBox["10", "\<\"-7\"\>"]}],
        5.695606511601283*^-7,
-       AutoDelete->True],
-      ScientificForm[#, 3]& ]},
-    {"6", Cell["   ",ExpressionUUID->"11a5bf42-edae-434b-9d04-19bad93becfb"], 
-     
-     TagBox[
-      InterpretationBox["\<\"8.09668\"\>",
-       8.096679976823609,
-       AutoDelete->True],
-      DecimalForm[#, 6]& ], 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"5.01\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"-5\"\>"]}],
-       0.00005008624700053588,
-       AutoDelete->True],
-      ScientificForm[#, 3]& ], Cell[
-     "",ExpressionUUID->"415a204a-f0f5-4927-ae23-433937c5e313"], 
-     TagBox[
-      InterpretationBox["\<\"-0.000000179483\"\>",
-       -1.7948342278698926`*^-7,
-       AutoDelete->True],
-      DecimalForm[#, 6]& ], 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"1.79\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"-7\"\>"]}],
-       1.7948342278698926`*^-7,
        AutoDelete->True],
       ScientificForm[#, 3]& ]}
    },
@@ -12716,9 +13366,10 @@ Cell[BoxData[
   "TextGrid"]], "Output",
  CellChangeTimes->{3.897649634658164*^9, 3.897650845894196*^9, 
   3.897651092538239*^9, 3.897651210111773*^9, 3.8976513378185253`*^9, 
-  3.897651369308379*^9},
+  3.897651369308379*^9, 3.897696303697982*^9, 3.8977016111367188`*^9, 
+  3.897735034716552*^9, 3.8977350679562893`*^9, 3.89773589773398*^9},
  CellLabel->
-  "Out[237]=",ExpressionUUID->"b90a92fe-7dab-4985-8511-1da01ec395cb"]
+  "Out[295]=",ExpressionUUID->"dbda560f-beac-4b83-b0f3-b77e4e138c93"]
 }, Open  ]]
 }, Open  ]],
 
@@ -20199,244 +20850,244 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "EmfFromTheoryXY module"->{
-  Cell[479751, 8347, 41451, 670, 2756, "Input",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a",
+  Cell[502396, 8868, 41451, 670, 2756, "Input",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a",
    InitializationCell->True,
    CellTags->"EmfFromTheoryXY module"],
-  Cell[521810, 9037, 38894, 685, 4457, "Input",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc",
+  Cell[544455, 9558, 38894, 685, 4457, "Input",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc",
    InitializationCell->True,
    CellTags->"EmfFromTheoryXY module"],
-  Cell[561353, 9744, 72690, 1315, 5864, "Input",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37",
+  Cell[583998, 10265, 72690, 1315, 5864, "Input",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37",
    InitializationCell->True,
    CellTags->"EmfFromTheoryXY module"],
-  Cell[634747, 11079, 45890, 752, 2714, "Input",ExpressionUUID->"fd611682-7255-4493-bceb-27f0f8cf3caf",
+  Cell[657392, 11600, 50749, 853, 3281, "Input",ExpressionUUID->"fd611682-7255-4493-bceb-27f0f8cf3caf",
    InitializationCell->True,
    CellTags->"EmfFromTheoryXY module"],
-  Cell[719019, 12757, 73649, 1314, 5864, "Input",ExpressionUUID->"babd4910-44fe-466a-8ed9-6c0a8d200d6b",
+  Cell[753962, 13408, 73649, 1314, 5864, "Input",ExpressionUUID->"babd4910-44fe-466a-8ed9-6c0a8d200d6b",
    InitializationCell->True,
    CellTags->"EmfFromTheoryXY module"]},
  "EMF from theory using x-y segments test"->{
-  Cell[793734, 14098, 37082, 686, 2446, "Input",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f",
+  Cell[828677, 14749, 37082, 686, 2446, "Input",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[830841, 14788, 325, 6, 24, "Print",ExpressionUUID->"47c7e791-72c8-4c4a-9a52-587bc815d697",
+  Cell[865784, 15439, 325, 6, 24, "Print",ExpressionUUID->"47c7e791-72c8-4c4a-9a52-587bc815d697",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[831169, 14796, 329, 6, 24, "Print",ExpressionUUID->"759f6548-6cbb-4c0f-9148-393edcaf3880",
+  Cell[866112, 15447, 329, 6, 24, "Print",ExpressionUUID->"759f6548-6cbb-4c0f-9148-393edcaf3880",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[831501, 14804, 327, 6, 24, "Print",ExpressionUUID->"b53682b6-1c46-4baf-8321-5cfef6825dce",
+  Cell[866444, 15455, 327, 6, 24, "Print",ExpressionUUID->"b53682b6-1c46-4baf-8321-5cfef6825dce",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[831831, 14812, 327, 6, 24, "Print",ExpressionUUID->"445462bb-301d-4bb5-93b3-89d8a3c5b551",
+  Cell[866774, 15463, 327, 6, 24, "Print",ExpressionUUID->"445462bb-301d-4bb5-93b3-89d8a3c5b551",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[832161, 14820, 325, 6, 24, "Print",ExpressionUUID->"2435c6c1-a404-40e5-ad73-4f7786361727",
+  Cell[867104, 15471, 325, 6, 24, "Print",ExpressionUUID->"2435c6c1-a404-40e5-ad73-4f7786361727",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[832489, 14828, 325, 6, 24, "Print",ExpressionUUID->"b8d5256a-34ab-48e0-b60f-5eba07509ae2",
+  Cell[867432, 15479, 325, 6, 24, "Print",ExpressionUUID->"b8d5256a-34ab-48e0-b60f-5eba07509ae2",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[832817, 14836, 666, 11, 63, "Print",ExpressionUUID->"92fbf4fb-d90e-43de-9673-e7c747e074d2",
+  Cell[867760, 15487, 666, 11, 63, "Print",ExpressionUUID->"92fbf4fb-d90e-43de-9673-e7c747e074d2",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[833486, 14849, 325, 6, 24, "Print",ExpressionUUID->"68181085-b582-4ff0-b009-f69c58f761f9",
+  Cell[868429, 15500, 325, 6, 24, "Print",ExpressionUUID->"68181085-b582-4ff0-b009-f69c58f761f9",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[833814, 14857, 325, 6, 24, "Print",ExpressionUUID->"34df0513-bdc2-4dc1-8582-ff7f6d1e4f29",
+  Cell[868757, 15508, 325, 6, 24, "Print",ExpressionUUID->"34df0513-bdc2-4dc1-8582-ff7f6d1e4f29",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[834142, 14865, 326, 6, 24, "Print",ExpressionUUID->"38b9a8c8-2e57-4ae0-9c0b-59c98d75de56",
+  Cell[869085, 15516, 326, 6, 24, "Print",ExpressionUUID->"38b9a8c8-2e57-4ae0-9c0b-59c98d75de56",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[834471, 14873, 330, 7, 24, "Print",ExpressionUUID->"dfa3a235-4628-4a1f-809a-d55096eb66c0",
+  Cell[869414, 15524, 330, 7, 24, "Print",ExpressionUUID->"dfa3a235-4628-4a1f-809a-d55096eb66c0",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[834804, 14882, 330, 7, 24, "Print",ExpressionUUID->"ed44088e-d2dd-4998-8ed1-ab8684745950",
+  Cell[869747, 15533, 330, 7, 24, "Print",ExpressionUUID->"ed44088e-d2dd-4998-8ed1-ab8684745950",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[835137, 14891, 330, 7, 24, "Print",ExpressionUUID->"60a4db1d-eb1f-4d26-a1a7-1ed841100b61",
+  Cell[870080, 15542, 330, 7, 24, "Print",ExpressionUUID->"60a4db1d-eb1f-4d26-a1a7-1ed841100b61",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[835470, 14900, 297, 6, 24, "Print",ExpressionUUID->"42f6d59f-6d31-4a1b-ae41-f2dae57f03ea",
+  Cell[870413, 15551, 297, 6, 24, "Print",ExpressionUUID->"42f6d59f-6d31-4a1b-ae41-f2dae57f03ea",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[836960, 14937, 95627, 2025, 7969, "Input",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672",
+  Cell[871903, 15588, 95627, 2025, 7969, "Input",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[932612, 16966, 1836, 28, 24, "Print",ExpressionUUID->"67fde098-2411-466d-ba85-1cf1bc1d1a13",
+  Cell[967555, 17617, 1836, 28, 24, "Print",ExpressionUUID->"67fde098-2411-466d-ba85-1cf1bc1d1a13",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[934451, 16996, 1832, 28, 24, "Print",ExpressionUUID->"8bb9d9aa-05ef-4797-a55f-22af9505f0e8",
+  Cell[969394, 17647, 1832, 28, 24, "Print",ExpressionUUID->"8bb9d9aa-05ef-4797-a55f-22af9505f0e8",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[936286, 17026, 1820, 28, 24, "Print",ExpressionUUID->"9354b4d7-d302-47fe-a1b6-b53b0e4c458e",
+  Cell[971229, 17677, 1820, 28, 24, "Print",ExpressionUUID->"9354b4d7-d302-47fe-a1b6-b53b0e4c458e",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[938109, 17056, 1830, 28, 24, "Print",ExpressionUUID->"b70faac9-d764-43df-be7a-908dd593d0a7",
+  Cell[973052, 17707, 1830, 28, 24, "Print",ExpressionUUID->"b70faac9-d764-43df-be7a-908dd593d0a7",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[939942, 17086, 1840, 28, 24, "Print",ExpressionUUID->"2d54ee3d-f196-46d0-8be0-24f5858adaa9",
+  Cell[974885, 17737, 1840, 28, 24, "Print",ExpressionUUID->"2d54ee3d-f196-46d0-8be0-24f5858adaa9",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[941785, 17116, 1820, 28, 24, "Print",ExpressionUUID->"78477112-8c09-44ca-9488-f5364479b670",
+  Cell[976728, 17767, 1820, 28, 24, "Print",ExpressionUUID->"78477112-8c09-44ca-9488-f5364479b670",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[943608, 17146, 1842, 28, 24, "Print",ExpressionUUID->"6d7afa72-d428-4c27-831f-2a3c6d394cfe",
+  Cell[978551, 17797, 1842, 28, 24, "Print",ExpressionUUID->"6d7afa72-d428-4c27-831f-2a3c6d394cfe",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[945453, 17176, 1804, 27, 24, "Print",ExpressionUUID->"6b362d1d-be85-4a3f-a981-f283b7cbfed6",
+  Cell[980396, 17827, 1804, 27, 24, "Print",ExpressionUUID->"6b362d1d-be85-4a3f-a981-f283b7cbfed6",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[947260, 17205, 1805, 28, 24, "Print",ExpressionUUID->"f3581abd-07ee-4d8d-8e04-86d51d07620f",
+  Cell[982203, 17856, 1805, 28, 24, "Print",ExpressionUUID->"f3581abd-07ee-4d8d-8e04-86d51d07620f",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[949068, 17235, 1809, 28, 24, "Print",ExpressionUUID->"262adf15-2532-4717-b5d6-73f2e02ba05f",
+  Cell[984011, 17886, 1809, 28, 24, "Print",ExpressionUUID->"262adf15-2532-4717-b5d6-73f2e02ba05f",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[950880, 17265, 1811, 28, 24, "Print",ExpressionUUID->"3975d061-8e5d-4543-95d2-1b0746468151",
+  Cell[985823, 17916, 1811, 28, 24, "Print",ExpressionUUID->"3975d061-8e5d-4543-95d2-1b0746468151",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[952694, 17295, 1811, 28, 24, "Print",ExpressionUUID->"b3a7e606-5b0a-4e3f-97f9-fd66a62e9ca6",
+  Cell[987637, 17946, 1811, 28, 24, "Print",ExpressionUUID->"b3a7e606-5b0a-4e3f-97f9-fd66a62e9ca6",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[954508, 17325, 1789, 27, 24, "Print",ExpressionUUID->"742cfb5d-4005-4c46-8572-b3830f99e845",
+  Cell[989451, 17976, 1789, 27, 24, "Print",ExpressionUUID->"742cfb5d-4005-4c46-8572-b3830f99e845",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[956300, 17354, 1789, 27, 24, "Print",ExpressionUUID->"fd91e10a-db58-467c-b826-8279616faad6",
+  Cell[991243, 18005, 1789, 27, 24, "Print",ExpressionUUID->"fd91e10a-db58-467c-b826-8279616faad6",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[958092, 17383, 1831, 28, 24, "Print",ExpressionUUID->"e19e1bf6-ea91-4c83-afc0-8d3dc6d48f8b",
+  Cell[993035, 18034, 1831, 28, 24, "Print",ExpressionUUID->"e19e1bf6-ea91-4c83-afc0-8d3dc6d48f8b",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[959926, 17413, 1789, 27, 24, "Print",ExpressionUUID->"620f76f8-9fad-4a97-bb51-0237e8160430",
+  Cell[994869, 18064, 1789, 27, 24, "Print",ExpressionUUID->"620f76f8-9fad-4a97-bb51-0237e8160430",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[961718, 17442, 1791, 27, 24, "Print",ExpressionUUID->"d491583a-d88a-4c37-90f1-74e36d80fd31",
+  Cell[996661, 18093, 1791, 27, 24, "Print",ExpressionUUID->"d491583a-d88a-4c37-90f1-74e36d80fd31",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[963512, 17471, 1833, 28, 24, "Print",ExpressionUUID->"cb08a8e4-1edc-4612-a652-4c3521bb862d",
+  Cell[998455, 18122, 1833, 28, 24, "Print",ExpressionUUID->"cb08a8e4-1edc-4612-a652-4c3521bb862d",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[965348, 17501, 1843, 28, 24, "Print",ExpressionUUID->"3ccad5bb-0e23-4d94-80b0-d98776de8f03",
+  Cell[1000291, 18152, 1843, 28, 24, "Print",ExpressionUUID->"3ccad5bb-0e23-4d94-80b0-d98776de8f03",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[967194, 17531, 1847, 28, 24, "Print",ExpressionUUID->"7dad5b36-cf63-404a-a97f-0f8f8a6aa934",
+  Cell[1002137, 18182, 1847, 28, 24, "Print",ExpressionUUID->"7dad5b36-cf63-404a-a97f-0f8f8a6aa934",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[969044, 17561, 1833, 28, 24, "Print",ExpressionUUID->"efac059f-3f9f-4ee7-a92b-fbc341594d7a",
+  Cell[1003987, 18212, 1833, 28, 24, "Print",ExpressionUUID->"efac059f-3f9f-4ee7-a92b-fbc341594d7a",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[970880, 17591, 1789, 27, 24, "Print",ExpressionUUID->"e5da87ce-dbc0-41f7-af23-1493f869c520",
+  Cell[1005823, 18242, 1789, 27, 24, "Print",ExpressionUUID->"e5da87ce-dbc0-41f7-af23-1493f869c520",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[972672, 17620, 1789, 27, 24, "Print",ExpressionUUID->"9c73c18e-0ddb-452c-87fb-217a4733b295",
+  Cell[1007615, 18271, 1789, 27, 24, "Print",ExpressionUUID->"9c73c18e-0ddb-452c-87fb-217a4733b295",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[974464, 17649, 1843, 28, 24, "Print",ExpressionUUID->"3eb9350d-9ec1-459d-acda-fb66a4673f10",
+  Cell[1009407, 18300, 1843, 28, 24, "Print",ExpressionUUID->"3eb9350d-9ec1-459d-acda-fb66a4673f10",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[976310, 17679, 1841, 28, 24, "Print",ExpressionUUID->"4399cd49-3471-4627-af28-feb006a1f33e",
+  Cell[1011253, 18330, 1841, 28, 24, "Print",ExpressionUUID->"4399cd49-3471-4627-af28-feb006a1f33e",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[978154, 17709, 1839, 28, 24, "Print",ExpressionUUID->"3d4fd04d-ffb6-4d85-a8a5-8883fac6bd6f",
+  Cell[1013097, 18360, 1839, 28, 24, "Print",ExpressionUUID->"3d4fd04d-ffb6-4d85-a8a5-8883fac6bd6f",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[979996, 17739, 1841, 28, 24, "Print",ExpressionUUID->"b3f2ce66-1ac1-453b-a7b1-b503ef4ad005",
+  Cell[1014939, 18390, 1841, 28, 24, "Print",ExpressionUUID->"b3f2ce66-1ac1-453b-a7b1-b503ef4ad005",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[981840, 17769, 1780, 27, 24, "Print",ExpressionUUID->"3c6c2deb-6425-462c-aa46-c7a56e433af1",
+  Cell[1016783, 18420, 1780, 27, 24, "Print",ExpressionUUID->"3c6c2deb-6425-462c-aa46-c7a56e433af1",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[983623, 17798, 1807, 28, 24, "Print",ExpressionUUID->"7a3979ee-d4d3-4cad-8c7c-1a26a18a1ade",
+  Cell[1018566, 18449, 1807, 28, 24, "Print",ExpressionUUID->"7a3979ee-d4d3-4cad-8c7c-1a26a18a1ade",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[985433, 17828, 1805, 28, 24, "Print",ExpressionUUID->"122cd2b5-3d03-42c8-a216-86cf5d17c88a",
+  Cell[1020376, 18479, 1805, 28, 24, "Print",ExpressionUUID->"122cd2b5-3d03-42c8-a216-86cf5d17c88a",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[987241, 17858, 1801, 27, 24, "Print",ExpressionUUID->"8fc0b352-6baf-4564-b41f-23fdf3e623e8",
+  Cell[1022184, 18509, 1801, 27, 24, "Print",ExpressionUUID->"8fc0b352-6baf-4564-b41f-23fdf3e623e8",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[989045, 17887, 1807, 28, 24, "Print",ExpressionUUID->"61e43282-6b7c-446c-a947-9af49bd3c603",
+  Cell[1023988, 18538, 1807, 28, 24, "Print",ExpressionUUID->"61e43282-6b7c-446c-a947-9af49bd3c603",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[990855, 17917, 1801, 27, 24, "Print",ExpressionUUID->"1b1959b6-7fd5-43af-b8bf-caf8684775cd",
+  Cell[1025798, 18568, 1801, 27, 24, "Print",ExpressionUUID->"1b1959b6-7fd5-43af-b8bf-caf8684775cd",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[992659, 17946, 1805, 28, 24, "Print",ExpressionUUID->"0432236a-d2b5-44b3-b646-0a2a912101fe",
+  Cell[1027602, 18597, 1805, 28, 24, "Print",ExpressionUUID->"0432236a-d2b5-44b3-b646-0a2a912101fe",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[994467, 17976, 1807, 28, 24, "Print",ExpressionUUID->"e6244fb2-9790-4502-9886-79477d09087c",
+  Cell[1029410, 18627, 1807, 28, 24, "Print",ExpressionUUID->"e6244fb2-9790-4502-9886-79477d09087c",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[996277, 18006, 1801, 27, 24, "Print",ExpressionUUID->"d7337ae3-3dd1-4b76-83f2-afb86b154166",
+  Cell[1031220, 18657, 1801, 27, 24, "Print",ExpressionUUID->"d7337ae3-3dd1-4b76-83f2-afb86b154166",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[998081, 18035, 1807, 28, 24, "Print",ExpressionUUID->"c3f242e5-6260-49cb-9326-878ac25eaefb",
+  Cell[1033024, 18686, 1807, 28, 24, "Print",ExpressionUUID->"c3f242e5-6260-49cb-9326-878ac25eaefb",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[999891, 18065, 1805, 28, 24, "Print",ExpressionUUID->"5d1e803e-3d96-47cc-876a-1d699a613e3f",
+  Cell[1034834, 18716, 1805, 28, 24, "Print",ExpressionUUID->"5d1e803e-3d96-47cc-876a-1d699a613e3f",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1001699, 18095, 1804, 28, 24, "Print",ExpressionUUID->"196af81c-f503-4dba-a304-36aa08435ef4",
+  Cell[1036642, 18746, 1804, 28, 24, "Print",ExpressionUUID->"196af81c-f503-4dba-a304-36aa08435ef4",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1003506, 18125, 1803, 27, 24, "Print",ExpressionUUID->"44c3b935-0afc-4af6-a1b8-8568922f3b8e",
+  Cell[1038449, 18776, 1803, 27, 24, "Print",ExpressionUUID->"44c3b935-0afc-4af6-a1b8-8568922f3b8e",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1005312, 18154, 1789, 27, 24, "Print",ExpressionUUID->"5bdc369e-61f1-4b18-b3c5-d385ebd5b237",
+  Cell[1040255, 18805, 1789, 27, 24, "Print",ExpressionUUID->"5bdc369e-61f1-4b18-b3c5-d385ebd5b237",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1007104, 18183, 1789, 27, 24, "Print",ExpressionUUID->"9beb5f9c-8794-41da-a665-d607290d775a",
+  Cell[1042047, 18834, 1789, 27, 24, "Print",ExpressionUUID->"9beb5f9c-8794-41da-a665-d607290d775a",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1008896, 18212, 1843, 28, 24, "Print",ExpressionUUID->"9f0223bd-80e4-4873-814a-eac0581fd759",
+  Cell[1043839, 18863, 1843, 28, 24, "Print",ExpressionUUID->"9f0223bd-80e4-4873-814a-eac0581fd759",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1010742, 18242, 1843, 28, 24, "Print",ExpressionUUID->"c8a33e59-927e-45df-be37-b7d18af166ff",
+  Cell[1045685, 18893, 1843, 28, 24, "Print",ExpressionUUID->"c8a33e59-927e-45df-be37-b7d18af166ff",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1012588, 18272, 1838, 28, 24, "Print",ExpressionUUID->"18624b12-f098-466a-b495-e91fbfb3f77f",
+  Cell[1047531, 18923, 1838, 28, 24, "Print",ExpressionUUID->"18624b12-f098-466a-b495-e91fbfb3f77f",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1014429, 18302, 1841, 28, 24, "Print",ExpressionUUID->"ffa5dfa1-8c13-4481-8b74-e9c8a666a28b",
+  Cell[1049372, 18953, 1841, 28, 24, "Print",ExpressionUUID->"ffa5dfa1-8c13-4481-8b74-e9c8a666a28b",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1016273, 18332, 1803, 27, 24, "Print",ExpressionUUID->"4f65f78b-b11a-45bc-94dc-c2c594cfeef5",
+  Cell[1051216, 18983, 1803, 27, 24, "Print",ExpressionUUID->"4f65f78b-b11a-45bc-94dc-c2c594cfeef5",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1018079, 18361, 1782, 27, 24, "Print",ExpressionUUID->"a13949af-7ebb-49e8-9d09-142235f282b7",
+  Cell[1053022, 19012, 1782, 27, 24, "Print",ExpressionUUID->"a13949af-7ebb-49e8-9d09-142235f282b7",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1019864, 18390, 1847, 28, 24, "Print",ExpressionUUID->"78df47f7-ecfc-4e5d-9973-40f429bf413b",
+  Cell[1054807, 19041, 1847, 28, 24, "Print",ExpressionUUID->"78df47f7-ecfc-4e5d-9973-40f429bf413b",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1021714, 18420, 1780, 27, 24, "Print",ExpressionUUID->"a032c0fb-b5b0-44e7-a174-aae0e883201b",
+  Cell[1056657, 19071, 1780, 27, 24, "Print",ExpressionUUID->"a032c0fb-b5b0-44e7-a174-aae0e883201b",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1023497, 18449, 1818, 28, 24, "Print",ExpressionUUID->"2c8f88a4-3096-4d1a-b0c8-fa207657b029",
+  Cell[1058440, 19100, 1818, 28, 24, "Print",ExpressionUUID->"2c8f88a4-3096-4d1a-b0c8-fa207657b029",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1025318, 18479, 1803, 27, 24, "Print",ExpressionUUID->"09c48819-7269-4520-bd58-b5eb7df04f7c",
+  Cell[1060261, 19130, 1803, 27, 24, "Print",ExpressionUUID->"09c48819-7269-4520-bd58-b5eb7df04f7c",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1027124, 18508, 1805, 28, 24, "Print",ExpressionUUID->"2bb8dbd1-2d6e-4b45-8154-c317dc5a2800",
+  Cell[1062067, 19159, 1805, 28, 24, "Print",ExpressionUUID->"2bb8dbd1-2d6e-4b45-8154-c317dc5a2800",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1028932, 18538, 1804, 28, 24, "Print",ExpressionUUID->"0058b48b-1782-4d61-998f-ac8c803f5de0",
+  Cell[1063875, 19189, 1804, 28, 24, "Print",ExpressionUUID->"0058b48b-1782-4d61-998f-ac8c803f5de0",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1030739, 18568, 1805, 28, 24, "Print",ExpressionUUID->"44651825-3e91-4307-9b5e-ec727eb6690f",
+  Cell[1065682, 19219, 1805, 28, 24, "Print",ExpressionUUID->"44651825-3e91-4307-9b5e-ec727eb6690f",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1032547, 18598, 1816, 28, 24, "Print",ExpressionUUID->"6b3bf2a6-61b5-4525-9685-92cbc1d8783d",
+  Cell[1067490, 19249, 1816, 28, 24, "Print",ExpressionUUID->"6b3bf2a6-61b5-4525-9685-92cbc1d8783d",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1034366, 18628, 1801, 27, 24, "Print",ExpressionUUID->"fdae309a-fa11-4653-95f1-027eab3a5914",
+  Cell[1069309, 19279, 1801, 27, 24, "Print",ExpressionUUID->"fdae309a-fa11-4653-95f1-027eab3a5914",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1036170, 18657, 1804, 27, 24, "Print",ExpressionUUID->"4ba3d15a-28b3-4be4-9aa8-1b4df1bbb7b0",
+  Cell[1071113, 19308, 1804, 27, 24, "Print",ExpressionUUID->"4ba3d15a-28b3-4be4-9aa8-1b4df1bbb7b0",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1037977, 18686, 1807, 28, 24, "Print",ExpressionUUID->"578d4115-14cc-41c1-9b30-f5a275c07c07",
+  Cell[1072920, 19337, 1807, 28, 24, "Print",ExpressionUUID->"578d4115-14cc-41c1-9b30-f5a275c07c07",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1039787, 18716, 1803, 27, 24, "Print",ExpressionUUID->"f43997cf-a537-40b9-8fe8-83bc65701ee3",
+  Cell[1074730, 19367, 1803, 27, 24, "Print",ExpressionUUID->"f43997cf-a537-40b9-8fe8-83bc65701ee3",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1041593, 18745, 1801, 27, 24, "Print",ExpressionUUID->"bbfa335a-c551-4290-92bc-684c6e9d9984",
+  Cell[1076536, 19396, 1801, 27, 24, "Print",ExpressionUUID->"bbfa335a-c551-4290-92bc-684c6e9d9984",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1043397, 18774, 1803, 27, 24, "Print",ExpressionUUID->"539741ce-fe3f-4a4e-9943-1c2d53056d5c",
+  Cell[1078340, 19425, 1803, 27, 24, "Print",ExpressionUUID->"539741ce-fe3f-4a4e-9943-1c2d53056d5c",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1045203, 18803, 1793, 27, 24, "Print",ExpressionUUID->"15bf9425-ce33-48ee-b7cf-df9e07a6ca8d",
+  Cell[1080146, 19454, 1793, 27, 24, "Print",ExpressionUUID->"15bf9425-ce33-48ee-b7cf-df9e07a6ca8d",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1046999, 18832, 1807, 28, 24, "Print",ExpressionUUID->"058fcf5e-8bf1-4b91-bc33-ccc881fc801e",
+  Cell[1081942, 19483, 1807, 28, 24, "Print",ExpressionUUID->"058fcf5e-8bf1-4b91-bc33-ccc881fc801e",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1048809, 18862, 1793, 27, 24, "Print",ExpressionUUID->"530c63e9-4fbe-4d95-b05f-08aba32d1885",
+  Cell[1083752, 19513, 1793, 27, 24, "Print",ExpressionUUID->"530c63e9-4fbe-4d95-b05f-08aba32d1885",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1050605, 18891, 1802, 27, 24, "Print",ExpressionUUID->"046a39a9-57af-4e7f-8a62-6b82d338d546",
+  Cell[1085548, 19542, 1802, 27, 24, "Print",ExpressionUUID->"046a39a9-57af-4e7f-8a62-6b82d338d546",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1052410, 18920, 1803, 27, 24, "Print",ExpressionUUID->"7ab5937f-44ff-41e4-a6ec-5213af3f8a71",
+  Cell[1087353, 19571, 1803, 27, 24, "Print",ExpressionUUID->"7ab5937f-44ff-41e4-a6ec-5213af3f8a71",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1054216, 18949, 1803, 28, 24, "Print",ExpressionUUID->"532d4ee2-384e-4c3d-ad30-feeb43487428",
+  Cell[1089159, 19600, 1803, 28, 24, "Print",ExpressionUUID->"532d4ee2-384e-4c3d-ad30-feeb43487428",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1056022, 18979, 1805, 28, 24, "Print",ExpressionUUID->"4b181273-daac-4b2d-8deb-c6030ae81258",
+  Cell[1090965, 19630, 1805, 28, 24, "Print",ExpressionUUID->"4b181273-daac-4b2d-8deb-c6030ae81258",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1057830, 19009, 1805, 28, 24, "Print",ExpressionUUID->"1459e4c9-3d87-4cbc-bdda-fcb16ffd3675",
+  Cell[1092773, 19660, 1805, 28, 24, "Print",ExpressionUUID->"1459e4c9-3d87-4cbc-bdda-fcb16ffd3675",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1059638, 19039, 1801, 27, 24, "Print",ExpressionUUID->"3026bcea-6404-4a75-b3a8-d44656b4bb70",
+  Cell[1094581, 19690, 1801, 27, 24, "Print",ExpressionUUID->"3026bcea-6404-4a75-b3a8-d44656b4bb70",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1061442, 19068, 1803, 27, 24, "Print",ExpressionUUID->"fca1dfc9-4515-4de1-b220-055208cf5b9c",
+  Cell[1096385, 19719, 1803, 27, 24, "Print",ExpressionUUID->"fca1dfc9-4515-4de1-b220-055208cf5b9c",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1063248, 19097, 1805, 28, 24, "Print",ExpressionUUID->"5f48bf19-eb79-4757-9620-626b7310689a",
+  Cell[1098191, 19748, 1805, 28, 24, "Print",ExpressionUUID->"5f48bf19-eb79-4757-9620-626b7310689a",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1065056, 19127, 1807, 28, 24, "Print",ExpressionUUID->"017f61a8-0945-4614-af78-7f31af108a10",
+  Cell[1099999, 19778, 1807, 28, 24, "Print",ExpressionUUID->"017f61a8-0945-4614-af78-7f31af108a10",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1066866, 19157, 1805, 28, 24, "Print",ExpressionUUID->"0c80f489-42f6-45fc-9491-a26647de1601",
+  Cell[1101809, 19808, 1805, 28, 24, "Print",ExpressionUUID->"0c80f489-42f6-45fc-9491-a26647de1601",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1068674, 19187, 1805, 28, 24, "Print",ExpressionUUID->"8b18dc84-e941-46d1-9064-7df5d57b3e57",
+  Cell[1103617, 19838, 1805, 28, 24, "Print",ExpressionUUID->"8b18dc84-e941-46d1-9064-7df5d57b3e57",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1070482, 19217, 1808, 28, 24, "Print",ExpressionUUID->"4055d1f3-d9f3-40be-910a-9a38efaf589b",
+  Cell[1105425, 19868, 1808, 28, 24, "Print",ExpressionUUID->"4055d1f3-d9f3-40be-910a-9a38efaf589b",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1072293, 19247, 1806, 28, 24, "Print",ExpressionUUID->"8ce91ed0-35c0-4120-9878-d24bdc96f836",
+  Cell[1107236, 19898, 1806, 28, 24, "Print",ExpressionUUID->"8ce91ed0-35c0-4120-9878-d24bdc96f836",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1074102, 19277, 1807, 28, 24, "Print",ExpressionUUID->"be639693-b7b7-45ae-9ea8-88b87c270919",
+  Cell[1109045, 19928, 1807, 28, 24, "Print",ExpressionUUID->"be639693-b7b7-45ae-9ea8-88b87c270919",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1075912, 19307, 1793, 27, 24, "Print",ExpressionUUID->"8b71f48b-fcf0-43e6-b0e8-f0e40390362b",
+  Cell[1110855, 19958, 1793, 27, 24, "Print",ExpressionUUID->"8b71f48b-fcf0-43e6-b0e8-f0e40390362b",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1077708, 19336, 1793, 27, 24, "Print",ExpressionUUID->"6b013a65-9cee-42f7-8c11-47eb454ad9e3",
+  Cell[1112651, 19987, 1793, 27, 24, "Print",ExpressionUUID->"6b013a65-9cee-42f7-8c11-47eb454ad9e3",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1079504, 19365, 1795, 27, 24, "Print",ExpressionUUID->"d97ef161-8d9d-4b1f-b191-69286730d37f",
+  Cell[1114447, 20016, 1795, 27, 24, "Print",ExpressionUUID->"d97ef161-8d9d-4b1f-b191-69286730d37f",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1081302, 19394, 1801, 27, 24, "Print",ExpressionUUID->"c520ff75-d678-4d28-921b-8340b256280b",
+  Cell[1116245, 20045, 1801, 27, 24, "Print",ExpressionUUID->"c520ff75-d678-4d28-921b-8340b256280b",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1083106, 19423, 1801, 27, 24, "Print",ExpressionUUID->"3bfc8d34-738e-4306-b656-51c46f173289",
+  Cell[1118049, 20074, 1801, 27, 24, "Print",ExpressionUUID->"3bfc8d34-738e-4306-b656-51c46f173289",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1084910, 19452, 1805, 28, 24, "Print",ExpressionUUID->"032b9121-020b-4d49-8808-71a14eaaf7d7",
+  Cell[1119853, 20103, 1805, 28, 24, "Print",ExpressionUUID->"032b9121-020b-4d49-8808-71a14eaaf7d7",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1086718, 19482, 1793, 27, 24, "Print",ExpressionUUID->"baddc4d9-9f1a-4dab-a73b-05167b52c086",
+  Cell[1121661, 20133, 1793, 27, 24, "Print",ExpressionUUID->"baddc4d9-9f1a-4dab-a73b-05167b52c086",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1088514, 19511, 1774, 27, 24, "Print",ExpressionUUID->"230b24ea-9eed-4a8a-b96a-22011974c1e7",
+  Cell[1123457, 20162, 1774, 27, 24, "Print",ExpressionUUID->"230b24ea-9eed-4a8a-b96a-22011974c1e7",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1091528, 19569, 24847, 372, 892, "Input",ExpressionUUID->"7f8eb847-fff7-46d9-b0e0-5b00fd0423ee",
+  Cell[1126471, 20220, 24847, 372, 892, "Input",ExpressionUUID->"7f8eb847-fff7-46d9-b0e0-5b00fd0423ee",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1116400, 19945, 395, 7, 24, "Print",ExpressionUUID->"11450fca-cce2-4db0-8e32-75f3831fe5bd",
+  Cell[1151343, 20596, 395, 7, 24, "Print",ExpressionUUID->"11450fca-cce2-4db0-8e32-75f3831fe5bd",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1116798, 19954, 385, 7, 24, "Print",ExpressionUUID->"120ea1ce-8fe3-423c-b88d-b954c557f7fb",
+  Cell[1151741, 20605, 385, 7, 24, "Print",ExpressionUUID->"120ea1ce-8fe3-423c-b88d-b954c557f7fb",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1117186, 19963, 396, 7, 24, "Print",ExpressionUUID->"429325cc-650e-4df6-9892-240f46247134",
+  Cell[1152129, 20614, 396, 7, 24, "Print",ExpressionUUID->"429325cc-650e-4df6-9892-240f46247134",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1117585, 19972, 275, 5, 24, "Print",ExpressionUUID->"23db230b-e3e2-461b-b966-ee64eeedda6e",
+  Cell[1152528, 20623, 275, 5, 24, "Print",ExpressionUUID->"23db230b-e3e2-461b-b966-ee64eeedda6e",
    CellTags->"EMF from theory using x-y segments test"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"EmfFromTheoryXY module", 1127997, 20200},
- {"EMF from theory using x-y segments test", 1128908, 20216}
+ {"EmfFromTheoryXY module", 1162940, 20851},
+ {"EMF from theory using x-y segments test", 1163852, 20867}
  }
 *)
 (*NotebookFileOutline
@@ -20494,317 +21145,309 @@ Cell[454888, 7878, 10152, 143, 170, "Output",ExpressionUUID->"17988657-dbd2-40bd
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[465089, 8027, 353, 5, 67, "Section",ExpressionUUID->"be23d519-7e74-41e9-88d8-3dbf033e0f33"],
-Cell[465445, 8034, 702, 12, 81, "Text",ExpressionUUID->"574b583a-80f8-4652-b426-b5830ac963bf"],
-Cell[466150, 8048, 567, 11, 58, "Text",ExpressionUUID->"64f930f5-2081-4842-ab35-35f10f395b44"],
-Cell[466720, 8061, 2027, 39, 136, "Input",ExpressionUUID->"5b66db58-ebdf-4bd6-8efb-e0e53b9a7afc"]
+Cell[465445, 8034, 775, 12, 81, "Text",ExpressionUUID->"574b583a-80f8-4652-b426-b5830ac963bf"],
+Cell[466223, 8048, 567, 11, 58, "Text",ExpressionUUID->"64f930f5-2081-4842-ab35-35f10f395b44"],
+Cell[CellGroupData[{
+Cell[466815, 8063, 2713, 54, 199, "Input",ExpressionUUID->"5b66db58-ebdf-4bd6-8efb-e0e53b9a7afc"],
+Cell[469531, 8119, 5429, 154, 145, "Print",ExpressionUUID->"7ba72010-39e4-469c-939e-953b3fee5873"],
+Cell[474963, 8275, 16417, 345, 263, "Output",ExpressionUUID->"5107e050-a198-4f36-b6c0-1e7d82ec5746"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[468784, 8105, 187, 3, 67, "Section",ExpressionUUID->"81d59fb3-b381-4e59-b7b9-cb5aeb509e47"],
-Cell[468974, 8110, 393, 8, 35, "Text",ExpressionUUID->"ee0b7f7b-677d-424d-8105-c58423228738"],
-Cell[469370, 8120, 9536, 206, 1223, "Input",ExpressionUUID->"35c9ef32-ac78-4343-8ab9-59a9509dc052",
+Cell[491429, 8626, 187, 3, 67, "Section",ExpressionUUID->"81d59fb3-b381-4e59-b7b9-cb5aeb509e47"],
+Cell[491619, 8631, 393, 8, 35, "Text",ExpressionUUID->"ee0b7f7b-677d-424d-8105-c58423228738"],
+Cell[492015, 8641, 9536, 206, 1223, "Input",ExpressionUUID->"35c9ef32-ac78-4343-8ab9-59a9509dc052",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[478943, 8331, 559, 8, 67, "Section",ExpressionUUID->"a7adafe0-1133-4668-94f7-ec3fcb63539f"],
-Cell[479505, 8341, 243, 4, 35, "Text",ExpressionUUID->"1c5620c9-eb1b-4132-b491-a8a2a4ac0a71"],
-Cell[479751, 8347, 41451, 670, 2756, "Input",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a",
+Cell[501588, 8852, 559, 8, 67, "Section",ExpressionUUID->"a7adafe0-1133-4668-94f7-ec3fcb63539f"],
+Cell[502150, 8862, 243, 4, 35, "Text",ExpressionUUID->"1c5620c9-eb1b-4132-b491-a8a2a4ac0a71"],
+Cell[502396, 8868, 41451, 670, 2756, "Input",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a",
  InitializationCell->True,
  CellTags->"EmfFromTheoryXY module"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[521239, 9022, 222, 4, 67, "Section",ExpressionUUID->"36305967-a1f0-48af-99bd-34a0e306db56"],
-Cell[521464, 9028, 343, 7, 35, "Text",ExpressionUUID->"7b014b69-19e5-4dc6-874f-16f000dcc3b1"],
-Cell[521810, 9037, 38894, 685, 4457, "Input",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc",
+Cell[543884, 9543, 222, 4, 67, "Section",ExpressionUUID->"36305967-a1f0-48af-99bd-34a0e306db56"],
+Cell[544109, 9549, 343, 7, 35, "Text",ExpressionUUID->"7b014b69-19e5-4dc6-874f-16f000dcc3b1"],
+Cell[544455, 9558, 38894, 685, 4457, "Input",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc",
  InitializationCell->True,
  CellTags->"EmfFromTheoryXY module"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[560741, 9727, 385, 8, 67, "Section",ExpressionUUID->"dc74adc8-9d30-40fc-a07d-d9bf1922fb7a"],
-Cell[561129, 9737, 221, 5, 35, "Text",ExpressionUUID->"44a066f0-4ada-4b81-b035-aff20c1cb187"],
-Cell[561353, 9744, 72690, 1315, 5864, "Input",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37",
+Cell[583386, 10248, 385, 8, 67, "Section",ExpressionUUID->"dc74adc8-9d30-40fc-a07d-d9bf1922fb7a"],
+Cell[583774, 10258, 221, 5, 35, "Text",ExpressionUUID->"44a066f0-4ada-4b81-b035-aff20c1cb187"],
+Cell[583998, 10265, 72690, 1315, 5864, "Input",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37",
  InitializationCell->True,
  CellTags->"EmfFromTheoryXY module"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[634080, 11064, 440, 6, 67, "Section",ExpressionUUID->"3441bd0c-9baa-4a2f-8786-d77ba76ea11c"],
-Cell[634523, 11072, 221, 5, 35, "Text",ExpressionUUID->"289131af-56b0-462d-90d0-4f1ba3ddff07"],
-Cell[634747, 11079, 45890, 752, 2714, "Input",ExpressionUUID->"fd611682-7255-4493-bceb-27f0f8cf3caf",
+Cell[656725, 11585, 440, 6, 67, "Section",ExpressionUUID->"3441bd0c-9baa-4a2f-8786-d77ba76ea11c"],
+Cell[657168, 11593, 221, 5, 35, "Text",ExpressionUUID->"289131af-56b0-462d-90d0-4f1ba3ddff07"],
+Cell[657392, 11600, 50749, 853, 3281, "Input",ExpressionUUID->"fd611682-7255-4493-bceb-27f0f8cf3caf",
  InitializationCell->True,
  CellTags->"EmfFromTheoryXY module"],
+Cell[708144, 12455, 2270, 44, 136, "Input",ExpressionUUID->"5d60f25c-83b7-4557-bf42-435bffdca6a1"],
 Cell[CellGroupData[{
-Cell[680662, 11835, 3341, 78, 388, "Input",ExpressionUUID->"5d60f25c-83b7-4557-bf42-435bffdca6a1"],
+Cell[710439, 12503, 262, 6, 30, "Input",ExpressionUUID->"974ed848-ca51-45d4-9fb5-7dfd92530dbc"],
+Cell[710704, 12511, 36835, 717, 263, "Output",ExpressionUUID->"d9583c0a-dc59-4365-bdba-8aebe1a0e3ff"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[684028, 11917, 1080, 28, 24, "Print",ExpressionUUID->"95e95ae7-7c6e-47bc-8856-861c0fb239d9"],
-Cell[685111, 11947, 1465, 38, 27, "Print",ExpressionUUID->"fabf6967-675d-48f0-ac5d-0fae0afd88dd"],
-Cell[686579, 11987, 1080, 28, 24, "Print",ExpressionUUID->"63620dec-c2f8-46d9-8f1d-72595ca6cb37"],
-Cell[687662, 12017, 1457, 38, 27, "Print",ExpressionUUID->"0ee1f34f-42cd-4c4f-817e-f2b6ef6d5a6d"]
+Cell[747576, 13233, 298, 7, 30, "Input",ExpressionUUID->"f8f24877-33af-4cd9-bba5-508d7d38bc68"],
+Cell[747877, 13242, 4685, 129, 142, "Output",ExpressionUUID->"dbda560f-beac-4b83-b0f3-b77e4e138c93"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[689168, 12061, 731, 15, 30, "Input",ExpressionUUID->"3d4b63e5-6787-4f09-abfb-2458a7fa5fb6"],
-Cell[689902, 12078, 9082, 196, 231, "Output",ExpressionUUID->"cf98ba7a-65e9-4f7b-be0b-e98bed271466"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[699021, 12279, 1116, 22, 115, "Input",ExpressionUUID->"fb9f0bff-3b18-48b4-a641-9f270b23da7d"],
-Cell[700140, 12303, 11761, 249, 239, "Output",ExpressionUUID->"83c0f0d3-23af-454c-9377-2cfa954df01a"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[711938, 12557, 247, 6, 30, "Input",ExpressionUUID->"f8f24877-33af-4cd9-bba5-508d7d38bc68"],
-Cell[712188, 12565, 5431, 155, 199, "Output",ExpressionUUID->"b90a92fe-7dab-4985-8511-1da01ec395cb"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[717668, 12726, 464, 9, 105, "Section",ExpressionUUID->"227d4fdf-4df2-4aec-9e78-6e97a2bc7292"],
-Cell[718135, 12737, 562, 10, 58, "Text",ExpressionUUID->"56a5ede9-9c7d-461e-8e64-4c4f73bb8bd5"],
-Cell[718700, 12749, 316, 6, 35, "Text",ExpressionUUID->"7c1cba62-07f0-4713-aea4-46784da4f5c1"],
-Cell[719019, 12757, 73649, 1314, 5864, "Input",ExpressionUUID->"babd4910-44fe-466a-8ed9-6c0a8d200d6b",
+Cell[752611, 13377, 464, 9, 105, "Section",ExpressionUUID->"227d4fdf-4df2-4aec-9e78-6e97a2bc7292"],
+Cell[753078, 13388, 562, 10, 58, "Text",ExpressionUUID->"56a5ede9-9c7d-461e-8e64-4c4f73bb8bd5"],
+Cell[753643, 13400, 316, 6, 35, "Text",ExpressionUUID->"7c1cba62-07f0-4713-aea4-46784da4f5c1"],
+Cell[753962, 13408, 73649, 1314, 5864, "Input",ExpressionUUID->"babd4910-44fe-466a-8ed9-6c0a8d200d6b",
  InitializationCell->True,
  CellTags->"EmfFromTheoryXY module"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[792705, 14076, 369, 5, 67, "Section",ExpressionUUID->"4368181f-6343-4d9b-82b9-b28ba61346a6"],
-Cell[793077, 14083, 632, 11, 58, "Text",ExpressionUUID->"7f7c5250-ac9a-46ce-803a-c04136d596a0"],
+Cell[827648, 14727, 369, 5, 67, "Section",ExpressionUUID->"4368181f-6343-4d9b-82b9-b28ba61346a6"],
+Cell[828020, 14734, 632, 11, 58, "Text",ExpressionUUID->"7f7c5250-ac9a-46ce-803a-c04136d596a0"],
 Cell[CellGroupData[{
-Cell[793734, 14098, 37082, 686, 2446, "Input",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f",
+Cell[828677, 14749, 37082, 686, 2446, "Input",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f",
  CellTags->"EMF from theory using x-y segments test"],
 Cell[CellGroupData[{
-Cell[830841, 14788, 325, 6, 24, "Print",ExpressionUUID->"47c7e791-72c8-4c4a-9a52-587bc815d697",
+Cell[865784, 15439, 325, 6, 24, "Print",ExpressionUUID->"47c7e791-72c8-4c4a-9a52-587bc815d697",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[831169, 14796, 329, 6, 24, "Print",ExpressionUUID->"759f6548-6cbb-4c0f-9148-393edcaf3880",
+Cell[866112, 15447, 329, 6, 24, "Print",ExpressionUUID->"759f6548-6cbb-4c0f-9148-393edcaf3880",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[831501, 14804, 327, 6, 24, "Print",ExpressionUUID->"b53682b6-1c46-4baf-8321-5cfef6825dce",
+Cell[866444, 15455, 327, 6, 24, "Print",ExpressionUUID->"b53682b6-1c46-4baf-8321-5cfef6825dce",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[831831, 14812, 327, 6, 24, "Print",ExpressionUUID->"445462bb-301d-4bb5-93b3-89d8a3c5b551",
+Cell[866774, 15463, 327, 6, 24, "Print",ExpressionUUID->"445462bb-301d-4bb5-93b3-89d8a3c5b551",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[832161, 14820, 325, 6, 24, "Print",ExpressionUUID->"2435c6c1-a404-40e5-ad73-4f7786361727",
+Cell[867104, 15471, 325, 6, 24, "Print",ExpressionUUID->"2435c6c1-a404-40e5-ad73-4f7786361727",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[832489, 14828, 325, 6, 24, "Print",ExpressionUUID->"b8d5256a-34ab-48e0-b60f-5eba07509ae2",
+Cell[867432, 15479, 325, 6, 24, "Print",ExpressionUUID->"b8d5256a-34ab-48e0-b60f-5eba07509ae2",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[832817, 14836, 666, 11, 63, "Print",ExpressionUUID->"92fbf4fb-d90e-43de-9673-e7c747e074d2",
+Cell[867760, 15487, 666, 11, 63, "Print",ExpressionUUID->"92fbf4fb-d90e-43de-9673-e7c747e074d2",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[833486, 14849, 325, 6, 24, "Print",ExpressionUUID->"68181085-b582-4ff0-b009-f69c58f761f9",
+Cell[868429, 15500, 325, 6, 24, "Print",ExpressionUUID->"68181085-b582-4ff0-b009-f69c58f761f9",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[833814, 14857, 325, 6, 24, "Print",ExpressionUUID->"34df0513-bdc2-4dc1-8582-ff7f6d1e4f29",
+Cell[868757, 15508, 325, 6, 24, "Print",ExpressionUUID->"34df0513-bdc2-4dc1-8582-ff7f6d1e4f29",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[834142, 14865, 326, 6, 24, "Print",ExpressionUUID->"38b9a8c8-2e57-4ae0-9c0b-59c98d75de56",
+Cell[869085, 15516, 326, 6, 24, "Print",ExpressionUUID->"38b9a8c8-2e57-4ae0-9c0b-59c98d75de56",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[834471, 14873, 330, 7, 24, "Print",ExpressionUUID->"dfa3a235-4628-4a1f-809a-d55096eb66c0",
+Cell[869414, 15524, 330, 7, 24, "Print",ExpressionUUID->"dfa3a235-4628-4a1f-809a-d55096eb66c0",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[834804, 14882, 330, 7, 24, "Print",ExpressionUUID->"ed44088e-d2dd-4998-8ed1-ab8684745950",
+Cell[869747, 15533, 330, 7, 24, "Print",ExpressionUUID->"ed44088e-d2dd-4998-8ed1-ab8684745950",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[835137, 14891, 330, 7, 24, "Print",ExpressionUUID->"60a4db1d-eb1f-4d26-a1a7-1ed841100b61",
+Cell[870080, 15542, 330, 7, 24, "Print",ExpressionUUID->"60a4db1d-eb1f-4d26-a1a7-1ed841100b61",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[835470, 14900, 297, 6, 24, "Print",ExpressionUUID->"42f6d59f-6d31-4a1b-ae41-f2dae57f03ea",
+Cell[870413, 15551, 297, 6, 24, "Print",ExpressionUUID->"42f6d59f-6d31-4a1b-ae41-f2dae57f03ea",
  CellTags->"EMF from theory using x-y segments test"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[835828, 14913, 459, 7, 67, "Section",ExpressionUUID->"cd589396-ef02-44cd-89af-5e30c17b5d79"],
-Cell[836290, 14922, 645, 11, 35, "Text",ExpressionUUID->"7a008000-24c7-4662-8978-ef79484ec3a9"],
+Cell[870771, 15564, 459, 7, 67, "Section",ExpressionUUID->"cd589396-ef02-44cd-89af-5e30c17b5d79"],
+Cell[871233, 15573, 645, 11, 35, "Text",ExpressionUUID->"7a008000-24c7-4662-8978-ef79484ec3a9"],
 Cell[CellGroupData[{
-Cell[836960, 14937, 95627, 2025, 7969, "Input",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672",
+Cell[871903, 15588, 95627, 2025, 7969, "Input",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672",
  CellTags->"EMF from theory using x-y segments test"],
 Cell[CellGroupData[{
-Cell[932612, 16966, 1836, 28, 24, "Print",ExpressionUUID->"67fde098-2411-466d-ba85-1cf1bc1d1a13",
+Cell[967555, 17617, 1836, 28, 24, "Print",ExpressionUUID->"67fde098-2411-466d-ba85-1cf1bc1d1a13",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[934451, 16996, 1832, 28, 24, "Print",ExpressionUUID->"8bb9d9aa-05ef-4797-a55f-22af9505f0e8",
+Cell[969394, 17647, 1832, 28, 24, "Print",ExpressionUUID->"8bb9d9aa-05ef-4797-a55f-22af9505f0e8",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[936286, 17026, 1820, 28, 24, "Print",ExpressionUUID->"9354b4d7-d302-47fe-a1b6-b53b0e4c458e",
+Cell[971229, 17677, 1820, 28, 24, "Print",ExpressionUUID->"9354b4d7-d302-47fe-a1b6-b53b0e4c458e",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[938109, 17056, 1830, 28, 24, "Print",ExpressionUUID->"b70faac9-d764-43df-be7a-908dd593d0a7",
+Cell[973052, 17707, 1830, 28, 24, "Print",ExpressionUUID->"b70faac9-d764-43df-be7a-908dd593d0a7",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[939942, 17086, 1840, 28, 24, "Print",ExpressionUUID->"2d54ee3d-f196-46d0-8be0-24f5858adaa9",
+Cell[974885, 17737, 1840, 28, 24, "Print",ExpressionUUID->"2d54ee3d-f196-46d0-8be0-24f5858adaa9",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[941785, 17116, 1820, 28, 24, "Print",ExpressionUUID->"78477112-8c09-44ca-9488-f5364479b670",
+Cell[976728, 17767, 1820, 28, 24, "Print",ExpressionUUID->"78477112-8c09-44ca-9488-f5364479b670",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[943608, 17146, 1842, 28, 24, "Print",ExpressionUUID->"6d7afa72-d428-4c27-831f-2a3c6d394cfe",
+Cell[978551, 17797, 1842, 28, 24, "Print",ExpressionUUID->"6d7afa72-d428-4c27-831f-2a3c6d394cfe",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[945453, 17176, 1804, 27, 24, "Print",ExpressionUUID->"6b362d1d-be85-4a3f-a981-f283b7cbfed6",
+Cell[980396, 17827, 1804, 27, 24, "Print",ExpressionUUID->"6b362d1d-be85-4a3f-a981-f283b7cbfed6",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[947260, 17205, 1805, 28, 24, "Print",ExpressionUUID->"f3581abd-07ee-4d8d-8e04-86d51d07620f",
+Cell[982203, 17856, 1805, 28, 24, "Print",ExpressionUUID->"f3581abd-07ee-4d8d-8e04-86d51d07620f",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[949068, 17235, 1809, 28, 24, "Print",ExpressionUUID->"262adf15-2532-4717-b5d6-73f2e02ba05f",
+Cell[984011, 17886, 1809, 28, 24, "Print",ExpressionUUID->"262adf15-2532-4717-b5d6-73f2e02ba05f",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[950880, 17265, 1811, 28, 24, "Print",ExpressionUUID->"3975d061-8e5d-4543-95d2-1b0746468151",
+Cell[985823, 17916, 1811, 28, 24, "Print",ExpressionUUID->"3975d061-8e5d-4543-95d2-1b0746468151",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[952694, 17295, 1811, 28, 24, "Print",ExpressionUUID->"b3a7e606-5b0a-4e3f-97f9-fd66a62e9ca6",
+Cell[987637, 17946, 1811, 28, 24, "Print",ExpressionUUID->"b3a7e606-5b0a-4e3f-97f9-fd66a62e9ca6",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[954508, 17325, 1789, 27, 24, "Print",ExpressionUUID->"742cfb5d-4005-4c46-8572-b3830f99e845",
+Cell[989451, 17976, 1789, 27, 24, "Print",ExpressionUUID->"742cfb5d-4005-4c46-8572-b3830f99e845",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[956300, 17354, 1789, 27, 24, "Print",ExpressionUUID->"fd91e10a-db58-467c-b826-8279616faad6",
+Cell[991243, 18005, 1789, 27, 24, "Print",ExpressionUUID->"fd91e10a-db58-467c-b826-8279616faad6",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[958092, 17383, 1831, 28, 24, "Print",ExpressionUUID->"e19e1bf6-ea91-4c83-afc0-8d3dc6d48f8b",
+Cell[993035, 18034, 1831, 28, 24, "Print",ExpressionUUID->"e19e1bf6-ea91-4c83-afc0-8d3dc6d48f8b",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[959926, 17413, 1789, 27, 24, "Print",ExpressionUUID->"620f76f8-9fad-4a97-bb51-0237e8160430",
+Cell[994869, 18064, 1789, 27, 24, "Print",ExpressionUUID->"620f76f8-9fad-4a97-bb51-0237e8160430",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[961718, 17442, 1791, 27, 24, "Print",ExpressionUUID->"d491583a-d88a-4c37-90f1-74e36d80fd31",
+Cell[996661, 18093, 1791, 27, 24, "Print",ExpressionUUID->"d491583a-d88a-4c37-90f1-74e36d80fd31",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[963512, 17471, 1833, 28, 24, "Print",ExpressionUUID->"cb08a8e4-1edc-4612-a652-4c3521bb862d",
+Cell[998455, 18122, 1833, 28, 24, "Print",ExpressionUUID->"cb08a8e4-1edc-4612-a652-4c3521bb862d",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[965348, 17501, 1843, 28, 24, "Print",ExpressionUUID->"3ccad5bb-0e23-4d94-80b0-d98776de8f03",
+Cell[1000291, 18152, 1843, 28, 24, "Print",ExpressionUUID->"3ccad5bb-0e23-4d94-80b0-d98776de8f03",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[967194, 17531, 1847, 28, 24, "Print",ExpressionUUID->"7dad5b36-cf63-404a-a97f-0f8f8a6aa934",
+Cell[1002137, 18182, 1847, 28, 24, "Print",ExpressionUUID->"7dad5b36-cf63-404a-a97f-0f8f8a6aa934",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[969044, 17561, 1833, 28, 24, "Print",ExpressionUUID->"efac059f-3f9f-4ee7-a92b-fbc341594d7a",
+Cell[1003987, 18212, 1833, 28, 24, "Print",ExpressionUUID->"efac059f-3f9f-4ee7-a92b-fbc341594d7a",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[970880, 17591, 1789, 27, 24, "Print",ExpressionUUID->"e5da87ce-dbc0-41f7-af23-1493f869c520",
+Cell[1005823, 18242, 1789, 27, 24, "Print",ExpressionUUID->"e5da87ce-dbc0-41f7-af23-1493f869c520",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[972672, 17620, 1789, 27, 24, "Print",ExpressionUUID->"9c73c18e-0ddb-452c-87fb-217a4733b295",
+Cell[1007615, 18271, 1789, 27, 24, "Print",ExpressionUUID->"9c73c18e-0ddb-452c-87fb-217a4733b295",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[974464, 17649, 1843, 28, 24, "Print",ExpressionUUID->"3eb9350d-9ec1-459d-acda-fb66a4673f10",
+Cell[1009407, 18300, 1843, 28, 24, "Print",ExpressionUUID->"3eb9350d-9ec1-459d-acda-fb66a4673f10",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[976310, 17679, 1841, 28, 24, "Print",ExpressionUUID->"4399cd49-3471-4627-af28-feb006a1f33e",
+Cell[1011253, 18330, 1841, 28, 24, "Print",ExpressionUUID->"4399cd49-3471-4627-af28-feb006a1f33e",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[978154, 17709, 1839, 28, 24, "Print",ExpressionUUID->"3d4fd04d-ffb6-4d85-a8a5-8883fac6bd6f",
+Cell[1013097, 18360, 1839, 28, 24, "Print",ExpressionUUID->"3d4fd04d-ffb6-4d85-a8a5-8883fac6bd6f",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[979996, 17739, 1841, 28, 24, "Print",ExpressionUUID->"b3f2ce66-1ac1-453b-a7b1-b503ef4ad005",
+Cell[1014939, 18390, 1841, 28, 24, "Print",ExpressionUUID->"b3f2ce66-1ac1-453b-a7b1-b503ef4ad005",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[981840, 17769, 1780, 27, 24, "Print",ExpressionUUID->"3c6c2deb-6425-462c-aa46-c7a56e433af1",
+Cell[1016783, 18420, 1780, 27, 24, "Print",ExpressionUUID->"3c6c2deb-6425-462c-aa46-c7a56e433af1",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[983623, 17798, 1807, 28, 24, "Print",ExpressionUUID->"7a3979ee-d4d3-4cad-8c7c-1a26a18a1ade",
+Cell[1018566, 18449, 1807, 28, 24, "Print",ExpressionUUID->"7a3979ee-d4d3-4cad-8c7c-1a26a18a1ade",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[985433, 17828, 1805, 28, 24, "Print",ExpressionUUID->"122cd2b5-3d03-42c8-a216-86cf5d17c88a",
+Cell[1020376, 18479, 1805, 28, 24, "Print",ExpressionUUID->"122cd2b5-3d03-42c8-a216-86cf5d17c88a",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[987241, 17858, 1801, 27, 24, "Print",ExpressionUUID->"8fc0b352-6baf-4564-b41f-23fdf3e623e8",
+Cell[1022184, 18509, 1801, 27, 24, "Print",ExpressionUUID->"8fc0b352-6baf-4564-b41f-23fdf3e623e8",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[989045, 17887, 1807, 28, 24, "Print",ExpressionUUID->"61e43282-6b7c-446c-a947-9af49bd3c603",
+Cell[1023988, 18538, 1807, 28, 24, "Print",ExpressionUUID->"61e43282-6b7c-446c-a947-9af49bd3c603",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[990855, 17917, 1801, 27, 24, "Print",ExpressionUUID->"1b1959b6-7fd5-43af-b8bf-caf8684775cd",
+Cell[1025798, 18568, 1801, 27, 24, "Print",ExpressionUUID->"1b1959b6-7fd5-43af-b8bf-caf8684775cd",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[992659, 17946, 1805, 28, 24, "Print",ExpressionUUID->"0432236a-d2b5-44b3-b646-0a2a912101fe",
+Cell[1027602, 18597, 1805, 28, 24, "Print",ExpressionUUID->"0432236a-d2b5-44b3-b646-0a2a912101fe",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[994467, 17976, 1807, 28, 24, "Print",ExpressionUUID->"e6244fb2-9790-4502-9886-79477d09087c",
+Cell[1029410, 18627, 1807, 28, 24, "Print",ExpressionUUID->"e6244fb2-9790-4502-9886-79477d09087c",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[996277, 18006, 1801, 27, 24, "Print",ExpressionUUID->"d7337ae3-3dd1-4b76-83f2-afb86b154166",
+Cell[1031220, 18657, 1801, 27, 24, "Print",ExpressionUUID->"d7337ae3-3dd1-4b76-83f2-afb86b154166",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[998081, 18035, 1807, 28, 24, "Print",ExpressionUUID->"c3f242e5-6260-49cb-9326-878ac25eaefb",
+Cell[1033024, 18686, 1807, 28, 24, "Print",ExpressionUUID->"c3f242e5-6260-49cb-9326-878ac25eaefb",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[999891, 18065, 1805, 28, 24, "Print",ExpressionUUID->"5d1e803e-3d96-47cc-876a-1d699a613e3f",
+Cell[1034834, 18716, 1805, 28, 24, "Print",ExpressionUUID->"5d1e803e-3d96-47cc-876a-1d699a613e3f",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1001699, 18095, 1804, 28, 24, "Print",ExpressionUUID->"196af81c-f503-4dba-a304-36aa08435ef4",
+Cell[1036642, 18746, 1804, 28, 24, "Print",ExpressionUUID->"196af81c-f503-4dba-a304-36aa08435ef4",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1003506, 18125, 1803, 27, 24, "Print",ExpressionUUID->"44c3b935-0afc-4af6-a1b8-8568922f3b8e",
+Cell[1038449, 18776, 1803, 27, 24, "Print",ExpressionUUID->"44c3b935-0afc-4af6-a1b8-8568922f3b8e",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1005312, 18154, 1789, 27, 24, "Print",ExpressionUUID->"5bdc369e-61f1-4b18-b3c5-d385ebd5b237",
+Cell[1040255, 18805, 1789, 27, 24, "Print",ExpressionUUID->"5bdc369e-61f1-4b18-b3c5-d385ebd5b237",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1007104, 18183, 1789, 27, 24, "Print",ExpressionUUID->"9beb5f9c-8794-41da-a665-d607290d775a",
+Cell[1042047, 18834, 1789, 27, 24, "Print",ExpressionUUID->"9beb5f9c-8794-41da-a665-d607290d775a",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1008896, 18212, 1843, 28, 24, "Print",ExpressionUUID->"9f0223bd-80e4-4873-814a-eac0581fd759",
+Cell[1043839, 18863, 1843, 28, 24, "Print",ExpressionUUID->"9f0223bd-80e4-4873-814a-eac0581fd759",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1010742, 18242, 1843, 28, 24, "Print",ExpressionUUID->"c8a33e59-927e-45df-be37-b7d18af166ff",
+Cell[1045685, 18893, 1843, 28, 24, "Print",ExpressionUUID->"c8a33e59-927e-45df-be37-b7d18af166ff",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1012588, 18272, 1838, 28, 24, "Print",ExpressionUUID->"18624b12-f098-466a-b495-e91fbfb3f77f",
+Cell[1047531, 18923, 1838, 28, 24, "Print",ExpressionUUID->"18624b12-f098-466a-b495-e91fbfb3f77f",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1014429, 18302, 1841, 28, 24, "Print",ExpressionUUID->"ffa5dfa1-8c13-4481-8b74-e9c8a666a28b",
+Cell[1049372, 18953, 1841, 28, 24, "Print",ExpressionUUID->"ffa5dfa1-8c13-4481-8b74-e9c8a666a28b",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1016273, 18332, 1803, 27, 24, "Print",ExpressionUUID->"4f65f78b-b11a-45bc-94dc-c2c594cfeef5",
+Cell[1051216, 18983, 1803, 27, 24, "Print",ExpressionUUID->"4f65f78b-b11a-45bc-94dc-c2c594cfeef5",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1018079, 18361, 1782, 27, 24, "Print",ExpressionUUID->"a13949af-7ebb-49e8-9d09-142235f282b7",
+Cell[1053022, 19012, 1782, 27, 24, "Print",ExpressionUUID->"a13949af-7ebb-49e8-9d09-142235f282b7",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1019864, 18390, 1847, 28, 24, "Print",ExpressionUUID->"78df47f7-ecfc-4e5d-9973-40f429bf413b",
+Cell[1054807, 19041, 1847, 28, 24, "Print",ExpressionUUID->"78df47f7-ecfc-4e5d-9973-40f429bf413b",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1021714, 18420, 1780, 27, 24, "Print",ExpressionUUID->"a032c0fb-b5b0-44e7-a174-aae0e883201b",
+Cell[1056657, 19071, 1780, 27, 24, "Print",ExpressionUUID->"a032c0fb-b5b0-44e7-a174-aae0e883201b",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1023497, 18449, 1818, 28, 24, "Print",ExpressionUUID->"2c8f88a4-3096-4d1a-b0c8-fa207657b029",
+Cell[1058440, 19100, 1818, 28, 24, "Print",ExpressionUUID->"2c8f88a4-3096-4d1a-b0c8-fa207657b029",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1025318, 18479, 1803, 27, 24, "Print",ExpressionUUID->"09c48819-7269-4520-bd58-b5eb7df04f7c",
+Cell[1060261, 19130, 1803, 27, 24, "Print",ExpressionUUID->"09c48819-7269-4520-bd58-b5eb7df04f7c",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1027124, 18508, 1805, 28, 24, "Print",ExpressionUUID->"2bb8dbd1-2d6e-4b45-8154-c317dc5a2800",
+Cell[1062067, 19159, 1805, 28, 24, "Print",ExpressionUUID->"2bb8dbd1-2d6e-4b45-8154-c317dc5a2800",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1028932, 18538, 1804, 28, 24, "Print",ExpressionUUID->"0058b48b-1782-4d61-998f-ac8c803f5de0",
+Cell[1063875, 19189, 1804, 28, 24, "Print",ExpressionUUID->"0058b48b-1782-4d61-998f-ac8c803f5de0",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1030739, 18568, 1805, 28, 24, "Print",ExpressionUUID->"44651825-3e91-4307-9b5e-ec727eb6690f",
+Cell[1065682, 19219, 1805, 28, 24, "Print",ExpressionUUID->"44651825-3e91-4307-9b5e-ec727eb6690f",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1032547, 18598, 1816, 28, 24, "Print",ExpressionUUID->"6b3bf2a6-61b5-4525-9685-92cbc1d8783d",
+Cell[1067490, 19249, 1816, 28, 24, "Print",ExpressionUUID->"6b3bf2a6-61b5-4525-9685-92cbc1d8783d",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1034366, 18628, 1801, 27, 24, "Print",ExpressionUUID->"fdae309a-fa11-4653-95f1-027eab3a5914",
+Cell[1069309, 19279, 1801, 27, 24, "Print",ExpressionUUID->"fdae309a-fa11-4653-95f1-027eab3a5914",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1036170, 18657, 1804, 27, 24, "Print",ExpressionUUID->"4ba3d15a-28b3-4be4-9aa8-1b4df1bbb7b0",
+Cell[1071113, 19308, 1804, 27, 24, "Print",ExpressionUUID->"4ba3d15a-28b3-4be4-9aa8-1b4df1bbb7b0",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1037977, 18686, 1807, 28, 24, "Print",ExpressionUUID->"578d4115-14cc-41c1-9b30-f5a275c07c07",
+Cell[1072920, 19337, 1807, 28, 24, "Print",ExpressionUUID->"578d4115-14cc-41c1-9b30-f5a275c07c07",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1039787, 18716, 1803, 27, 24, "Print",ExpressionUUID->"f43997cf-a537-40b9-8fe8-83bc65701ee3",
+Cell[1074730, 19367, 1803, 27, 24, "Print",ExpressionUUID->"f43997cf-a537-40b9-8fe8-83bc65701ee3",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1041593, 18745, 1801, 27, 24, "Print",ExpressionUUID->"bbfa335a-c551-4290-92bc-684c6e9d9984",
+Cell[1076536, 19396, 1801, 27, 24, "Print",ExpressionUUID->"bbfa335a-c551-4290-92bc-684c6e9d9984",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1043397, 18774, 1803, 27, 24, "Print",ExpressionUUID->"539741ce-fe3f-4a4e-9943-1c2d53056d5c",
+Cell[1078340, 19425, 1803, 27, 24, "Print",ExpressionUUID->"539741ce-fe3f-4a4e-9943-1c2d53056d5c",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1045203, 18803, 1793, 27, 24, "Print",ExpressionUUID->"15bf9425-ce33-48ee-b7cf-df9e07a6ca8d",
+Cell[1080146, 19454, 1793, 27, 24, "Print",ExpressionUUID->"15bf9425-ce33-48ee-b7cf-df9e07a6ca8d",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1046999, 18832, 1807, 28, 24, "Print",ExpressionUUID->"058fcf5e-8bf1-4b91-bc33-ccc881fc801e",
+Cell[1081942, 19483, 1807, 28, 24, "Print",ExpressionUUID->"058fcf5e-8bf1-4b91-bc33-ccc881fc801e",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1048809, 18862, 1793, 27, 24, "Print",ExpressionUUID->"530c63e9-4fbe-4d95-b05f-08aba32d1885",
+Cell[1083752, 19513, 1793, 27, 24, "Print",ExpressionUUID->"530c63e9-4fbe-4d95-b05f-08aba32d1885",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1050605, 18891, 1802, 27, 24, "Print",ExpressionUUID->"046a39a9-57af-4e7f-8a62-6b82d338d546",
+Cell[1085548, 19542, 1802, 27, 24, "Print",ExpressionUUID->"046a39a9-57af-4e7f-8a62-6b82d338d546",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1052410, 18920, 1803, 27, 24, "Print",ExpressionUUID->"7ab5937f-44ff-41e4-a6ec-5213af3f8a71",
+Cell[1087353, 19571, 1803, 27, 24, "Print",ExpressionUUID->"7ab5937f-44ff-41e4-a6ec-5213af3f8a71",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1054216, 18949, 1803, 28, 24, "Print",ExpressionUUID->"532d4ee2-384e-4c3d-ad30-feeb43487428",
+Cell[1089159, 19600, 1803, 28, 24, "Print",ExpressionUUID->"532d4ee2-384e-4c3d-ad30-feeb43487428",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1056022, 18979, 1805, 28, 24, "Print",ExpressionUUID->"4b181273-daac-4b2d-8deb-c6030ae81258",
+Cell[1090965, 19630, 1805, 28, 24, "Print",ExpressionUUID->"4b181273-daac-4b2d-8deb-c6030ae81258",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1057830, 19009, 1805, 28, 24, "Print",ExpressionUUID->"1459e4c9-3d87-4cbc-bdda-fcb16ffd3675",
+Cell[1092773, 19660, 1805, 28, 24, "Print",ExpressionUUID->"1459e4c9-3d87-4cbc-bdda-fcb16ffd3675",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1059638, 19039, 1801, 27, 24, "Print",ExpressionUUID->"3026bcea-6404-4a75-b3a8-d44656b4bb70",
+Cell[1094581, 19690, 1801, 27, 24, "Print",ExpressionUUID->"3026bcea-6404-4a75-b3a8-d44656b4bb70",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1061442, 19068, 1803, 27, 24, "Print",ExpressionUUID->"fca1dfc9-4515-4de1-b220-055208cf5b9c",
+Cell[1096385, 19719, 1803, 27, 24, "Print",ExpressionUUID->"fca1dfc9-4515-4de1-b220-055208cf5b9c",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1063248, 19097, 1805, 28, 24, "Print",ExpressionUUID->"5f48bf19-eb79-4757-9620-626b7310689a",
+Cell[1098191, 19748, 1805, 28, 24, "Print",ExpressionUUID->"5f48bf19-eb79-4757-9620-626b7310689a",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1065056, 19127, 1807, 28, 24, "Print",ExpressionUUID->"017f61a8-0945-4614-af78-7f31af108a10",
+Cell[1099999, 19778, 1807, 28, 24, "Print",ExpressionUUID->"017f61a8-0945-4614-af78-7f31af108a10",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1066866, 19157, 1805, 28, 24, "Print",ExpressionUUID->"0c80f489-42f6-45fc-9491-a26647de1601",
+Cell[1101809, 19808, 1805, 28, 24, "Print",ExpressionUUID->"0c80f489-42f6-45fc-9491-a26647de1601",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1068674, 19187, 1805, 28, 24, "Print",ExpressionUUID->"8b18dc84-e941-46d1-9064-7df5d57b3e57",
+Cell[1103617, 19838, 1805, 28, 24, "Print",ExpressionUUID->"8b18dc84-e941-46d1-9064-7df5d57b3e57",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1070482, 19217, 1808, 28, 24, "Print",ExpressionUUID->"4055d1f3-d9f3-40be-910a-9a38efaf589b",
+Cell[1105425, 19868, 1808, 28, 24, "Print",ExpressionUUID->"4055d1f3-d9f3-40be-910a-9a38efaf589b",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1072293, 19247, 1806, 28, 24, "Print",ExpressionUUID->"8ce91ed0-35c0-4120-9878-d24bdc96f836",
+Cell[1107236, 19898, 1806, 28, 24, "Print",ExpressionUUID->"8ce91ed0-35c0-4120-9878-d24bdc96f836",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1074102, 19277, 1807, 28, 24, "Print",ExpressionUUID->"be639693-b7b7-45ae-9ea8-88b87c270919",
+Cell[1109045, 19928, 1807, 28, 24, "Print",ExpressionUUID->"be639693-b7b7-45ae-9ea8-88b87c270919",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1075912, 19307, 1793, 27, 24, "Print",ExpressionUUID->"8b71f48b-fcf0-43e6-b0e8-f0e40390362b",
+Cell[1110855, 19958, 1793, 27, 24, "Print",ExpressionUUID->"8b71f48b-fcf0-43e6-b0e8-f0e40390362b",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1077708, 19336, 1793, 27, 24, "Print",ExpressionUUID->"6b013a65-9cee-42f7-8c11-47eb454ad9e3",
+Cell[1112651, 19987, 1793, 27, 24, "Print",ExpressionUUID->"6b013a65-9cee-42f7-8c11-47eb454ad9e3",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1079504, 19365, 1795, 27, 24, "Print",ExpressionUUID->"d97ef161-8d9d-4b1f-b191-69286730d37f",
+Cell[1114447, 20016, 1795, 27, 24, "Print",ExpressionUUID->"d97ef161-8d9d-4b1f-b191-69286730d37f",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1081302, 19394, 1801, 27, 24, "Print",ExpressionUUID->"c520ff75-d678-4d28-921b-8340b256280b",
+Cell[1116245, 20045, 1801, 27, 24, "Print",ExpressionUUID->"c520ff75-d678-4d28-921b-8340b256280b",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1083106, 19423, 1801, 27, 24, "Print",ExpressionUUID->"3bfc8d34-738e-4306-b656-51c46f173289",
+Cell[1118049, 20074, 1801, 27, 24, "Print",ExpressionUUID->"3bfc8d34-738e-4306-b656-51c46f173289",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1084910, 19452, 1805, 28, 24, "Print",ExpressionUUID->"032b9121-020b-4d49-8808-71a14eaaf7d7",
+Cell[1119853, 20103, 1805, 28, 24, "Print",ExpressionUUID->"032b9121-020b-4d49-8808-71a14eaaf7d7",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1086718, 19482, 1793, 27, 24, "Print",ExpressionUUID->"baddc4d9-9f1a-4dab-a73b-05167b52c086",
+Cell[1121661, 20133, 1793, 27, 24, "Print",ExpressionUUID->"baddc4d9-9f1a-4dab-a73b-05167b52c086",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1088514, 19511, 1774, 27, 24, "Print",ExpressionUUID->"230b24ea-9eed-4a8a-b96a-22011974c1e7",
+Cell[1123457, 20162, 1774, 27, 24, "Print",ExpressionUUID->"230b24ea-9eed-4a8a-b96a-22011974c1e7",
  CellTags->"EMF from theory using x-y segments test"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1090349, 19545, 506, 7, 67, "Section",ExpressionUUID->"7563948f-eeb0-4b59-abeb-82906d3b452b"],
-Cell[1090858, 19554, 645, 11, 35, "Text",ExpressionUUID->"6297a081-d589-41b9-a9f3-2616a96a788e"],
+Cell[1125292, 20196, 506, 7, 67, "Section",ExpressionUUID->"7563948f-eeb0-4b59-abeb-82906d3b452b"],
+Cell[1125801, 20205, 645, 11, 35, "Text",ExpressionUUID->"6297a081-d589-41b9-a9f3-2616a96a788e"],
 Cell[CellGroupData[{
-Cell[1091528, 19569, 24847, 372, 892, "Input",ExpressionUUID->"7f8eb847-fff7-46d9-b0e0-5b00fd0423ee",
+Cell[1126471, 20220, 24847, 372, 892, "Input",ExpressionUUID->"7f8eb847-fff7-46d9-b0e0-5b00fd0423ee",
  CellTags->"EMF from theory using x-y segments test"],
 Cell[CellGroupData[{
-Cell[1116400, 19945, 395, 7, 24, "Print",ExpressionUUID->"11450fca-cce2-4db0-8e32-75f3831fe5bd",
+Cell[1151343, 20596, 395, 7, 24, "Print",ExpressionUUID->"11450fca-cce2-4db0-8e32-75f3831fe5bd",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1116798, 19954, 385, 7, 24, "Print",ExpressionUUID->"120ea1ce-8fe3-423c-b88d-b954c557f7fb",
+Cell[1151741, 20605, 385, 7, 24, "Print",ExpressionUUID->"120ea1ce-8fe3-423c-b88d-b954c557f7fb",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1117186, 19963, 396, 7, 24, "Print",ExpressionUUID->"429325cc-650e-4df6-9892-240f46247134",
+Cell[1152129, 20614, 396, 7, 24, "Print",ExpressionUUID->"429325cc-650e-4df6-9892-240f46247134",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1117585, 19972, 275, 5, 24, "Print",ExpressionUUID->"23db230b-e3e2-461b-b966-ee64eeedda6e",
+Cell[1152528, 20623, 275, 5, 24, "Print",ExpressionUUID->"23db230b-e3e2-461b-b966-ee64eeedda6e",
  CellTags->"EMF from theory using x-y segments test"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1117921, 19984, 455, 7, 67, "Section",ExpressionUUID->"ae17f6bb-9bd0-4b33-a8de-a6e616575ef4"],
-Cell[1118379, 19993, 503, 9, 35, "Text",ExpressionUUID->"ebf30fc3-6ac9-4da0-929c-a42eb8d426ed"],
-Cell[1118885, 20004, 8707, 179, 1363, "Input",ExpressionUUID->"2db0c55c-cfce-41f8-91ae-5911b1a7ff27",
+Cell[1152864, 20635, 455, 7, 67, "Section",ExpressionUUID->"ae17f6bb-9bd0-4b33-a8de-a6e616575ef4"],
+Cell[1153322, 20644, 503, 9, 35, "Text",ExpressionUUID->"ebf30fc3-6ac9-4da0-929c-a42eb8d426ed"],
+Cell[1153828, 20655, 8707, 179, 1363, "Input",ExpressionUUID->"2db0c55c-cfce-41f8-91ae-5911b1a7ff27",
  InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
