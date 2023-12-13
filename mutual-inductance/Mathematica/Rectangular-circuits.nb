@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1276548,      22936]
-NotebookOptionsPosition[   1229904,      22279]
-NotebookOutlinePosition[   1248394,      22534]
-CellTagsIndexPosition[   1248243,      22528]
+NotebookDataLength[   1328307,      24011]
+NotebookOptionsPosition[   1281626,      23353]
+NotebookOutlinePosition[   1300146,      23609]
+CellTagsIndexPosition[   1299995,      23603]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -11952,7 +11952,7 @@ Cell[BoxData[{
            "[", 
            RowBox[{"[", 
             RowBox[{";;", "5"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-         RowBox[{"scale", "=", "1"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"scale", "=", "2"}], ";", "\[IndentingNewLine]", 
          RowBox[{"(*", 
           RowBox[{
            RowBox[{"markers", "=", 
@@ -11981,9 +11981,8 @@ Cell[BoxData[{
          RowBox[{"markers", "=", 
           RowBox[{
            RowBox[{"{", 
-            RowBox[{
-            "uptriangle", ",", " ", "circle", ",", "square", ",", 
-             "\"\<\[Times]\>\""}], "}"}], "/.", 
+            RowBox[{"uptriangle", ",", " ", "circle", ",", "square"}], "}"}], 
+           "/.", 
            RowBox[{"{", 
             RowBox[{
              RowBox[{
@@ -12001,11 +12000,14 @@ Cell[BoxData[{
                 RowBox[{"{", 
                  RowBox[{"a", ",", "b"}], "}"}]}], "]"}]}]}], "}"}]}]}], ";", 
          "\[IndentingNewLine]", 
-         RowBox[{"(*", 
-          RowBox[{
-           RowBox[{"AppendTo", "[", 
-            RowBox[{"markers", ",", " ", "\"\<\[Times]\>\""}], "]"}], ";"}], 
-          "*)"}], "\[IndentingNewLine]", 
+         RowBox[{"xMarker", "=", 
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<xx\>\"", ",", 
+            RowBox[{"FontFamily", "\[Rule]", "\"\<Wingdings\>\""}]}], "]"}]}],
+          ";", "\[IndentingNewLine]", 
+         RowBox[{"AppendTo", "[", 
+          RowBox[{"markers", ",", " ", "xMarker"}], "]"}], ";", 
+         "\[IndentingNewLine]", 
          RowBox[{"circMarker", " ", "=", " ", 
           RowBox[{"Graphics", "[", 
            RowBox[{
@@ -12025,39 +12027,43 @@ Cell[BoxData[{
               RowBox[{"0", ",", "0"}], "}"}]}], ",", 
             RowBox[{"ImagePadding", "\[Rule]", "1"}]}], "]"}]}], ";", 
          "\[IndentingNewLine]", 
-         RowBox[{"xMarker", " ", "=", " ", 
-          RowBox[{"Graphics", "[", 
-           RowBox[{
-            RowBox[{"{", 
+         RowBox[{"(*", 
+          RowBox[{
+           RowBox[{"xMarker", " ", "=", " ", 
+            RowBox[{"Graphics", "[", 
              RowBox[{
-              RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
-              RowBox[{"FaceForm", "[", "White", "]"}], ",", 
               RowBox[{"{", 
-               RowBox[{"Line", "[", 
+               RowBox[{
+                RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+                RowBox[{"FaceForm", "[", "White", "]"}], ",", 
                 RowBox[{"{", 
-                 RowBox[{
-                  RowBox[{"{", 
-                   RowBox[{
+                 RowBox[{"Thick", ",", 
+                  RowBox[{"Line", "[", 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
                     RowBox[{"{", 
                     RowBox[{
                     RowBox[{"-", "1"}], ",", 
                     RowBox[{"-", "1"}]}], "}"}], ",", 
                     RowBox[{"{", 
                     RowBox[{"1", ",", "1"}], "}"}]}], "}"}], ",", 
-                  RowBox[{"{", 
-                   RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
                     RowBox[{"{", 
                     RowBox[{"1", ",", 
                     RowBox[{"-", "1"}]}], "}"}], ",", 
                     RowBox[{"{", 
                     RowBox[{
                     RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "}"}]}], "}"}], 
-                "]"}], "}"}]}], "}"}], ",", 
-            RowBox[{"ImageSize", "\[Rule]", "15"}], ",", 
-            RowBox[{"AlignmentPoint", "\[Rule]", 
-             RowBox[{"{", 
-              RowBox[{"0", ",", "0"}], "}"}]}], ",", 
-            RowBox[{"ImagePadding", "\[Rule]", "1"}]}], "]"}]}], ";", 
+                   "]"}]}], "}"}]}], "}"}], ",", 
+              RowBox[{"ImageSize", "\[Rule]", "15"}], ",", 
+              RowBox[{"AlignmentPoint", "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{"0", ",", "0"}], "}"}]}], ",", 
+              RowBox[{"ImagePadding", "\[Rule]", "1"}]}], "]"}]}], ";"}], 
+          "\[IndentingNewLine]", "*)"}], "\[IndentingNewLine]", 
          "\[IndentingNewLine]", 
          RowBox[{"sqrMarker", " ", "=", " ", 
           RowBox[{"Graphics", "[", 
@@ -12120,11 +12126,14 @@ Cell[BoxData[{
               RowBox[{"0", ",", "0"}], "}"}]}], ",", 
             RowBox[{"ImagePadding", "\[Rule]", "1"}]}], "]"}]}], ";", 
          "\[IndentingNewLine]", 
-         RowBox[{"markers", "=", 
-          RowBox[{"{", 
-           RowBox[{
-           "circMarker", ",", " ", "xMarker", ",", " ", "sqrMarker", ",", 
-            "triangleMarker"}], "}"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{"(*", 
+          RowBox[{
+           RowBox[{"markers", "=", 
+            RowBox[{"{", 
+             RowBox[{
+             "circMarker", ",", " ", "xMarker", ",", "triangleMarker", ",", 
+              " ", "sqrMarker"}], "}"}]}], ";"}], "*)"}], 
+         "\[IndentingNewLine]", 
          RowBox[{"Print", "[", "markers", "]"}], ";", "\[IndentingNewLine]", 
          RowBox[{"ListPlot", "[", "\[IndentingNewLine]", 
           RowBox[{
@@ -12140,11 +12149,11 @@ Cell[BoxData[{
                "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"Transpose", "[", 
               RowBox[{"{", 
-               RowBox[{"separations", ",", "fullAccelEmfCoplanar"}], "}"}], 
+               RowBox[{"separations", ",", "staticAccelEmfCoplanar"}], "}"}], 
               "]"}], ",", "\[IndentingNewLine]", 
              RowBox[{"Transpose", "[", 
               RowBox[{"{", 
-               RowBox[{"separations", ",", "staticAccelEmfCoplanar"}], "}"}], 
+               RowBox[{"separations", ",", "fullAccelEmfCoplanar"}], "}"}], 
               "]"}]}], "\[IndentingNewLine]", "}"}], ",", 
            "\[IndentingNewLine]", 
            RowBox[{"ImageSize", "\[Rule]", " ", "500"}], ",", 
@@ -12227,11 +12236,36 @@ Cell[BoxData[{
            "\[IndentingNewLine]", 
            RowBox[{"AspectRatio", "\[Rule]", "0.75"}], ",", 
            "\[IndentingNewLine]", 
-           RowBox[{"PlotLegends", "\[Rule]", 
+           RowBox[{"PlotStyle", "\[Rule]", 
             RowBox[{"{", 
+             RowBox[{"Thick", ",", "Dotted", ",", "Thick", ",", "Dashed"}], 
+             "}"}]}], ",", "\[IndentingNewLine]", 
+           RowBox[{"(*", 
+            RowBox[{
+             RowBox[{"PlotStyle", "\[Rule]", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{"Thickness", "[", "0.005", "]"}], "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"Dashing", "[", 
+                   RowBox[{"{", 
+                    RowBox[{"Medium", ",", "Large"}], "}"}], "]"}], ",", 
+                  "Thick", ",", 
+                  RowBox[{"Thickness", "[", "0.01", "]"}]}], "}"}], ",", 
+                "Thick", ",", "Dashed"}], "}"}]}], ","}], 
+            "\[IndentingNewLine]", "*)"}], 
+           RowBox[{"PlotLegends", "\[Rule]", 
+            RowBox[{"Placed", "[", 
              RowBox[{
-             "\"\<Faraday\>\"", ",", "\"\<Dynamic\>\"", ",", "\"\<Static\>\"",
-               ",", "\"\<Full\>\""}], "}"}]}], ",", "\[IndentingNewLine]", 
+              RowBox[{"{", 
+               RowBox[{
+               "\"\<Faraday\>\"", ",", "\"\<Dynamic\>\"", ",", 
+                "\"\<Static\>\"", ",", "\"\<Full\>\""}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"0.75", ",", "0.75"}], "}"}]}], "]"}]}], ",", 
+           "\[IndentingNewLine]", 
            RowBox[{"(*", 
             RowBox[{
              RowBox[{"ImagePadding", "\[Rule]", 
@@ -12258,9 +12292,21 @@ Cell[BoxData[{
               RowBox[{"Style", "[", 
                RowBox[{
                "\"\<Normalized EMF difference (\[Micro]V)\>\"", ",", "10"}], 
-               "]"}]}], "\[IndentingNewLine]", "}"}]}]}], "]"}]}], 
-        "\[IndentingNewLine]", ")"}]}], ";", "\[IndentingNewLine]", 
-      "\[IndentingNewLine]", 
+               "]"}]}], "\[IndentingNewLine]", "}"}]}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Prolog", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"Thick", ",", " ", "Black", ",", 
+              RowBox[{"Line", "[", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"0", ",", 
+                   RowBox[{"-", "10"}]}], "}"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{"0.10", ",", "10"}], "}"}]}], "}"}], "]"}]}], 
+             "}"}]}]}], "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]",
+         ")"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
       RowBox[{"this", " ", "=", " ", 
        RowBox[{
         RowBox[{"this", "[", "\"\<makePublic\>\"", "]"}], "[", 
@@ -12325,9 +12371,22 @@ Cell[BoxData[{
    3.911380935966957*^9}, {3.911381017726377*^9, 3.911381114675974*^9}, {
    3.9113811833432713`*^9, 3.911381187792118*^9}, {3.911381246880125*^9, 
    3.91138127239659*^9}, {3.91138137914554*^9, 3.911381418918191*^9}, {
-   3.911381451074143*^9, 
-   3.911381462887035*^9}},ExpressionUUID->"367c4d01-4931-4529-8b03-\
-ef3298d5f708"],
+   3.911381451074143*^9, 3.911381462887035*^9}, {3.911381779364462*^9, 
+   3.9113818489869223`*^9}, {3.911382105223246*^9, 3.911382201569764*^9}, {
+   3.911382321626315*^9, 3.911382353597555*^9}, {3.91138253966471*^9, 
+   3.9113825746956472`*^9}, {3.911382673096121*^9, 3.9113826890329742`*^9}, {
+   3.911382735977808*^9, 3.9113827368149147`*^9}, {3.911382769714679*^9, 
+   3.911382777159437*^9}, {3.9114270995968037`*^9, 3.911427208879808*^9}, {
+   3.911427452082357*^9, 3.9114274531315928`*^9}, {3.911427978862557*^9, 
+   3.9114279868560266`*^9}, {3.91142813511045*^9, 3.911428135247246*^9}, {
+   3.911430818693666*^9, 3.911430965732511*^9}, {3.911431022404066*^9, 
+   3.911431035328569*^9}, 3.911431095636456*^9, {3.91143129826293*^9, 
+   3.911431380997072*^9}, 3.911431421187704*^9, {3.911431469640202*^9, 
+   3.911431551309894*^9}, {3.911431767879094*^9, 3.911431817087429*^9}, {
+   3.9114318601112843`*^9, 3.911431883295155*^9}, {3.9114319208810577`*^9, 
+   3.911431921309738*^9}},
+ CellLabel->
+  "In[305]:=",ExpressionUUID->"367c4d01-4931-4529-8b03-ef3298d5f708"],
 
 Cell[CellGroupData[{
 
@@ -12338,12 +12397,12 @@ Cell[BoxData[
    "3.5207298669608535`", ",", "1.4302151750912937`", ",", 
    "0.7421114099912274`", ",", "0.43911245135973404`"}], "}"}]], "Print",
  CellChangeTimes->{
-  3.911379730026478*^9, {3.911379857943293*^9, 3.9113798693974667`*^9}, 
-   3.91138071009293*^9, 3.911381118383471*^9, {3.91138122314106*^9, 
-   3.911381250642356*^9}, 3.9113812921343946`*^9},
+  3.911431422660448*^9, 3.911431475509903*^9, {3.911431531537094*^9, 
+   3.911431552681924*^9}, 3.911431820111883*^9, {3.911431867551774*^9, 
+   3.9114318848666153`*^9}, 3.911431921965784*^9},
  CellLabel->
   "During evaluation of \
-In[193]:=",ExpressionUUID->"b945aedc-7c7c-4a9b-9b8c-cce933a7d43b"],
+In[305]:=",ExpressionUUID->"fb7ae0c5-1592-4633-bf0d-71df86ea2aef"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -12354,12 +12413,12 @@ Cell[BoxData[
    ",", "5.4896414596187115`*^-6", ",", "9.308553062211249`*^-7"}], 
   "}"}]], "Print",
  CellChangeTimes->{
-  3.911379730026478*^9, {3.911379857943293*^9, 3.9113798693974667`*^9}, 
-   3.91138071009293*^9, 3.911381118383471*^9, {3.91138122314106*^9, 
-   3.911381250642356*^9}, 3.911381292137246*^9},
+  3.911431422660448*^9, 3.911431475509903*^9, {3.911431531537094*^9, 
+   3.911431552681924*^9}, 3.911431820111883*^9, {3.911431867551774*^9, 
+   3.9114318848666153`*^9}, 3.911431921967873*^9},
  CellLabel->
   "During evaluation of \
-In[193]:=",ExpressionUUID->"64d8c8fd-e953-4a6d-adad-88e03ef63278"],
+In[305]:=",ExpressionUUID->"a323a207-2034-4d50-bc1c-a50f859f8986"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -12371,12 +12430,12 @@ Cell[BoxData[
    RowBox[{"-", "0.7421097464556264`"}], ",", 
    RowBox[{"-", "0.4391117515468105`"}]}], "}"}]], "Print",
  CellChangeTimes->{
-  3.911379730026478*^9, {3.911379857943293*^9, 3.9113798693974667`*^9}, 
-   3.91138071009293*^9, 3.911381118383471*^9, {3.91138122314106*^9, 
-   3.911381250642356*^9}, 3.9113812921405*^9},
+  3.911431422660448*^9, 3.911431475509903*^9, {3.911431531537094*^9, 
+   3.911431552681924*^9}, 3.911431820111883*^9, {3.911431867551774*^9, 
+   3.9114318848666153`*^9}, 3.911431921971051*^9},
  CellLabel->
   "During evaluation of \
-In[193]:=",ExpressionUUID->"ace0feca-d24c-469a-bf3b-6f9fd63d95c0"],
+In[305]:=",ExpressionUUID->"9519d41f-5e1b-48ff-8091-ed20cc5c0b4b"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -12385,70 +12444,72 @@ Cell[BoxData[
    "3.5209060226091635`", ",", "1.4302657891846609`", ",", 
    "0.7421148219696837`", ",", "0.439113577185068`"}], "}"}]], "Print",
  CellChangeTimes->{
-  3.911379730026478*^9, {3.911379857943293*^9, 3.9113798693974667`*^9}, 
-   3.91138071009293*^9, 3.911381118383471*^9, {3.91138122314106*^9, 
-   3.911381250642356*^9}, 3.911381292143283*^9},
+  3.911431422660448*^9, 3.911431475509903*^9, {3.911431531537094*^9, 
+   3.911431552681924*^9}, 3.911431820111883*^9, {3.911431867551774*^9, 
+   3.9114318848666153`*^9}, 3.9114319219736423`*^9},
  CellLabel->
   "During evaluation of \
-In[193]:=",ExpressionUUID->"9e00ee10-6b35-4c05-ba70-d6a9187b269f"],
+In[305]:=",ExpressionUUID->"8479d84a-49a9-4932-9eb0-27fb23d4baa8"],
 
 Cell[BoxData["\<\"Induced EMF for circuit separation\"\>"], "Print",
  CellChangeTimes->{
-  3.911379730026478*^9, {3.911379857943293*^9, 3.9113798693974667`*^9}, 
-   3.91138071009293*^9, 3.911381118383471*^9, {3.91138122314106*^9, 
-   3.911381250642356*^9}, 3.911381292145989*^9},
+  3.911431422660448*^9, 3.911431475509903*^9, {3.911431531537094*^9, 
+   3.911431552681924*^9}, 3.911431820111883*^9, {3.911431867551774*^9, 
+   3.9114318848666153`*^9}, 3.911431921976585*^9},
  CellLabel->
   "During evaluation of \
-In[193]:=",ExpressionUUID->"da4e1acd-31d7-4468-a598-566c73f5a903"],
+In[305]:=",ExpressionUUID->"e0bdfdb6-7b96-4666-b433-c5b0d794eb08"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   GraphicsBox[
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], DiskBox[{0, 0}, 1]},
-    AlignmentPoint->{0, 0},
-    ImagePadding->1,
-    ImageSize->15], ",", 
-   GraphicsBox[
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     LineBox[{{{-1, -1}, {1, 1}}, {{1, -1}, {-1, 1}}}]},
-    AlignmentPoint->{0, 0},
-    ImagePadding->1,
-    ImageSize->15], ",", 
-   GraphicsBox[
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     GeometricTransformationBox[
-      RectangleBox[{-1, -1}, {1, 1}], {{{
-       0.7071067811865475, -0.7071067811865475}, {0.7071067811865475, 
-       0.7071067811865475}}, Center}]},
-    AlignmentPoint->{0, 0},
-    ImagePadding->1,
-    ImageSize->15], ",", 
-   GraphicsBox[
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-     TagBox[
-      PolygonBox[
-       NCache[{{Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {0, 1}, {
-         Rational[-1, 2] 3^Rational[1, 2], Rational[-1, 2]}}, {{
-         0.8660254037844386, -0.5}, {0, 1}, {-0.8660254037844386, -0.5}}]],
-      "Triangle"]},
-    AlignmentPoint->{0, 0},
-    ImagePadding->1,
-    ImageSize->15]}], "}"}]], "Print",
+   GraphicsBox[{
+     {GrayLevel[1], 
+      {FaceForm[None], 
+       PolygonBox[
+        NCache[{Offset[{0, 4}], Offset[{(-2) 3^Rational[1, 2], -2}], 
+          Offset[{2 3^Rational[1, 2], -2}]}, {
+         Offset[{0, 4}], Offset[{-3.4641016151377544`, -2}], 
+          Offset[{3.4641016151377544`, -2}]}]]}}, 
+     {AbsoluteThickness[1.5], Dashing[{}], 
+      JoinedCurveBox[NCache[
+       Line[{Offset[{0, 8}], Offset[{(-4) 3^Rational[1, 2], -4}], 
+          Offset[{4 3^Rational[1, 2], -4}], Offset[{0, 8}]}], 
+        Line[{Offset[{0, 8}], Offset[{-6.928203230275509, -4}], 
+          Offset[{6.928203230275509, -4}], Offset[{0, 8}]}]],
+       CurveClosed->True]}}], ",", 
+   GraphicsBox[{
+     {GrayLevel[1], 
+      {FaceForm[None], DiskBox[{0, 0}, Offset[{3., 3.}, {0., 0.}]]}}, 
+     {AbsoluteThickness[1.5], Dashing[{}], 
+      CircleBox[{0, 0}, Offset[{6., 6.}, {0., 0.}]]}}], ",", 
+   GraphicsBox[{
+     {GrayLevel[1], 
+      {FaceForm[None], 
+       PolygonBox[{
+        Offset[{-2.75, -2.75}], Offset[{2.75, -2.75}], Offset[{2.75, 2.75}], 
+         Offset[{-2.75, 2.75}], Offset[{-2.75, -2.75}]}]}}, 
+     {AbsoluteThickness[1.5], Dashing[{}], 
+      LineBox[{Offset[{-5.5, -5.5}], Offset[{5.5, -5.5}], Offset[{5.5, 5.5}], 
+        Offset[{-5.5, 5.5}], Offset[{-5.5, -5.5}]}]}}], ",", 
+   StyleBox["\<\"xx\"\>",
+    StripOnInput->False,
+    FontFamily->"Wingdings"]}], "}"}]], "Print",
  CellChangeTimes->{
-  3.911379730026478*^9, {3.911379857943293*^9, 3.9113798693974667`*^9}, 
-   3.91138071009293*^9, 3.911381118383471*^9, {3.91138122314106*^9, 
-   3.911381250642356*^9}, 3.911381292151526*^9},
+  3.911431422660448*^9, 3.911431475509903*^9, {3.911431531537094*^9, 
+   3.911431552681924*^9}, 3.911431820111883*^9, {3.911431867551774*^9, 
+   3.9114318848666153`*^9}, 3.911431921980681*^9},
  CellLabel->
   "During evaluation of \
-In[193]:=",ExpressionUUID->"67d65593-2cc9-437d-ae85-a6d6af74171f"]
+In[305]:=",ExpressionUUID->"80c48e15-93ce-467d-89f1-bef050e895a1"]
 }, Open  ]],
 
 Cell[BoxData[
- GraphicsBox[{{}, {{{}, {}, 
-     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[LineBox[CompressedData["
+ TagBox[
+  GraphicsBox[{{{}, {{{}, {}, 
+       {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+        0.012833333333333334`], Thickness[Large], 
+        StyleBox[LineBox[CompressedData["
 1:eJwlk4k7FPoChhkqy6REslVjHdtUlqO65PtR9iJMWiiVJ9PipGuZMNaUVLKW
 LSVibNlHKEclOblKixZHUhwMsjSibOne23mf532+P+B9PpXDPs5HKEJCQlH/
 8//LkS217gn2B20Vpa5dRZusexTxxu6pP5aktsdaDGuR+vdtdBX1AExmO51o
@@ -12495,11 +12556,11 @@ IdUeKFgqLHRH1yB49S695ief4D6R38F+XIOyyiOBXb6fEB7fhn2UWrzIunzG
 hfYJEk8OPj60pRbJ9JQ37JyPCLU2mDvCroUhZ1OOjeRH7KuT80NJLXanLRSZ
 crqxpqWnobmnFl+7+tb7TXwAU5V16rVMHYa4/FPUf39A4KlgBfOtddBhipRq
 fe/CUo9x+36fOqRYGNEHz3bh2q//1GHpC7byCcUu/BcPCNjz
-        "]],
-       FontSize->10]}, 
-     {RGBColor[0.880722, 0.611041, 0.142051], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[LineBox[CompressedData["
+          "]],
+         FontSize->10]}, 
+       {RGBColor[0.880722, 0.611041, 0.142051], PointSize[
+        0.012833333333333334`], AbsoluteThickness[1.6], Dashing[{0, Small}], 
+        StyleBox[LineBox[CompressedData["
 1:eJwlk4c7FXwDhoWGkRFllV0HIbSU3p4fZURRJ0mlUuG0JDMrI1mJjISSIh17
 n2PlE5GI1FuUF5W9ORkRwvd9vfd13dfzB9zXI3PejmrNzsbG5vc//78ewtn6
 ne5OKGiuD06UUSSqVT7Nhg1OGClXPCU0pEDK2hopMvLOiLYvvRyZrUCuSHk7
@@ -12546,63 +12607,11 @@ dEJMV2zxW0ARtgSXfqqq7YDFREqLy+si8DU8d2t16ID3vUacZC9G3bT08BHp
 DnDXWr4+91cxQnOOhTglfcdNfY15a5diTLrfPqTP8x0nS9Y5IqsYd0bqj+/x
 +AbJus7yms5iqCcq9jpOfIWpLO16k1AJirc/UuOz/wrX6+5i2vtKsKAn6bx5
 ph2rz7KMeu1K0GifOzp8ux2P/vynBDNUk2Y78Xb8F9h07Ss=
-        "]],
-       FontSize->10]}, 
-     {RGBColor[0.560181, 0.691569, 0.194885], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[LineBox[CompressedData["
-1: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
-0CpH/wOD5Au6
-        "]],
-       FontSize->10]}, 
-     {RGBColor[0.922526, 0.385626, 0.209179], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[LineBox[CompressedData["
+          "]],
+         FontSize->10]}, 
+       {RGBColor[0.560181, 0.691569, 0.194885], PointSize[
+        0.012833333333333334`], Thickness[Large], 
+        StyleBox[LineBox[CompressedData["
 1:eJwlk3lUDHofxkehfadFSstoKk2ImzLxFa16SZq6IbK8GhTR3rRNItnSRuW2
 y0yLaZ+WK34/KkWbS0hRTd32ZcwY2qj3vu7nnOc85/n7cx7tkz4HT4sQCITo
 f/L/Dl1VbMul+0N728Mvt7QNsHE9493eVn/o2n7gydKYPq7raSdpEwPgBL2o
@@ -12650,179 +12659,1244 @@ QrwiuIjyab/mnzbVsPjmbTRfm4vUrNUWe2OqwRhTyTXN/chdwOoKbKwGq8WY
 0cpUqg8drlX2A3YNnOpbJjQK7UWaL7lPX3BrIMtijugp+IyoOrSLnUq18FFz
 o4zIpc8o+CJdzXJPLdhHZQxozXxCMh48hyGfWlD32NkzcOUT+uPXf2ohsEKK
 fGbNJ/Q/9HUjBQ==
-        "]],
-       FontSize->10]}}, {
-     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[GeometricTransformationBox[InsetBox[
-         FormBox[
-          StyleBox[
-           GraphicsBox[
-            {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-             DiskBox[{0, 0}, 1]},
-            AlignmentPoint->{0, 0},
-            ImagePadding->1,
-            ImageSize->15],
-           StripOnInput->False,
-           GraphicsBoxOptions->{DefaultBaseStyle->Directive[
-             PointSize[0.012833333333333334`], 
-             RGBColor[0.368417, 0.506779, 0.709798], 
-             AbsoluteThickness[1.6], FontSize -> 10]}],
-          TraditionalForm], {0., 0.}], {{{0.005, 12.566068440919082`}}, {{
-        0.01, 8.096349360045998}}, {{0.025, 3.5207298669608535`}}, {{0.05, 
-        1.4302151750912937`}}, {{0.075, 0.7421114099912274}}, {{0.1, 
-        0.43911245135973404`}}}],
-       FontSize->10]}, 
-     {RGBColor[0.880722, 0.611041, 0.142051], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[GeometricTransformationBox[InsetBox[
-         FormBox[
-          StyleBox[
-           GraphicsBox[
-            {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-             LineBox[{{{-1, -1}, {1, 1}}, {{1, -1}, {-1, 1}}}]},
-            AlignmentPoint->{0, 0},
-            ImagePadding->1,
-            ImageSize->15],
-           StripOnInput->False,
-           GraphicsBoxOptions->{DefaultBaseStyle->Directive[
-             PointSize[0.012833333333333334`], 
-             RGBColor[0.880722, 0.611041, 0.142051], 
-             AbsoluteThickness[1.6], FontSize -> 10]}],
-          TraditionalForm], {0., 0.}], {{{0.005, 12.565685564167188`}}, {{
-        0.01, 8.096652106279388}}, {{0.025, 3.5209060226091635`}}, {{0.05, 
-        1.4302657891846609`}}, {{0.075, 0.7421148219696837}}, {{0.1, 
-        0.439113577185068}}}],
-       FontSize->10]}, 
-     {RGBColor[0.560181, 0.691569, 0.194885], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[GeometricTransformationBox[InsetBox[
-         FormBox[
-          StyleBox[
-           GraphicsBox[
-            {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-             GeometricTransformationBox[
-              RectangleBox[{-1, -1}, {1, 1}], {{{
-               0.7071067811865475, -0.7071067811865475}, {0.7071067811865475, 
-               0.7071067811865475}}, Center}]},
-            AlignmentPoint->{0, 0},
-            ImagePadding->1,
-            ImageSize->15],
-           StripOnInput->False,
-           GraphicsBoxOptions->{DefaultBaseStyle->Directive[
-             PointSize[0.012833333333333334`], 
-             RGBColor[0.560181, 0.691569, 0.194885], 
-             AbsoluteThickness[1.6], FontSize -> 10]}],
-          TraditionalForm], {0., 0.}], {{{0.005, -3.644838516120546*^-6}}, {{
-        0.01, -0.0000752541589533829}}, {{0.025, -0.00001717080422202342}}, {{
-        0.05, 6.088023992640133*^-6}}, {{0.075, 5.4896414596187115`*^-6}}, {{
-        0.1, 9.308553062211249*^-7}}}],
-       FontSize->10]}, 
-     {RGBColor[0.922526, 0.385626, 0.209179], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[GeometricTransformationBox[InsetBox[
-         FormBox[
-          StyleBox[
-           GraphicsBox[
-            {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[1]], 
-             
-             TagBox[PolygonBox[
-               NCache[{{Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {0,
-                  1}, {Rational[-1, 2] 3^Rational[1, 2], Rational[-1, 2]}}, {{
-                 0.8660254037844386, -0.5}, {0, 
-                 1}, {-0.8660254037844386, -0.5}}]],
-              "Triangle"]},
-            AlignmentPoint->{0, 0},
-            ImagePadding->1,
-            ImageSize->15],
-           StripOnInput->False,
-           GraphicsBoxOptions->{DefaultBaseStyle->Directive[
-             PointSize[0.012833333333333334`], 
-             RGBColor[0.922526, 0.385626, 0.209179], 
-             AbsoluteThickness[1.6], FontSize -> 10]}],
-          TraditionalForm], {0., 0.}], {{{0.005, -12.565528412093865`}}, {{
-        0.01, -8.096682903783643}}, {{0.025, -3.520791566154428}}, {{
-        0.05, -1.4302482053814238`}}, {{0.075, -0.7421097464556264}}, {{
-        0.1, -0.4391117515468105}}}],
-       FontSize->10]}}, {
-     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[{},
-       FontSize->10]}, 
-     {RGBColor[0.880722, 0.611041, 0.142051], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[{},
-       FontSize->10]}, 
-     {RGBColor[0.560181, 0.691569, 0.194885], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[{},
-       FontSize->10]}, 
-     {RGBColor[0.922526, 0.385626, 0.209179], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[{},
-       FontSize->10]}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}}, {
-     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[{},
-       FontSize->10]}, 
-     {RGBColor[0.880722, 0.611041, 0.142051], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[{},
-       FontSize->10]}, 
-     {RGBColor[0.560181, 0.691569, 0.194885], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[{},
-       FontSize->10]}, 
-     {RGBColor[0.922526, 0.385626, 0.209179], PointSize[
-      0.012833333333333334`], AbsoluteThickness[1.6], 
-      StyleBox[{},
-       FontSize->
-        10]}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}}}, {{}, {}}},
-  
-  AspectRatio->0.75,
-  Axes->{True, True},
-  AxesLabel->{None, None},
-  AxesOrigin->{0, 0},
-  BaseStyle->{FontSize -> 10},
-  DisplayFunction->Identity,
-  Frame->{{True, False}, {True, False}},
-  FrameLabel->{{
-     FormBox[
-      StyleBox[
-      "\"Normalized EMF difference (\[Micro]V)\"", 10, StripOnInput -> False],
-       TraditionalForm], None}, {
-     FormBox[
-      StyleBox[
-      "\"Requested precision of integration\"", 10, StripOnInput -> False], 
-      TraditionalForm], None}},
-  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
-  GridLines->{None, None},
-  GridLinesStyle->Directive[
-    GrayLevel[0.5, 0.4]],
-  ImageSize->500,
-  Method->{
-   "OptimizePlotMarkers" -> True, 
-    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-        (Identity[#]& )[
-         Part[#, 1]], 
-        (Identity[#]& )[
-         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-        (Identity[#]& )[
-         Part[#, 1]], 
-        (Identity[#]& )[
-         Part[#, 2]]}& )}},
-  PlotRange->{{0., 0.10000000000000002`}, {-13, 13}},
-  PlotRangeClipping->True,
-  PlotRangePadding->{{
-     Scaled[0.02], 
-     Scaled[0.02]}, {0, 0}},
-  Ticks->{Automatic, Automatic}]], "Output",
+          "]],
+         FontSize->10]}, 
+       {RGBColor[0.922526, 0.385626, 0.209179], PointSize[
+        0.012833333333333334`], AbsoluteThickness[1.6], 
+        Dashing[{Small, Small}], 
+        StyleBox[LineBox[CompressedData["
+1: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
+0CpH/wOD5Au6
+          "]],
+         FontSize->10]}}, {
+       {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+        0.012833333333333334`], Thickness[Large], 
+        StyleBox[GeometricTransformationBox[InsetBox[
+           FormBox[
+            StyleBox[
+             GraphicsBox[{
+               {GrayLevel[1], 
+                {FaceForm[None], 
+                 PolygonBox[
+                  NCache[{
+                   Offset[{0, 4}], Offset[{(-2) 3^Rational[1, 2], -2}], 
+                    Offset[{2 3^Rational[1, 2], -2}]}, {
+                   Offset[{0, 4}], Offset[{-3.4641016151377544`, -2}], 
+                    Offset[{3.4641016151377544`, -2}]}]]}}, 
+               {AbsoluteThickness[1.5], Dashing[{}], 
+                JoinedCurveBox[NCache[
+                 Line[{Offset[{0, 8}], Offset[{(-4) 3^Rational[1, 2], -4}], 
+                    Offset[{4 3^Rational[1, 2], -4}], Offset[{0, 8}]}], 
+                  Line[{Offset[{0, 8}], Offset[{-6.928203230275509, -4}], 
+                    Offset[{6.928203230275509, -4}], Offset[{0, 8}]}]],
+                 CurveClosed->True]}}],
+             StripOnInput->False,
+             GraphicsBoxOptions->{DefaultBaseStyle->Directive[
+               PointSize[0.012833333333333334`], 
+               RGBColor[0.368417, 0.506779, 0.709798], 
+               AbsoluteThickness[1.6], FontSize -> 10, 
+               Thickness[Large]]}],
+            TraditionalForm], {0., 0.}], {{{0.005, 12.566068440919082`}}, {{
+          0.01, 8.096349360045998}}, {{0.025, 3.5207298669608535`}}, {{0.05, 
+          1.4302151750912937`}}, {{0.075, 0.7421114099912274}}, {{0.1, 
+          0.43911245135973404`}}}],
+         FontSize->10]}, 
+       {RGBColor[0.880722, 0.611041, 0.142051], PointSize[
+        0.012833333333333334`], AbsoluteThickness[1.6], Dashing[{0, Small}], 
+        StyleBox[GeometricTransformationBox[InsetBox[
+           FormBox[
+            StyleBox[
+             GraphicsBox[{
+               {GrayLevel[1], 
+                {FaceForm[None], 
+                 DiskBox[{0, 0}, Offset[{3., 3.}, {0., 0.}]]}}, 
+               {AbsoluteThickness[1.5], Dashing[{}], 
+                CircleBox[{0, 0}, Offset[{6., 6.}, {0., 0.}]]}}],
+             StripOnInput->False,
+             GraphicsBoxOptions->{DefaultBaseStyle->Directive[
+               PointSize[0.012833333333333334`], 
+               RGBColor[0.880722, 0.611041, 0.142051], 
+               AbsoluteThickness[1.6], FontSize -> 10, 
+               Dashing[{0, Small}]]}],
+            TraditionalForm], {0., 0.}], {{{0.005, 12.565685564167188`}}, {{
+          0.01, 8.096652106279388}}, {{0.025, 3.5209060226091635`}}, {{0.05, 
+          1.4302657891846609`}}, {{0.075, 0.7421148219696837}}, {{0.1, 
+          0.439113577185068}}}],
+         FontSize->10]}, 
+       {RGBColor[0.560181, 0.691569, 0.194885], PointSize[
+        0.012833333333333334`], Thickness[Large], 
+        StyleBox[GeometricTransformationBox[InsetBox[
+           FormBox[
+            StyleBox[
+             GraphicsBox[{
+               {GrayLevel[1], 
+                {FaceForm[None], 
+                 PolygonBox[{
+                  Offset[{-2.75, -2.75}], Offset[{2.75, -2.75}], 
+                   Offset[{2.75, 2.75}], Offset[{-2.75, 2.75}], 
+                   Offset[{-2.75, -2.75}]}]}}, 
+               {AbsoluteThickness[1.5], Dashing[{}], 
+                LineBox[{
+                 Offset[{-5.5, -5.5}], Offset[{5.5, -5.5}], 
+                  Offset[{5.5, 5.5}], Offset[{-5.5, 5.5}], 
+                  Offset[{-5.5, -5.5}]}]}}],
+             StripOnInput->False,
+             GraphicsBoxOptions->{DefaultBaseStyle->Directive[
+               PointSize[0.012833333333333334`], 
+               RGBColor[0.560181, 0.691569, 0.194885], 
+               AbsoluteThickness[1.6], FontSize -> 10, 
+               Thickness[Large]]}],
+            TraditionalForm], {0., 0.}], {{{0.005, -12.565528412093865`}}, {{
+          0.01, -8.096682903783643}}, {{0.025, -3.520791566154428}}, {{
+          0.05, -1.4302482053814238`}}, {{0.075, -0.7421097464556264}}, {{
+          0.1, -0.4391117515468105}}}],
+         FontSize->10]}, 
+       {RGBColor[0.922526, 0.385626, 0.209179], PointSize[
+        0.012833333333333334`], AbsoluteThickness[1.6], 
+        Dashing[{Small, Small}], 
+        StyleBox[GeometricTransformationBox[InsetBox[
+           StyleBox[
+            StyleBox["\<\"xx\"\>",
+             StripOnInput->False,
+             FontFamily->"Wingdings"],
+            StripOnInput->False,
+            GraphicsBoxOptions->{DefaultBaseStyle->Directive[
+              PointSize[0.012833333333333334`], 
+              RGBColor[0.922526, 0.385626, 0.209179], 
+              AbsoluteThickness[1.6], FontSize -> 10, 
+              Dashing[{Small, Small}]]}], {0., 0.}], {{{
+          0.005, -3.644838516120546*^-6}}, {{
+          0.01, -0.0000752541589533829}}, {{
+          0.025, -0.00001717080422202342}}, {{0.05, 
+          6.088023992640133*^-6}}, {{0.075, 5.4896414596187115`*^-6}}, {{0.1, 
+          9.308553062211249*^-7}}}],
+         FontSize->10]}}, {
+       {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+        0.012833333333333334`], Thickness[Large], 
+        StyleBox[{},
+         FontSize->10]}, 
+       {RGBColor[0.880722, 0.611041, 0.142051], PointSize[
+        0.012833333333333334`], AbsoluteThickness[1.6], Dashing[{0, Small}], 
+        StyleBox[{},
+         FontSize->10]}, 
+       {RGBColor[0.560181, 0.691569, 0.194885], PointSize[
+        0.012833333333333334`], Thickness[Large], 
+        StyleBox[{},
+         FontSize->10]}, 
+       {RGBColor[0.922526, 0.385626, 0.209179], PointSize[
+        0.012833333333333334`], AbsoluteThickness[1.6], 
+        Dashing[{Small, Small}], 
+        StyleBox[{},
+         FontSize->10]}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}}, {
+       {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+        0.012833333333333334`], Thickness[Large], 
+        StyleBox[{},
+         FontSize->10]}, 
+       {RGBColor[0.880722, 0.611041, 0.142051], PointSize[
+        0.012833333333333334`], AbsoluteThickness[1.6], Dashing[{0, Small}], 
+        StyleBox[{},
+         FontSize->10]}, 
+       {RGBColor[0.560181, 0.691569, 0.194885], PointSize[
+        0.012833333333333334`], Thickness[Large], 
+        StyleBox[{},
+         FontSize->10]}, 
+       {RGBColor[0.922526, 0.385626, 0.209179], PointSize[
+        0.012833333333333334`], AbsoluteThickness[1.6], 
+        Dashing[{Small, Small}], 
+        StyleBox[{},
+         FontSize->
+          10]}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}}}, {{}, \
+{}}}, InsetBox[
+     TemplateBox[{"\"Faraday\"","\"Dynamic\"","\"Static\"","\"Full\""},
+      "PointLegend",
+      DisplayFunction->(FormBox[
+        StyleBox[
+         StyleBox[
+          PaneBox[
+           TagBox[
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   GraphicsBox[{{
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6], FontSize -> 10, 
+                    Thickness[Large]], {
+                    LineBox[{{0, 10}, {40, 10}}]}}, {
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6], FontSize -> 10, 
+                    Thickness[Large]], {
+                    InsetBox[
+                    GraphicsBox[{{
+                    GrayLevel[1], {
+                    FaceForm[], 
+                    PolygonBox[
+                    NCache[{
+                    Offset[{0, 4}], 
+                    Offset[{(-2) 3^Rational[1, 2], -2}], 
+                    Offset[{2 3^Rational[1, 2], -2}]}, {
+                    Offset[{0, 4}], 
+                    Offset[{-3.4641016151377544`, -2}], 
+                    Offset[{3.4641016151377544`, -2}]}]]}}, 
+                    AbsoluteThickness[1.5], 
+                    Dashing[{}], 
+                    JoinedCurveBox[
+                    NCache[
+                    Line[{
+                    Offset[{0, 8}], 
+                    Offset[{(-4) 3^Rational[1, 2], -4}], 
+                    Offset[{4 3^Rational[1, 2], -4}], 
+                    Offset[{0, 8}]}], 
+                    Line[{
+                    Offset[{0, 8}], 
+                    Offset[{-6.928203230275509, -4}], 
+                    Offset[{6.928203230275509, -4}], 
+                    Offset[{0, 8}]}]], CurveClosed -> True]}, {
+                    DefaultBaseStyle -> {"Graphics", {
+                    AbsolutePointSize[6]}, 
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6], FontSize -> 10, 
+                    Thickness[Large]]}}], 
+                    NCache[
+                    Scaled[{
+                    Rational[1, 2], 
+                    Rational[1, 2]}], 
+                    Scaled[{0.5, 0.5}]], Automatic, 
+                    Scaled[1]]}}}, AspectRatio -> Full, ImageSize -> {40, 10},
+                     PlotRangePadding -> None, ImagePadding -> Automatic, 
+                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #}, {
+                   GraphicsBox[{{
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.880722, 0.611041, 0.142051], 
+                    AbsoluteThickness[1.6], FontSize -> 10, 
+                    Dashing[{0, Small}]], {
+                    LineBox[{{0, 10}, {40, 10}}]}}, {
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.880722, 0.611041, 0.142051], 
+                    AbsoluteThickness[1.6], FontSize -> 10, 
+                    Dashing[{0, Small}]], {
+                    InsetBox[
+                    GraphicsBox[{{
+                    GrayLevel[1], {
+                    FaceForm[], 
+                    DiskBox[{0, 0}, 
+                    Offset[{3, 3}]]}}, 
+                    AbsoluteThickness[1.5], 
+                    Dashing[{}], 
+                    CircleBox[{0, 0}, 
+                    Offset[{6, 6}]]}, {DefaultBaseStyle -> {"Graphics", {
+                    AbsolutePointSize[6]}, 
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.880722, 0.611041, 0.142051], 
+                    AbsoluteThickness[1.6], FontSize -> 10, 
+                    Dashing[{0, Small}]]}}], 
+                    NCache[
+                    Scaled[{
+                    Rational[1, 2], 
+                    Rational[1, 2]}], 
+                    Scaled[{0.5, 0.5}]], Automatic, 
+                    Scaled[1]]}}}, AspectRatio -> Full, ImageSize -> {40, 10},
+                     PlotRangePadding -> None, ImagePadding -> Automatic, 
+                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #2}, {
+                   GraphicsBox[{{
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.560181, 0.691569, 0.194885], 
+                    AbsoluteThickness[1.6], FontSize -> 10, 
+                    Thickness[Large]], {
+                    LineBox[{{0, 10}, {40, 10}}]}}, {
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.560181, 0.691569, 0.194885], 
+                    AbsoluteThickness[1.6], FontSize -> 10, 
+                    Thickness[Large]], {
+                    InsetBox[
+                    GraphicsBox[{{
+                    GrayLevel[1], {
+                    FaceForm[], 
+                    PolygonBox[{
+                    Offset[{-2.75, -2.75}], 
+                    Offset[{2.75, -2.75}], 
+                    Offset[{2.75, 2.75}], 
+                    Offset[{-2.75, 2.75}], 
+                    Offset[{-2.75, -2.75}]}]}}, 
+                    AbsoluteThickness[1.5], 
+                    Dashing[{}], 
+                    LineBox[{
+                    Offset[{-5.5, -5.5}], 
+                    Offset[{5.5, -5.5}], 
+                    Offset[{5.5, 5.5}], 
+                    Offset[{-5.5, 5.5}], 
+                    Offset[{-5.5, -5.5}]}]}, {
+                    DefaultBaseStyle -> {"Graphics", {
+                    AbsolutePointSize[6]}, 
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.560181, 0.691569, 0.194885], 
+                    AbsoluteThickness[1.6], FontSize -> 10, 
+                    Thickness[Large]]}}], 
+                    NCache[
+                    Scaled[{
+                    Rational[1, 2], 
+                    Rational[1, 2]}], 
+                    Scaled[{0.5, 0.5}]], Automatic, 
+                    Scaled[1]]}}}, AspectRatio -> Full, ImageSize -> {40, 10},
+                     PlotRangePadding -> None, ImagePadding -> Automatic, 
+                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #3}, {
+                   GraphicsBox[{{
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.922526, 0.385626, 0.209179], 
+                    AbsoluteThickness[1.6], FontSize -> 10, 
+                    Dashing[{Small, Small}]], {
+                    LineBox[{{0, 10}, {40, 10}}]}}, {
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    RGBColor[0.922526, 0.385626, 0.209179], 
+                    AbsoluteThickness[1.6], FontSize -> 10, 
+                    Dashing[{Small, Small}]], {
+                    InsetBox[
+                    FormBox[
+                    StyleBox[
+                    StyleBox[
+                    "\"xx\"", FontFamily -> "Wingdings", StripOnInput -> 
+                    False], FontSize -> 10, StripOnInput -> False], 
+                    TraditionalForm], 
+                    NCache[
+                    Scaled[{
+                    Rational[1, 2], 
+                    Rational[1, 2]}], 
+                    Scaled[{0.5, 0.5}]]]}}}, AspectRatio -> Full, 
+                    ImageSize -> {40, 10}, PlotRangePadding -> None, 
+                    ImagePadding -> Automatic, 
+                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #4}}, 
+                 GridBoxAlignment -> {
+                  "Columns" -> {Center, Left}, "Rows" -> {{Baseline}}}, 
+                 AutoDelete -> False, 
+                 GridBoxDividers -> {
+                  "Columns" -> {{False}}, "Rows" -> {{False}}}, 
+                 GridBoxItemSize -> {"Columns" -> {{All}}, "Rows" -> {{All}}},
+                  GridBoxSpacings -> {
+                  "Columns" -> {{0.5}}, "Rows" -> {{0.8}}}], "Grid"]}}, 
+             GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+             AutoDelete -> False, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{1}}, "Rows" -> {{0}}}], 
+            "Grid"], Alignment -> Left, AppearanceElements -> None, 
+           ImageMargins -> {{5, 5}, {5, 5}}, ImageSizeAction -> 
+           "ResizeToFit"], LineIndent -> 0, StripOnInput -> False], {
+         FontFamily -> "Arial"}, Background -> Automatic, StripOnInput -> 
+         False], TraditionalForm]& ),
+      Editable->True,
+      InterpretationFunction:>(RowBox[{"PointLegend", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{
+               RowBox[{"Directive", "[", 
+                 RowBox[{
+                   RowBox[{"PointSize", "[", "0.012833333333333334`", "]"}], 
+                   ",", 
+                   InterpretationBox[
+                    ButtonBox[
+                    TooltipBox[
+                    GraphicsBox[{{
+                    GrayLevel[0], 
+                    RectangleBox[{0, 0}]}, {
+                    GrayLevel[0], 
+                    RectangleBox[{1, -1}]}, {
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
+                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
+                    FrameStyle -> 
+                    RGBColor[
+                    0.24561133333333335`, 0.3378526666666667, 
+                    0.4731986666666667], FrameTicks -> None, PlotRangePadding -> 
+                    None, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    StyleBox[
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{"0.368417`", ",", "0.506779`", ",", "0.709798`"}],
+                     "]"}], NumberMarks -> False]], Appearance -> None, 
+                    BaseStyle -> {}, BaselinePosition -> Baseline, 
+                    DefaultBaseStyle -> {}, ButtonFunction :> 
+                    With[{Typeset`box$ = EvaluationBox[]}, 
+                    If[
+                    Not[
+                    AbsoluteCurrentValue["Deployed"]], 
+                    SelectionMove[Typeset`box$, All, Expression]; 
+                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+                    FrontEnd`Private`$ColorSelectorInitialColor = 
+                    RGBColor[0.368417, 0.506779, 0.709798]; 
+                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+                    MathLink`CallFrontEnd[
+                    FrontEnd`AttachCell[Typeset`box$, 
+                    FrontEndResource["RGBColorValueSelector"], {
+                    0, {Left, Bottom}}, {Left, Top}, 
+                    "ClosingActions" -> {
+                    "SelectionDeparture", "ParentChanged", 
+                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    RGBColor[0.368417, 0.506779, 0.709798], Editable -> False,
+                     Selectable -> False], ",", 
+                   RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
+                   RowBox[{"FontSize", "\[Rule]", "10"}], ",", 
+                   RowBox[{"Thickness", "[", "Large", "]"}]}], "]"}], ",", 
+               RowBox[{"Directive", "[", 
+                 RowBox[{
+                   RowBox[{"PointSize", "[", "0.012833333333333334`", "]"}], 
+                   ",", 
+                   InterpretationBox[
+                    ButtonBox[
+                    TooltipBox[
+                    GraphicsBox[{{
+                    GrayLevel[0], 
+                    RectangleBox[{0, 0}]}, {
+                    GrayLevel[0], 
+                    RectangleBox[{1, -1}]}, {
+                    RGBColor[0.880722, 0.611041, 0.142051], 
+                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
+                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
+                    FrameStyle -> 
+                    RGBColor[
+                    0.587148, 0.40736066666666665`, 0.09470066666666668], 
+                    FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    StyleBox[
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{"0.880722`", ",", "0.611041`", ",", "0.142051`"}],
+                     "]"}], NumberMarks -> False]], Appearance -> None, 
+                    BaseStyle -> {}, BaselinePosition -> Baseline, 
+                    DefaultBaseStyle -> {}, ButtonFunction :> 
+                    With[{Typeset`box$ = EvaluationBox[]}, 
+                    If[
+                    Not[
+                    AbsoluteCurrentValue["Deployed"]], 
+                    SelectionMove[Typeset`box$, All, Expression]; 
+                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+                    FrontEnd`Private`$ColorSelectorInitialColor = 
+                    RGBColor[0.880722, 0.611041, 0.142051]; 
+                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+                    MathLink`CallFrontEnd[
+                    FrontEnd`AttachCell[Typeset`box$, 
+                    FrontEndResource["RGBColorValueSelector"], {
+                    0, {Left, Bottom}}, {Left, Top}, 
+                    "ClosingActions" -> {
+                    "SelectionDeparture", "ParentChanged", 
+                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    RGBColor[0.880722, 0.611041, 0.142051], Editable -> False,
+                     Selectable -> False], ",", 
+                   RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
+                   RowBox[{"FontSize", "\[Rule]", "10"}], ",", 
+                   RowBox[{"Dashing", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "Small"}], "}"}], "]"}]}], "]"}], ",", 
+               RowBox[{"Directive", "[", 
+                 RowBox[{
+                   RowBox[{"PointSize", "[", "0.012833333333333334`", "]"}], 
+                   ",", 
+                   InterpretationBox[
+                    ButtonBox[
+                    TooltipBox[
+                    GraphicsBox[{{
+                    GrayLevel[0], 
+                    RectangleBox[{0, 0}]}, {
+                    GrayLevel[0], 
+                    RectangleBox[{1, -1}]}, {
+                    RGBColor[0.560181, 0.691569, 0.194885], 
+                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
+                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
+                    FrameStyle -> 
+                    RGBColor[
+                    0.37345400000000006`, 0.461046, 0.12992333333333334`], 
+                    FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    StyleBox[
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{"0.560181`", ",", "0.691569`", ",", "0.194885`"}],
+                     "]"}], NumberMarks -> False]], Appearance -> None, 
+                    BaseStyle -> {}, BaselinePosition -> Baseline, 
+                    DefaultBaseStyle -> {}, ButtonFunction :> 
+                    With[{Typeset`box$ = EvaluationBox[]}, 
+                    If[
+                    Not[
+                    AbsoluteCurrentValue["Deployed"]], 
+                    SelectionMove[Typeset`box$, All, Expression]; 
+                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+                    FrontEnd`Private`$ColorSelectorInitialColor = 
+                    RGBColor[0.560181, 0.691569, 0.194885]; 
+                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+                    MathLink`CallFrontEnd[
+                    FrontEnd`AttachCell[Typeset`box$, 
+                    FrontEndResource["RGBColorValueSelector"], {
+                    0, {Left, Bottom}}, {Left, Top}, 
+                    "ClosingActions" -> {
+                    "SelectionDeparture", "ParentChanged", 
+                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    RGBColor[0.560181, 0.691569, 0.194885], Editable -> False,
+                     Selectable -> False], ",", 
+                   RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
+                   RowBox[{"FontSize", "\[Rule]", "10"}], ",", 
+                   RowBox[{"Thickness", "[", "Large", "]"}]}], "]"}], ",", 
+               RowBox[{"Directive", "[", 
+                 RowBox[{
+                   RowBox[{"PointSize", "[", "0.012833333333333334`", "]"}], 
+                   ",", 
+                   InterpretationBox[
+                    ButtonBox[
+                    TooltipBox[
+                    GraphicsBox[{{
+                    GrayLevel[0], 
+                    RectangleBox[{0, 0}]}, {
+                    GrayLevel[0], 
+                    RectangleBox[{1, -1}]}, {
+                    RGBColor[0.922526, 0.385626, 0.209179], 
+                    RectangleBox[{0, -1}, {2, 1}]}}, DefaultBaseStyle -> 
+                    "ColorSwatchGraphics", AspectRatio -> 1, Frame -> True, 
+                    FrameStyle -> 
+                    RGBColor[
+                    0.6150173333333333, 0.25708400000000003`, 
+                    0.13945266666666667`], FrameTicks -> None, 
+                    PlotRangePadding -> None, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    StyleBox[
+                    RowBox[{"RGBColor", "[", 
+                    RowBox[{"0.922526`", ",", "0.385626`", ",", "0.209179`"}],
+                     "]"}], NumberMarks -> False]], Appearance -> None, 
+                    BaseStyle -> {}, BaselinePosition -> Baseline, 
+                    DefaultBaseStyle -> {}, ButtonFunction :> 
+                    With[{Typeset`box$ = EvaluationBox[]}, 
+                    If[
+                    Not[
+                    AbsoluteCurrentValue["Deployed"]], 
+                    SelectionMove[Typeset`box$, All, Expression]; 
+                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+                    FrontEnd`Private`$ColorSelectorInitialColor = 
+                    RGBColor[0.922526, 0.385626, 0.209179]; 
+                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+                    MathLink`CallFrontEnd[
+                    FrontEnd`AttachCell[Typeset`box$, 
+                    FrontEndResource["RGBColorValueSelector"], {
+                    0, {Left, Bottom}}, {Left, Top}, 
+                    "ClosingActions" -> {
+                    "SelectionDeparture", "ParentChanged", 
+                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    RGBColor[0.922526, 0.385626, 0.209179], Editable -> False,
+                     Selectable -> False], ",", 
+                   RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
+                   RowBox[{"FontSize", "\[Rule]", "10"}], ",", 
+                   RowBox[{"Dashing", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"Small", ",", "Small"}], "}"}], "]"}]}], "]"}]}], 
+             "}"}], ",", 
+           RowBox[{"{", 
+             RowBox[{#, ",", #2, ",", #3, ",", #4}], "}"}], ",", 
+           RowBox[{"LegendMarkers", "\[Rule]", 
+             RowBox[{"{", 
+               RowBox[{
+                 RowBox[{"{", 
+                   RowBox[{
+                    GraphicsBox[{{
+                    GrayLevel[1], {
+                    FaceForm[], 
+                    PolygonBox[
+                    NCache[{
+                    Offset[{0, 4}], 
+                    Offset[{(-2) 3^Rational[1, 2], -2}], 
+                    Offset[{2 3^Rational[1, 2], -2}]}, {
+                    Offset[{0, 4}], 
+                    Offset[{-3.4641016151377544`, -2}], 
+                    Offset[{3.4641016151377544`, -2}]}]]}}, 
+                    AbsoluteThickness[1.5], 
+                    Dashing[{}], 
+                    JoinedCurveBox[
+                    NCache[
+                    Line[{
+                    Offset[{0, 8}], 
+                    Offset[{(-4) 3^Rational[1, 2], -4}], 
+                    Offset[{4 3^Rational[1, 2], -4}], 
+                    Offset[{0, 8}]}], 
+                    Line[{
+                    Offset[{0, 8}], 
+                    Offset[{-6.928203230275509, -4}], 
+                    Offset[{6.928203230275509, -4}], 
+                    Offset[{0, 8}]}]], CurveClosed -> True]}], ",", 
+                    "Automatic"}], "}"}], ",", 
+                 RowBox[{"{", 
+                   RowBox[{
+                    GraphicsBox[{{
+                    GrayLevel[1], {
+                    FaceForm[], 
+                    DiskBox[{0, 0}, 
+                    Offset[{3, 3}]]}}, 
+                    AbsoluteThickness[1.5], 
+                    Dashing[{}], 
+                    CircleBox[{0, 0}, 
+                    Offset[{6, 6}]]}], ",", "Automatic"}], "}"}], ",", 
+                 RowBox[{"{", 
+                   RowBox[{
+                    GraphicsBox[{{
+                    GrayLevel[1], {
+                    FaceForm[], 
+                    PolygonBox[{
+                    Offset[{-2.75, -2.75}], 
+                    Offset[{2.75, -2.75}], 
+                    Offset[{2.75, 2.75}], 
+                    Offset[{-2.75, 2.75}], 
+                    Offset[{-2.75, -2.75}]}]}}, 
+                    AbsoluteThickness[1.5], 
+                    Dashing[{}], 
+                    LineBox[{
+                    Offset[{-5.5, -5.5}], 
+                    Offset[{5.5, -5.5}], 
+                    Offset[{5.5, 5.5}], 
+                    Offset[{-5.5, 5.5}], 
+                    Offset[{-5.5, -5.5}]}]}], ",", "Automatic"}], "}"}], ",", 
+                 
+                 RowBox[{"{", 
+                   RowBox[{
+                    StyleBox[
+                    "\"xx\"", FontFamily -> "Wingdings", StripOnInput -> 
+                    False], ",", "Automatic"}], "}"}]}], "}"}]}], ",", 
+           RowBox[{"Joined", "\[Rule]", 
+             RowBox[{"{", 
+               RowBox[{"True", ",", "True", ",", "True", ",", "True"}], 
+               "}"}]}], ",", 
+           RowBox[{"LabelStyle", "\[Rule]", 
+             RowBox[{"{", "}"}]}], ",", 
+           RowBox[{"LegendLayout", "\[Rule]", "\"Column\""}]}], "]"}]& )], 
+     Scaled[{0.75, 0.75}], ImageScaled[{0.5, 0.5}],
+     BaseStyle->{FontSize -> Larger},
+     FormatType->StandardForm]},
+   AspectRatio->0.75,
+   Axes->{True, True},
+   AxesLabel->{None, None},
+   AxesOrigin->{0, 0},
+   BaseStyle->{FontSize -> 10},
+   DisplayFunction->Identity,
+   Frame->{{True, False}, {True, False}},
+   FrameLabel->{{
+      FormBox[
+       StyleBox[
+       "\"Normalized EMF difference (\[Micro]V)\"", 10, StripOnInput -> 
+        False], TraditionalForm], None}, {
+      FormBox[
+       StyleBox[
+       "\"Requested precision of integration\"", 10, StripOnInput -> False], 
+       TraditionalForm], None}},
+   FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+   GridLines->{None, None},
+   GridLinesStyle->Directive[
+     GrayLevel[0.5, 0.4]],
+   ImageSize->500,
+   Method->{
+    "OptimizePlotMarkers" -> True, 
+     "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+         (Identity[#]& )[
+          Part[#, 1]], 
+         (Identity[#]& )[
+          Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+         (Identity[#]& )[
+          Part[#, 1]], 
+         (Identity[#]& )[
+          Part[#, 2]]}& )}},
+   PlotRange->{{0., 0.10000000000000002`}, {-13, 13}},
+   PlotRangeClipping->True,
+   PlotRangePadding->{{
+      Scaled[0.02], 
+      Scaled[0.02]}, {0, 0}},
+   Prolog->{
+     Thickness[Large], 
+     GrayLevel[0], 
+     LineBox[{{0, -10}, {0.1, 10}}]},
+   Ticks->{Automatic, Automatic}],
+  InterpretTemplate[Legended[
+    Graphics[{{}, {{{}, {}, {
+         Hue[0.67, 0.6, 0.6], 
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.368417, 0.506779, 0.709798], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Thickness[Large]], 
+         Line[CompressedData["
+1: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
+          "]]}, {
+         Hue[0.9060679774997897, 0.6, 0.6], 
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.880722, 0.611041, 0.142051], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Dashing[{0, Small}]], 
+         Line[CompressedData["
+1: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
+          "]]}, {
+         Hue[0.1421359549995791, 0.6, 0.6], 
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.560181, 0.691569, 0.194885], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Thickness[Large]], 
+         Line[CompressedData["
+1:eJwlk3lUDHofxkehfadFSstoKk2ImzLxFa16SZq6IbK8GhTR3rRNItnSRuW2
+y0yLaZ+WK34/KkWbS0hRTd32ZcwY2qj3vu7nnOc85/n7cx7tkz4HT4sQCITo
+f/L/Dl1VbMul+0N728Mvt7QNsHE9493eVn/o2n7gydKYPq7raSdpEwPgBL2o
+K7JYH3uti/R/dTkAklp3xJj56GOGYzD/0WgAJFy6LeFipI+tyTmdxq6BEFOg
+xSQMk/BiSL9zVUsgpFWGZ3mmk7Dw+9qHBfZBwHtjaF7uSMK00zsWL7wOArZV
+cZUsgYRZMfp3vY8Hww/7uCMsth7+qt6YJT4fDCt0nbxYbno4eXjOuSAjBHhy
+4Qbbl+nhDhZ7pNKBDtwDqR9vsNbjSa2m+ITlobC03gA1OKzHJkrkqw+bQ8G/
+g6OhNE3Ek/Bi3jU1DE7dbjDLiSNi6pkQkrR/OHzP6nG+Tybiqn1kyw3uEXDI
+NqrcoEUXnyxrDl/jFAn59ZRUOk0X7zVMk8g2YICiS4JdjYgutg/LV48qY0Ad
+RVxMNkMHU0tWxJ/aFQUd1XoqLFMdLEXMi6K/j4LzEn51xR3aeDUlSGrO7zLU
+X/TbfuCMNlZ28bVTVIsGAbm4s4qgjYvexDrPNUYDKaqgXSZNC//r5wrEFk54
+MTZr4bUOix9mt12FCf8Vb72T1+HxYTPVoz+vQtpys3eJLzSxib5NpV5LDFjY
+flTJmtPAex1l3S7kXANRhnPnE7IGDkwPKfkPIxZUBPJW6qfWYukDFz27adeB
+2R+aPZimjt0Ku/U3ud2A93GLOnverMGFE9m5nk434R2IrvCUXoP3Uosi7znf
+gjZTYWSwnRq+Sxzw6jp2G4aqKG3MGFX8VzpZydovDuxFrfQ0mlTw/p8B2t/i
+7wDRI6hBTFIFk+udcgju8ZAjs4ub6KiMdSwcFSyF8TDmJF41nrIas6+zTO0S
+EkDfZ3sYZXAVnm3ZT9PZkgjX83edL9u8CpN0zed6PibCVsurz4OjlfCpksO7
+o64mgUuYL+dJlyLujGelapomg2qGb+SjzYo4c0TpIJ5IhoJh3qFLcQp46m1S
+gy/zLmxIp0aY8eTxSIC6zW7Pe9BOkNIzpsrj8qlMI8qGFPArmV/1ky6HA48o
+tp/9lgLbmje8KnKVxUf7zjK6G1LB/E14L6bI4LR/gcfOjQ3JhtJYQsAZyvO7
+D5Q7T6o9daXwkg9VAh/8A2ar6hQU9CRx2IDhumzTdDhduySkmkjgfFWe5bxm
+BjRdqY/+aiuOQ7mut6KlMuGmmHU/21MMK0mrqvEXMkFq0zMj67iVmEEbFZnl
+ZUHupP9N+tMVmMbdWc70y4aKDRmacjPL8Z3vNkZvv2TD9Z5A8YZtyzHn8MiP
+Iz45kDy+0+swQxSf+0YvU+flgKGtydmk1yLYpNj9w6RPLrD7bhM36YvgBO+R
+hQJ+LgTkxiF+zDKsrhr4iOz/AD6HX3JPmyTgfamnAg/OPACH434ao24E/LhT
+ckRAzwPixVz7nSlLiFv54ubYYh4Yj9wxWIpdRAe1BHz56IdwQsRg3d2Ynyhu
+cYS5R4wJMZkjFy7f+YGI20TN3G8ywTrV+qj9gwV0ryzT5Dc5Fni31hl7P5tH
+AS6riQWJLMhTaSKdH5tDuySfpyWuzoca195b7Wvm0OXqJa3WlHygeoblKrrM
+ohYrA9tNagWwVVed/ThlBt3/pacANM5t5TsMfEcOlQp1U6qF8Pn+zMkDW78j
+2vR40c6UQhBon+Mwbn9D1Jq/wwpWFcHwtI1D1pQQ0S4/3e2QUASufLtrF6hC
+tFi3TcFS5hE0qm5oLX32FYV0yf1gxT6C99T8MP3fvqKt1itVMkTZIH83dCGl
+WICu+3UH7Ij4Z7/0KHpGFqB3bx2MmLNs+G+/HI9Wzkdh79X2C32LIf2VjcE+
+Cz76a0KUZzVVDE5BqG5LyxdkfuWlDodWAgrvt0r3HvuCJOUNf54YKIGxR/XC
+tdM81BkpsKs0LgW51yKdsiQe4nDd5329S6FFmB6qfGYadQ1VpIcWloLJvFhZ
+TekUOmf1ofbTaCkEo1pzOmEKpXOYPXmkMqjR1e/pc51EafxltwY8y0B35cvD
+FyomUEJpMzWPWQbd1ooRhasnUGVhN5odLoMfz0Ik1cLH0cZUld+nSeXw9FBA
+486xMbR5s0de0tlyMJ2k+2cfGkND5ITNM0XlkOxG+Py8bRRF2dyOJfHKYSE8
+tMHQehRt+UUFxFJOfnFHI8htiVO3LrgCevcqe3yjjCAQvcdpf1IBeh35gsk/
+h9G5cWaJ6vJKmG1UfuFsMYzcj9dZvN9bCYNGR4XmeAjdky+c7kuohMRlIakl
+NkMonbnnd9mPlRBvSWtr6PgbTba5i2/X4kDYOLH4+pG/kazJyyQKjQOTc8Uu
+suODKCLC/eYEmwOR50X6ToYOooZj4wwdIQeadq89nSI3iNwjbFbWmleBZ9Cc
+SB1zALXGWrGvRVTBuHjK2/5dA+iuQY0Y7XkVzAj5/NW9XGQmHcDauKIatM3F
+QrwiuIjyab/mnzbVsPjmbTRfm4vUrNUWe2OqwRhTyTXN/chdwOoKbKwGq8WY
++A7ffhR5px0Oi9RA7w1as61WP5JsPt54YkcNaDcN953I7UPhtiYLpwNrYFbK
+0cpUqg8drlX2A3YNnOpbJjQK7UWaL7lPX3BrIMtijugp+IyoOrSLnUq18FFz
+o4zIpc8o+CJdzXJPLdhHZQxozXxCMh48hyGfWlD32NkzcOUT+uPXf2ohsEKK
+fGbNJ/Q/9HUjBQ==
+          "]]}, {
+         Hue[0.37820393249936934`, 0.6, 0.6], 
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.922526, 0.385626, 0.209179], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Dashing[{Small, Small}]], 
+         Line[CompressedData["
+1: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
+0CpH/wOD5Au6
+          "]]}}, {{
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.368417, 0.506779, 0.709798], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Thickness[Large]], 
+         GeometricTransformation[
+          Inset[
+           Style[
+            Graphics[{{
+               GrayLevel[1], {
+                FaceForm[], 
+                Polygon[{
+                  Offset[{0, 4}], 
+                  Offset[{(-2) 3^Rational[1, 2], -2}], 
+                  Offset[{2 3^Rational[1, 2], -2}]}]}}, 
+              AbsoluteThickness[1.5], 
+              Dashing[{}], 
+              JoinedCurve[
+               Line[{
+                 Offset[{0, 8}], 
+                 Offset[{(-4) 3^Rational[1, 2], -4}], 
+                 Offset[{4 3^Rational[1, 2], -4}], 
+                 Offset[{0, 8}]}], CurveClosed -> True]}], 
+            GraphicsBoxOptions -> {DefaultBaseStyle -> Directive[
+                PointSize[0.012833333333333334`], 
+                RGBColor[0.368417, 0.506779, 0.709798], 
+                AbsoluteThickness[1.6], FontSize -> 10, 
+                Thickness[Large]]}], {0., 0.}], {{{0.005, 
+          12.566068440919082`}}, {{0.01, 8.096349360045998}}, {{0.025, 
+          3.5207298669608535`}}, {{0.05, 1.4302151750912937`}}, {{0.075, 
+          0.7421114099912274}}, {{0.1, 0.43911245135973404`}}}]}, {
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.880722, 0.611041, 0.142051], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Dashing[{0, Small}]], 
+         GeometricTransformation[
+          Inset[
+           Style[
+            Graphics[{{
+               GrayLevel[1], {
+                FaceForm[], 
+                Disk[{0, 0}, 
+                 Offset[{3, 3}]]}}, 
+              AbsoluteThickness[1.5], 
+              Dashing[{}], 
+              Circle[{0, 0}, 
+               Offset[{6, 6}]]}], 
+            GraphicsBoxOptions -> {DefaultBaseStyle -> Directive[
+                PointSize[0.012833333333333334`], 
+                RGBColor[0.880722, 0.611041, 0.142051], 
+                AbsoluteThickness[1.6], FontSize -> 10, 
+                Dashing[{0, Small}]]}], {0., 0.}], {{{0.005, 
+          12.565685564167188`}}, {{0.01, 8.096652106279388}}, {{0.025, 
+          3.5209060226091635`}}, {{0.05, 1.4302657891846609`}}, {{0.075, 
+          0.7421148219696837}}, {{0.1, 0.439113577185068}}}]}, {
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.560181, 0.691569, 0.194885], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Thickness[Large]], 
+         GeometricTransformation[
+          Inset[
+           Style[
+            Graphics[{{
+               GrayLevel[1], {
+                FaceForm[], 
+                Polygon[{
+                  Offset[{-2.75, -2.75}], 
+                  Offset[{2.75, -2.75}], 
+                  Offset[{2.75, 2.75}], 
+                  Offset[{-2.75, 2.75}], 
+                  Offset[{-2.75, -2.75}]}]}}, 
+              AbsoluteThickness[1.5], 
+              Dashing[{}], 
+              Line[{
+                Offset[{-5.5, -5.5}], 
+                Offset[{5.5, -5.5}], 
+                Offset[{5.5, 5.5}], 
+                Offset[{-5.5, 5.5}], 
+                Offset[{-5.5, -5.5}]}]}], 
+            GraphicsBoxOptions -> {DefaultBaseStyle -> Directive[
+                PointSize[0.012833333333333334`], 
+                RGBColor[0.560181, 0.691569, 0.194885], 
+                AbsoluteThickness[1.6], FontSize -> 10, 
+                Thickness[Large]]}], {0., 0.}], {{{
+          0.005, -12.565528412093865`}}, {{0.01, -8.096682903783643}}, {{
+          0.025, -3.520791566154428}}, {{0.05, -1.4302482053814238`}}, {{
+          0.075, -0.7421097464556264}}, {{0.1, -0.4391117515468105}}}]}, {
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.922526, 0.385626, 0.209179], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Dashing[{Small, Small}]], 
+         GeometricTransformation[
+          Inset[
+           Style[
+            Style["xx", FontFamily -> "Wingdings"], 
+            GraphicsBoxOptions -> {DefaultBaseStyle -> Directive[
+                PointSize[0.012833333333333334`], 
+                RGBColor[0.922526, 0.385626, 0.209179], 
+                AbsoluteThickness[1.6], FontSize -> 10, 
+                Dashing[{Small, Small}]]}], {0., 0.}], {{{
+          0.005, -3.644838516120546*^-6}}, {{
+          0.01, -0.0000752541589533829}}, {{
+          0.025, -0.00001717080422202342}}, {{0.05, 
+          6.088023992640133*^-6}}, {{0.075, 5.4896414596187115`*^-6}}, {{0.1, 
+          9.308553062211249*^-7}}}]}}, {{
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.368417, 0.506779, 0.709798], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Thickness[Large]]}, {
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.880722, 0.611041, 0.142051], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Dashing[{0, Small}]]}, {
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.560181, 0.691569, 0.194885], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Thickness[Large]]}, {
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.922526, 0.385626, 0.209179], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          
+          Dashing[{
+           Small, Small}]]}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}}, {{
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.368417, 0.506779, 0.709798], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Thickness[Large]]}, {
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.880722, 0.611041, 0.142051], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Dashing[{0, Small}]]}, {
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.560181, 0.691569, 0.194885], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          Thickness[Large]]}, {
+         Directive[
+          PointSize[0.012833333333333334`], 
+          RGBColor[0.922526, 0.385626, 0.209179], 
+          AbsoluteThickness[1.6], FontSize -> 10, 
+          
+          Dashing[{
+           Small, Small}]]}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}}}, {{}, {}}}, {
+     DisplayFunction -> Identity, DisplayFunction -> Identity, AspectRatio -> 
+      0.75, Axes -> {True, True}, AxesLabel -> {None, None}, 
+      AxesOrigin -> {0, 0}, BaseStyle -> {FontSize -> 10}, DisplayFunction :> 
+      Identity, Frame -> {{True, False}, {True, False}}, FrameLabel -> {{
+         Style["Normalized EMF difference (\[Micro]V)", 10], None}, {
+         Style["Requested precision of integration", 10], None}}, 
+      FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
+      GridLines -> {None, None}, GridLinesStyle -> Directive[
+        GrayLevel[0.5, 0.4]], ImageSize -> 500, 
+      Method -> {
+       "OptimizePlotMarkers" -> True, 
+        "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+            (Identity[#]& )[
+             Part[#, 1]], 
+            (Identity[#]& )[
+             Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+            (Identity[#]& )[
+             Part[#, 1]], 
+            (Identity[#]& )[
+             Part[#, 2]]}& )}}, 
+      PlotRange -> {{0., 0.10000000000000002`}, {-13, 13}}, PlotRangeClipping -> 
+      True, PlotRangePadding -> {{
+         Scaled[0.02], 
+         Scaled[0.02]}, {0, 0}}, Prolog -> {
+        Thickness[Large], 
+        GrayLevel[0], 
+        Line[{{0, -10}, {0.1, 10}}]}, Ticks -> {Automatic, Automatic}}], 
+    Placed[
+     Unevaluated[
+      PointLegend[{
+        Directive[
+         PointSize[0.012833333333333334`], 
+         RGBColor[0.368417, 0.506779, 0.709798], 
+         AbsoluteThickness[1.6], FontSize -> 10, 
+         Thickness[Large]], 
+        Directive[
+         PointSize[0.012833333333333334`], 
+         RGBColor[0.880722, 0.611041, 0.142051], 
+         AbsoluteThickness[1.6], FontSize -> 10, 
+         Dashing[{0, Small}]], 
+        Directive[
+         PointSize[0.012833333333333334`], 
+         RGBColor[0.560181, 0.691569, 0.194885], 
+         AbsoluteThickness[1.6], FontSize -> 10, 
+         Thickness[Large]], 
+        Directive[
+         PointSize[0.012833333333333334`], 
+         RGBColor[0.922526, 0.385626, 0.209179], 
+         AbsoluteThickness[1.6], FontSize -> 10, 
+         Dashing[{Small, Small}]]}, {"Faraday", "Dynamic", "Static", "Full"}, 
+       LegendMarkers -> {{
+          Graphics[{{
+             GrayLevel[1], {
+              FaceForm[], 
+              Polygon[{
+                Offset[{0, 4}], 
+                Offset[{(-2) 3^Rational[1, 2], -2}], 
+                Offset[{2 3^Rational[1, 2], -2}]}]}}, 
+            AbsoluteThickness[1.5], 
+            Dashing[{}], 
+            JoinedCurve[
+             Line[{
+               Offset[{0, 8}], 
+               Offset[{(-4) 3^Rational[1, 2], -4}], 
+               Offset[{4 3^Rational[1, 2], -4}], 
+               Offset[{0, 8}]}], CurveClosed -> True]}], Automatic}, {
+          Graphics[{{
+             GrayLevel[1], {
+              FaceForm[], 
+              Disk[{0, 0}, 
+               Offset[{3, 3}]]}}, 
+            AbsoluteThickness[1.5], 
+            Dashing[{}], 
+            Circle[{0, 0}, 
+             Offset[{6, 6}]]}], Automatic}, {
+          Graphics[{{
+             GrayLevel[1], {
+              FaceForm[], 
+              Polygon[{
+                Offset[{-2.75, -2.75}], 
+                Offset[{2.75, -2.75}], 
+                Offset[{2.75, 2.75}], 
+                Offset[{-2.75, 2.75}], 
+                Offset[{-2.75, -2.75}]}]}}, 
+            AbsoluteThickness[1.5], 
+            Dashing[{}], 
+            Line[{
+              Offset[{-5.5, -5.5}], 
+              Offset[{5.5, -5.5}], 
+              Offset[{5.5, 5.5}], 
+              Offset[{-5.5, 5.5}], 
+              Offset[{-5.5, -5.5}]}]}], Automatic}, {
+          Style["xx", FontFamily -> "Wingdings"], Automatic}}, 
+       Joined -> {True, True, True, True}, LabelStyle -> {}, LegendLayout -> 
+       "Column"]], {0.75, 0.75}, Identity]]& ],
+  AutoDelete->True,
+  Editable->True,
+  SelectWithContents->False,
+  Selectable->True]], "Output",
  CellChangeTimes->{
-  3.911379730107214*^9, {3.911379858024028*^9, 3.911379869479615*^9}, 
-   3.911380710201877*^9, 3.911381118466551*^9, {3.9113812232137213`*^9, 
-   3.911381250719883*^9}, 3.911381292216009*^9},
+  3.911431422795298*^9, 3.911431475648196*^9, {3.911431531668448*^9, 
+   3.9114315528585*^9}, 3.911431820244581*^9, {3.9114318676870937`*^9, 
+   3.911431885018406*^9}, 3.911431922087963*^9},
  CellLabel->
-  "Out[195]=",ExpressionUUID->"372a4386-2e66-40b5-a99c-9e39fee5ffc6"]
+  "Out[307]=",ExpressionUUID->"095544b4-01e5-49d7-9bc7-a5e498a2d434"]
 }, Open  ]]
 }, Open  ]],
 
@@ -22278,10 +23352,11 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowToolbars->{},
-WindowSize->{1212, 816},
-WindowMargins->{{101, Automatic}, {-18, Automatic}},
+WindowSize->{1339, 816},
+WindowMargins->{{Automatic, 0}, {-18, Automatic}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
+Magnification:>1.25 Inherited,
 FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
@@ -22291,650 +23366,650 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "EmfFromTheoryXY module"->{
-  Cell[506498, 8967, 41451, 670, 2756, "Input",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a",
+  Cell[506498, 8967, 41451, 670, 3445, "Input",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a",
    InitializationCell->True,
    CellTags->"EmfFromTheoryXY module"],
-  Cell[548557, 9657, 38895, 685, 4436, "Input",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc",
+  Cell[548557, 9657, 38895, 685, 5545, "Input",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc",
    InitializationCell->True,
    CellTags->"EmfFromTheoryXY module"],
-  Cell[588101, 10364, 76430, 1385, 6431, "Input",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37",
+  Cell[588101, 10364, 76430, 1385, 8014, "Input",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37",
    InitializationCell->True,
    CellTags->"EmfFromTheoryXY module"],
-  Cell[714327, 12845, 53095, 896, 3554, "Input",ExpressionUUID->"fd611682-7255-4493-bceb-27f0f8cf3caf",
+  Cell[766049, 13919, 53095, 896, 4452, "Input",ExpressionUUID->"fd611682-7255-4493-bceb-27f0f8cf3caf",
    InitializationCell->True,
    CellTags->"EmfFromTheoryXY module"],
-  Cell[811417, 14740, 73649, 1314, 5864, "Input",ExpressionUUID->"babd4910-44fe-466a-8ed9-6c0a8d200d6b",
+  Cell[863139, 15814, 73649, 1314, 7330, "Input",ExpressionUUID->"babd4910-44fe-466a-8ed9-6c0a8d200d6b",
    InitializationCell->True,
    CellTags->"EmfFromTheoryXY module"]},
  "EMF from theory using x-y segments test"->{
-  Cell[886132, 16081, 37082, 686, 2446, "Input",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f",
+  Cell[937854, 17155, 37082, 686, 3057, "Input",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[923239, 16771, 420, 7, 24, "Print",ExpressionUUID->"fb32f87e-efbb-482e-8826-7d4995cd9fef",
+  Cell[974961, 17845, 420, 7, 30, "Print",ExpressionUUID->"fb32f87e-efbb-482e-8826-7d4995cd9fef",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[923662, 16780, 422, 7, 24, "Print",ExpressionUUID->"635e8c1b-d0a0-453e-9cf9-d4c61e141141",
+  Cell[975384, 17854, 422, 7, 30, "Print",ExpressionUUID->"635e8c1b-d0a0-453e-9cf9-d4c61e141141",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[924087, 16789, 422, 7, 24, "Print",ExpressionUUID->"4103891a-b12f-4819-b30e-062413e2aebe",
+  Cell[975809, 17863, 422, 7, 30, "Print",ExpressionUUID->"4103891a-b12f-4819-b30e-062413e2aebe",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[924512, 16798, 424, 7, 24, "Print",ExpressionUUID->"ae7af435-720e-478e-9912-21255fed9cea",
+  Cell[976234, 17872, 424, 7, 30, "Print",ExpressionUUID->"ae7af435-720e-478e-9912-21255fed9cea",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[924939, 16807, 420, 7, 24, "Print",ExpressionUUID->"11dae033-ce8f-4189-b969-361d4e274c2d",
+  Cell[976661, 17881, 420, 7, 30, "Print",ExpressionUUID->"11dae033-ce8f-4189-b969-361d4e274c2d",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[925362, 16816, 422, 7, 24, "Print",ExpressionUUID->"33843a86-6984-4395-a421-126b3f180eff",
+  Cell[977084, 17890, 422, 7, 30, "Print",ExpressionUUID->"33843a86-6984-4395-a421-126b3f180eff",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[925787, 16825, 759, 12, 63, "Print",ExpressionUUID->"523cb6e5-3c41-433d-b819-c7b8118048b4",
+  Cell[977509, 17899, 759, 12, 78, "Print",ExpressionUUID->"523cb6e5-3c41-433d-b819-c7b8118048b4",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[926549, 16839, 422, 7, 24, "Print",ExpressionUUID->"fedb8068-6342-41f1-8926-15961e814340",
+  Cell[978271, 17913, 422, 7, 30, "Print",ExpressionUUID->"fedb8068-6342-41f1-8926-15961e814340",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[926974, 16848, 420, 7, 24, "Print",ExpressionUUID->"90fc38ae-3613-4dd5-bb5f-3dab1ad5828c",
+  Cell[978696, 17922, 420, 7, 30, "Print",ExpressionUUID->"90fc38ae-3613-4dd5-bb5f-3dab1ad5828c",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[927397, 16857, 424, 7, 24, "Print",ExpressionUUID->"115a951a-2140-4f5e-adfa-e44e6ddf2ec6",
+  Cell[979119, 17931, 424, 7, 30, "Print",ExpressionUUID->"115a951a-2140-4f5e-adfa-e44e6ddf2ec6",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[927824, 16866, 427, 8, 24, "Print",ExpressionUUID->"193fbf76-bdcf-4d76-896b-ead8bc8d8992",
+  Cell[979546, 17940, 427, 8, 30, "Print",ExpressionUUID->"193fbf76-bdcf-4d76-896b-ead8bc8d8992",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[928254, 16876, 425, 8, 24, "Print",ExpressionUUID->"e084fc61-27ed-40a6-8042-322c5d1b6499",
+  Cell[979976, 17950, 425, 8, 30, "Print",ExpressionUUID->"e084fc61-27ed-40a6-8042-322c5d1b6499",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[928682, 16886, 425, 8, 24, "Print",ExpressionUUID->"0b490bdb-423d-4014-a10f-5e1299b29aa5",
+  Cell[980404, 17960, 425, 8, 30, "Print",ExpressionUUID->"0b490bdb-423d-4014-a10f-5e1299b29aa5",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[929110, 16896, 392, 7, 24, "Print",ExpressionUUID->"c2723c11-3233-4075-b230-9c76d71b9426",
+  Cell[980832, 17970, 392, 7, 30, "Print",ExpressionUUID->"c2723c11-3233-4075-b230-9c76d71b9426",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[930695, 16934, 95627, 2025, 7969, "Input",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672",
+  Cell[982417, 18008, 95627, 2025, 9961, "Input",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1026347, 18963, 1932, 29, 24, "Print",ExpressionUUID->"7a959fcf-14c4-411e-894a-16005c210901",
+  Cell[1078069, 20037, 1932, 29, 30, "Print",ExpressionUUID->"7a959fcf-14c4-411e-894a-16005c210901",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1028282, 18994, 1928, 29, 24, "Print",ExpressionUUID->"700192d4-ec9d-4805-8519-05ded78ea538",
+  Cell[1080004, 20068, 1928, 29, 30, "Print",ExpressionUUID->"700192d4-ec9d-4805-8519-05ded78ea538",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1030213, 19025, 1916, 29, 24, "Print",ExpressionUUID->"ed67c753-2e4d-4437-b520-e52f6a177667",
+  Cell[1081935, 20099, 1916, 29, 30, "Print",ExpressionUUID->"ed67c753-2e4d-4437-b520-e52f6a177667",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1032132, 19056, 1924, 29, 24, "Print",ExpressionUUID->"71105abd-b3d0-4273-92fc-6de40b66c049",
+  Cell[1083854, 20130, 1924, 29, 30, "Print",ExpressionUUID->"71105abd-b3d0-4273-92fc-6de40b66c049",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1034059, 19087, 1934, 29, 24, "Print",ExpressionUUID->"5774ddd5-a2e5-4bc0-8abe-28619cbf4ed6",
+  Cell[1085781, 20161, 1934, 29, 30, "Print",ExpressionUUID->"5774ddd5-a2e5-4bc0-8abe-28619cbf4ed6",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1035996, 19118, 1912, 29, 24, "Print",ExpressionUUID->"dfb1c6e0-0495-40db-8b1b-d34d52c1e9e2",
+  Cell[1087718, 20192, 1912, 29, 30, "Print",ExpressionUUID->"dfb1c6e0-0495-40db-8b1b-d34d52c1e9e2",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1037911, 19149, 1936, 29, 24, "Print",ExpressionUUID->"88b1c00e-7ccf-444e-9829-5f2df6700e64",
+  Cell[1089633, 20223, 1936, 29, 30, "Print",ExpressionUUID->"88b1c00e-7ccf-444e-9829-5f2df6700e64",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1039850, 19180, 1896, 28, 24, "Print",ExpressionUUID->"74ac24c3-4b06-4d6c-99f9-103f60dc1330",
+  Cell[1091572, 20254, 1896, 28, 30, "Print",ExpressionUUID->"74ac24c3-4b06-4d6c-99f9-103f60dc1330",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1041749, 19210, 1900, 29, 24, "Print",ExpressionUUID->"79109f59-6eec-4582-bf37-2c9db4a87193",
+  Cell[1093471, 20284, 1900, 29, 30, "Print",ExpressionUUID->"79109f59-6eec-4582-bf37-2c9db4a87193",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1043652, 19241, 1903, 29, 24, "Print",ExpressionUUID->"5ef336af-f42b-4547-9ea4-2d5b61fd1ce4",
+  Cell[1095374, 20315, 1903, 29, 30, "Print",ExpressionUUID->"5ef336af-f42b-4547-9ea4-2d5b61fd1ce4",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1045558, 19272, 1903, 29, 24, "Print",ExpressionUUID->"b64b914e-efb8-495d-aa6e-4383e17f01f2",
+  Cell[1097280, 20346, 1903, 29, 30, "Print",ExpressionUUID->"b64b914e-efb8-495d-aa6e-4383e17f01f2",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1047464, 19303, 1905, 29, 24, "Print",ExpressionUUID->"fc6f97f4-d358-423e-8b67-b7774acbc813",
+  Cell[1099186, 20377, 1905, 29, 30, "Print",ExpressionUUID->"fc6f97f4-d358-423e-8b67-b7774acbc813",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1049372, 19334, 1883, 28, 24, "Print",ExpressionUUID->"969755ae-a42d-4295-ab07-00e634863ace",
+  Cell[1101094, 20408, 1883, 28, 30, "Print",ExpressionUUID->"969755ae-a42d-4295-ab07-00e634863ace",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1051258, 19364, 1883, 28, 24, "Print",ExpressionUUID->"b37802f7-da80-46b0-8d96-7b0b8f6b4726",
+  Cell[1102980, 20438, 1883, 28, 30, "Print",ExpressionUUID->"b37802f7-da80-46b0-8d96-7b0b8f6b4726",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1053144, 19394, 1925, 29, 24, "Print",ExpressionUUID->"e2072b81-5cb5-483f-90a5-9ff941e09a66",
+  Cell[1104866, 20468, 1925, 29, 30, "Print",ExpressionUUID->"e2072b81-5cb5-483f-90a5-9ff941e09a66",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1055072, 19425, 1883, 28, 24, "Print",ExpressionUUID->"dfc65c69-c745-4aed-a66e-ff5eb37b7a44",
+  Cell[1106794, 20499, 1883, 28, 30, "Print",ExpressionUUID->"dfc65c69-c745-4aed-a66e-ff5eb37b7a44",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1056958, 19455, 1885, 28, 24, "Print",ExpressionUUID->"51f828a2-807a-4ab1-ba55-2396e9b00455",
+  Cell[1108680, 20529, 1885, 28, 30, "Print",ExpressionUUID->"51f828a2-807a-4ab1-ba55-2396e9b00455",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1058846, 19485, 1925, 29, 24, "Print",ExpressionUUID->"4c77a740-42b6-45bf-8a68-b37941760779",
+  Cell[1110568, 20559, 1925, 29, 30, "Print",ExpressionUUID->"4c77a740-42b6-45bf-8a68-b37941760779",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1060774, 19516, 1937, 29, 24, "Print",ExpressionUUID->"7f7e7ced-7ffb-4603-a00a-8cfad5668ace",
+  Cell[1112496, 20590, 1937, 29, 30, "Print",ExpressionUUID->"7f7e7ced-7ffb-4603-a00a-8cfad5668ace",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1062714, 19547, 1939, 29, 24, "Print",ExpressionUUID->"1bb3cddb-bb8a-43fe-b9df-46c62c06c919",
+  Cell[1114436, 20621, 1939, 29, 30, "Print",ExpressionUUID->"1bb3cddb-bb8a-43fe-b9df-46c62c06c919",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1064656, 19578, 1927, 29, 24, "Print",ExpressionUUID->"455a7501-838d-4871-93af-47908467f3ad",
+  Cell[1116378, 20652, 1927, 29, 30, "Print",ExpressionUUID->"455a7501-838d-4871-93af-47908467f3ad",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1066586, 19609, 1882, 28, 24, "Print",ExpressionUUID->"a4f1ef86-8247-414b-ade1-3892a3be8f55",
+  Cell[1118308, 20683, 1882, 28, 30, "Print",ExpressionUUID->"a4f1ef86-8247-414b-ade1-3892a3be8f55",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1068471, 19639, 1883, 28, 24, "Print",ExpressionUUID->"29e703a3-a68f-4850-9235-394d25b16f26",
+  Cell[1120193, 20713, 1883, 28, 30, "Print",ExpressionUUID->"29e703a3-a68f-4850-9235-394d25b16f26",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1070357, 19669, 1937, 29, 24, "Print",ExpressionUUID->"61a86506-9d10-4b4a-843f-0cb2f9e3a9a9",
+  Cell[1122079, 20743, 1937, 29, 30, "Print",ExpressionUUID->"61a86506-9d10-4b4a-843f-0cb2f9e3a9a9",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1072297, 19700, 1935, 29, 24, "Print",ExpressionUUID->"8914d086-f7dd-4b79-bcb2-b41c8541e944",
+  Cell[1124019, 20774, 1935, 29, 30, "Print",ExpressionUUID->"8914d086-f7dd-4b79-bcb2-b41c8541e944",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1074235, 19731, 1935, 29, 24, "Print",ExpressionUUID->"c85012e3-1aa4-45a3-a3e2-709733d60730",
+  Cell[1125957, 20805, 1935, 29, 30, "Print",ExpressionUUID->"c85012e3-1aa4-45a3-a3e2-709733d60730",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1076173, 19762, 1935, 29, 24, "Print",ExpressionUUID->"3fa8707e-2875-4012-9c2b-a99e58dc3763",
+  Cell[1127895, 20836, 1935, 29, 30, "Print",ExpressionUUID->"3fa8707e-2875-4012-9c2b-a99e58dc3763",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1078111, 19793, 1876, 28, 24, "Print",ExpressionUUID->"0e631926-f6ed-4e89-8f38-8b3a394e2ef2",
+  Cell[1129833, 20867, 1876, 28, 30, "Print",ExpressionUUID->"0e631926-f6ed-4e89-8f38-8b3a394e2ef2",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1079990, 19823, 1899, 29, 24, "Print",ExpressionUUID->"2de21434-eb31-400f-9b06-9c97eeef86b4",
+  Cell[1131712, 20897, 1899, 29, 30, "Print",ExpressionUUID->"2de21434-eb31-400f-9b06-9c97eeef86b4",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1081892, 19854, 1901, 29, 24, "Print",ExpressionUUID->"eba7a179-8648-4f34-a562-7e7b6c7a3f1f",
+  Cell[1133614, 20928, 1901, 29, 30, "Print",ExpressionUUID->"eba7a179-8648-4f34-a562-7e7b6c7a3f1f",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1083796, 19885, 1897, 28, 24, "Print",ExpressionUUID->"2f2c6fbd-ce5e-4249-8e96-ea8f083e655b",
+  Cell[1135518, 20959, 1897, 28, 30, "Print",ExpressionUUID->"2f2c6fbd-ce5e-4249-8e96-ea8f083e655b",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1085696, 19915, 1899, 29, 24, "Print",ExpressionUUID->"f43e2e33-d2ae-4cbb-a7f3-144960ffbc3a",
+  Cell[1137418, 20989, 1899, 29, 30, "Print",ExpressionUUID->"f43e2e33-d2ae-4cbb-a7f3-144960ffbc3a",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1087598, 19946, 1895, 28, 24, "Print",ExpressionUUID->"30519301-4da6-4da0-8f07-26e250160c3d",
+  Cell[1139320, 21020, 1895, 28, 30, "Print",ExpressionUUID->"30519301-4da6-4da0-8f07-26e250160c3d",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1089496, 19976, 1899, 29, 24, "Print",ExpressionUUID->"f21ef8dd-d307-4763-a45a-a9e73064efa0",
+  Cell[1141218, 21050, 1899, 29, 30, "Print",ExpressionUUID->"f21ef8dd-d307-4763-a45a-a9e73064efa0",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1091398, 20007, 1903, 29, 24, "Print",ExpressionUUID->"637cb1e3-67fb-4b17-b91d-5f0ea71c5bbe",
+  Cell[1143120, 21081, 1903, 29, 30, "Print",ExpressionUUID->"637cb1e3-67fb-4b17-b91d-5f0ea71c5bbe",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1093304, 20038, 1895, 28, 24, "Print",ExpressionUUID->"6c10fa19-1232-4858-aa34-0f5476296ae8",
+  Cell[1145026, 21112, 1895, 28, 30, "Print",ExpressionUUID->"6c10fa19-1232-4858-aa34-0f5476296ae8",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1095202, 20068, 1901, 29, 24, "Print",ExpressionUUID->"20dcffee-abb1-47db-a04d-8681f4027f44",
+  Cell[1146924, 21142, 1901, 29, 30, "Print",ExpressionUUID->"20dcffee-abb1-47db-a04d-8681f4027f44",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1097106, 20099, 1901, 29, 24, "Print",ExpressionUUID->"8c20d0f1-357f-4542-8eed-41bcde5ec774",
+  Cell[1148828, 21173, 1901, 29, 30, "Print",ExpressionUUID->"8c20d0f1-357f-4542-8eed-41bcde5ec774",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1099010, 20130, 1899, 29, 24, "Print",ExpressionUUID->"828eb2fc-cc5e-4407-901a-fa95a5886f1b",
+  Cell[1150732, 21204, 1899, 29, 30, "Print",ExpressionUUID->"828eb2fc-cc5e-4407-901a-fa95a5886f1b",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1100912, 20161, 1895, 28, 24, "Print",ExpressionUUID->"0667b0c3-c668-4f6c-b82d-5d6bcbc460c3",
+  Cell[1152634, 21235, 1895, 28, 30, "Print",ExpressionUUID->"0667b0c3-c668-4f6c-b82d-5d6bcbc460c3",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1102810, 20191, 1885, 28, 24, "Print",ExpressionUUID->"63951702-0abd-45d0-ada2-21e998c98b4e",
+  Cell[1154532, 21265, 1885, 28, 30, "Print",ExpressionUUID->"63951702-0abd-45d0-ada2-21e998c98b4e",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1104698, 20221, 1883, 28, 24, "Print",ExpressionUUID->"712842cd-e079-45ab-a4df-6ea26e30ce64",
+  Cell[1156420, 21295, 1883, 28, 30, "Print",ExpressionUUID->"712842cd-e079-45ab-a4df-6ea26e30ce64",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1106584, 20251, 1937, 29, 24, "Print",ExpressionUUID->"1083ab69-41f4-492a-8957-c582025c3af6",
+  Cell[1158306, 21325, 1937, 29, 30, "Print",ExpressionUUID->"1083ab69-41f4-492a-8957-c582025c3af6",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1108524, 20282, 1935, 29, 24, "Print",ExpressionUUID->"cfca6a7c-6abc-4cf2-b93e-9de4761a2dce",
+  Cell[1160246, 21356, 1935, 29, 30, "Print",ExpressionUUID->"cfca6a7c-6abc-4cf2-b93e-9de4761a2dce",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1110462, 20313, 1935, 29, 24, "Print",ExpressionUUID->"ccf8b60a-7fd2-4166-83cc-29cf96637328",
+  Cell[1162184, 21387, 1935, 29, 30, "Print",ExpressionUUID->"ccf8b60a-7fd2-4166-83cc-29cf96637328",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1112400, 20344, 1937, 29, 24, "Print",ExpressionUUID->"dc009c86-d541-4348-a5a0-1b018294aac0",
+  Cell[1164122, 21418, 1937, 29, 30, "Print",ExpressionUUID->"dc009c86-d541-4348-a5a0-1b018294aac0",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1114340, 20375, 1897, 28, 24, "Print",ExpressionUUID->"ad8f55bd-3cc9-4374-9901-b229dda3c070",
+  Cell[1166062, 21449, 1897, 28, 30, "Print",ExpressionUUID->"ad8f55bd-3cc9-4374-9901-b229dda3c070",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1116240, 20405, 1874, 28, 24, "Print",ExpressionUUID->"c88e5932-0751-4a55-84aa-6339ae9b7698",
+  Cell[1167962, 21479, 1874, 28, 30, "Print",ExpressionUUID->"c88e5932-0751-4a55-84aa-6339ae9b7698",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1118117, 20435, 1938, 29, 24, "Print",ExpressionUUID->"e046dea6-2c7c-4d80-8985-cf3583bdbe51",
+  Cell[1169839, 21509, 1938, 29, 30, "Print",ExpressionUUID->"e046dea6-2c7c-4d80-8985-cf3583bdbe51",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1120058, 20466, 1874, 28, 24, "Print",ExpressionUUID->"354d1da2-d59e-4de0-b942-b211cd589753",
+  Cell[1171780, 21540, 1874, 28, 30, "Print",ExpressionUUID->"354d1da2-d59e-4de0-b942-b211cd589753",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1121935, 20496, 1912, 29, 24, "Print",ExpressionUUID->"551fd44e-e3c2-43e2-b8c8-f93d20fdfe4c",
+  Cell[1173657, 21570, 1912, 29, 30, "Print",ExpressionUUID->"551fd44e-e3c2-43e2-b8c8-f93d20fdfe4c",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1123850, 20527, 1895, 28, 24, "Print",ExpressionUUID->"ea4b6e61-b4c5-42bc-8928-dd71d7d0a91b",
+  Cell[1175572, 21601, 1895, 28, 30, "Print",ExpressionUUID->"ea4b6e61-b4c5-42bc-8928-dd71d7d0a91b",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1125748, 20557, 1899, 29, 24, "Print",ExpressionUUID->"bb7911fe-021b-4b19-8775-82f5aec60a3c",
+  Cell[1177470, 21631, 1899, 29, 30, "Print",ExpressionUUID->"bb7911fe-021b-4b19-8775-82f5aec60a3c",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1127650, 20588, 1899, 29, 24, "Print",ExpressionUUID->"24c6baf6-015f-4df6-b2db-a7bdc2e8335a",
+  Cell[1179372, 21662, 1899, 29, 30, "Print",ExpressionUUID->"24c6baf6-015f-4df6-b2db-a7bdc2e8335a",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1129552, 20619, 1899, 29, 24, "Print",ExpressionUUID->"2c9b1dd9-b253-4a8a-a6c2-0b4929fc8b30",
+  Cell[1181274, 21693, 1899, 29, 30, "Print",ExpressionUUID->"2c9b1dd9-b253-4a8a-a6c2-0b4929fc8b30",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1131454, 20650, 1909, 29, 24, "Print",ExpressionUUID->"d0ea8fa1-3d9e-48fc-923f-945be2589ce8",
+  Cell[1183176, 21724, 1909, 29, 30, "Print",ExpressionUUID->"d0ea8fa1-3d9e-48fc-923f-945be2589ce8",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1133366, 20681, 1895, 28, 24, "Print",ExpressionUUID->"ff9e3d1e-e8d2-4671-bbaf-d3704db4a7a6",
+  Cell[1185088, 21755, 1895, 28, 30, "Print",ExpressionUUID->"ff9e3d1e-e8d2-4671-bbaf-d3704db4a7a6",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1135264, 20711, 1896, 28, 24, "Print",ExpressionUUID->"438f246f-dbd9-4f44-ad5c-6d9d10c705ab",
+  Cell[1186986, 21785, 1896, 28, 30, "Print",ExpressionUUID->"438f246f-dbd9-4f44-ad5c-6d9d10c705ab",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1137163, 20741, 1899, 29, 24, "Print",ExpressionUUID->"99f14e6b-ab01-4cad-947e-98eb2e610444",
+  Cell[1188885, 21815, 1899, 29, 30, "Print",ExpressionUUID->"99f14e6b-ab01-4cad-947e-98eb2e610444",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1139065, 20772, 1897, 28, 24, "Print",ExpressionUUID->"5e372939-0384-4901-9818-20dd56bf54d6",
+  Cell[1190787, 21846, 1897, 28, 30, "Print",ExpressionUUID->"5e372939-0384-4901-9818-20dd56bf54d6",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1140965, 20802, 1895, 28, 24, "Print",ExpressionUUID->"fde6e605-477d-4be6-adac-4fe643d66670",
+  Cell[1192687, 21876, 1895, 28, 30, "Print",ExpressionUUID->"fde6e605-477d-4be6-adac-4fe643d66670",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1142863, 20832, 1895, 28, 24, "Print",ExpressionUUID->"31d2ae15-8e8c-4c26-81fb-6c774ac24ca6",
+  Cell[1194585, 21906, 1895, 28, 30, "Print",ExpressionUUID->"31d2ae15-8e8c-4c26-81fb-6c774ac24ca6",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1144761, 20862, 1887, 28, 24, "Print",ExpressionUUID->"7c6c2331-f97d-4c52-bfec-b55918102526",
+  Cell[1196483, 21936, 1887, 28, 30, "Print",ExpressionUUID->"7c6c2331-f97d-4c52-bfec-b55918102526",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1146651, 20892, 1899, 29, 24, "Print",ExpressionUUID->"e4a94455-fbb4-415b-81d2-e56ed4340cee",
+  Cell[1198373, 21966, 1899, 29, 30, "Print",ExpressionUUID->"e4a94455-fbb4-415b-81d2-e56ed4340cee",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1148553, 20923, 1885, 28, 24, "Print",ExpressionUUID->"c75e5aa0-d165-4b96-bc93-2eda92557f04",
+  Cell[1200275, 21997, 1885, 28, 30, "Print",ExpressionUUID->"c75e5aa0-d165-4b96-bc93-2eda92557f04",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1150441, 20953, 1896, 28, 24, "Print",ExpressionUUID->"8934b23c-b930-4130-9d85-fc7a2c1fa98c",
+  Cell[1202163, 22027, 1896, 28, 30, "Print",ExpressionUUID->"8934b23c-b930-4130-9d85-fc7a2c1fa98c",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1152340, 20983, 1895, 28, 24, "Print",ExpressionUUID->"a4557b84-d79b-4f11-9e7e-2a68de9fae54",
+  Cell[1204062, 22057, 1895, 28, 30, "Print",ExpressionUUID->"a4557b84-d79b-4f11-9e7e-2a68de9fae54",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1154238, 21013, 1899, 29, 24, "Print",ExpressionUUID->"32b5dfdd-6a08-4a55-9728-d115184a53f6",
+  Cell[1205960, 22087, 1899, 29, 30, "Print",ExpressionUUID->"32b5dfdd-6a08-4a55-9728-d115184a53f6",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1156140, 21044, 1899, 29, 24, "Print",ExpressionUUID->"3a8b2c7a-8f13-4a82-8aad-cc2ee5b79ca4",
+  Cell[1207862, 22118, 1899, 29, 30, "Print",ExpressionUUID->"3a8b2c7a-8f13-4a82-8aad-cc2ee5b79ca4",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1158042, 21075, 1899, 29, 24, "Print",ExpressionUUID->"36411e8e-9ac5-476b-8bac-cea7b42d4b59",
+  Cell[1209764, 22149, 1899, 29, 30, "Print",ExpressionUUID->"36411e8e-9ac5-476b-8bac-cea7b42d4b59",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1159944, 21106, 1897, 28, 24, "Print",ExpressionUUID->"ea14fe45-0c8d-4f42-867e-2e8b20efd875",
+  Cell[1211666, 22180, 1897, 28, 30, "Print",ExpressionUUID->"ea14fe45-0c8d-4f42-867e-2e8b20efd875",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1161844, 21136, 1895, 28, 24, "Print",ExpressionUUID->"42d071ba-9927-4ac4-ba74-4458f37b6c44",
+  Cell[1213566, 22210, 1895, 28, 30, "Print",ExpressionUUID->"42d071ba-9927-4ac4-ba74-4458f37b6c44",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1163742, 21166, 1901, 29, 24, "Print",ExpressionUUID->"fe66ebb2-2e28-44a6-9913-3f763b11a2c1",
+  Cell[1215464, 22240, 1901, 29, 30, "Print",ExpressionUUID->"fe66ebb2-2e28-44a6-9913-3f763b11a2c1",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1165646, 21197, 1897, 29, 24, "Print",ExpressionUUID->"aaca5064-ca1a-4787-9d55-6b12e0eeea95",
+  Cell[1217368, 22271, 1897, 29, 30, "Print",ExpressionUUID->"aaca5064-ca1a-4787-9d55-6b12e0eeea95",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1167546, 21228, 1899, 29, 24, "Print",ExpressionUUID->"43dee99f-1a9b-413b-ab49-e4537154ef42",
+  Cell[1219268, 22302, 1899, 29, 30, "Print",ExpressionUUID->"43dee99f-1a9b-413b-ab49-e4537154ef42",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1169448, 21259, 1899, 29, 24, "Print",ExpressionUUID->"c6d09604-e17b-4eb2-b65d-da37e0dfd887",
+  Cell[1221170, 22333, 1899, 29, 30, "Print",ExpressionUUID->"c6d09604-e17b-4eb2-b65d-da37e0dfd887",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1171350, 21290, 1900, 29, 24, "Print",ExpressionUUID->"4c42dece-7d02-495d-abd0-720a0c0485cd",
+  Cell[1223072, 22364, 1900, 29, 30, "Print",ExpressionUUID->"4c42dece-7d02-495d-abd0-720a0c0485cd",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1173253, 21321, 1900, 29, 24, "Print",ExpressionUUID->"dbe7ff25-e796-48d8-89a0-ec7e57941cf0",
+  Cell[1224975, 22395, 1900, 29, 30, "Print",ExpressionUUID->"dbe7ff25-e796-48d8-89a0-ec7e57941cf0",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1175156, 21352, 1901, 29, 24, "Print",ExpressionUUID->"a90c9c18-852d-4e59-89c3-b2ff79ab5a19",
+  Cell[1226878, 22426, 1901, 29, 30, "Print",ExpressionUUID->"a90c9c18-852d-4e59-89c3-b2ff79ab5a19",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1177060, 21383, 1889, 28, 24, "Print",ExpressionUUID->"63d1f6f1-68a5-44ce-adb4-ff10756e6138",
+  Cell[1228782, 22457, 1889, 28, 30, "Print",ExpressionUUID->"63d1f6f1-68a5-44ce-adb4-ff10756e6138",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1178952, 21413, 1889, 28, 24, "Print",ExpressionUUID->"94b1f1bd-f3e4-4e07-9b08-1ac57932e05c",
+  Cell[1230674, 22487, 1889, 28, 30, "Print",ExpressionUUID->"94b1f1bd-f3e4-4e07-9b08-1ac57932e05c",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1180844, 21443, 1887, 28, 24, "Print",ExpressionUUID->"f6d6ba59-1c1b-46ec-8be5-35b0e418295f",
+  Cell[1232566, 22517, 1887, 28, 30, "Print",ExpressionUUID->"f6d6ba59-1c1b-46ec-8be5-35b0e418295f",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1182734, 21473, 1895, 28, 24, "Print",ExpressionUUID->"82071bf3-5687-42a9-8d76-3e15bc37cab2",
+  Cell[1234456, 22547, 1895, 28, 30, "Print",ExpressionUUID->"82071bf3-5687-42a9-8d76-3e15bc37cab2",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1184632, 21503, 1895, 28, 24, "Print",ExpressionUUID->"451c6f48-460c-4023-9614-5323179f4bdf",
+  Cell[1236354, 22577, 1895, 28, 30, "Print",ExpressionUUID->"451c6f48-460c-4023-9614-5323179f4bdf",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1186530, 21533, 1901, 29, 24, "Print",ExpressionUUID->"078f2833-47bf-4b5d-a0e2-73d2b84e2256",
+  Cell[1238252, 22607, 1901, 29, 30, "Print",ExpressionUUID->"078f2833-47bf-4b5d-a0e2-73d2b84e2256",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1188434, 21564, 1887, 28, 24, "Print",ExpressionUUID->"999fde25-7aa0-4310-a2fb-ac4ce225a7f6",
+  Cell[1240156, 22638, 1887, 28, 30, "Print",ExpressionUUID->"999fde25-7aa0-4310-a2fb-ac4ce225a7f6",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1190324, 21594, 1866, 28, 24, "Print",ExpressionUUID->"355a08d5-c3cd-44ed-a575-3c6a50d6dadd",
+  Cell[1242046, 22668, 1866, 28, 30, "Print",ExpressionUUID->"355a08d5-c3cd-44ed-a575-3c6a50d6dadd",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1193430, 21653, 24847, 372, 892, "Input",ExpressionUUID->"7f8eb847-fff7-46d9-b0e0-5b00fd0423ee",
+  Cell[1245152, 22727, 24847, 372, 1115, "Input",ExpressionUUID->"7f8eb847-fff7-46d9-b0e0-5b00fd0423ee",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1218302, 22029, 491, 9, 24, "Print",ExpressionUUID->"b6a5e800-edd0-4c58-b54d-b106858a47f3",
+  Cell[1270024, 23103, 491, 9, 30, "Print",ExpressionUUID->"b6a5e800-edd0-4c58-b54d-b106858a47f3",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1218796, 22040, 481, 9, 24, "Print",ExpressionUUID->"853d1228-a309-44d0-97b1-34b47cbee023",
+  Cell[1270518, 23114, 481, 9, 30, "Print",ExpressionUUID->"853d1228-a309-44d0-97b1-34b47cbee023",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1219280, 22051, 492, 9, 24, "Print",ExpressionUUID->"87c29fcc-b159-49fc-b674-e47e1fa11dbc",
+  Cell[1271002, 23125, 492, 9, 30, "Print",ExpressionUUID->"87c29fcc-b159-49fc-b674-e47e1fa11dbc",
    CellTags->"EMF from theory using x-y segments test"],
-  Cell[1219775, 22062, 369, 7, 24, "Print",ExpressionUUID->"17198d8f-73ca-4ec9-8538-5adf41cc1b0b",
+  Cell[1271497, 23136, 369, 7, 30, "Print",ExpressionUUID->"17198d8f-73ca-4ec9-8538-5adf41cc1b0b",
    CellTags->"EMF from theory using x-y segments test"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"EmfFromTheoryXY module", 1230282, 22292},
- {"EMF from theory using x-y segments test", 1231194, 22308}
+ {"EmfFromTheoryXY module", 1282033, 23367},
+ {"EMF from theory using x-y segments test", 1282945, 23383}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 339, 5, 98, "Title",ExpressionUUID->"292b9907-0c5f-4600-8a19-19f765b4e166"],
-Cell[922, 29, 1624, 25, 104, "Text",ExpressionUUID->"bec1b235-8fb1-436b-8efb-d0c0e12a237c"],
-Cell[2549, 56, 985, 17, 58, "Text",ExpressionUUID->"7c97536e-6041-4661-8b01-240016344571"],
-Cell[3537, 75, 576, 19, 58, "Text",ExpressionUUID->"ad49b67c-1c84-444f-a67e-9e4461d40d4b"],
+Cell[580, 22, 339, 5, 122, "Title",ExpressionUUID->"292b9907-0c5f-4600-8a19-19f765b4e166"],
+Cell[922, 29, 1624, 25, 130, "Text",ExpressionUUID->"bec1b235-8fb1-436b-8efb-d0c0e12a237c"],
+Cell[2549, 56, 985, 17, 72, "Text",ExpressionUUID->"7c97536e-6041-4661-8b01-240016344571"],
+Cell[3537, 75, 576, 19, 72, "Text",ExpressionUUID->"ad49b67c-1c84-444f-a67e-9e4461d40d4b"],
 Cell[CellGroupData[{
-Cell[4138, 98, 186, 3, 67, "Section",ExpressionUUID->"dc69e64f-9a40-44b9-8c4f-c1e0007b57ac"],
-Cell[4327, 103, 836, 22, 58, "Text",ExpressionUUID->"b29c760d-26a1-4714-921f-8e4c2a0bd28b"],
-Cell[5166, 127, 37289, 616, 249, "Text",ExpressionUUID->"a8101ae0-b096-4b18-bea3-7d642b593806"]
+Cell[4138, 98, 186, 3, 83, "Section",ExpressionUUID->"dc69e64f-9a40-44b9-8c4f-c1e0007b57ac"],
+Cell[4327, 103, 836, 22, 72, "Text",ExpressionUUID->"b29c760d-26a1-4714-921f-8e4c2a0bd28b"],
+Cell[5166, 127, 37289, 616, 311, "Text",ExpressionUUID->"a8101ae0-b096-4b18-bea3-7d642b593806"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[42492, 748, 273, 4, 67, "Section",ExpressionUUID->"1a740c1e-e291-473c-88f5-ad88947d21e6"],
-Cell[42768, 754, 312, 9, 35, "Text",ExpressionUUID->"0dec22e9-205d-4962-870a-0035f317cf45"],
-Cell[43083, 765, 23522, 400, 63, "Text",ExpressionUUID->"e8fbf5e0-52bb-4c05-907d-825c1af38950"],
-Cell[66608, 1167, 593, 11, 35, "Text",ExpressionUUID->"9dd05d10-6ad3-45f3-ac3d-6eaa4fd63090"],
-Cell[67204, 1180, 55301, 945, 72, "Text",ExpressionUUID->"fa16fc4c-5198-45d1-8222-9963a19fb0be"],
-Cell[122508, 2127, 532, 10, 58, "Text",ExpressionUUID->"927f8fd2-fca1-4795-9bf4-1053b6a91848"],
-Cell[123043, 2139, 52226, 868, 42, "Text",ExpressionUUID->"13c96ed2-adfd-49b6-84d6-65f66a52d272"],
-Cell[175272, 3009, 250, 4, 35, "Text",ExpressionUUID->"e295092a-b6ca-4a34-b2a1-21840d5e0343"],
-Cell[175525, 3015, 23835, 393, 50, "Text",ExpressionUUID->"88ad9f8b-0e44-4a07-baf3-86477aa27842"]
+Cell[42492, 748, 273, 4, 83, "Section",ExpressionUUID->"1a740c1e-e291-473c-88f5-ad88947d21e6"],
+Cell[42768, 754, 312, 9, 43, "Text",ExpressionUUID->"0dec22e9-205d-4962-870a-0035f317cf45"],
+Cell[43083, 765, 23522, 400, 78, "Text",ExpressionUUID->"e8fbf5e0-52bb-4c05-907d-825c1af38950"],
+Cell[66608, 1167, 593, 11, 43, "Text",ExpressionUUID->"9dd05d10-6ad3-45f3-ac3d-6eaa4fd63090"],
+Cell[67204, 1180, 55301, 945, 90, "Text",ExpressionUUID->"fa16fc4c-5198-45d1-8222-9963a19fb0be"],
+Cell[122508, 2127, 532, 10, 72, "Text",ExpressionUUID->"927f8fd2-fca1-4795-9bf4-1053b6a91848"],
+Cell[123043, 2139, 52226, 868, 52, "Text",ExpressionUUID->"13c96ed2-adfd-49b6-84d6-65f66a52d272"],
+Cell[175272, 3009, 250, 4, 43, "Text",ExpressionUUID->"e295092a-b6ca-4a34-b2a1-21840d5e0343"],
+Cell[175525, 3015, 23835, 393, 62, "Text",ExpressionUUID->"88ad9f8b-0e44-4a07-baf3-86477aa27842"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[199397, 3413, 234, 4, 67, "Section",ExpressionUUID->"a3e4f388-8fff-451c-a5ea-0b63e441da0f"],
-Cell[199634, 3419, 576, 10, 58, "Text",ExpressionUUID->"01c16be8-bda1-43a4-8421-1e78f1074cb9"],
-Cell[200213, 3431, 72584, 1206, 76, "Text",ExpressionUUID->"668cf6df-603b-43da-95ba-7fc5a78c988b"],
-Cell[272800, 4639, 344, 7, 35, "Text",ExpressionUUID->"a36d4c03-9261-480f-8b23-972d1a2fba5f"],
-Cell[273147, 4648, 78314, 1311, 76, "Text",ExpressionUUID->"c7dba98f-d997-4514-bb12-5f36e01b303e"],
-Cell[351464, 5961, 309, 10, 35, "Text",ExpressionUUID->"41e45a28-739c-464d-894f-40d1db8fbfe5"],
-Cell[351776, 5973, 85025, 1412, 42, "Text",ExpressionUUID->"98948dda-81db-4f23-9257-090d302595d9"]
+Cell[199397, 3413, 234, 4, 83, "Section",ExpressionUUID->"a3e4f388-8fff-451c-a5ea-0b63e441da0f"],
+Cell[199634, 3419, 576, 10, 72, "Text",ExpressionUUID->"01c16be8-bda1-43a4-8421-1e78f1074cb9"],
+Cell[200213, 3431, 72584, 1206, 95, "Text",ExpressionUUID->"668cf6df-603b-43da-95ba-7fc5a78c988b"],
+Cell[272800, 4639, 344, 7, 43, "Text",ExpressionUUID->"a36d4c03-9261-480f-8b23-972d1a2fba5f"],
+Cell[273147, 4648, 78314, 1311, 95, "Text",ExpressionUUID->"c7dba98f-d997-4514-bb12-5f36e01b303e"],
+Cell[351464, 5961, 309, 10, 43, "Text",ExpressionUUID->"41e45a28-739c-464d-894f-40d1db8fbfe5"],
+Cell[351776, 5973, 85025, 1412, 52, "Text",ExpressionUUID->"98948dda-81db-4f23-9257-090d302595d9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[436838, 7390, 209, 4, 67, "Section",ExpressionUUID->"a3e913f5-c7f4-4c07-818f-27af4167fd1e"],
-Cell[437050, 7396, 529, 9, 58, "Text",ExpressionUUID->"2c4b869f-f151-4cb3-8e0c-afd7eb0e57c0"],
-Cell[437582, 7407, 674, 15, 58, "Text",ExpressionUUID->"1c755d6c-21d9-4872-a4ef-f72258f9f613"],
-Cell[438259, 7424, 592, 10, 35, "Text",ExpressionUUID->"b743a663-9c31-4e75-a525-b249f62669c7"]
+Cell[436838, 7390, 209, 4, 83, "Section",ExpressionUUID->"a3e913f5-c7f4-4c07-818f-27af4167fd1e"],
+Cell[437050, 7396, 529, 9, 72, "Text",ExpressionUUID->"2c4b869f-f151-4cb3-8e0c-afd7eb0e57c0"],
+Cell[437582, 7407, 674, 15, 72, "Text",ExpressionUUID->"1c755d6c-21d9-4872-a4ef-f72258f9f613"],
+Cell[438259, 7424, 592, 10, 43, "Text",ExpressionUUID->"b743a663-9c31-4e75-a525-b249f62669c7"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[438888, 7439, 300, 5, 67, "Section",ExpressionUUID->"2a034e67-360e-49c2-8aa7-f5dd501868aa"],
-Cell[439191, 7446, 702, 12, 81, "Text",ExpressionUUID->"0ae625c6-2718-4ffa-84ef-71a3c3052615"],
-Cell[439896, 7460, 567, 11, 58, "Text",ExpressionUUID->"de0c5b5a-304d-4946-b68f-85ecd1aff930"],
-Cell[440466, 7473, 2336, 48, 136, "Input",ExpressionUUID->"2b372f87-ca4e-4480-9a0d-a14e4fd540a3"],
+Cell[438888, 7439, 300, 5, 83, "Section",ExpressionUUID->"2a034e67-360e-49c2-8aa7-f5dd501868aa"],
+Cell[439191, 7446, 702, 12, 101, "Text",ExpressionUUID->"0ae625c6-2718-4ffa-84ef-71a3c3052615"],
+Cell[439896, 7460, 567, 11, 72, "Text",ExpressionUUID->"de0c5b5a-304d-4946-b68f-85ecd1aff930"],
+Cell[440466, 7473, 2336, 48, 170, "Input",ExpressionUUID->"2b372f87-ca4e-4480-9a0d-a14e4fd540a3"],
 Cell[CellGroupData[{
-Cell[442827, 7525, 439, 8, 30, "Input",ExpressionUUID->"59439501-3171-485e-a8b5-6aa9b9a1e857"],
-Cell[443269, 7535, 10422, 315, 196, "Output",ExpressionUUID->"d8810e38-dda2-4229-b59d-9e1614a83367"]
+Cell[442827, 7525, 439, 8, 37, "Input",ExpressionUUID->"59439501-3171-485e-a8b5-6aa9b9a1e857"],
+Cell[443269, 7535, 10422, 315, 245, "Output",ExpressionUUID->"d8810e38-dda2-4229-b59d-9e1614a83367"]
 }, Open  ]],
-Cell[453706, 7853, 719, 12, 81, "Text",ExpressionUUID->"e23f5e3a-16b6-4c83-9a93-9245ba838749"],
+Cell[453706, 7853, 719, 12, 101, "Text",ExpressionUUID->"e23f5e3a-16b6-4c83-9a93-9245ba838749"],
 Cell[CellGroupData[{
-Cell[454450, 7869, 553, 9, 30, "Input",ExpressionUUID->"fdd90cc0-32bd-4b41-9258-133964d6a5f9"],
-Cell[455006, 7880, 10274, 145, 170, "Output",ExpressionUUID->"cf0302a9-7460-4711-b458-42862c7f31ce"]
+Cell[454450, 7869, 553, 9, 37, "Input",ExpressionUUID->"fdd90cc0-32bd-4b41-9258-133964d6a5f9"],
+Cell[455006, 7880, 10274, 145, 212, "Output",ExpressionUUID->"cf0302a9-7460-4711-b458-42862c7f31ce"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[465329, 8031, 353, 5, 67, "Section",ExpressionUUID->"be23d519-7e74-41e9-88d8-3dbf033e0f33"],
-Cell[465685, 8038, 775, 12, 81, "Text",ExpressionUUID->"574b583a-80f8-4652-b426-b5830ac963bf"],
-Cell[466463, 8052, 567, 11, 58, "Text",ExpressionUUID->"64f930f5-2081-4842-ab35-35f10f395b44"],
-Cell[467033, 8065, 2438, 45, 136, "Input",ExpressionUUID->"5b66db58-ebdf-4bd6-8efb-e0e53b9a7afc"],
-Cell[469474, 8112, 1509, 23, 30, "Input",ExpressionUUID->"fc944cb2-813c-4ebe-8b29-0cb3a965e584"],
+Cell[465329, 8031, 353, 5, 83, "Section",ExpressionUUID->"be23d519-7e74-41e9-88d8-3dbf033e0f33"],
+Cell[465685, 8038, 775, 12, 101, "Text",ExpressionUUID->"574b583a-80f8-4652-b426-b5830ac963bf"],
+Cell[466463, 8052, 567, 11, 72, "Text",ExpressionUUID->"64f930f5-2081-4842-ab35-35f10f395b44"],
+Cell[467033, 8065, 2438, 45, 170, "Input",ExpressionUUID->"5b66db58-ebdf-4bd6-8efb-e0e53b9a7afc"],
+Cell[469474, 8112, 1509, 23, 37, "Input",ExpressionUUID->"fc944cb2-813c-4ebe-8b29-0cb3a965e584"],
 Cell[CellGroupData[{
-Cell[471008, 8139, 1454, 21, 30, "Input",ExpressionUUID->"f1d779c5-5d1e-4177-962c-173bd6d2bc59"],
-Cell[472465, 8162, 403, 8, 24, "Print",ExpressionUUID->"28712e94-86b6-4f90-af90-9a7e4b13c76e"],
-Cell[472871, 8172, 8259, 184, 208, "Output",ExpressionUUID->"8c2c2a6b-9098-4970-a170-5d2826cc412f"]
+Cell[471008, 8139, 1454, 21, 37, "Input",ExpressionUUID->"f1d779c5-5d1e-4177-962c-173bd6d2bc59"],
+Cell[472465, 8162, 403, 8, 30, "Print",ExpressionUUID->"28712e94-86b6-4f90-af90-9a7e4b13c76e"],
+Cell[472871, 8172, 8259, 184, 260, "Output",ExpressionUUID->"8c2c2a6b-9098-4970-a170-5d2826cc412f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[481167, 8361, 234, 5, 30, "Input",ExpressionUUID->"f684d76b-a4c3-403b-b23b-c2696797df74"],
-Cell[481404, 8368, 372, 7, 24, "Print",ExpressionUUID->"5887e128-8086-45e4-b4c0-0c9dc1082148"],
-Cell[481779, 8377, 7592, 172, 208, "Output",ExpressionUUID->"2537682b-13e3-4750-9741-c6bc092a58cc"]
+Cell[481167, 8361, 234, 5, 37, "Input",ExpressionUUID->"f684d76b-a4c3-403b-b23b-c2696797df74"],
+Cell[481404, 8368, 372, 7, 30, "Print",ExpressionUUID->"5887e128-8086-45e4-b4c0-0c9dc1082148"],
+Cell[481779, 8377, 7592, 172, 260, "Output",ExpressionUUID->"2537682b-13e3-4750-9741-c6bc092a58cc"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[489408, 8554, 294, 6, 30, "Input",ExpressionUUID->"6a33a35e-15af-46b2-b67b-33eacf5eadf3"],
-Cell[489705, 8562, 5777, 157, 164, "Output",ExpressionUUID->"453277bd-201d-40d4-9416-c9445c01a0a6"]
+Cell[489408, 8554, 294, 6, 37, "Input",ExpressionUUID->"6a33a35e-15af-46b2-b67b-33eacf5eadf3"],
+Cell[489705, 8562, 5777, 157, 205, "Output",ExpressionUUID->"453277bd-201d-40d4-9416-c9445c01a0a6"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[495531, 8725, 187, 3, 67, "Section",ExpressionUUID->"81d59fb3-b381-4e59-b7b9-cb5aeb509e47"],
-Cell[495721, 8730, 393, 8, 35, "Text",ExpressionUUID->"ee0b7f7b-677d-424d-8105-c58423228738"],
-Cell[496117, 8740, 9536, 206, 1223, "Input",ExpressionUUID->"35c9ef32-ac78-4343-8ab9-59a9509dc052",
+Cell[495531, 8725, 187, 3, 83, "Section",ExpressionUUID->"81d59fb3-b381-4e59-b7b9-cb5aeb509e47"],
+Cell[495721, 8730, 393, 8, 43, "Text",ExpressionUUID->"ee0b7f7b-677d-424d-8105-c58423228738"],
+Cell[496117, 8740, 9536, 206, 1528, "Input",ExpressionUUID->"35c9ef32-ac78-4343-8ab9-59a9509dc052",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[505690, 8951, 559, 8, 67, "Section",ExpressionUUID->"a7adafe0-1133-4668-94f7-ec3fcb63539f"],
-Cell[506252, 8961, 243, 4, 35, "Text",ExpressionUUID->"1c5620c9-eb1b-4132-b491-a8a2a4ac0a71"],
-Cell[506498, 8967, 41451, 670, 2756, "Input",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a",
+Cell[505690, 8951, 559, 8, 83, "Section",ExpressionUUID->"a7adafe0-1133-4668-94f7-ec3fcb63539f"],
+Cell[506252, 8961, 243, 4, 43, "Text",ExpressionUUID->"1c5620c9-eb1b-4132-b491-a8a2a4ac0a71"],
+Cell[506498, 8967, 41451, 670, 3445, "Input",ExpressionUUID->"dd452ac7-d264-4d2e-a444-d6eae049ec7a",
  InitializationCell->True,
  CellTags->"EmfFromTheoryXY module"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[547986, 9642, 222, 4, 67, "Section",ExpressionUUID->"36305967-a1f0-48af-99bd-34a0e306db56"],
-Cell[548211, 9648, 343, 7, 35, "Text",ExpressionUUID->"7b014b69-19e5-4dc6-874f-16f000dcc3b1"],
-Cell[548557, 9657, 38895, 685, 4436, "Input",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc",
+Cell[547986, 9642, 222, 4, 83, "Section",ExpressionUUID->"36305967-a1f0-48af-99bd-34a0e306db56"],
+Cell[548211, 9648, 343, 7, 43, "Text",ExpressionUUID->"7b014b69-19e5-4dc6-874f-16f000dcc3b1"],
+Cell[548557, 9657, 38895, 685, 5545, "Input",ExpressionUUID->"9ec57479-b83c-476f-af9c-3b3a782859fc",
  InitializationCell->True,
  CellTags->"EmfFromTheoryXY module"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[587489, 10347, 385, 8, 67, "Section",ExpressionUUID->"dc74adc8-9d30-40fc-a07d-d9bf1922fb7a"],
-Cell[587877, 10357, 221, 5, 35, "Text",ExpressionUUID->"44a066f0-4ada-4b81-b035-aff20c1cb187"],
-Cell[588101, 10364, 76430, 1385, 6431, "Input",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37",
+Cell[587489, 10347, 385, 8, 83, "Section",ExpressionUUID->"dc74adc8-9d30-40fc-a07d-d9bf1922fb7a"],
+Cell[587877, 10357, 221, 5, 43, "Text",ExpressionUUID->"44a066f0-4ada-4b81-b035-aff20c1cb187"],
+Cell[588101, 10364, 76430, 1385, 8014, "Input",ExpressionUUID->"67ab6a20-75ae-4d6a-a435-7ababd3a0e37",
  InitializationCell->True,
  CellTags->"EmfFromTheoryXY module"],
-Cell[664534, 11751, 1831, 41, 136, "Input",ExpressionUUID->"4372a0f5-e997-4814-ac2f-92aec731f39c"],
+Cell[664534, 11751, 1831, 41, 194, "Input",ExpressionUUID->"4372a0f5-e997-4814-ac2f-92aec731f39c"],
 Cell[CellGroupData[{
-Cell[666390, 11796, 235, 3, 30, "Input",ExpressionUUID->"6f1f3070-9ac9-4ec9-8b28-286337d07abb"],
-Cell[666628, 11801, 391, 8, 34, "Output",ExpressionUUID->"8f23602e-c96c-42dc-83f6-441cfdf56010"]
+Cell[666390, 11796, 235, 3, 37, "Input",ExpressionUUID->"6f1f3070-9ac9-4ec9-8b28-286337d07abb"],
+Cell[666628, 11801, 391, 8, 42, "Output",ExpressionUUID->"8f23602e-c96c-42dc-83f6-441cfdf56010"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[667056, 11814, 271, 5, 30, "Input",ExpressionUUID->"d868144d-9a7b-45f3-8fee-e9258c672610"],
-Cell[667330, 11821, 471, 9, 34, "Output",ExpressionUUID->"a2b03282-63de-4c76-a421-2008ed4c50bb"]
+Cell[667056, 11814, 271, 5, 37, "Input",ExpressionUUID->"d868144d-9a7b-45f3-8fee-e9258c672610"],
+Cell[667330, 11821, 471, 9, 42, "Output",ExpressionUUID->"a2b03282-63de-4c76-a421-2008ed4c50bb"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[667838, 11835, 326, 7, 30, "Input",ExpressionUUID->"e5992fe0-1f25-4af4-be56-a0ccb5387e91"],
-Cell[668167, 11844, 515, 10, 34, "Output",ExpressionUUID->"360130e3-cbb5-477d-aa87-8299fbf7a011"]
+Cell[667838, 11835, 326, 7, 37, "Input",ExpressionUUID->"e5992fe0-1f25-4af4-be56-a0ccb5387e91"],
+Cell[668167, 11844, 515, 10, 42, "Output",ExpressionUUID->"360130e3-cbb5-477d-aa87-8299fbf7a011"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[668719, 11859, 21401, 470, 1832, "Input",ExpressionUUID->"367c4d01-4931-4529-8b03-ef3298d5f708",
+Cell[668719, 11859, 24301, 529, 2504, "Input",ExpressionUUID->"367c4d01-4931-4529-8b03-ef3298d5f708",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[690145, 12333, 550, 12, 24, "Print",ExpressionUUID->"b945aedc-7c7c-4a9b-9b8c-cce933a7d43b"],
-Cell[690698, 12347, 621, 14, 27, "Print",ExpressionUUID->"64d8c8fd-e953-4a6d-adad-88e03ef63278"],
-Cell[691322, 12363, 647, 15, 24, "Print",ExpressionUUID->"ace0feca-d24c-469a-bf3b-6f9fd63d95c0"],
-Cell[691972, 12380, 546, 12, 24, "Print",ExpressionUUID->"9e00ee10-6b35-4c05-ba70-d6a9187b269f"],
-Cell[692521, 12394, 385, 7, 24, "Print",ExpressionUUID->"da4e1acd-31d7-4468-a598-566c73f5a903"],
-Cell[692909, 12403, 1481, 40, 27, "Print",ExpressionUUID->"67d65593-2cc9-437d-ae85-a6d6af74171f"]
+Cell[693045, 12392, 550, 12, 29, "Print",ExpressionUUID->"fb7ae0c5-1592-4633-bf0d-71df86ea2aef"],
+Cell[693598, 12406, 623, 14, 34, "Print",ExpressionUUID->"a323a207-2034-4d50-bc1c-a50f859f8986"],
+Cell[694224, 12422, 651, 15, 29, "Print",ExpressionUUID->"9519d41f-5e1b-48ff-8091-ed20cc5c0b4b"],
+Cell[694878, 12439, 550, 12, 29, "Print",ExpressionUUID->"8479d84a-49a9-4932-9eb0-27fb23d4baa8"],
+Cell[695431, 12453, 387, 7, 29, "Print",ExpressionUUID->"e0bdfdb6-7b96-4666-b433-c5b0d794eb08"],
+Cell[695821, 12462, 1756, 41, 237, "Print",ExpressionUUID->"80c48e15-93ce-467d-89f1-bef050e895a1"]
 }, Open  ]],
-Cell[694405, 12446, 19206, 378, 398, "Output",ExpressionUUID->"372a4386-2e66-40b5-a99c-9e39fee5ffc6"]
+Cell[697592, 12506, 67741, 1392, 530, "Output",ExpressionUUID->"095544b4-01e5-49d7-9bc7-a5e498a2d434"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[713660, 12830, 440, 6, 67, "Section",ExpressionUUID->"3441bd0c-9baa-4a2f-8786-d77ba76ea11c"],
-Cell[714103, 12838, 221, 5, 35, "Text",ExpressionUUID->"289131af-56b0-462d-90d0-4f1ba3ddff07"],
-Cell[714327, 12845, 53095, 896, 3554, "Input",ExpressionUUID->"fd611682-7255-4493-bceb-27f0f8cf3caf",
+Cell[765382, 13904, 440, 6, 84, "Section",ExpressionUUID->"3441bd0c-9baa-4a2f-8786-d77ba76ea11c"],
+Cell[765825, 13912, 221, 5, 44, "Text",ExpressionUUID->"289131af-56b0-462d-90d0-4f1ba3ddff07"],
+Cell[766049, 13919, 53095, 896, 4452, "Input",ExpressionUUID->"fd611682-7255-4493-bceb-27f0f8cf3caf",
  InitializationCell->True,
  CellTags->"EmfFromTheoryXY module"],
-Cell[767425, 13743, 2506, 46, 136, "Input",ExpressionUUID->"5d60f25c-83b7-4557-bf42-435bffdca6a1"],
-Cell[769934, 13791, 14303, 306, 1874, "Input",ExpressionUUID->"d7ff80b4-b6a5-438f-827a-97838f373405",
+Cell[819147, 14817, 2506, 46, 170, "Input",ExpressionUUID->"5d60f25c-83b7-4557-bf42-435bffdca6a1"],
+Cell[821656, 14865, 14303, 306, 2342, "Input",ExpressionUUID->"d7ff80b4-b6a5-438f-827a-97838f373405",
  InitializationCell->True],
-Cell[784240, 14099, 1509, 23, 30, "Input",ExpressionUUID->"3dacdd0f-12c5-4250-9035-c265564f8a34"],
+Cell[835962, 15173, 1509, 23, 37, "Input",ExpressionUUID->"3dacdd0f-12c5-4250-9035-c265564f8a34"],
 Cell[CellGroupData[{
-Cell[785774, 14126, 1454, 21, 30, "Input",ExpressionUUID->"8754bcac-33fe-482d-9ad7-3773f9dbc436"],
-Cell[787231, 14149, 356, 7, 24, "Print",ExpressionUUID->"2f4c72ff-736e-439e-ba56-62abd87e7fe6"],
-Cell[787590, 14158, 8209, 183, 208, "Output",ExpressionUUID->"23ba5f79-3fdc-435a-9bdc-6d1390f2b814"]
+Cell[837496, 15200, 1454, 21, 37, "Input",ExpressionUUID->"8754bcac-33fe-482d-9ad7-3773f9dbc436"],
+Cell[838953, 15223, 356, 7, 30, "Print",ExpressionUUID->"2f4c72ff-736e-439e-ba56-62abd87e7fe6"],
+Cell[839312, 15232, 8209, 183, 260, "Output",ExpressionUUID->"23ba5f79-3fdc-435a-9bdc-6d1390f2b814"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[795836, 14346, 234, 5, 30, "Input",ExpressionUUID->"b0b9a063-df99-43a8-83ce-ffdb7922239a"],
-Cell[796073, 14353, 331, 7, 24, "Print",ExpressionUUID->"d9ae8a69-cf75-4a6b-87af-680cd8366e29"],
-Cell[796407, 14362, 7548, 172, 208, "Output",ExpressionUUID->"88aa39ea-5c71-429a-89f8-bd8e12838f54"]
+Cell[847558, 15420, 234, 5, 37, "Input",ExpressionUUID->"b0b9a063-df99-43a8-83ce-ffdb7922239a"],
+Cell[847795, 15427, 331, 7, 30, "Print",ExpressionUUID->"d9ae8a69-cf75-4a6b-87af-680cd8366e29"],
+Cell[848129, 15436, 7548, 172, 260, "Output",ExpressionUUID->"88aa39ea-5c71-429a-89f8-bd8e12838f54"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[803992, 14539, 294, 6, 30, "Input",ExpressionUUID->"f8f24877-33af-4cd9-bba5-508d7d38bc68"],
-Cell[804289, 14547, 5728, 156, 164, "Output",ExpressionUUID->"f00fb6ef-3d0c-4338-8efc-3282c813c338"]
+Cell[855714, 15613, 294, 6, 37, "Input",ExpressionUUID->"f8f24877-33af-4cd9-bba5-508d7d38bc68"],
+Cell[856011, 15621, 5728, 156, 205, "Output",ExpressionUUID->"f00fb6ef-3d0c-4338-8efc-3282c813c338"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[810066, 14709, 464, 9, 105, "Section",ExpressionUUID->"227d4fdf-4df2-4aec-9e78-6e97a2bc7292"],
-Cell[810533, 14720, 562, 10, 58, "Text",ExpressionUUID->"56a5ede9-9c7d-461e-8e64-4c4f73bb8bd5"],
-Cell[811098, 14732, 316, 6, 35, "Text",ExpressionUUID->"7c1cba62-07f0-4713-aea4-46784da4f5c1"],
-Cell[811417, 14740, 73649, 1314, 5864, "Input",ExpressionUUID->"babd4910-44fe-466a-8ed9-6c0a8d200d6b",
+Cell[861788, 15783, 464, 9, 131, "Section",ExpressionUUID->"227d4fdf-4df2-4aec-9e78-6e97a2bc7292"],
+Cell[862255, 15794, 562, 10, 72, "Text",ExpressionUUID->"56a5ede9-9c7d-461e-8e64-4c4f73bb8bd5"],
+Cell[862820, 15806, 316, 6, 43, "Text",ExpressionUUID->"7c1cba62-07f0-4713-aea4-46784da4f5c1"],
+Cell[863139, 15814, 73649, 1314, 7330, "Input",ExpressionUUID->"babd4910-44fe-466a-8ed9-6c0a8d200d6b",
  InitializationCell->True,
  CellTags->"EmfFromTheoryXY module"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[885103, 16059, 369, 5, 67, "Section",ExpressionUUID->"4368181f-6343-4d9b-82b9-b28ba61346a6"],
-Cell[885475, 16066, 632, 11, 58, "Text",ExpressionUUID->"7f7c5250-ac9a-46ce-803a-c04136d596a0"],
+Cell[936825, 17133, 369, 5, 83, "Section",ExpressionUUID->"4368181f-6343-4d9b-82b9-b28ba61346a6"],
+Cell[937197, 17140, 632, 11, 72, "Text",ExpressionUUID->"7f7c5250-ac9a-46ce-803a-c04136d596a0"],
 Cell[CellGroupData[{
-Cell[886132, 16081, 37082, 686, 2446, "Input",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f",
+Cell[937854, 17155, 37082, 686, 3057, "Input",ExpressionUUID->"b98d00b5-d4df-4dfc-9d8f-b08f4656999f",
  CellTags->"EMF from theory using x-y segments test"],
 Cell[CellGroupData[{
-Cell[923239, 16771, 420, 7, 24, "Print",ExpressionUUID->"fb32f87e-efbb-482e-8826-7d4995cd9fef",
+Cell[974961, 17845, 420, 7, 30, "Print",ExpressionUUID->"fb32f87e-efbb-482e-8826-7d4995cd9fef",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[923662, 16780, 422, 7, 24, "Print",ExpressionUUID->"635e8c1b-d0a0-453e-9cf9-d4c61e141141",
+Cell[975384, 17854, 422, 7, 30, "Print",ExpressionUUID->"635e8c1b-d0a0-453e-9cf9-d4c61e141141",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[924087, 16789, 422, 7, 24, "Print",ExpressionUUID->"4103891a-b12f-4819-b30e-062413e2aebe",
+Cell[975809, 17863, 422, 7, 30, "Print",ExpressionUUID->"4103891a-b12f-4819-b30e-062413e2aebe",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[924512, 16798, 424, 7, 24, "Print",ExpressionUUID->"ae7af435-720e-478e-9912-21255fed9cea",
+Cell[976234, 17872, 424, 7, 30, "Print",ExpressionUUID->"ae7af435-720e-478e-9912-21255fed9cea",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[924939, 16807, 420, 7, 24, "Print",ExpressionUUID->"11dae033-ce8f-4189-b969-361d4e274c2d",
+Cell[976661, 17881, 420, 7, 30, "Print",ExpressionUUID->"11dae033-ce8f-4189-b969-361d4e274c2d",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[925362, 16816, 422, 7, 24, "Print",ExpressionUUID->"33843a86-6984-4395-a421-126b3f180eff",
+Cell[977084, 17890, 422, 7, 30, "Print",ExpressionUUID->"33843a86-6984-4395-a421-126b3f180eff",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[925787, 16825, 759, 12, 63, "Print",ExpressionUUID->"523cb6e5-3c41-433d-b819-c7b8118048b4",
+Cell[977509, 17899, 759, 12, 78, "Print",ExpressionUUID->"523cb6e5-3c41-433d-b819-c7b8118048b4",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[926549, 16839, 422, 7, 24, "Print",ExpressionUUID->"fedb8068-6342-41f1-8926-15961e814340",
+Cell[978271, 17913, 422, 7, 30, "Print",ExpressionUUID->"fedb8068-6342-41f1-8926-15961e814340",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[926974, 16848, 420, 7, 24, "Print",ExpressionUUID->"90fc38ae-3613-4dd5-bb5f-3dab1ad5828c",
+Cell[978696, 17922, 420, 7, 30, "Print",ExpressionUUID->"90fc38ae-3613-4dd5-bb5f-3dab1ad5828c",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[927397, 16857, 424, 7, 24, "Print",ExpressionUUID->"115a951a-2140-4f5e-adfa-e44e6ddf2ec6",
+Cell[979119, 17931, 424, 7, 30, "Print",ExpressionUUID->"115a951a-2140-4f5e-adfa-e44e6ddf2ec6",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[927824, 16866, 427, 8, 24, "Print",ExpressionUUID->"193fbf76-bdcf-4d76-896b-ead8bc8d8992",
+Cell[979546, 17940, 427, 8, 30, "Print",ExpressionUUID->"193fbf76-bdcf-4d76-896b-ead8bc8d8992",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[928254, 16876, 425, 8, 24, "Print",ExpressionUUID->"e084fc61-27ed-40a6-8042-322c5d1b6499",
+Cell[979976, 17950, 425, 8, 30, "Print",ExpressionUUID->"e084fc61-27ed-40a6-8042-322c5d1b6499",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[928682, 16886, 425, 8, 24, "Print",ExpressionUUID->"0b490bdb-423d-4014-a10f-5e1299b29aa5",
+Cell[980404, 17960, 425, 8, 30, "Print",ExpressionUUID->"0b490bdb-423d-4014-a10f-5e1299b29aa5",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[929110, 16896, 392, 7, 24, "Print",ExpressionUUID->"c2723c11-3233-4075-b230-9c76d71b9426",
+Cell[980832, 17970, 392, 7, 30, "Print",ExpressionUUID->"c2723c11-3233-4075-b230-9c76d71b9426",
  CellTags->"EMF from theory using x-y segments test"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[929563, 16910, 459, 7, 67, "Section",ExpressionUUID->"cd589396-ef02-44cd-89af-5e30c17b5d79"],
-Cell[930025, 16919, 645, 11, 35, "Text",ExpressionUUID->"7a008000-24c7-4662-8978-ef79484ec3a9"],
+Cell[981285, 17984, 459, 7, 83, "Section",ExpressionUUID->"cd589396-ef02-44cd-89af-5e30c17b5d79"],
+Cell[981747, 17993, 645, 11, 43, "Text",ExpressionUUID->"7a008000-24c7-4662-8978-ef79484ec3a9"],
 Cell[CellGroupData[{
-Cell[930695, 16934, 95627, 2025, 7969, "Input",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672",
+Cell[982417, 18008, 95627, 2025, 9961, "Input",ExpressionUUID->"8600f530-06c1-43c5-8ba5-106191628672",
  CellTags->"EMF from theory using x-y segments test"],
 Cell[CellGroupData[{
-Cell[1026347, 18963, 1932, 29, 24, "Print",ExpressionUUID->"7a959fcf-14c4-411e-894a-16005c210901",
+Cell[1078069, 20037, 1932, 29, 30, "Print",ExpressionUUID->"7a959fcf-14c4-411e-894a-16005c210901",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1028282, 18994, 1928, 29, 24, "Print",ExpressionUUID->"700192d4-ec9d-4805-8519-05ded78ea538",
+Cell[1080004, 20068, 1928, 29, 30, "Print",ExpressionUUID->"700192d4-ec9d-4805-8519-05ded78ea538",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1030213, 19025, 1916, 29, 24, "Print",ExpressionUUID->"ed67c753-2e4d-4437-b520-e52f6a177667",
+Cell[1081935, 20099, 1916, 29, 30, "Print",ExpressionUUID->"ed67c753-2e4d-4437-b520-e52f6a177667",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1032132, 19056, 1924, 29, 24, "Print",ExpressionUUID->"71105abd-b3d0-4273-92fc-6de40b66c049",
+Cell[1083854, 20130, 1924, 29, 30, "Print",ExpressionUUID->"71105abd-b3d0-4273-92fc-6de40b66c049",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1034059, 19087, 1934, 29, 24, "Print",ExpressionUUID->"5774ddd5-a2e5-4bc0-8abe-28619cbf4ed6",
+Cell[1085781, 20161, 1934, 29, 30, "Print",ExpressionUUID->"5774ddd5-a2e5-4bc0-8abe-28619cbf4ed6",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1035996, 19118, 1912, 29, 24, "Print",ExpressionUUID->"dfb1c6e0-0495-40db-8b1b-d34d52c1e9e2",
+Cell[1087718, 20192, 1912, 29, 30, "Print",ExpressionUUID->"dfb1c6e0-0495-40db-8b1b-d34d52c1e9e2",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1037911, 19149, 1936, 29, 24, "Print",ExpressionUUID->"88b1c00e-7ccf-444e-9829-5f2df6700e64",
+Cell[1089633, 20223, 1936, 29, 30, "Print",ExpressionUUID->"88b1c00e-7ccf-444e-9829-5f2df6700e64",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1039850, 19180, 1896, 28, 24, "Print",ExpressionUUID->"74ac24c3-4b06-4d6c-99f9-103f60dc1330",
+Cell[1091572, 20254, 1896, 28, 30, "Print",ExpressionUUID->"74ac24c3-4b06-4d6c-99f9-103f60dc1330",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1041749, 19210, 1900, 29, 24, "Print",ExpressionUUID->"79109f59-6eec-4582-bf37-2c9db4a87193",
+Cell[1093471, 20284, 1900, 29, 30, "Print",ExpressionUUID->"79109f59-6eec-4582-bf37-2c9db4a87193",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1043652, 19241, 1903, 29, 24, "Print",ExpressionUUID->"5ef336af-f42b-4547-9ea4-2d5b61fd1ce4",
+Cell[1095374, 20315, 1903, 29, 30, "Print",ExpressionUUID->"5ef336af-f42b-4547-9ea4-2d5b61fd1ce4",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1045558, 19272, 1903, 29, 24, "Print",ExpressionUUID->"b64b914e-efb8-495d-aa6e-4383e17f01f2",
+Cell[1097280, 20346, 1903, 29, 30, "Print",ExpressionUUID->"b64b914e-efb8-495d-aa6e-4383e17f01f2",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1047464, 19303, 1905, 29, 24, "Print",ExpressionUUID->"fc6f97f4-d358-423e-8b67-b7774acbc813",
+Cell[1099186, 20377, 1905, 29, 30, "Print",ExpressionUUID->"fc6f97f4-d358-423e-8b67-b7774acbc813",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1049372, 19334, 1883, 28, 24, "Print",ExpressionUUID->"969755ae-a42d-4295-ab07-00e634863ace",
+Cell[1101094, 20408, 1883, 28, 30, "Print",ExpressionUUID->"969755ae-a42d-4295-ab07-00e634863ace",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1051258, 19364, 1883, 28, 24, "Print",ExpressionUUID->"b37802f7-da80-46b0-8d96-7b0b8f6b4726",
+Cell[1102980, 20438, 1883, 28, 30, "Print",ExpressionUUID->"b37802f7-da80-46b0-8d96-7b0b8f6b4726",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1053144, 19394, 1925, 29, 24, "Print",ExpressionUUID->"e2072b81-5cb5-483f-90a5-9ff941e09a66",
+Cell[1104866, 20468, 1925, 29, 30, "Print",ExpressionUUID->"e2072b81-5cb5-483f-90a5-9ff941e09a66",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1055072, 19425, 1883, 28, 24, "Print",ExpressionUUID->"dfc65c69-c745-4aed-a66e-ff5eb37b7a44",
+Cell[1106794, 20499, 1883, 28, 30, "Print",ExpressionUUID->"dfc65c69-c745-4aed-a66e-ff5eb37b7a44",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1056958, 19455, 1885, 28, 24, "Print",ExpressionUUID->"51f828a2-807a-4ab1-ba55-2396e9b00455",
+Cell[1108680, 20529, 1885, 28, 30, "Print",ExpressionUUID->"51f828a2-807a-4ab1-ba55-2396e9b00455",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1058846, 19485, 1925, 29, 24, "Print",ExpressionUUID->"4c77a740-42b6-45bf-8a68-b37941760779",
+Cell[1110568, 20559, 1925, 29, 30, "Print",ExpressionUUID->"4c77a740-42b6-45bf-8a68-b37941760779",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1060774, 19516, 1937, 29, 24, "Print",ExpressionUUID->"7f7e7ced-7ffb-4603-a00a-8cfad5668ace",
+Cell[1112496, 20590, 1937, 29, 30, "Print",ExpressionUUID->"7f7e7ced-7ffb-4603-a00a-8cfad5668ace",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1062714, 19547, 1939, 29, 24, "Print",ExpressionUUID->"1bb3cddb-bb8a-43fe-b9df-46c62c06c919",
+Cell[1114436, 20621, 1939, 29, 30, "Print",ExpressionUUID->"1bb3cddb-bb8a-43fe-b9df-46c62c06c919",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1064656, 19578, 1927, 29, 24, "Print",ExpressionUUID->"455a7501-838d-4871-93af-47908467f3ad",
+Cell[1116378, 20652, 1927, 29, 30, "Print",ExpressionUUID->"455a7501-838d-4871-93af-47908467f3ad",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1066586, 19609, 1882, 28, 24, "Print",ExpressionUUID->"a4f1ef86-8247-414b-ade1-3892a3be8f55",
+Cell[1118308, 20683, 1882, 28, 30, "Print",ExpressionUUID->"a4f1ef86-8247-414b-ade1-3892a3be8f55",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1068471, 19639, 1883, 28, 24, "Print",ExpressionUUID->"29e703a3-a68f-4850-9235-394d25b16f26",
+Cell[1120193, 20713, 1883, 28, 30, "Print",ExpressionUUID->"29e703a3-a68f-4850-9235-394d25b16f26",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1070357, 19669, 1937, 29, 24, "Print",ExpressionUUID->"61a86506-9d10-4b4a-843f-0cb2f9e3a9a9",
+Cell[1122079, 20743, 1937, 29, 30, "Print",ExpressionUUID->"61a86506-9d10-4b4a-843f-0cb2f9e3a9a9",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1072297, 19700, 1935, 29, 24, "Print",ExpressionUUID->"8914d086-f7dd-4b79-bcb2-b41c8541e944",
+Cell[1124019, 20774, 1935, 29, 30, "Print",ExpressionUUID->"8914d086-f7dd-4b79-bcb2-b41c8541e944",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1074235, 19731, 1935, 29, 24, "Print",ExpressionUUID->"c85012e3-1aa4-45a3-a3e2-709733d60730",
+Cell[1125957, 20805, 1935, 29, 30, "Print",ExpressionUUID->"c85012e3-1aa4-45a3-a3e2-709733d60730",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1076173, 19762, 1935, 29, 24, "Print",ExpressionUUID->"3fa8707e-2875-4012-9c2b-a99e58dc3763",
+Cell[1127895, 20836, 1935, 29, 30, "Print",ExpressionUUID->"3fa8707e-2875-4012-9c2b-a99e58dc3763",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1078111, 19793, 1876, 28, 24, "Print",ExpressionUUID->"0e631926-f6ed-4e89-8f38-8b3a394e2ef2",
+Cell[1129833, 20867, 1876, 28, 30, "Print",ExpressionUUID->"0e631926-f6ed-4e89-8f38-8b3a394e2ef2",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1079990, 19823, 1899, 29, 24, "Print",ExpressionUUID->"2de21434-eb31-400f-9b06-9c97eeef86b4",
+Cell[1131712, 20897, 1899, 29, 30, "Print",ExpressionUUID->"2de21434-eb31-400f-9b06-9c97eeef86b4",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1081892, 19854, 1901, 29, 24, "Print",ExpressionUUID->"eba7a179-8648-4f34-a562-7e7b6c7a3f1f",
+Cell[1133614, 20928, 1901, 29, 30, "Print",ExpressionUUID->"eba7a179-8648-4f34-a562-7e7b6c7a3f1f",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1083796, 19885, 1897, 28, 24, "Print",ExpressionUUID->"2f2c6fbd-ce5e-4249-8e96-ea8f083e655b",
+Cell[1135518, 20959, 1897, 28, 30, "Print",ExpressionUUID->"2f2c6fbd-ce5e-4249-8e96-ea8f083e655b",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1085696, 19915, 1899, 29, 24, "Print",ExpressionUUID->"f43e2e33-d2ae-4cbb-a7f3-144960ffbc3a",
+Cell[1137418, 20989, 1899, 29, 30, "Print",ExpressionUUID->"f43e2e33-d2ae-4cbb-a7f3-144960ffbc3a",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1087598, 19946, 1895, 28, 24, "Print",ExpressionUUID->"30519301-4da6-4da0-8f07-26e250160c3d",
+Cell[1139320, 21020, 1895, 28, 30, "Print",ExpressionUUID->"30519301-4da6-4da0-8f07-26e250160c3d",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1089496, 19976, 1899, 29, 24, "Print",ExpressionUUID->"f21ef8dd-d307-4763-a45a-a9e73064efa0",
+Cell[1141218, 21050, 1899, 29, 30, "Print",ExpressionUUID->"f21ef8dd-d307-4763-a45a-a9e73064efa0",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1091398, 20007, 1903, 29, 24, "Print",ExpressionUUID->"637cb1e3-67fb-4b17-b91d-5f0ea71c5bbe",
+Cell[1143120, 21081, 1903, 29, 30, "Print",ExpressionUUID->"637cb1e3-67fb-4b17-b91d-5f0ea71c5bbe",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1093304, 20038, 1895, 28, 24, "Print",ExpressionUUID->"6c10fa19-1232-4858-aa34-0f5476296ae8",
+Cell[1145026, 21112, 1895, 28, 30, "Print",ExpressionUUID->"6c10fa19-1232-4858-aa34-0f5476296ae8",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1095202, 20068, 1901, 29, 24, "Print",ExpressionUUID->"20dcffee-abb1-47db-a04d-8681f4027f44",
+Cell[1146924, 21142, 1901, 29, 30, "Print",ExpressionUUID->"20dcffee-abb1-47db-a04d-8681f4027f44",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1097106, 20099, 1901, 29, 24, "Print",ExpressionUUID->"8c20d0f1-357f-4542-8eed-41bcde5ec774",
+Cell[1148828, 21173, 1901, 29, 30, "Print",ExpressionUUID->"8c20d0f1-357f-4542-8eed-41bcde5ec774",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1099010, 20130, 1899, 29, 24, "Print",ExpressionUUID->"828eb2fc-cc5e-4407-901a-fa95a5886f1b",
+Cell[1150732, 21204, 1899, 29, 30, "Print",ExpressionUUID->"828eb2fc-cc5e-4407-901a-fa95a5886f1b",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1100912, 20161, 1895, 28, 24, "Print",ExpressionUUID->"0667b0c3-c668-4f6c-b82d-5d6bcbc460c3",
+Cell[1152634, 21235, 1895, 28, 30, "Print",ExpressionUUID->"0667b0c3-c668-4f6c-b82d-5d6bcbc460c3",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1102810, 20191, 1885, 28, 24, "Print",ExpressionUUID->"63951702-0abd-45d0-ada2-21e998c98b4e",
+Cell[1154532, 21265, 1885, 28, 30, "Print",ExpressionUUID->"63951702-0abd-45d0-ada2-21e998c98b4e",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1104698, 20221, 1883, 28, 24, "Print",ExpressionUUID->"712842cd-e079-45ab-a4df-6ea26e30ce64",
+Cell[1156420, 21295, 1883, 28, 30, "Print",ExpressionUUID->"712842cd-e079-45ab-a4df-6ea26e30ce64",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1106584, 20251, 1937, 29, 24, "Print",ExpressionUUID->"1083ab69-41f4-492a-8957-c582025c3af6",
+Cell[1158306, 21325, 1937, 29, 30, "Print",ExpressionUUID->"1083ab69-41f4-492a-8957-c582025c3af6",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1108524, 20282, 1935, 29, 24, "Print",ExpressionUUID->"cfca6a7c-6abc-4cf2-b93e-9de4761a2dce",
+Cell[1160246, 21356, 1935, 29, 30, "Print",ExpressionUUID->"cfca6a7c-6abc-4cf2-b93e-9de4761a2dce",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1110462, 20313, 1935, 29, 24, "Print",ExpressionUUID->"ccf8b60a-7fd2-4166-83cc-29cf96637328",
+Cell[1162184, 21387, 1935, 29, 30, "Print",ExpressionUUID->"ccf8b60a-7fd2-4166-83cc-29cf96637328",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1112400, 20344, 1937, 29, 24, "Print",ExpressionUUID->"dc009c86-d541-4348-a5a0-1b018294aac0",
+Cell[1164122, 21418, 1937, 29, 30, "Print",ExpressionUUID->"dc009c86-d541-4348-a5a0-1b018294aac0",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1114340, 20375, 1897, 28, 24, "Print",ExpressionUUID->"ad8f55bd-3cc9-4374-9901-b229dda3c070",
+Cell[1166062, 21449, 1897, 28, 30, "Print",ExpressionUUID->"ad8f55bd-3cc9-4374-9901-b229dda3c070",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1116240, 20405, 1874, 28, 24, "Print",ExpressionUUID->"c88e5932-0751-4a55-84aa-6339ae9b7698",
+Cell[1167962, 21479, 1874, 28, 30, "Print",ExpressionUUID->"c88e5932-0751-4a55-84aa-6339ae9b7698",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1118117, 20435, 1938, 29, 24, "Print",ExpressionUUID->"e046dea6-2c7c-4d80-8985-cf3583bdbe51",
+Cell[1169839, 21509, 1938, 29, 30, "Print",ExpressionUUID->"e046dea6-2c7c-4d80-8985-cf3583bdbe51",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1120058, 20466, 1874, 28, 24, "Print",ExpressionUUID->"354d1da2-d59e-4de0-b942-b211cd589753",
+Cell[1171780, 21540, 1874, 28, 30, "Print",ExpressionUUID->"354d1da2-d59e-4de0-b942-b211cd589753",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1121935, 20496, 1912, 29, 24, "Print",ExpressionUUID->"551fd44e-e3c2-43e2-b8c8-f93d20fdfe4c",
+Cell[1173657, 21570, 1912, 29, 30, "Print",ExpressionUUID->"551fd44e-e3c2-43e2-b8c8-f93d20fdfe4c",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1123850, 20527, 1895, 28, 24, "Print",ExpressionUUID->"ea4b6e61-b4c5-42bc-8928-dd71d7d0a91b",
+Cell[1175572, 21601, 1895, 28, 30, "Print",ExpressionUUID->"ea4b6e61-b4c5-42bc-8928-dd71d7d0a91b",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1125748, 20557, 1899, 29, 24, "Print",ExpressionUUID->"bb7911fe-021b-4b19-8775-82f5aec60a3c",
+Cell[1177470, 21631, 1899, 29, 30, "Print",ExpressionUUID->"bb7911fe-021b-4b19-8775-82f5aec60a3c",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1127650, 20588, 1899, 29, 24, "Print",ExpressionUUID->"24c6baf6-015f-4df6-b2db-a7bdc2e8335a",
+Cell[1179372, 21662, 1899, 29, 30, "Print",ExpressionUUID->"24c6baf6-015f-4df6-b2db-a7bdc2e8335a",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1129552, 20619, 1899, 29, 24, "Print",ExpressionUUID->"2c9b1dd9-b253-4a8a-a6c2-0b4929fc8b30",
+Cell[1181274, 21693, 1899, 29, 30, "Print",ExpressionUUID->"2c9b1dd9-b253-4a8a-a6c2-0b4929fc8b30",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1131454, 20650, 1909, 29, 24, "Print",ExpressionUUID->"d0ea8fa1-3d9e-48fc-923f-945be2589ce8",
+Cell[1183176, 21724, 1909, 29, 30, "Print",ExpressionUUID->"d0ea8fa1-3d9e-48fc-923f-945be2589ce8",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1133366, 20681, 1895, 28, 24, "Print",ExpressionUUID->"ff9e3d1e-e8d2-4671-bbaf-d3704db4a7a6",
+Cell[1185088, 21755, 1895, 28, 30, "Print",ExpressionUUID->"ff9e3d1e-e8d2-4671-bbaf-d3704db4a7a6",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1135264, 20711, 1896, 28, 24, "Print",ExpressionUUID->"438f246f-dbd9-4f44-ad5c-6d9d10c705ab",
+Cell[1186986, 21785, 1896, 28, 30, "Print",ExpressionUUID->"438f246f-dbd9-4f44-ad5c-6d9d10c705ab",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1137163, 20741, 1899, 29, 24, "Print",ExpressionUUID->"99f14e6b-ab01-4cad-947e-98eb2e610444",
+Cell[1188885, 21815, 1899, 29, 30, "Print",ExpressionUUID->"99f14e6b-ab01-4cad-947e-98eb2e610444",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1139065, 20772, 1897, 28, 24, "Print",ExpressionUUID->"5e372939-0384-4901-9818-20dd56bf54d6",
+Cell[1190787, 21846, 1897, 28, 30, "Print",ExpressionUUID->"5e372939-0384-4901-9818-20dd56bf54d6",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1140965, 20802, 1895, 28, 24, "Print",ExpressionUUID->"fde6e605-477d-4be6-adac-4fe643d66670",
+Cell[1192687, 21876, 1895, 28, 30, "Print",ExpressionUUID->"fde6e605-477d-4be6-adac-4fe643d66670",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1142863, 20832, 1895, 28, 24, "Print",ExpressionUUID->"31d2ae15-8e8c-4c26-81fb-6c774ac24ca6",
+Cell[1194585, 21906, 1895, 28, 30, "Print",ExpressionUUID->"31d2ae15-8e8c-4c26-81fb-6c774ac24ca6",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1144761, 20862, 1887, 28, 24, "Print",ExpressionUUID->"7c6c2331-f97d-4c52-bfec-b55918102526",
+Cell[1196483, 21936, 1887, 28, 30, "Print",ExpressionUUID->"7c6c2331-f97d-4c52-bfec-b55918102526",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1146651, 20892, 1899, 29, 24, "Print",ExpressionUUID->"e4a94455-fbb4-415b-81d2-e56ed4340cee",
+Cell[1198373, 21966, 1899, 29, 30, "Print",ExpressionUUID->"e4a94455-fbb4-415b-81d2-e56ed4340cee",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1148553, 20923, 1885, 28, 24, "Print",ExpressionUUID->"c75e5aa0-d165-4b96-bc93-2eda92557f04",
+Cell[1200275, 21997, 1885, 28, 30, "Print",ExpressionUUID->"c75e5aa0-d165-4b96-bc93-2eda92557f04",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1150441, 20953, 1896, 28, 24, "Print",ExpressionUUID->"8934b23c-b930-4130-9d85-fc7a2c1fa98c",
+Cell[1202163, 22027, 1896, 28, 30, "Print",ExpressionUUID->"8934b23c-b930-4130-9d85-fc7a2c1fa98c",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1152340, 20983, 1895, 28, 24, "Print",ExpressionUUID->"a4557b84-d79b-4f11-9e7e-2a68de9fae54",
+Cell[1204062, 22057, 1895, 28, 30, "Print",ExpressionUUID->"a4557b84-d79b-4f11-9e7e-2a68de9fae54",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1154238, 21013, 1899, 29, 24, "Print",ExpressionUUID->"32b5dfdd-6a08-4a55-9728-d115184a53f6",
+Cell[1205960, 22087, 1899, 29, 30, "Print",ExpressionUUID->"32b5dfdd-6a08-4a55-9728-d115184a53f6",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1156140, 21044, 1899, 29, 24, "Print",ExpressionUUID->"3a8b2c7a-8f13-4a82-8aad-cc2ee5b79ca4",
+Cell[1207862, 22118, 1899, 29, 30, "Print",ExpressionUUID->"3a8b2c7a-8f13-4a82-8aad-cc2ee5b79ca4",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1158042, 21075, 1899, 29, 24, "Print",ExpressionUUID->"36411e8e-9ac5-476b-8bac-cea7b42d4b59",
+Cell[1209764, 22149, 1899, 29, 30, "Print",ExpressionUUID->"36411e8e-9ac5-476b-8bac-cea7b42d4b59",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1159944, 21106, 1897, 28, 24, "Print",ExpressionUUID->"ea14fe45-0c8d-4f42-867e-2e8b20efd875",
+Cell[1211666, 22180, 1897, 28, 30, "Print",ExpressionUUID->"ea14fe45-0c8d-4f42-867e-2e8b20efd875",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1161844, 21136, 1895, 28, 24, "Print",ExpressionUUID->"42d071ba-9927-4ac4-ba74-4458f37b6c44",
+Cell[1213566, 22210, 1895, 28, 30, "Print",ExpressionUUID->"42d071ba-9927-4ac4-ba74-4458f37b6c44",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1163742, 21166, 1901, 29, 24, "Print",ExpressionUUID->"fe66ebb2-2e28-44a6-9913-3f763b11a2c1",
+Cell[1215464, 22240, 1901, 29, 30, "Print",ExpressionUUID->"fe66ebb2-2e28-44a6-9913-3f763b11a2c1",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1165646, 21197, 1897, 29, 24, "Print",ExpressionUUID->"aaca5064-ca1a-4787-9d55-6b12e0eeea95",
+Cell[1217368, 22271, 1897, 29, 30, "Print",ExpressionUUID->"aaca5064-ca1a-4787-9d55-6b12e0eeea95",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1167546, 21228, 1899, 29, 24, "Print",ExpressionUUID->"43dee99f-1a9b-413b-ab49-e4537154ef42",
+Cell[1219268, 22302, 1899, 29, 30, "Print",ExpressionUUID->"43dee99f-1a9b-413b-ab49-e4537154ef42",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1169448, 21259, 1899, 29, 24, "Print",ExpressionUUID->"c6d09604-e17b-4eb2-b65d-da37e0dfd887",
+Cell[1221170, 22333, 1899, 29, 30, "Print",ExpressionUUID->"c6d09604-e17b-4eb2-b65d-da37e0dfd887",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1171350, 21290, 1900, 29, 24, "Print",ExpressionUUID->"4c42dece-7d02-495d-abd0-720a0c0485cd",
+Cell[1223072, 22364, 1900, 29, 30, "Print",ExpressionUUID->"4c42dece-7d02-495d-abd0-720a0c0485cd",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1173253, 21321, 1900, 29, 24, "Print",ExpressionUUID->"dbe7ff25-e796-48d8-89a0-ec7e57941cf0",
+Cell[1224975, 22395, 1900, 29, 30, "Print",ExpressionUUID->"dbe7ff25-e796-48d8-89a0-ec7e57941cf0",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1175156, 21352, 1901, 29, 24, "Print",ExpressionUUID->"a90c9c18-852d-4e59-89c3-b2ff79ab5a19",
+Cell[1226878, 22426, 1901, 29, 30, "Print",ExpressionUUID->"a90c9c18-852d-4e59-89c3-b2ff79ab5a19",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1177060, 21383, 1889, 28, 24, "Print",ExpressionUUID->"63d1f6f1-68a5-44ce-adb4-ff10756e6138",
+Cell[1228782, 22457, 1889, 28, 30, "Print",ExpressionUUID->"63d1f6f1-68a5-44ce-adb4-ff10756e6138",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1178952, 21413, 1889, 28, 24, "Print",ExpressionUUID->"94b1f1bd-f3e4-4e07-9b08-1ac57932e05c",
+Cell[1230674, 22487, 1889, 28, 30, "Print",ExpressionUUID->"94b1f1bd-f3e4-4e07-9b08-1ac57932e05c",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1180844, 21443, 1887, 28, 24, "Print",ExpressionUUID->"f6d6ba59-1c1b-46ec-8be5-35b0e418295f",
+Cell[1232566, 22517, 1887, 28, 30, "Print",ExpressionUUID->"f6d6ba59-1c1b-46ec-8be5-35b0e418295f",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1182734, 21473, 1895, 28, 24, "Print",ExpressionUUID->"82071bf3-5687-42a9-8d76-3e15bc37cab2",
+Cell[1234456, 22547, 1895, 28, 30, "Print",ExpressionUUID->"82071bf3-5687-42a9-8d76-3e15bc37cab2",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1184632, 21503, 1895, 28, 24, "Print",ExpressionUUID->"451c6f48-460c-4023-9614-5323179f4bdf",
+Cell[1236354, 22577, 1895, 28, 30, "Print",ExpressionUUID->"451c6f48-460c-4023-9614-5323179f4bdf",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1186530, 21533, 1901, 29, 24, "Print",ExpressionUUID->"078f2833-47bf-4b5d-a0e2-73d2b84e2256",
+Cell[1238252, 22607, 1901, 29, 30, "Print",ExpressionUUID->"078f2833-47bf-4b5d-a0e2-73d2b84e2256",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1188434, 21564, 1887, 28, 24, "Print",ExpressionUUID->"999fde25-7aa0-4310-a2fb-ac4ce225a7f6",
+Cell[1240156, 22638, 1887, 28, 30, "Print",ExpressionUUID->"999fde25-7aa0-4310-a2fb-ac4ce225a7f6",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1190324, 21594, 1866, 28, 24, "Print",ExpressionUUID->"355a08d5-c3cd-44ed-a575-3c6a50d6dadd",
+Cell[1242046, 22668, 1866, 28, 30, "Print",ExpressionUUID->"355a08d5-c3cd-44ed-a575-3c6a50d6dadd",
  CellTags->"EMF from theory using x-y segments test"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1192251, 21629, 506, 7, 67, "Section",ExpressionUUID->"7563948f-eeb0-4b59-abeb-82906d3b452b"],
-Cell[1192760, 21638, 645, 11, 35, "Text",ExpressionUUID->"6297a081-d589-41b9-a9f3-2616a96a788e"],
+Cell[1243973, 22703, 506, 7, 83, "Section",ExpressionUUID->"7563948f-eeb0-4b59-abeb-82906d3b452b"],
+Cell[1244482, 22712, 645, 11, 43, "Text",ExpressionUUID->"6297a081-d589-41b9-a9f3-2616a96a788e"],
 Cell[CellGroupData[{
-Cell[1193430, 21653, 24847, 372, 892, "Input",ExpressionUUID->"7f8eb847-fff7-46d9-b0e0-5b00fd0423ee",
+Cell[1245152, 22727, 24847, 372, 1115, "Input",ExpressionUUID->"7f8eb847-fff7-46d9-b0e0-5b00fd0423ee",
  CellTags->"EMF from theory using x-y segments test"],
 Cell[CellGroupData[{
-Cell[1218302, 22029, 491, 9, 24, "Print",ExpressionUUID->"b6a5e800-edd0-4c58-b54d-b106858a47f3",
+Cell[1270024, 23103, 491, 9, 30, "Print",ExpressionUUID->"b6a5e800-edd0-4c58-b54d-b106858a47f3",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1218796, 22040, 481, 9, 24, "Print",ExpressionUUID->"853d1228-a309-44d0-97b1-34b47cbee023",
+Cell[1270518, 23114, 481, 9, 30, "Print",ExpressionUUID->"853d1228-a309-44d0-97b1-34b47cbee023",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1219280, 22051, 492, 9, 24, "Print",ExpressionUUID->"87c29fcc-b159-49fc-b674-e47e1fa11dbc",
+Cell[1271002, 23125, 492, 9, 30, "Print",ExpressionUUID->"87c29fcc-b159-49fc-b674-e47e1fa11dbc",
  CellTags->"EMF from theory using x-y segments test"],
-Cell[1219775, 22062, 369, 7, 24, "Print",ExpressionUUID->"17198d8f-73ca-4ec9-8538-5adf41cc1b0b",
+Cell[1271497, 23136, 369, 7, 30, "Print",ExpressionUUID->"17198d8f-73ca-4ec9-8538-5adf41cc1b0b",
  CellTags->"EMF from theory using x-y segments test"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1220205, 22076, 455, 7, 67, "Section",ExpressionUUID->"ae17f6bb-9bd0-4b33-a8de-a6e616575ef4"],
-Cell[1220663, 22085, 503, 9, 35, "Text",ExpressionUUID->"ebf30fc3-6ac9-4da0-929c-a42eb8d426ed"],
-Cell[1221169, 22096, 8707, 179, 1328, "Input",ExpressionUUID->"2db0c55c-cfce-41f8-91ae-5911b1a7ff27",
+Cell[1271927, 23150, 455, 7, 83, "Section",ExpressionUUID->"ae17f6bb-9bd0-4b33-a8de-a6e616575ef4"],
+Cell[1272385, 23159, 503, 9, 43, "Text",ExpressionUUID->"ebf30fc3-6ac9-4da0-929c-a42eb8d426ed"],
+Cell[1272891, 23170, 8707, 179, 1660, "Input",ExpressionUUID->"2db0c55c-cfce-41f8-91ae-5911b1a7ff27",
  InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
